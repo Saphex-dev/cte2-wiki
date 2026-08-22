@@ -899,12 +899,8 @@ const description =
 			}
 			:global(h1, h2, h3) {
 				font-family: var(--font-display);
-				/* Press Start 2P ships one weight. Asking for 600 makes the
-				   browser synthesise a bold, which smears a pixel face. */
-				font-weight: 400;
-				/* Pixel faces are drawn on a whole-pixel grid; fractional
-				   tracking puts the stems between pixels. */
-				letter-spacing: normal;
+				font-weight: 600;
+				letter-spacing: -0.01em;
 				margin: 0;
 			}
 			:global(a) {
@@ -1208,11 +1204,6 @@ const description =
 			}
 			.col h3,
 			.pbody > .cols h3 {
-				/* These sit in 128px columns. "Weapons and offhand" in the
-				   display face is ~255px at this size and clips — the width
-				   cost of a square-advance font lands hardest on the smallest
-				   labels. Small column heads stay on mono. */
-				font-family: var(--font-mono);
 				font-size: 12px;
 				letter-spacing: 0.12em;
 				text-transform: uppercase;
@@ -1341,8 +1332,17 @@ const description =
 				display: flex;
 				flex-direction: column;
 			}
+			/* One of the two reserved roles for the pixel face: an item's own
+			   name. 16px because the face is drawn on an 8px grid and only
+			   stays crisp at multiples of it. Weight and tracking are left
+			   alone — it ships one weight, and fractional tracking would put
+			   stems between pixels. */
 			.item h3 {
-				font-size: 20px;
+				font-family: var(--font-pixel);
+				font-size: 16px;
+				font-weight: 400;
+				letter-spacing: normal;
+				line-height: 1.5;
 				color: var(--r-unique);
 			}
 			.base {

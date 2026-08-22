@@ -1,8 +1,9 @@
 ---
 /* The CTE2 wordmark.
  *
- * Letterforms are Press Start 2P — a LOGOTYPE, not a typeface (ROADMAP § D10).
- * It sets the mark and nothing else.
+ * Letterforms are Press Start 2P, via `--font-pixel`. That token is reserved
+ * for exactly two roles — this mark, and an item's own name (ROADMAP § D11).
+ * Do not reach for it for a heading, a label or a panel title.
  *
  * The violet -> magenta ramp is not spread evenly across the glyphs. It holds
  * brand violet for the first 55% of the mark and eases to magenta over the
@@ -73,7 +74,7 @@ const rendered = chars.map((ch) => {
 
 <style>
 	.wm {
-		font-family: var(--font-logo);
+		font-family: var(--font-pixel);
 		font-size: var(--wm-size);
 		line-height: 1.5;
 		white-space: nowrap;

@@ -73,21 +73,31 @@
 	--r-runeword: #ffff55; /* YELLOW */
 
 	/* ---- Type ---------------------------------------------------------- */
-	/* Press Start 2P now carries the wordmark AND the display face: headings,
-	   panel titles, nav, labels, item names. D10 originally confined it to the
-	   logotype; that was revised deliberately — the blocky face is the point.
+	/* `--font-pixel` is RESERVED. It sets exactly two things:
+	     1. the wordmark
+	     2. an item's own name
+	   Nothing else, ever. Not panel titles, not nav, not section headings.
 
-	   What has NOT moved, and the measurement behind it: Press Start 2P
-	   advances a full em per glyph, so a line is roughly 1.7x the width of the
-	   same string in Plex Mono. Measured against the 1,151 real stat names,
-	   at 13px the median line is 325px but the p90 is 728px and the longest is
-	   1,859px — against a content column of about 640px. Body prose and stat
-	   lines therefore stay on Plex until that is solved, because the stat
-	   tables are the reason players come.
+	   The reservation is by ROLE, not by hand-picked word, so it needs no
+	   tagging and holds across the whole item set. It is also the reason the
+	   face still reads as special: applied at six levels of hierarchy it
+	   stopped being an accent and became the page's body texture, which is
+	   what made the site look cartoony (D11).
 
-	   Flip --font-body to var(--font-display) to see the alternative. */
-	--font-logo: 'Press Start 2P', ui-monospace, monospace;
-	--font-display: 'Press Start 2P', 'Monocraft', ui-monospace, monospace;
+	   Two properties of the face that constrain its use:
+	   - It advances a full em per glyph, ~1.7x the width of Plex Mono. Against
+	     the 1,151 real stat names at 13px the median line is 325px but the p90
+	     is 728px, against a ~640px column, so a median stat name wraps to three
+	     lines. Body and stat text never get it.
+	   - It is drawn on an 8px grid and is only crisp at multiples of 8. Size
+	     pixel text at 8/16/24/32, never 11 or 13. */
+	--font-pixel: 'Press Start 2P', ui-monospace, monospace;
+
+	/* Structural display: headings, panel titles, nav, labels. Monocraft is
+	   the intended face and is not on Google Fonts — until it is self-hosted
+	   this resolves to IBM Plex Mono, which is a stand-in rather than an
+	   accident. */
+	--font-display: 'Monocraft', 'IBM Plex Mono', ui-monospace, monospace;
 	--font-body: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
 	--font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', monospace;
 }

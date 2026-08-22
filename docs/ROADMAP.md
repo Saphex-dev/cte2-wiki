@@ -368,6 +368,37 @@ their neon-tube cross-section. More decisively, a wordmark has to work as a favi
 OG image, a README banner and a Discord embed, none of which run CSS. As an asset it is
 portable and pixel-exact; as a runtime effect it is neither.
 
+### D11 — The pixel face is reserved for two roles
+
+`--font-pixel` (Press Start 2P) sets **the wordmark** and **an item's own name**.
+Nothing else. Not panel titles, not nav, not section headings, not labels.
+Structural display goes to `--font-display`; body and stat text to the Plex family.
+
+*Why, after D10 briefly put it everywhere:* applied across six levels of hierarchy —
+hero heading, panel titles, nav, group labels, playstyle names, item names — the face
+stopped reading as an accent and became the page's body texture. The result looked
+cartoony. Character comes from contrast, and at six levels there was nothing left to
+contrast against. Press Start 2P's caps also fill nearly the whole em where Plex Sans
+fills about 70%, so 16px of it reads like 22px of a normal face and everything shouts
+at once.
+
+*Why by role and not by keyword:* the alternative considered was stylising selected
+words. That means someone decides which words are special on every page — hand-tagging,
+which does not survive three hundred item pages. A role is automatic: "an item's name
+is blocky" needs no human judgement and holds across the whole item set.
+
+*Why these two roles specifically:* the item name is the single most important string
+on an item page and the thing players scan for, so making it the loudest element is
+semantic rather than decorative. And both roles are short and can afford the width.
+
+*Sizing rule:* pixel text sits at multiples of 8 — 8, 16, 24, 32. The face is drawn on
+an 8px grid and interpolates at anything between, which reads as cheap rather than
+small. Item names are 16px for this reason. It also ships one weight, so never request
+a bold, and `letter-spacing` stays `normal`.
+
+**This supersedes D10's promotion of the face to display duty.** The width measurement
+recorded in D10 stands and is why body and stat text were never in scope.
+
 ---
 
 ## 3. Phase order
