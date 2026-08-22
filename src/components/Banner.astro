@@ -1,0 +1,62 @@
+---
+/* Top-of-page banner slot.
+ *
+ * Reserved for Mahjerion's original CTE2 banner art. Empty until that lands.
+ *
+ * The slot holds its height via `aspect-ratio` rather than collapsing, so
+ * dropping the image in later causes no layout shift — everything below it
+ * stays exactly where it is now.
+ *
+ * `ratio` is PROVISIONAL. The real banner is not in the instance — the only
+ * pack artwork there is profileImage/cte2-icon-sword.png, which is 512x512 —
+ * so 3/1 is a common wide-banner shape, not a measured one. When the real
+ * asset arrives, set `ratio` to its true dimensions and nothing else changes.
+ */
+interface Props {
+	/** Path under public/. Omit to leave the slot empty. */
+	src?: string;
+	/** Required whenever `src` is set — the banner carries the pack's name. */
+	alt?: string;
+	/** CSS aspect-ratio for the reserved area. */
+	ratio?: string;
+	class?: string;
+}
+
+const { src, alt = '', ratio = '3 / 1', class: className = '' } = Astro.props;
+---
+
+<div
+	class={`banner bevel ${className}`}
+	style={`--banner-ratio:${ratio}`}
+	aria-hidden={src ? undefined : 'true'}
+>
+	{src && <img src={src} alt={alt} width="1920" height="640" />}
+</div>
+
+<style>
+	.banner {
+		aspect-ratio: var(--banner-ratio);
+		width: 100%;
+		overflow: hidden;
+		/* Same night -> earth ground as the page, so an empty slot reads as a
+		   deliberate quiet area rather than a hole waiting for an image. */
+		background:
+			linear-gradient(180deg, var(--bg-mid) 0%, var(--bg-deep) 100%);
+	}
+	.banner img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		/* Pack art is pixel art. Let it stay pixel art when it scales up. */
+		image-rendering: pixelated;
+	}
+
+	/* A 3:1 slot is most of a phone screen. Let it get taller-but-shorter
+	   rather than eating the whole first viewport. */
+	@media (max-width: 640px) {
+		.banner {
+			aspect-ratio: 2 / 1;
+		}
+	}
+</style>
