@@ -1,0 +1,7 @@
+/* Cascade layer order: Starlight's own styles sit between Tailwind's base and
+   theme/utilities so Tailwind utilities can override Starlight component CSS. */
+@layer base, starlight, theme, components, utilities;
+
+@import '@astrojs/starlight-tailwind';
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
