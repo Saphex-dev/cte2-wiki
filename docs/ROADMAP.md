@@ -278,6 +278,62 @@ decoration.
 *This is a correction, not a preference.* It falls straight out of D4: rarity colour is
 a rendered pack fact, and pack facts do not get borrowed for atmosphere.
 
+### D9 — The brand palette is sampled from the icon, and it is quarantined
+
+The site palette derives from the CurseForge icon, read off the pixels rather than
+chosen:
+
+| token | hex | role |
+|---|---|---|
+| `--brand-violet` | `#844DEC` | wordmark, left two-thirds |
+| `--brand-magenta` | `#C730ED` | wordmark, at the numeral |
+| `--brand-lavender` | `#C57EFF` | wordmark outer rim |
+| `--brand-violet-deep` | `#472281` | wordmark counters and shading |
+| `--stroke` | `#211533` | glyph and edge outline |
+| `--bg` | `#231E2A` | night — page ground |
+| `--bg-earth` | `#2B1A12` | earth — page foot |
+| `--accent` | `#FFDEDB` | torch — links and emphasis |
+
+*Why sampled:* the brief's "prefer extracted values over invented ones" applies to
+colour as much as to stat lines. A palette taken from Mahjerion's own icon is one he
+will recognise.
+
+**The quarantine is the load-bearing part.** Saturated violet and magenta sit directly
+on top of two pack rarity hues — `--r-epic` is LIGHT_PURPLE `#ff55ff` and `--r-mythic`
+is DARK_PURPLE `#aa00aa`. Those are pack facts and cannot move, so the brand must.
+Therefore:
+
+- **Saturated brand violet and magenta appear in the wordmark and nowhere else.** Not
+  as a heading colour, not as a link, not as a border.
+- **Chrome draws from the dark end** — `night`, `earth`, `stroke`, `--line #2E2740` —
+  plus `torch` for anything interactive. Torch is the one colour in the sampled set
+  that collides with no rarity tier, which is precisely why it inherits the job the
+  borrowed aqua was doing.
+- **The ground turns warm.** `#231E2A` grading to `#2B1A12`, replacing the cold
+  `#0b0d12`. Warm dark reads as Minecraft; blue-black reads as a developer tool.
+
+*Also settled here:* the bevel moves from 1px to 2px. At 1px it was indistinguishable
+from a plain rule on screen, so the element the brief calls the signature was doing no
+work at all.
+
+### D10 — Press Start 2P is a logotype, not a typeface
+
+Press Start 2P sets the wordmark. It sets nothing else, ever.
+
+*Why the hard line:* it is effectively caps-only and extremely wide — fine for six
+words locked into a mark, punishing for a heading, unusable for a stat line. Monocraft
+remains the display face (D7) and the Plex family keeps body and numerics. Without the
+rule written down, someone reasonably sets an `h2` in the logo font and the line length
+falls apart.
+
+*The wordmark should ship as SVG, not CSS.* The current study reproduces the outer
+rim, the dark outline and the glow with `-webkit-text-stroke`, `paint-order` on HTML
+text and a `z-index:-1` pseudo-element — Chrome-favouring, fragile against stacking
+contexts, and unable to reproduce the inner dark line that gives the original glyphs
+their neon-tube cross-section. More decisively, a wordmark has to work as a favicon, an
+OG image, a README banner and a Discord embed, none of which run CSS. As an asset it is
+portable and pixel-exact; as a runtime effect it is neither.
+
 ---
 
 ## 3. Phase order
@@ -289,11 +345,21 @@ Dependency order, not priority order. Each phase leaves the build green.
 Cheap, and everything after it is judged against the result. Nothing here is new
 design work — it is making the design that was already decided actually render.
 
+- ~~Split the chrome palette off the rarity palette~~ (D8, D9) — **done**. `tokens.css`
+  now carries three separate palettes, the ground is warm, and the six chrome usages of
+  rarity tokens in `index.astro` are gone. Rarity colour survives only where it labels
+  an actual item: the ladder swatches, search-hit names, and the unique card frames.
+- ~~Make the bevel read~~ — **done**. 2px, and it is finally visible.
 - Self-host Monocraft (D7), licence checked, applied to headings and item names only.
-- Split the chrome palette off the rarity palette (D8).
-- Make the bevel read. It is defined in `tokens.css` and currently indistinguishable
-  from a 1px rule on screen.
+- Export the wordmark as SVG (D10) and put it in the header, replacing the placeholder
+  square and the `CTE2 Wiki` text.
 - Re-screenshot and re-judge. The current page has never been seen in its own typeface.
+
+*Interim state, honestly:* the palette rebase makes the page more coherent and removes
+the false colour signals, but it has also made it quieter — the borrowed aqua was doing
+work that nothing has yet replaced. The two items still open are what put character
+back: the wordmark is the only place saturated brand colour is allowed, and Monocraft
+is the only thing carrying display character. Judge the result after those, not now.
 
 ### Phase 1 — Extractor: dimensions and rarities
 
