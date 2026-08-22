@@ -6,6 +6,10 @@ dist/
 # dependencies
 node_modules/
 
+# agent worktrees — .claude/worktrees/ holds full checkouts of this repo, so
+# committing this directory would nest the repo inside itself
+.claude/
+
 # logs
 npm-debug.log*
 yarn-debug.log*

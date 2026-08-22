@@ -55,10 +55,10 @@ Settled deliberately. Treat this table as a constraint, not a description.
 | Layer | Choice |
 |---|---|
 | Site generator | Astro 7 |
-| Docs framework | **Starlight** — owns the page shell, sidebar, and content collection |
+| Docs framework | **Starlight** — owns prose docs only; item and build pages are custom `src/pages/` routes (revised 2026-08-22, see `docs/ROADMAP.md` § D1) |
 | Content | Markdown / MDX in `src/content/docs/`, extracted JSON in `data/` |
 | Styling | Tailwind CSS v4 (Vite plugin) + `@astrojs/starlight-tailwind` |
-| Search | Pagefind — bundled with Starlight, indexed automatically during build |
+| Search | Pagefind — bundled with Starlight. Automatic for docs pages; custom routes must declare `data-pagefind-body` themselves or the item corpus is unsearchable |
 | Extraction | Python 3.9+, stdlib only |
 | Hosting | Cloudflare Pages |
 | VCS / contributions | GitHub, pull request based |
@@ -185,6 +185,14 @@ signal worth raising rather than absorbing.
 
 ### Dimension + rarity background matrix
 
+> **Revised 2026-08-22 — the rarity axis is dropped.** Uniques carry no drop-source
+> field, and `rarity` is the constant `"unique"` on all 251 of them, so five of the six
+> procedural tiers would never render on an item page. Backgrounds key on **dimension
+> alone**, derived from `min_drop_lvl` against the pack's own `mmorpg_dimension` level
+> ladder (8 dimensions, 1–100). That mapping is *derived*, not a drop location — it may
+> never be labelled "drops in." See `docs/ROADMAP.md` § D2. The rest of this section
+> stands, with rarity read as a single tier.
+
 Backgrounds encode two signals at once: **material family = dimension**,
 **elaboration = rarity**. Netherrack for common Nether; the Citadel for mythic Nether;
 enchanted deepslate for mythic Overworld.
@@ -200,9 +208,9 @@ Implementation rules:
     optional ambient drift
 - Deliverable is roughly one tileable texture plus one mythic backdrop per dimension.
   Everything between is CSS layers. Every dimension gets full coverage on day one.
-- **Theming is automatic.** `data-dimension` on `<html>`, set from the item's
-  drop-source field in frontmatter, drives CSS custom properties. No hand-tagging —
-  it has to hold up across hundreds of items.
+- **Theming is automatic.** `data-dimension` on `<html>`, derived from the item's
+  `min_drop_lvl` against the dimension level ladder, drives CSS custom properties. No
+  hand-tagging — it has to hold up across hundreds of items.
 - **Rarity is carried absolutely by the item name and frame**, not by the background.
   A player landing cold on one page can't compare against other cells. Background is
   atmospheric reinforcement only.
@@ -247,6 +255,8 @@ vocabulary controlled — a new tag needs a deliberate decision, not an ad-hoc s
 
 ## Reference docs
 
+- `docs/ROADMAP.md` — decisions and the data audit behind them, plus phase order.
+  Written later than this file; where the two disagree, reconcile them
 - `extract/README.md` — how extraction works, entry shape, gotchas
 - `docs/EXTRACTION_MANIFEST.md` — what exists: counts, named vs derived, join health,
   unmapped registries
