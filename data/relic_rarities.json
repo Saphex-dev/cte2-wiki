@@ -1,0 +1,128 @@
+[
+  {
+    "id": "common",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_rarity/common.json",
+    "data": {
+      "affixes": 1,
+      "base_data": {
+        "id": "common",
+        "text_format": "GRAY",
+        "tier": 0,
+        "weight": 729
+      },
+      "max_affix_percent": 30,
+      "max_uses": 5,
+      "min_affix_percent": 0
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_relic_rarity/common.json",
+    "name": "Common",
+    "name_source": "derived"
+  },
+  {
+    "id": "epic",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_rarity/epic.json",
+    "data": {
+      "affixes": 3,
+      "base_data": {
+        "id": "epic",
+        "text_format": "LIGHT_PURPLE",
+        "tier": 3,
+        "weight": 27
+      },
+      "max_affix_percent": 75,
+      "max_uses": 8,
+      "min_affix_percent": 45
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_relic_rarity/epic.json",
+    "name": "Epic",
+    "name_source": "derived"
+  },
+  {
+    "id": "legendary",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_rarity/legendary.json",
+    "data": {
+      "affixes": 3,
+      "base_data": {
+        "id": "legendary",
+        "text_format": "GOLD",
+        "tier": 4,
+        "weight": 9
+      },
+      "max_affix_percent": 90,
+      "max_uses": 9,
+      "min_affix_percent": 60
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_relic_rarity/legendary.json",
+    "name": "Legendary",
+    "name_source": "derived"
+  },
+  {
+    "id": "mythic",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_rarity/mythic.json",
+    "data": {
+      "affixes": 4,
+      "base_data": {
+        "id": "mythic",
+        "text_format": "DARK_PURPLE",
+        "tier": 5,
+        "weight": 3
+      },
+      "max_affix_percent": 100,
+      "max_uses": 10,
+      "min_affix_percent": 75
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_relic_rarity/mythic.json",
+    "name": "Mythic",
+    "name_source": "derived"
+  },
+  {
+    "id": "rare",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_rarity/rare.json",
+    "data": {
+      "affixes": 2,
+      "base_data": {
+        "id": "rare",
+        "text_format": "AQUA",
+        "tier": 2,
+        "weight": 81
+      },
+      "max_affix_percent": 60,
+      "max_uses": 7,
+      "min_affix_percent": 30
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_relic_rarity/rare.json",
+    "name": "Rare",
+    "name_source": "derived"
+  },
+  {
+    "id": "uncommon",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_rarity/uncommon.json",
+    "data": {
+      "affixes": 2,
+      "base_data": {
+        "id": "uncommon",
+        "text_format": "GREEN",
+        "tier": 1,
+        "weight": 243
+      },
+      "max_affix_percent": 45,
+      "max_uses": 6,
+      "min_affix_percent": 15
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_relic_rarity/uncommon.json",
+    "name": "Uncommon",
+    "name_source": "derived"
+  }
+]

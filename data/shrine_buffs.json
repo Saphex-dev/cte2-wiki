@@ -1,0 +1,143 @@
+[
+  {
+    "id": "shrine_acceleration",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_shrine_buff/shrine_acceleration.json",
+    "data": {
+      "duration_ticks": 1200,
+      "effect_id": "shrine_acceleration",
+      "id": "shrine_acceleration",
+      "weight": 1000
+    },
+    "name": "Shrine Acceleration",
+    "name_source": "derived"
+  },
+  {
+    "id": "shrine_brutal",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_shrine_buff/shrine_brutal.json",
+    "data": {
+      "duration_ticks": 1200,
+      "effect_id": "shrine_brutal",
+      "id": "shrine_brutal",
+      "weight": 1000
+    },
+    "name": "Shrine Brutal",
+    "name_source": "derived"
+  },
+  {
+    "id": "shrine_charges",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_shrine_buff/shrine_charges.json",
+    "data": {
+      "duration_ticks": 1200,
+      "effect_id": "shrine_charges",
+      "id": "shrine_charges",
+      "weight": 1000
+    },
+    "name": "Shrine Charges",
+    "name_source": "derived"
+  },
+  {
+    "id": "shrine_critical_strikes",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_shrine_buff/shrine_critical_strikes.json",
+    "data": {
+      "duration_ticks": 1200,
+      "effect_id": "shrine_critical_strikes",
+      "id": "shrine_critical_strikes",
+      "weight": 1000
+    },
+    "name": "Shrine Critical Strikes",
+    "name_source": "derived"
+  },
+  {
+    "id": "shrine_impenetrable",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_shrine_buff/shrine_impenetrable.json",
+    "data": {
+      "duration_ticks": 1200,
+      "effect_id": "shrine_impenetrable",
+      "id": "shrine_impenetrable",
+      "weight": 1000
+    },
+    "name": "Shrine Impenetrable",
+    "name_source": "derived"
+  },
+  {
+    "id": "shrine_massive",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_shrine_buff/shrine_massive.json",
+    "data": {
+      "duration_ticks": 1200,
+      "effect_id": "shrine_massive",
+      "id": "shrine_massive",
+      "weight": 1000
+    },
+    "name": "Shrine Massive",
+    "name_source": "derived"
+  },
+  {
+    "id": "shrine_replenishing",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_shrine_buff/shrine_replenishing.json",
+    "data": {
+      "duration_ticks": 1200,
+      "effect_id": "shrine_replenishing",
+      "id": "shrine_replenishing",
+      "weight": 1000
+    },
+    "name": "Shrine Replenishing",
+    "name_source": "derived"
+  },
+  {
+    "id": "shrine_resistance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_shrine_buff/shrine_resistance.json",
+    "data": {
+      "duration_ticks": 1200,
+      "effect_id": "shrine_resistance",
+      "id": "shrine_resistance",
+      "weight": 1000
+    },
+    "name": "Shrine Resistance",
+    "name_source": "derived"
+  },
+  {
+    "id": "shrine_riches",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_shrine_buff/shrine_riches.json",
+    "data": {
+      "duration_ticks": 1200,
+      "effect_id": "shrine_riches",
+      "id": "shrine_riches",
+      "weight": 100
+    },
+    "name": "Shrine Riches",
+    "name_source": "derived"
+  },
+  {
+    "id": "valor",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_shrine_buff/valor.json",
+    "data": {
+      "duration_ticks": 1200,
+      "effect_id": "valor",
+      "id": "valor",
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_shrine_buff/valor.json",
+    "name": "Valor",
+    "name_source": "derived"
+  }
+]

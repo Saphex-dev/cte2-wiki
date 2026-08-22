@@ -1,0 +1,2970 @@
+[
+  {
+    "id": "add_spawn_rate",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_currency/add_spawn_rate.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_spawn_rate",
+          "weight": 1
+        }
+      ],
+      "id": "add_spawn_rate",
+      "item_id": "ancient_obelisks:orbs/add_spawn_rate",
+      "item_type_requirement": [
+        "is_obelisk_map"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "obelisk_spawnrate_cap"
+      ],
+      "weight": 0
+    },
+    "name": "Add Spawn Rate",
+    "name_source": "derived"
+  },
+  {
+    "id": "add_tier",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_currency/add_tier.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_tier",
+          "weight": 1
+        }
+      ],
+      "id": "add_tier",
+      "item_id": "ancient_obelisks:orbs/add_tier",
+      "item_type_requirement": [
+        "is_obelisk_map"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "is_less_than_max_tier"
+      ],
+      "weight": 0
+    },
+    "name": "Add Tier",
+    "name_source": "derived"
+  },
+  {
+    "id": "add_wave",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_currency/add_wave.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_wave",
+          "weight": 1
+        }
+      ],
+      "id": "add_wave",
+      "item_id": "ancient_obelisks:orbs/add_wave",
+      "item_type_requirement": [
+        "is_obelisk_map"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "has_less_than_x_waves"
+      ],
+      "weight": 0
+    },
+    "name": "Add Wave",
+    "name_source": "derived"
+  },
+  {
+    "id": "affix_common_reroll",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/affix_common_reroll.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "reroll_random_affix",
+          "weight": 1
+        }
+      ],
+      "id": "affix_common_reroll",
+      "item_id": "mmorpg:currency/affix_common_reroll",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 10
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_affixes"
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/affix_common_reroll.json",
+    "name": "Orb of New Beginnings",
+    "name_source": "lang"
+  },
+  {
+    "id": "affix_number_reroll",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/affix_number_reroll.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "affix_number_reroll",
+          "weight": 1
+        }
+      ],
+      "id": "affix_number_reroll",
+      "item_id": "mmorpg:currency/affix_number_reroll",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 5
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_affixes"
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/affix_number_reroll.json",
+    "name": "Orb of Ciphers",
+    "name_source": "lang"
+  },
+  {
+    "id": "affix_random_mythic_reroll",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/affix_random_mythic_reroll.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "reroll_random_affix_to_mythic",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_random_mythic_affix",
+          "weight": 1
+        }
+      ],
+      "id": "affix_random_mythic_reroll",
+      "item_id": "mmorpg:currency/affix_random_mythic_reroll",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 25
+      },
+      "rar": "mythic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_affixes",
+        "is_mythic",
+        "max_uses_random_mythic_affix"
+      ],
+      "weight": 10
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/affix_random_mythic_reroll.json",
+    "name": "Orb of Divine Benevolence",
+    "name_source": "lang"
+  },
+  {
+    "id": "affix_reroll_all",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/affix_reroll_all.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "reroll_all_affixes",
+          "weight": 1
+        }
+      ],
+      "id": "affix_reroll_all",
+      "item_id": "mmorpg:currency/affix_reroll_all",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 10
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_affixes"
+      ],
+      "weight": 1000
+    },
+    "name": "Orb of Rebirth",
+    "name_source": "lang"
+  },
+  {
+    "id": "affix_tier_up_down",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/affix_tier_up_down.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "upgrade_random_affix",
+          "weight": 1
+        }
+      ],
+      "id": "affix_tier_up_down",
+      "item_id": "mmorpg:currency/affix_tier_up_down",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 20
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_affixes"
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/affix_tier_up_down.json",
+    "name": "Orb of Imbalance",
+    "name_source": "lang"
+  },
+  {
+    "id": "aura_gem_rarity_upgrade",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/aura_gem_rarity_upgrade.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "upgrade_skill_gem_rarity",
+          "weight": 1
+        }
+      ],
+      "id": "aura_gem_rarity_upgrade",
+      "item_id": "mmorpg:currency/aura_gem_rarity_upgrade",
+      "item_type_requirement": [
+        "is_aura_gem"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_skill_gem_common_or_uncommon"
+      ],
+      "weight": 250
+    },
+    "name": "Orb of Ember",
+    "name_source": "lang"
+  },
+  {
+    "id": "aura_gem_stat_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/aura_gem_stat_reroll.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "aura_gem_stat_reroll",
+      "item_id": "mmorpg:currency/aura_gem_stat_reroll",
+      "item_type_requirement": [
+        "is_aura_gem"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "reroll_skill_gem_stats",
+          "weight": 75
+        },
+        {
+          "id": "destroy_item",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "mythic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored"
+      ],
+      "weight": 50
+    },
+    "name": "Orb of Flames",
+    "name_source": "lang"
+  },
+  {
+    "id": "base_number_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/base_number_reroll.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "base_number_reroll",
+          "weight": 1
+        }
+      ],
+      "id": "base_number_reroll",
+      "item_id": "mmorpg:currency/base_number_reroll",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 15
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored"
+      ],
+      "weight": 50
+    },
+    "name": "Orb of Introspection",
+    "name_source": "lang"
+  },
+  {
+    "id": "bond_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/bond_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_20_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "bond_seed",
+      "item_id": "mmorpg:currency/bond_seed",
+      "item_type_requirement": [
+        "is_gear_slot_ring"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Bond Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "chaos_orb",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/chaos_orb.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "chaos_orb",
+      "item_id": "mmorpg:currency/chaos_orb",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "corrupt_gear",
+          "weight": 75
+        },
+        {
+          "id": "destroy_item",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "unique",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored"
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/chaos_orb.json",
+    "name": "Orb of Chaos",
+    "name_source": "lang"
+  },
+  {
+    "id": "common_to_epic_with_tag_dexterity",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/common_to_epic_with_tag_dexterity.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "common_to_epic_with_tag_dexterity",
+          "weight": 1
+        }
+      ],
+      "id": "common_to_epic_with_tag_dexterity",
+      "item_id": "mmorpg:currency/common_to_epic_with_tag_dexterity",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 15
+      },
+      "rar": "epic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_common"
+      ],
+      "weight": 250
+    },
+    "name": "Orb of the Phantom",
+    "name_source": "lang"
+  },
+  {
+    "id": "common_to_epic_with_tag_intelligence",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/common_to_epic_with_tag_intelligence.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "common_to_epic_with_tag_intelligence",
+          "weight": 1
+        }
+      ],
+      "id": "common_to_epic_with_tag_intelligence",
+      "item_id": "mmorpg:currency/common_to_epic_with_tag_intelligence",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 15
+      },
+      "rar": "epic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_common"
+      ],
+      "weight": 250
+    },
+    "name": "Orb of the Aegis",
+    "name_source": "lang"
+  },
+  {
+    "id": "common_to_epic_with_tag_strength",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/common_to_epic_with_tag_strength.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "common_to_epic_with_tag_strength",
+          "weight": 1
+        }
+      ],
+      "id": "common_to_epic_with_tag_strength",
+      "item_id": "mmorpg:currency/common_to_epic_with_tag_strength",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 15
+      },
+      "rar": "epic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_common"
+      ],
+      "weight": 250
+    },
+    "name": "Orb of the Bulwark",
+    "name_source": "lang"
+  },
+  {
+    "id": "common_to_runed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/common_to_runed.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "common_to_runed",
+      "item_id": "mmorpg:currency/common_to_runed",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "common_to_runed",
+          "weight": 75
+        },
+        {
+          "id": "destroy_item",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 40
+      },
+      "rar": "runeword",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_nothing_socketed",
+        "is_common"
+      ],
+      "weight": 250
+    },
+    "name": "Orb of Runic Invocation",
+    "name_source": "lang"
+  },
+  {
+    "id": "enchant_reroll",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/enchant_reroll.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "reroll_infusion",
+          "weight": 1
+        }
+      ],
+      "id": "enchant_reroll",
+      "item_id": "mmorpg:currency/enchant_reroll",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 5
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_infusion"
+      ],
+      "weight": 250
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/enchant_reroll.json",
+    "name": "Orb of Second Guessing",
+    "name_source": "lang"
+  },
+  {
+    "id": "entangled_affix_upgrade",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/entangled_affix_upgrade.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "entangled_affix_upgrade",
+      "item_id": "mmorpg:currency/entangled_affix_upgrade",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "upgrade_lowest_affix",
+          "weight": 75
+        },
+        {
+          "id": "corrupt_gear_no_affix",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_affixes"
+      ],
+      "weight": 50
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/entangled_affix_upgrade.json",
+    "name": "Entangled Orb of Upgrade",
+    "name_source": "lang"
+  },
+  {
+    "id": "entangled_potential",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/entangled_potential.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "entangled_potential",
+      "item_id": "mmorpg:currency/entangled_potential",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "add_potential",
+          "weight": 75
+        },
+        {
+          "id": "corrupt_gear_no_affix",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored"
+      ],
+      "weight": 50
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/entangled_potential.json",
+    "name": "Entangled Orb of Potential",
+    "name_source": "lang"
+  },
+  {
+    "id": "entangled_quality",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/entangled_quality.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "entangled_quality",
+      "item_id": "mmorpg:currency/entangled_quality",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "add_1_to_5_gear_quality",
+          "weight": 75
+        },
+        {
+          "id": "corrupt_gear_no_affix",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_under_21_quality"
+      ],
+      "weight": 50
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/entangled_quality.json",
+    "name": "Entangled Orb of Quality",
+    "name_source": "lang"
+  },
+  {
+    "id": "entangled_unique_reroll",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/entangled_unique_reroll.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "entangled_unique_reroll",
+      "item_id": "mmorpg:currency/entangled_unique_reroll",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "add_10_perc_unique_stats",
+          "weight": 75
+        },
+        {
+          "id": "corrupt_gear_no_affix",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_unique"
+      ],
+      "weight": 50
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/entangled_unique_reroll.json",
+    "name": "Entangled Orb of Imperfection",
+    "name_source": "lang"
+  },
+  {
+    "id": "extract_gem",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/extract_gem.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "extract_gem",
+          "weight": 1
+        }
+      ],
+      "id": "extract_gem",
+      "item_id": "mmorpg:currency/extract_gem",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "uncommon",
+      "req": [
+        "has_socketed_gem"
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/extract_gem.json",
+    "name": "Gem Extractor",
+    "name_source": "lang"
+  },
+  {
+    "id": "extract_rune",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/extract_rune.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "extract_rune",
+          "weight": 1
+        }
+      ],
+      "id": "extract_rune",
+      "item_id": "mmorpg:currency/extract_rune",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 1
+      },
+      "rar": "uncommon",
+      "req": [
+        "has_socketed_rune"
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/extract_rune.json",
+    "name": "Rune Extractor",
+    "name_source": "lang"
+  },
+  {
+    "id": "force_soul_tag_armor_dodge_stat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/force_soul_tag_armor_dodge_stat.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "force_soul_tag_armor_dodge_stat",
+          "weight": 1
+        }
+      ],
+      "id": "force_soul_tag_armor_dodge_stat",
+      "item_id": "cte_essentials:forcesoultagarmordodgestat",
+      "item_type_requirement": [
+        "is_soul"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_single_item"
+      ],
+      "weight": 0
+    },
+    "name": "Force Soul Tag Armor Dodge Stat",
+    "name_source": "derived"
+  },
+  {
+    "id": "force_soul_tag_armor_magic_shield_stat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/force_soul_tag_armor_magic_shield_stat.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "force_soul_tag_armor_magic_shield_stat",
+          "weight": 1
+        }
+      ],
+      "id": "force_soul_tag_armor_magic_shield_stat",
+      "item_id": "cte_essentials:forcesoultagarmormagicshieldstat",
+      "item_type_requirement": [
+        "is_soul"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_single_item"
+      ],
+      "weight": 0
+    },
+    "name": "Force Soul Tag Armor Magic Shield Stat",
+    "name_source": "derived"
+  },
+  {
+    "id": "force_soul_tag_armor_stat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/force_soul_tag_armor_stat.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "force_soul_tag_armor_stat",
+          "weight": 1
+        }
+      ],
+      "id": "force_soul_tag_armor_stat",
+      "item_id": "mmorpg:currency/force_soul_tag_armor_stat",
+      "item_type_requirement": [
+        "is_soul"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_single_item"
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/force_soul_tag_armor_stat.json",
+    "name": "Plate-Gear Soul Modifier",
+    "name_source": "lang"
+  },
+  {
+    "id": "force_soul_tag_dodge_stat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/force_soul_tag_dodge_stat.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "force_soul_tag_dodge_stat",
+          "weight": 1
+        }
+      ],
+      "id": "force_soul_tag_dodge_stat",
+      "item_id": "mmorpg:currency/force_soul_tag_dodge_stat",
+      "item_type_requirement": [
+        "is_soul"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_single_item"
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/force_soul_tag_dodge_stat.json",
+    "name": "Leather-Gear Soul Modifier",
+    "name_source": "lang"
+  },
+  {
+    "id": "force_soul_tag_magic_shield_dodge_stat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/force_soul_tag_magic_shield_dodge_stat.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "force_soul_tag_magic_shield_dodge_stat",
+          "weight": 1
+        }
+      ],
+      "id": "force_soul_tag_magic_shield_dodge_stat",
+      "item_id": "cte_essentials:forcesoultagmagicshielddodgestat",
+      "item_type_requirement": [
+        "is_soul"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_single_item"
+      ],
+      "weight": 0
+    },
+    "name": "Force Soul Tag Magic Shield Dodge Stat",
+    "name_source": "derived"
+  },
+  {
+    "id": "force_soul_tag_magic_shield_stat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/force_soul_tag_magic_shield_stat.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "force_soul_tag_magic_shield_stat",
+          "weight": 1
+        }
+      ],
+      "id": "force_soul_tag_magic_shield_stat",
+      "item_id": "mmorpg:currency/force_soul_tag_magic_shield_stat",
+      "item_type_requirement": [
+        "is_soul"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_single_item"
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/force_soul_tag_magic_shield_stat.json",
+    "name": "Cloth-Gear Soul Modifier",
+    "name_source": "lang"
+  },
+  {
+    "id": "gear_rarity_random",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/gear_rarity_random.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "gear_rarity_random",
+          "weight": 1
+        }
+      ],
+      "id": "gear_rarity_random",
+      "item_id": "mmorpg:currency/gear_rarity_random",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 1
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_common"
+      ],
+      "weight": 1000
+    },
+    "name": "Orb of Colors",
+    "name_source": "lang"
+  },
+  {
+    "id": "gear_rarity_upgrade",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/gear_rarity_upgrade.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "gear_rarity_upgrade",
+          "weight": 1
+        }
+      ],
+      "id": "gear_rarity_upgrade",
+      "item_id": "mmorpg:currency/gear_rarity_upgrade",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 35
+      },
+      "rar": "mythic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_higher_rar"
+      ],
+      "weight": 50
+    },
+    "name": "Orb of Ascension",
+    "name_source": "lang"
+  },
+  {
+    "id": "harvest_essence_0",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/harvest_essence_0.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "harvest_essence_0",
+      "item_id": "mmorpg:currency/harvest_essence_0",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "destroy_item",
+          "weight": 15
+        },
+        {
+          "id": "upgrade_specific_rar_common",
+          "weight": 85
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 1
+      },
+      "rar": "common",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "not_crafted_gear",
+        "has_affix_common"
+      ],
+      "weight": 5
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/harvest_essence_0.json",
+    "name": "Harvested Spiritual Essence",
+    "name_source": "lang"
+  },
+  {
+    "id": "harvest_essence_1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/harvest_essence_1.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "harvest_essence_1",
+      "item_id": "mmorpg:currency/harvest_essence_1",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "destroy_item",
+          "weight": 15
+        },
+        {
+          "id": "upgrade_specific_rar_uncommon",
+          "weight": 85
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 1
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "not_crafted_gear",
+        "has_affix_uncommon"
+      ],
+      "weight": 5
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/harvest_essence_1.json",
+    "name": "Harvested Celestial Essence",
+    "name_source": "lang"
+  },
+  {
+    "id": "harvest_essence_2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/harvest_essence_2.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "harvest_essence_2",
+      "item_id": "mmorpg:currency/harvest_essence_2",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "destroy_item",
+          "weight": 15
+        },
+        {
+          "id": "upgrade_specific_rar_rare",
+          "weight": 85
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 1
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "not_crafted_gear",
+        "has_affix_rare"
+      ],
+      "weight": 5
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/harvest_essence_2.json",
+    "name": "Harvested Empyrean Essence",
+    "name_source": "lang"
+  },
+  {
+    "id": "harvest_essence_3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/harvest_essence_3.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "harvest_essence_3",
+      "item_id": "mmorpg:currency/harvest_essence_3",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "destroy_item",
+          "weight": 15
+        },
+        {
+          "id": "upgrade_specific_rar_epic",
+          "weight": 85
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 1
+      },
+      "rar": "epic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "not_crafted_gear",
+        "has_affix_epic"
+      ],
+      "weight": 5
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/harvest_essence_3.json",
+    "name": "Harvested Angelic Essence",
+    "name_source": "lang"
+  },
+  {
+    "id": "harvest_essence_4",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/harvest_essence_4.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "harvest_essence_4",
+      "item_id": "mmorpg:currency/harvest_essence_4",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "destroy_item",
+          "weight": 15
+        },
+        {
+          "id": "upgrade_specific_rar_legendary",
+          "weight": 85
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 1
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "not_crafted_gear",
+        "has_affix_legendary"
+      ],
+      "weight": 5
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/harvest_essence_4.json",
+    "name": "Harvested Divine Essence",
+    "name_source": "lang"
+  },
+  {
+    "id": "heart_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/heart_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_20_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "heart_seed",
+      "item_id": "mmorpg:currency/heart_seed",
+      "item_type_requirement": [
+        "is_gear_slot_chest"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Heart Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "implicit_affix_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/implicit_affix_reroll.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "implicit_affix_reroll",
+          "weight": 1
+        }
+      ],
+      "id": "implicit_affix_reroll",
+      "item_id": "mmorpg:currency/implicit_affix_reroll",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 15
+      },
+      "rar": "mythic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_other_implicit"
+      ],
+      "weight": 50
+    },
+    "name": "Orb of Revelation",
+    "name_source": "lang"
+  },
+  {
+    "id": "implicit_number_reroll",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/implicit_number_reroll.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "implicit_number_reroll",
+          "weight": 1
+        }
+      ],
+      "id": "implicit_number_reroll",
+      "item_id": "mmorpg:currency/implicit_number_reroll",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 10
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_implicit"
+      ],
+      "weight": 250
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/implicit_number_reroll.json",
+    "name": "Orb of Genesis",
+    "name_source": "lang"
+  },
+  {
+    "id": "jewel_corrupt",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/jewel_corrupt.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "jewel_corrupt",
+      "item_id": "mmorpg:currency/jewel_corrupt",
+      "item_type_requirement": [
+        "is_jewel"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "jewel_corrupt",
+          "weight": 75
+        },
+        {
+          "id": "destroy_item",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "unique",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored"
+      ],
+      "weight": 250
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/jewel_corrupt.json",
+    "name": "Orb of Mesmerizing Chaos",
+    "name_source": "lang"
+  },
+  {
+    "id": "jewel_sure_upgrade",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/jewel_sure_upgrade.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "increment_uses_sure_jewel_up",
+          "weight": 1
+        },
+        {
+          "id": "upgrade_jewel_affix_rarity",
+          "weight": 1
+        }
+      ],
+      "id": "jewel_sure_upgrade",
+      "item_id": "mmorpg:currency/jewel_sure_upgrade",
+      "item_type_requirement": [
+        "is_jewel"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 15
+      },
+      "rar": "mythic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_sure_jewel_up"
+      ],
+      "weight": 10
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/jewel_sure_upgrade.json",
+    "name": "Orb of Mystery",
+    "name_source": "lang"
+  },
+  {
+    "id": "jewel_upgrade_affix",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/jewel_upgrade_affix.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "jewel_upgrade_affix",
+      "item_id": "mmorpg:currency/jewel_upgrade_affix",
+      "item_type_requirement": [
+        "is_jewel"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "upgrade_jewel_affix_rarity",
+          "weight": 75
+        },
+        {
+          "id": "destroy_item",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 5
+      },
+      "rar": "epic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored"
+      ],
+      "weight": 250
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/jewel_upgrade_affix.json",
+    "name": "Orb of Glimmering Light",
+    "name_source": "lang"
+  },
+  {
+    "id": "legendary_enchant_tool",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_currency/legendary_enchant_tool.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "enchant_with_30_levels",
+          "weight": 1
+        }
+      ],
+      "id": "legendary_enchant_tool",
+      "item_id": "library_of_exile:legendary_enchant_tool",
+      "item_type_requirement": [],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "is_tool_tag",
+        "has_no_enchants"
+      ],
+      "weight": 0
+    },
+    "name": "Legendary Enchant Tool",
+    "name_source": "derived"
+  },
+  {
+    "id": "level_up_orb",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/level_up_orb.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "increment_uses_level_up",
+          "weight": 1
+        },
+        {
+          "id": "add_gear_level",
+          "weight": 1
+        }
+      ],
+      "id": "level_up_orb",
+      "item_id": "mmorpg:currency/level_up_orb",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 5
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "lvl_not_max",
+        "max_uses_level_up"
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/level_up_orb.json",
+    "name": "Orb of Infinity",
+    "name_source": "lang"
+  },
+  {
+    "id": "map_rarity_upgrade",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/map_rarity_upgrade.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "map_rarity_upgrade",
+          "weight": 1
+        }
+      ],
+      "id": "map_rarity_upgrade",
+      "item_id": "mmorpg:currency/map_rarity_upgrade",
+      "item_type_requirement": [
+        "is_dungeon_map_item"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "epic",
+      "req": [
+        "map_has_higher_rar"
+      ],
+      "weight": 250
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/map_rarity_upgrade.json",
+    "name": "Orb of Map Rarity",
+    "name_source": "lang"
+  },
+  {
+    "id": "might_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/might_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_20_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "might_seed",
+      "item_id": "mmorpg:currency/might_seed",
+      "item_type_requirement": [
+        "is_gear_slot_weapon_family"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Might Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "mind_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/mind_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_20_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "mind_seed",
+      "item_id": "mmorpg:currency/mind_seed",
+      "item_type_requirement": [
+        "is_gear_slot_helmet"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Mind Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "mirror",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/mirror.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "mirror",
+          "weight": 1
+        }
+      ],
+      "id": "mirror",
+      "item_id": "mmorpg:currency/mirror",
+      "item_type_requirement": [
+        "is_gear",
+        "is_jewel"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "mythic",
+      "req": [
+        "is_not_mirrored"
+      ],
+      "weight": 1
+    },
+    "name": "Orb of Reflection",
+    "name_source": "lang"
+  },
+  {
+    "id": "omen_rarity_random_upgrade",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/omen_rarity_random_upgrade.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "upgrade_omen_rarity",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_codex_rarity_uses",
+          "weight": 1
+        }
+      ],
+      "id": "omen_rarity_random_upgrade",
+      "item_id": "mmorpg:currency/omen_rarity_random_upgrade",
+      "item_type_requirement": [
+        "is_omen"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "omen_has_higher_rar",
+        "max_uses_codex_rarity_uses"
+      ],
+      "weight": 50
+    },
+    "name": "Orb of Knowledge",
+    "name_source": "lang"
+  },
+  {
+    "id": "omen_stat_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/omen_stat_reroll.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "omen_stat_reroll",
+      "item_id": "mmorpg:currency/omen_stat_reroll",
+      "item_type_requirement": [
+        "is_omen"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "reroll_omen_stats",
+          "weight": 75
+        },
+        {
+          "id": "destroy_item",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored"
+      ],
+      "weight": 1000
+    },
+    "name": "Orb of Foresight",
+    "name_source": "lang"
+  },
+  {
+    "id": "orb_of_quality",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/orb_of_quality.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_gear_quality",
+          "weight": 1
+        }
+      ],
+      "id": "orb_of_quality",
+      "item_id": "mmorpg:currency/orb_of_quality",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 2
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_under_20_quality"
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/orb_of_quality.json",
+    "name": "Orb of Quality",
+    "name_source": "lang"
+  },
+  {
+    "id": "orb_of_relief",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/orb_of_relief.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "upgrade_lowest_affix",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_relief",
+          "weight": 1
+        }
+      ],
+      "id": "orb_of_relief",
+      "item_id": "mmorpg:currency/orb_of_relief",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 2
+      },
+      "rar": "epic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_affixes",
+        "has_affix_of_rar_or_lower_epic",
+        "max_uses_relief"
+      ],
+      "weight": 250
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/orb_of_relief.json",
+    "name": "Orb of Relief",
+    "name_source": "lang"
+  },
+  {
+    "id": "perfected_bond_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/perfected_bond_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_50_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "perfected_bond_seed",
+      "item_id": "mmorpg:currency/perfected_bond_seed",
+      "item_type_requirement": [
+        "is_gear_slot_ring"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Perfected Bond Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "perfected_heart_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/perfected_heart_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_50_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "perfected_heart_seed",
+      "item_id": "mmorpg:currency/perfected_heart_seed",
+      "item_type_requirement": [
+        "is_gear_slot_chest"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Perfected Heart Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "perfected_might_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/perfected_might_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_50_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "perfected_might_seed",
+      "item_id": "mmorpg:currency/perfected_might_seed",
+      "item_type_requirement": [
+        "is_gear_slot_weapon_family"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Perfected Might Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "perfected_mind_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/perfected_mind_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_50_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "perfected_mind_seed",
+      "item_id": "mmorpg:currency/perfected_mind_seed",
+      "item_type_requirement": [
+        "is_gear_slot_helmet"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Perfected Mind Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "perfected_orb_with_tag_dexterity",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/perfected_orb_with_tag_dexterity.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "perfected_orb_with_tag_dexterity",
+      "item_id": "mmorpg:currency/perfected_orb_with_tag_dexterity",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "common_to_mythic_with_tag_dexterity",
+          "weight": 75
+        },
+        {
+          "id": "destroy_item",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 45
+      },
+      "rar": "mythic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_common",
+        "lvl_is_50"
+      ],
+      "weight": 0
+    },
+    "name": "Perfected Orb of the Phantom",
+    "name_source": "lang"
+  },
+  {
+    "id": "perfected_orb_with_tag_intelligence",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/perfected_orb_with_tag_intelligence.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "perfected_orb_with_tag_intelligence",
+      "item_id": "mmorpg:currency/perfected_orb_with_tag_intelligence",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "common_to_mythic_with_tag_intelligence",
+          "weight": 75
+        },
+        {
+          "id": "destroy_item",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 45
+      },
+      "rar": "mythic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_common",
+        "lvl_is_50"
+      ],
+      "weight": 0
+    },
+    "name": "Perfected Orb of the Aegis",
+    "name_source": "lang"
+  },
+  {
+    "id": "perfected_orb_with_tag_strength",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/perfected_orb_with_tag_strength.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "perfected_orb_with_tag_strength",
+      "item_id": "mmorpg:currency/perfected_orb_with_tag_strength",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "common_to_mythic_with_tag_strength",
+          "weight": 75
+        },
+        {
+          "id": "destroy_item",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 45
+      },
+      "rar": "mythic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_common",
+        "lvl_is_50"
+      ],
+      "weight": 0
+    },
+    "name": "Perfected Orb of the Bulwark",
+    "name_source": "lang"
+  },
+  {
+    "id": "perfected_root_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/perfected_root_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_50_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "perfected_root_seed",
+      "item_id": "mmorpg:currency/perfected_root_seed",
+      "item_type_requirement": [
+        "is_gear_slot_pants"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Perfected Root Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "perfected_soul_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/perfected_soul_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_50_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "perfected_soul_seed",
+      "item_id": "mmorpg:currency/perfected_soul_seed",
+      "item_type_requirement": [
+        "is_gear_slot_necklace"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Perfected Soul Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "perfected_stride_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/perfected_stride_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_50_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "perfected_stride_seed",
+      "item_id": "mmorpg:currency/perfected_stride_seed",
+      "item_type_requirement": [
+        "is_gear_slot_boots"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Perfected Stride Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "pinnacle_upgrade",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/pinnacle_upgrade.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "pinnacle_upgrade",
+          "weight": 1
+        }
+      ],
+      "id": "pinnacle_upgrade",
+      "item_id": "dungeon_realm:pinnacle_upgrade",
+      "item_type_requirement": [
+        "is_map"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "map_is_mythic",
+        "is_not_uber"
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_currency/pinnacle_upgrade.json",
+    "name": "Pinnacle Upgrade",
+    "name_source": "derived"
+  },
+  {
+    "id": "prefix_number_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/prefix_number_reroll.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "prefix_number_reroll",
+          "weight": 1
+        }
+      ],
+      "id": "prefix_number_reroll",
+      "item_id": "mmorpg:currency/prefix_number_reroll",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 10
+      },
+      "rar": "epic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_prefixes"
+      ],
+      "weight": 250
+    },
+    "name": "Orb of Western Ciphers",
+    "name_source": "lang"
+  },
+  {
+    "id": "prefix_reroll_all",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/prefix_reroll_all.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "reroll_all_prefixes",
+          "weight": 1
+        }
+      ],
+      "id": "prefix_reroll_all",
+      "item_id": "mmorpg:currency/prefix_reroll_all",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 20
+      },
+      "rar": "epic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_prefixes"
+      ],
+      "weight": 250
+    },
+    "name": "Orb of Sinistral Rebirth",
+    "name_source": "lang"
+  },
+  {
+    "id": "root_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/root_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_20_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "root_seed",
+      "item_id": "mmorpg:currency/root_seed",
+      "item_type_requirement": [
+        "is_gear_slot_pants"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Root Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "sharpening_stone_0",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/sharpening_stone_0.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "sharpening_stone_quality_0",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_sharpening_stone",
+          "weight": 1
+        }
+      ],
+      "id": "sharpening_stone_0",
+      "item_id": "mmorpg:currency/sharpening_stone_0",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "common",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_sharpening_stone"
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/sharpening_stone_0.json",
+    "name": "Spiritual Sharpening Stone",
+    "name_source": "lang"
+  },
+  {
+    "id": "sharpening_stone_1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/sharpening_stone_1.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "sharpening_stone_quality_1",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_sharpening_stone",
+          "weight": 1
+        }
+      ],
+      "id": "sharpening_stone_1",
+      "item_id": "mmorpg:currency/sharpening_stone_1",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_sharpening_stone"
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/sharpening_stone_1.json",
+    "name": "Celestial Sharpening Stone",
+    "name_source": "lang"
+  },
+  {
+    "id": "sharpening_stone_2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/sharpening_stone_2.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "sharpening_stone_quality_2",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_sharpening_stone",
+          "weight": 1
+        }
+      ],
+      "id": "sharpening_stone_2",
+      "item_id": "mmorpg:currency/sharpening_stone_2",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_sharpening_stone"
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/sharpening_stone_2.json",
+    "name": "Empyrean Sharpening Stone",
+    "name_source": "lang"
+  },
+  {
+    "id": "sharpening_stone_3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/sharpening_stone_3.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "sharpening_stone_quality_3",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_sharpening_stone",
+          "weight": 1
+        }
+      ],
+      "id": "sharpening_stone_3",
+      "item_id": "mmorpg:currency/sharpening_stone_3",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "epic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_sharpening_stone"
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/sharpening_stone_3.json",
+    "name": "Angelic Sharpening Stone",
+    "name_source": "lang"
+  },
+  {
+    "id": "sharpening_stone_4",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/sharpening_stone_4.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "sharpening_stone_quality_4",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_sharpening_stone",
+          "weight": 1
+        }
+      ],
+      "id": "sharpening_stone_4",
+      "item_id": "mmorpg:currency/sharpening_stone_4",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_sharpening_stone"
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/sharpening_stone_4.json",
+    "name": "Divine Sharpening Stone",
+    "name_source": "lang"
+  },
+  {
+    "id": "sharpening_stone_5",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/sharpening_stone_5.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "sharpening_stone_quality_5",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_sharpening_stone",
+          "weight": 1
+        }
+      ],
+      "id": "sharpening_stone_5",
+      "item_id": "mmorpg:currency/sharpening_stone_5",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "mythic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_sharpening_stone"
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/sharpening_stone_5.json",
+    "name": "Godly Sharpening Stone",
+    "name_source": "lang"
+  },
+  {
+    "id": "socket_adder",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/socket_adder.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_socket",
+          "weight": 1
+        }
+      ],
+      "id": "socket_adder",
+      "item_id": "mmorpg:currency/socket_adder",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 25
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "can_add_sockets"
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/socket_adder.json",
+    "name": "Orb of Digging",
+    "name_source": "lang"
+  },
+  {
+    "id": "soul_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/soul_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_20_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "soul_seed",
+      "item_id": "mmorpg:currency/soul_seed",
+      "item_type_requirement": [
+        "is_gear_slot_necklace"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Soul Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "stride_seed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/stride_seed.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_20_potential",
+          "weight": 1
+        },
+        {
+          "id": "increment_uses_seed_uses",
+          "weight": 1
+        }
+      ],
+      "id": "stride_seed",
+      "item_id": "mmorpg:currency/stride_seed",
+      "item_type_requirement": [
+        "is_gear_slot_boots"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "max_uses_seed_uses"
+      ],
+      "weight": 0
+    },
+    "name": "Stride Seed",
+    "name_source": "lang"
+  },
+  {
+    "id": "suffix_number_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/suffix_number_reroll.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "suffix_number_reroll",
+          "weight": 1
+        }
+      ],
+      "id": "suffix_number_reroll",
+      "item_id": "mmorpg:currency/suffix_number_reroll",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 10
+      },
+      "rar": "epic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_suffixes"
+      ],
+      "weight": 250
+    },
+    "name": "Orb of Eastern Ciphers",
+    "name_source": "lang"
+  },
+  {
+    "id": "suffix_reroll_all",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/suffix_reroll_all.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "reroll_all_suffixes",
+          "weight": 1
+        }
+      ],
+      "id": "suffix_reroll_all",
+      "item_id": "mmorpg:currency/suffix_reroll_all",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 20
+      },
+      "rar": "epic",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_suffixes"
+      ],
+      "weight": 250
+    },
+    "name": "Orb of Dextral Rebirth",
+    "name_source": "lang"
+  },
+  {
+    "id": "support_gem_rarity_upgrade",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/support_gem_rarity_upgrade.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "upgrade_skill_gem_rarity",
+          "weight": 1
+        }
+      ],
+      "id": "support_gem_rarity_upgrade",
+      "item_id": "mmorpg:currency/support_gem_rarity_upgrade",
+      "item_type_requirement": [
+        "is_support_gem"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "uncommon",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_skill_gem_common_or_uncommon"
+      ],
+      "weight": 250
+    },
+    "name": "Orb of Shock",
+    "name_source": "lang"
+  },
+  {
+    "id": "support_gem_stat_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/support_gem_stat_reroll.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "support_gem_stat_reroll",
+      "item_id": "mmorpg:currency/support_gem_stat_reroll",
+      "item_type_requirement": [
+        "is_support_gem"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "reroll_skill_gem_stats",
+          "weight": 75
+        },
+        {
+          "id": "destroy_item",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "legendary",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored"
+      ],
+      "weight": 50
+    },
+    "name": "Orb of Tension",
+    "name_source": "lang"
+  },
+  {
+    "id": "uber_upgrade",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/uber_upgrade.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "uber_upgrade",
+          "weight": 1
+        }
+      ],
+      "id": "uber_upgrade",
+      "item_id": "dungeon_realm:uber_upgrade",
+      "item_type_requirement": [
+        "is_map"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "rare",
+      "req": [
+        "map_is_mythic",
+        "is_not_uber"
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_currency/uber_upgrade.json",
+    "name": "Uber Upgrade",
+    "name_source": "derived"
+  },
+  {
+    "id": "unique_reroll",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/unique_reroll.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "add_5_perc_unique_stats",
+          "weight": 1
+        }
+      ],
+      "id": "unique_reroll",
+      "item_id": "mmorpg:currency/unique_reroll",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 15
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "is_unique"
+      ],
+      "weight": 50
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/unique_reroll.json",
+    "name": "Orb of Imperfection",
+    "name_source": "lang"
+  },
+  {
+    "id": "up_corrupt_affix",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/up_corrupt_affix.json",
+    "data": {
+      "always_do_item_mods": [],
+      "id": "up_corrupt_affix",
+      "item_id": "mmorpg:currency/up_corrupt_affix",
+      "item_type_requirement": [
+        "is_jewel"
+      ],
+      "pick_one_item_mod": [
+        {
+          "id": "up_corrupt_affix",
+          "weight": 75
+        },
+        {
+          "id": "destroy_item",
+          "weight": 25
+        }
+      ],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 0
+      },
+      "rar": "epic",
+      "req": [
+        "is_not_mirrored",
+        "has_corrupt_affixes"
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/up_corrupt_affix.json",
+    "name": "Orb of Foolish Risk",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_common_affix",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_currency/upgrade_common_affix.json",
+    "data": {
+      "always_do_item_mods": [
+        {
+          "id": "upgrade_specific_rar_common",
+          "weight": 1
+        }
+      ],
+      "id": "upgrade_common_affix",
+      "item_id": "mmorpg:currency/upgrade_common_affix",
+      "item_type_requirement": [
+        "is_gear"
+      ],
+      "pick_one_item_mod": [],
+      "potential": {
+        "needs_potential": true,
+        "potential_cost": 2
+      },
+      "rar": "rare",
+      "req": [
+        "is_not_corrupted",
+        "is_not_mirrored",
+        "has_affix_common"
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_currency/upgrade_common_affix.json",
+    "name": "Orb of Fledgling's Reprieve",
+    "name_source": "lang"
+  }
+]

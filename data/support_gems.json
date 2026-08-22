@@ -1,0 +1,2479 @@
+[
+  {
+    "id": "accuracy",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/accuracy.json",
+    "data": {
+      "id": "accuracy",
+      "manaMulti": 1.1,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 9.0,
+          "min": 3.0,
+          "stat": "accuracy"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Accuracy Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "aggressive_minions",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/aggressive_minions.json",
+    "data": {
+      "id": "aggressive_minions",
+      "manaMulti": 1.2,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 20.0,
+          "stat": "aggro_radius"
+        },
+        {
+          "type": "MORE",
+          "max": 12.0,
+          "min": 4.0,
+          "stat": "summon_damage"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/aggressive_minions.json",
+    "name": "Aggressive Minions Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "ailment_damage_less_hit_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/ailment_damage_less_hit_dmg.json",
+    "data": {
+      "id": "ailment_damage_less_hit_dmg",
+      "manaMulti": 1.3,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 37.5,
+          "min": 12.5,
+          "stat": "ailment_damage"
+        },
+        {
+          "type": "MORE",
+          "max": -10.0,
+          "min": -10.0,
+          "stat": "hit_damage"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/ailment_damage_less_hit_dmg.json",
+    "name": "Ailment Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "aoe_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/aoe_dmg.json",
+    "data": {
+      "id": "aoe_dmg",
+      "manaMulti": 1.4,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 27.0,
+          "min": 9.0,
+          "stat": "area_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "inc_aoe"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/aoe_dmg.json",
+    "name": "Area Focus Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "archmage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/archmage.json",
+    "data": {
+      "id": "archmage",
+      "manaMulti": 1.4,
+      "min_lvl": 30,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 2.0,
+          "stat": "archmage"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/archmage.json",
+    "name": "Mageblade Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "battery",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/battery.json",
+    "data": {
+      "id": "battery",
+      "manaMulti": 1.2,
+      "min_lvl": 30,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "inc_leech_per_lightning_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "all_lightning_damage"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "name": "Battery Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "bleed_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/bleed_chance.json",
+    "data": {
+      "id": "bleed_chance",
+      "manaMulti": 1.2,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 45.0,
+          "min": 15.0,
+          "stat": "bleed_chance"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/bleed_chance.json",
+    "name": "Bleed Chance Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "brutality",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/brutality.json",
+    "data": {
+      "id": "brutality",
+      "manaMulti": 1.3,
+      "min_lvl": 30,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 27.0,
+          "min": 9.0,
+          "stat": "all_physical_damage"
+        },
+        {
+          "type": "MORE",
+          "max": -100.0,
+          "min": -100.0,
+          "stat": "all_elemental_damage"
+        },
+        {
+          "type": "MORE",
+          "max": -100.0,
+          "min": -100.0,
+          "stat": "all_chaos_damage"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "name": "Brutality Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "burn_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/burn_chance.json",
+    "data": {
+      "id": "burn_chance",
+      "manaMulti": 1.2,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 20.0,
+          "stat": "burn_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "burn_damage"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/burn_chance.json",
+    "name": "Burn Chance Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "cast_speed",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/cast_speed.json",
+    "data": {
+      "id": "cast_speed",
+      "manaMulti": 1.2,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 24.0,
+          "min": 8.0,
+          "stat": "cast_speed"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "name": "Faster Cast Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "chaos_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/chaos_damage.json",
+    "data": {
+      "id": "chaos_damage",
+      "manaMulti": 1.3,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "all_chaos_damage"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/chaos_damage.json",
+    "name": "Chaos Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "chaos_flat_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/chaos_flat_dmg.json",
+    "data": {
+      "id": "chaos_flat_dmg",
+      "manaMulti": 1.2,
+      "min_lvl": 30,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 2.5,
+          "stat": "flat_chaos_added_damage"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/chaos_flat_dmg.json",
+    "name": "Flat Chaos Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "chaos_pene",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/chaos_pene.json",
+    "data": {
+      "id": "chaos_pene",
+      "manaMulti": 1.3,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 18.0,
+          "min": 6.0,
+          "stat": "chaos_penetration"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/chaos_pene.json",
+    "name": "Chaos Penetration Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "cluster_traps",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/cluster_traps.json",
+    "data": {
+      "id": "cluster_traps",
+      "manaMulti": 1.4,
+      "min_lvl": 30,
+      "one_of_a_kind": "proj_count",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -60.0,
+          "stat": "trap_spell_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 2.0,
+          "stat": "trap_count"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Cluster Traps Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "cold_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/cold_damage.json",
+    "data": {
+      "id": "cold_damage",
+      "manaMulti": 1.3,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "all_water_damage"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/cold_damage.json",
+    "name": "Cold Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "crit_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/crit_chance.json",
+    "data": {
+      "id": "crit_chance",
+      "manaMulti": 1.2,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 2.5,
+          "min": 2.5,
+          "stat": "critical_hit"
+        },
+        {
+          "type": "MORE",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "critical_hit"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/crit_chance.json",
+    "name": "Crit Chance Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "crit_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/crit_damage.json",
+    "data": {
+      "id": "crit_damage",
+      "manaMulti": 1.3,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 45.0,
+          "min": 15.0,
+          "stat": "critical_damage"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/crit_damage.json",
+    "name": "Crit Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "crit_dmg_less_non_crit_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/crit_dmg_less_non_crit_dmg.json",
+    "data": {
+      "id": "crit_dmg_less_non_crit_dmg",
+      "manaMulti": 1.4,
+      "min_lvl": 30,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 24.0,
+          "min": 8.0,
+          "stat": "critical_damage"
+        },
+        {
+          "type": "MORE",
+          "max": -75.0,
+          "min": -75.0,
+          "stat": "non_crit_damage"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/crit_dmg_less_non_crit_dmg.json",
+    "name": "Confident Ruin Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "defensive_minions",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/defensive_minions.json",
+    "data": {
+      "id": "defensive_minions",
+      "manaMulti": 1.2,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -60.0,
+          "min": -20.0,
+          "stat": "aggro_radius"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "summon_health"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/defensive_minions.json",
+    "name": "Elusive Minions Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "disarray",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/disarray.json",
+    "data": {
+      "id": "disarray",
+      "manaMulti": 1.3,
+      "min_lvl": 20,
+      "one_of_a_kind": "random_spread",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "random_spread_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 30.0,
+          "stat": "proj_spread_randomness"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Disarray Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "dot_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/dot_damage.json",
+    "data": {
+      "id": "dot_damage",
+      "manaMulti": 1.3,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "dot_dmg"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/dot_damage.json",
+    "name": "Damage Over Time Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "effect_duration",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/effect_duration.json",
+    "data": {
+      "id": "effect_duration",
+      "manaMulti": 1.15,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "eff_dur_u_cast"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/effect_duration.json",
+    "name": "Effect Duration Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "electrify_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/electrify_chance.json",
+    "data": {
+      "id": "electrify_chance",
+      "manaMulti": 1.2,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 20.0,
+          "stat": "electrify_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "electrify_damage"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/electrify_chance.json",
+    "name": "Electrify Chance Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "endurance_on_hit",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/endurance_on_hit.json",
+    "data": {
+      "id": "endurance_on_hit",
+      "manaMulti": 1.2,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 4.0,
+          "stat": "dmg_per_endurance_charge"
+        },
+        {
+          "type": "FLAT",
+          "max": 24.0,
+          "min": 8.0,
+          "stat": "endurance_charge_on_hit"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "name": "Endurance Charge On Hit Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "energy_on_hit",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/energy_on_hit.json",
+    "data": {
+      "id": "energy_on_hit",
+      "manaMulti": 1.0,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 4.5,
+          "min": 1.5,
+          "stat": "energysteal"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/energy_on_hit.json",
+    "name": "Energy Leech Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "enlighten",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/enlighten.json",
+    "data": {
+      "id": "enlighten",
+      "manaMulti": 1.0,
+      "min_lvl": 40,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 9.0,
+          "min": 3.0,
+          "stat": "bonus_exp"
+        }
+      ],
+      "style": "INT",
+      "weight": 0
+    },
+    "name": "Enlighten Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "faster_attacks",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/faster_attacks.json",
+    "data": {
+      "id": "faster_attacks",
+      "manaMulti": 1.1,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "weapon_skill_cdr"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "weapon_skill_spell_dmg"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Faster Attacks Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "fire_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/fire_damage.json",
+    "data": {
+      "id": "fire_damage",
+      "manaMulti": 1.3,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "all_fire_damage"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/fire_damage.json",
+    "name": "Fire Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "fire_flat_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/fire_flat_dmg.json",
+    "data": {
+      "id": "fire_flat_dmg",
+      "manaMulti": 1.2,
+      "min_lvl": 5,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 27.0,
+          "min": 9.0,
+          "stat": "plus_phys_to_fire"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 1.0,
+          "stat": "flat_fire_added_damage"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/fire_flat_dmg.json",
+    "name": "Added Fire Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "fire_pene",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/fire_pene.json",
+    "data": {
+      "id": "fire_pene",
+      "manaMulti": 1.3,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 18.0,
+          "min": 6.0,
+          "stat": "fire_penetration"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/fire_pene.json",
+    "name": "Fire Penetration Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "focal_point",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/focal_point.json",
+    "data": {
+      "id": "focal_point",
+      "manaMulti": 1.2,
+      "min_lvl": 10,
+      "one_of_a_kind": "random_spread",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -45.0,
+          "min": -15.0,
+          "stat": "proj_spread_randomness"
+        },
+        {
+          "type": "PERCENT",
+          "max": 18.0,
+          "min": 6.0,
+          "stat": "accuracy"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Focal Point Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "focused_shot",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/focused_shot.json",
+    "data": {
+      "id": "focused_shot",
+      "manaMulti": 1.3,
+      "min_lvl": 20,
+      "one_of_a_kind": "proj_count",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "projectile_damage"
+        },
+        {
+          "type": "MORE",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "increase_healing"
+        },
+        {
+          "type": "MORE",
+          "max": -100.0,
+          "min": -100.0,
+          "stat": "projectile_count"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Focused Shot Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "fortify",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/fortify.json",
+    "data": {
+      "id": "fortify",
+      "manaMulti": 1.3,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 70.0,
+          "stat": "fortify_on_melee_hit"
+        },
+        {
+          "type": "MORE",
+          "max": 9.0,
+          "min": 3.0,
+          "stat": "str_dmg"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "name": "Fortify Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "freeze_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/freeze_chance.json",
+    "data": {
+      "id": "freeze_chance",
+      "manaMulti": 1.2,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 20.0,
+          "stat": "freeze_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "freeze_damage"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/freeze_chance.json",
+    "name": "Freeze Chance Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "frenzy_on_crit",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/frenzy_on_crit.json",
+    "data": {
+      "id": "frenzy_on_crit",
+      "manaMulti": 1.2,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 4.0,
+          "stat": "dmg_per_frenzy_charge"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 30.0,
+          "stat": "frenzy_charge_on_crit"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/frenzy_on_crit.json",
+    "name": "Frenzy Charge On Crit Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "gmp",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/gmp.json",
+    "data": {
+      "id": "gmp",
+      "manaMulti": 1.5,
+      "min_lvl": 30,
+      "one_of_a_kind": "proj_count",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 4.0,
+          "stat": "projectile_count"
+        },
+        {
+          "type": "MORE",
+          "max": -60.0,
+          "min": -70.0,
+          "stat": "projectile_damage"
+        },
+        {
+          "type": "MORE",
+          "max": -60.0,
+          "min": -70.0,
+          "stat": "increase_healing"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/gmp.json",
+    "name": "Greater Multiple Projectiles Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "gmp_barrage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/gmp_barrage.json",
+    "data": {
+      "id": "gmp_barrage",
+      "manaMulti": 1.6,
+      "min_lvl": 30,
+      "one_of_a_kind": "proj_count",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "projectile_barrage"
+        },
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 4.0,
+          "stat": "projectile_count"
+        },
+        {
+          "type": "MORE",
+          "max": -65.0,
+          "min": -73.3,
+          "stat": "projectile_damage"
+        },
+        {
+          "type": "MORE",
+          "max": -65.0,
+          "min": -73.3,
+          "stat": "increase_healing"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/gmp_barrage.json",
+    "name": "Greater Barrage Projectiles Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "heal_at_low",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/heal_at_low.json",
+    "data": {
+      "id": "heal_at_low",
+      "manaMulti": 1.2,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 75.0,
+          "min": 25.0,
+          "stat": "low_hp_healing"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/heal_at_low.json",
+    "name": "Immediate Care Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "health_on_hit",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/health_on_hit.json",
+    "data": {
+      "id": "health_on_hit",
+      "manaMulti": 1.1,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 4.5,
+          "min": 1.5,
+          "stat": "lifesteal"
+        },
+        {
+          "type": "FLAT",
+          "max": 4.5,
+          "min": 1.5,
+          "stat": "spell_lifesteal"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/health_on_hit.json",
+    "name": "Health Leech Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "imbuement",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/imbuement.json",
+    "data": {
+      "id": "imbuement",
+      "manaMulti": 1.2,
+      "min_lvl": 30,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 9.0,
+          "min": 3.0,
+          "stat": "imbuement"
+        },
+        {
+          "type": "FLAT",
+          "max": 9.0,
+          "min": 3.0,
+          "stat": "imbuement_energy_cost"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Imbuement Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "inc_heal",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/inc_heal.json",
+    "data": {
+      "id": "inc_heal",
+      "manaMulti": 1.3,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 45.0,
+          "min": 15.0,
+          "stat": "increase_healing"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/inc_heal.json",
+    "name": "Increased Healing Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "iron_will",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/iron_will.json",
+    "data": {
+      "id": "iron_will",
+      "manaMulti": 1.1,
+      "min_lvl": 30,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "int_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 25.0,
+          "stat": "int_dmg_per_perc_strength"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "name": "Iron Will Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "lightning_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/lightning_damage.json",
+    "data": {
+      "id": "lightning_damage",
+      "manaMulti": 1.3,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "all_lightning_damage"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/lightning_damage.json",
+    "name": "Lightning Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "lightning_flat_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/lightning_flat_dmg.json",
+    "data": {
+      "id": "lightning_flat_dmg",
+      "manaMulti": 1.2,
+      "min_lvl": 5,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 2.0,
+          "stat": "flat_lightning_added_damage"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/lightning_flat_dmg.json",
+    "name": "Flat Lightning Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "lightning_pene",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/lightning_pene.json",
+    "data": {
+      "id": "lightning_pene",
+      "manaMulti": 1.3,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 18.0,
+          "min": 6.0,
+          "stat": "lightning_penetration"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/lightning_pene.json",
+    "name": "Lightning Penetration Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "lmp",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/lmp.json",
+    "data": {
+      "id": "lmp",
+      "manaMulti": 1.3,
+      "min_lvl": 1,
+      "one_of_a_kind": "proj_count",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 2.0,
+          "stat": "projectile_count"
+        },
+        {
+          "type": "MORE",
+          "max": -40.0,
+          "min": -56.6,
+          "stat": "projectile_damage"
+        },
+        {
+          "type": "MORE",
+          "max": -40.0,
+          "min": -56.6,
+          "stat": "increase_healing"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/lmp.json",
+    "name": "Lesser Multiple Projectiles Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "lmp_barrage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/lmp_barrage.json",
+    "data": {
+      "id": "lmp_barrage",
+      "manaMulti": 1.4,
+      "min_lvl": 10,
+      "one_of_a_kind": "proj_count",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "projectile_barrage"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 2.0,
+          "stat": "projectile_count"
+        },
+        {
+          "type": "MORE",
+          "max": -52.5,
+          "min": -65.0,
+          "stat": "projectile_damage"
+        },
+        {
+          "type": "MORE",
+          "max": -52.5,
+          "min": -65.0,
+          "stat": "increase_healing"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/lmp_barrage.json",
+    "name": "Lesser Barrage Projectiles Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "magic_find",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/magic_find.json",
+    "data": {
+      "id": "magic_find",
+      "manaMulti": 1.2,
+      "min_lvl": 40,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 9.0,
+          "min": 3.0,
+          "stat": "magic_find"
+        }
+      ],
+      "style": "INT",
+      "weight": 0
+    },
+    "name": "Magic Find Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "magic_shield_on_hit",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/magic_shield_on_hit.json",
+    "data": {
+      "id": "magic_shield_on_hit",
+      "manaMulti": 1.2,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 4.5,
+          "min": 1.5,
+          "stat": "magic_shield_on_hit_hit"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/magic_shield_on_hit.json",
+    "name": "Magic Shield On Hit Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "mana_on_hit",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/mana_on_hit.json",
+    "data": {
+      "id": "mana_on_hit",
+      "manaMulti": 1.0,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 4.5,
+          "min": 1.5,
+          "stat": "spell_manasteal"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/mana_on_hit.json",
+    "name": "Mana Leech Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "mana_saver_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/mana_saver_dmg.json",
+    "data": {
+      "id": "mana_saver_dmg",
+      "manaMulti": 0.9,
+      "min_lvl": 10,
+      "one_of_a_kind": "resource_reduction",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "non_crit_damage"
+        }
+      ],
+      "style": "INT",
+      "weight": 500
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/mana_saver_dmg.json",
+    "name": "Conservation Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "melee_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/melee_damage.json",
+    "data": {
+      "id": "melee_damage",
+      "manaMulti": 1.3,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 27.0,
+          "min": 9.0,
+          "stat": "str_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": -10.0,
+          "min": -10.0,
+          "stat": "cdr"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/melee_damage.json",
+    "name": "Melee Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "minion_threat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/minion_threat.json",
+    "data": {
+      "id": "minion_threat",
+      "manaMulti": 1.1,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 75.0,
+          "min": 25.0,
+          "stat": "threat_generated"
+        },
+        {
+          "type": "FLAT",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "summon_health"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/minion_threat.json",
+    "name": "Minion Threat Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "phys_to_cold",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/phys_to_cold.json",
+    "data": {
+      "id": "phys_to_cold",
+      "manaMulti": 1.2,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "phys_to_water"
+        },
+        {
+          "type": "FLAT",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "all_water_damage"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Physical To Cold Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "phys_to_fire",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/phys_to_fire.json",
+    "data": {
+      "id": "phys_to_fire",
+      "manaMulti": 1.2,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "phys_to_fire"
+        },
+        {
+          "type": "FLAT",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "all_fire_damage"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "name": "Physical To Fire Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "phys_to_lightning",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/phys_to_lightning.json",
+    "data": {
+      "id": "phys_to_lightning",
+      "manaMulti": 1.2,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "phys_to_lightning"
+        },
+        {
+          "type": "FLAT",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "all_lightning_damage"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "name": "Physical To Lightning Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "physical_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/physical_damage.json",
+    "data": {
+      "id": "physical_damage",
+      "manaMulti": 1.3,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "all_physical_damage"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/physical_damage.json",
+    "name": "Physical Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "physical_pene",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/physical_pene.json",
+    "data": {
+      "id": "physical_pene",
+      "manaMulti": 1.3,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 9.0,
+          "min": 3.0,
+          "stat": "armor_penetration"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "name": "Physical Penetration Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "plus_aoe",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/plus_aoe.json",
+    "data": {
+      "id": "plus_aoe",
+      "manaMulti": 1.3,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "inc_aoe"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/plus_aoe.json",
+    "name": "Expanded Area Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "poison_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/poison_chance.json",
+    "data": {
+      "id": "poison_chance",
+      "manaMulti": 1.2,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 20.0,
+          "stat": "poison_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "poison_damage"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/poison_chance.json",
+    "name": "Poison Chance Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "power_on_crit",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/power_on_crit.json",
+    "data": {
+      "id": "power_on_crit",
+      "manaMulti": 1.2,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 4.0,
+          "stat": "dmg_per_power_charge"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 30.0,
+          "stat": "power_charge_on_crit"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/power_on_crit.json",
+    "name": "Power Charge On Crit Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "proc_freeze",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/proc_freeze.json",
+    "data": {
+      "id": "proc_freeze",
+      "manaMulti": 1.2,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "all_water_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 20.0,
+          "stat": "freeze_proc_chance"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/proc_freeze.json",
+    "name": "Ice Breaker Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "proc_shock",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/proc_shock.json",
+    "data": {
+      "id": "proc_shock",
+      "manaMulti": 1.2,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "all_lightning_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 20.0,
+          "stat": "electrify_proc_chance"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/proc_shock.json",
+    "name": "Shock Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "proc_target",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/proc_target.json",
+    "data": {
+      "id": "proc_target",
+      "manaMulti": 1.2,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "proc_target"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "total_damage"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "name": "Warlord Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "proj_nova",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/proj_nova.json",
+    "data": {
+      "id": "proj_nova",
+      "manaMulti": 1.3,
+      "min_lvl": 30,
+      "one_of_a_kind": "proj_count",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "projectile_nova"
+        },
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 4.0,
+          "stat": "projectile_count"
+        },
+        {
+          "type": "MORE",
+          "max": -52.5,
+          "min": -65.0,
+          "stat": "projectile_damage"
+        },
+        {
+          "type": "MORE",
+          "max": -52.5,
+          "min": -65.0,
+          "stat": "increase_healing"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Projectile Nova Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "proj_speed",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/proj_speed.json",
+    "data": {
+      "id": "proj_speed",
+      "manaMulti": 1.1,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "projectile_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 75.0,
+          "min": 25.0,
+          "stat": "faster_projectiles"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/proj_speed.json",
+    "name": "Faster Projectiles Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "ranged_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/ranged_damage.json",
+    "data": {
+      "id": "ranged_damage",
+      "manaMulti": 1.3,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 27.0,
+          "min": 9.0,
+          "stat": "dex_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": -10.0,
+          "min": -10.0,
+          "stat": "cdr"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/ranged_damage.json",
+    "name": "Ranged Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "rare_cooldown",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/rare_cooldown.json",
+    "data": {
+      "id": "rare_cooldown",
+      "manaMulti": 1.3,
+      "min_lvl": 40,
+      "one_of_a_kind": "cdr",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 24.0,
+          "min": 8.0,
+          "stat": "cdr"
+        }
+      ],
+      "style": "INT",
+      "weight": 50
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/rare_cooldown.json",
+    "name": "Greater Cooldown Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "rare_mana_eff",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/rare_mana_eff.json",
+    "data": {
+      "id": "rare_mana_eff",
+      "manaMulti": 0.8,
+      "min_lvl": 40,
+      "one_of_a_kind": "resource_reduction",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 18.0,
+          "min": 6.0,
+          "stat": "non_crit_damage"
+        }
+      ],
+      "style": "STR",
+      "weight": 50
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/rare_mana_eff.json",
+    "name": "Greater Conservation Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "reduced_proj_speed",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/reduced_proj_speed.json",
+    "data": {
+      "id": "reduced_proj_speed",
+      "manaMulti": 1.2,
+      "min_lvl": 30,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 27.0,
+          "min": 9.0,
+          "stat": "projectile_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": -40.0,
+          "min": -40.0,
+          "stat": "faster_projectiles"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Slower Projectiles Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "small_cdr",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/small_cdr.json",
+    "data": {
+      "id": "small_cdr",
+      "manaMulti": 1.1,
+      "min_lvl": 1,
+      "one_of_a_kind": "cdr",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "cdr"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/small_cdr.json",
+    "name": "Minor Cooldown Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "spell_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/spell_damage.json",
+    "data": {
+      "id": "spell_damage",
+      "manaMulti": 1.3,
+      "min_lvl": 30,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "int_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": -10.0,
+          "min": -10.0,
+          "stat": "cdr"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/spell_damage.json",
+    "name": "Skill Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "spell_damage_no_crit",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/spell_damage_no_crit.json",
+    "data": {
+      "id": "spell_damage_no_crit",
+      "manaMulti": 1.4,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 24.0,
+          "min": 8.0,
+          "stat": "int_dmg"
+        },
+        {
+          "type": "MORE",
+          "max": -80.0,
+          "min": -80.0,
+          "stat": "critical_damage"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/spell_damage_no_crit.json",
+    "name": "Restrained Destruction Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "summon_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/summon_damage.json",
+    "data": {
+      "id": "summon_damage",
+      "manaMulti": 1.4,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 45.0,
+          "min": 15.0,
+          "stat": "summon_damage"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/summon_damage.json",
+    "name": "Summon Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "summon_duration",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/summon_duration.json",
+    "data": {
+      "id": "summon_duration",
+      "manaMulti": 1.2,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 20.0,
+          "stat": "summon_duration"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/summon_duration.json",
+    "name": "Summon Duration Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "summon_health",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/summon_health.json",
+    "data": {
+      "id": "summon_health",
+      "manaMulti": 1.2,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 51.0,
+          "min": 17.0,
+          "stat": "summon_health"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/summon_health.json",
+    "name": "Summon Health Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "swift_affliction",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/swift_affliction.json",
+    "data": {
+      "id": "swift_affliction",
+      "manaMulti": 1.4,
+      "min_lvl": 30,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "poison_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": -40.0,
+          "min": -40.0,
+          "stat": "poison_duration"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Swift Affliction Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "targeted_hate",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/targeted_hate.json",
+    "data": {
+      "id": "targeted_hate",
+      "manaMulti": 1.2,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "damage_to_cursed"
+        }
+      ],
+      "style": "INT",
+      "weight": 1000
+    },
+    "name": "Targeted Hate Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "threat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/threat.json",
+    "data": {
+      "id": "threat",
+      "manaMulti": 1.0,
+      "min_lvl": 20,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 75.0,
+          "min": 25.0,
+          "stat": "threat_generated"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/threat.json",
+    "name": "Greater Threat Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "totem_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/totem_damage.json",
+    "data": {
+      "id": "totem_damage",
+      "manaMulti": 1.3,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "totem_spell_dmg"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/totem_damage.json",
+    "name": "Totem Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "totem_dmg_cdr",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/totem_dmg_cdr.json",
+    "data": {
+      "id": "totem_dmg_cdr",
+      "manaMulti": 1.2,
+      "min_lvl": 1,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 30.0,
+          "stat": "totem_cdr"
+        },
+        {
+          "type": "MORE",
+          "max": -15.0,
+          "min": -45.0,
+          "stat": "totem_spell_dmg"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/totem_dmg_cdr.json",
+    "name": "Primed Totems Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "trap_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/trap_damage.json",
+    "data": {
+      "id": "trap_damage",
+      "manaMulti": 1.3,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 21.0,
+          "min": 7.0,
+          "stat": "trap_spell_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": -10.0,
+          "min": -10.0,
+          "stat": "charge_recovery_rate"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Trap Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "turbo_totems",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/turbo_totems.json",
+    "data": {
+      "id": "turbo_totems",
+      "manaMulti": 1.4,
+      "min_lvl": 30,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "totem_count"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "totem_spell_dmg"
+        }
+      ],
+      "style": "STR",
+      "weight": 1000
+    },
+    "name": "Turbo Totems Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "void_manipulation",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/void_manipulation.json",
+    "data": {
+      "id": "void_manipulation",
+      "manaMulti": 1.2,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "all_chaos_damage"
+        },
+        {
+          "type": "MORE",
+          "max": -80.0,
+          "min": -80.0,
+          "stat": "all_elemental_damage"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "name": "Void Manipulation Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "water_flat_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/water_flat_dmg.json",
+    "data": {
+      "id": "water_flat_dmg",
+      "manaMulti": 1.2,
+      "min_lvl": 5,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 2.0,
+          "stat": "flat_water_added_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "freeze_chance"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/water_flat_dmg.json",
+    "name": "Flat Cold Damage Support Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "water_pene",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_support_gem/water_pene.json",
+    "data": {
+      "id": "water_pene",
+      "manaMulti": 1.3,
+      "min_lvl": 10,
+      "one_of_a_kind": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 18.0,
+          "min": 6.0,
+          "stat": "water_penetration"
+        }
+      ],
+      "style": "DEX",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_support_gem/water_pene.json",
+    "name": "Cold Penetration Support Gem",
+    "name_source": "lang"
+  }
+]

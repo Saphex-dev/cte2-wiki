@@ -1,0 +1,1765 @@
+[
+  {
+    "id": "bridge",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/bridge.json",
+    "data": {
+      "id": "bridge",
+      "mobs": [
+        {
+          "mob_id": "born_in_chaos_v1:fallen_chaos_knight",
+          "weight": 650
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_bruiser",
+          "weight": 50
+        },
+        {
+          "mob_id": "realmrpg_wyrms:red_wyrm",
+          "weight": 150
+        },
+        {
+          "mob_id": "twilightforest:upper_goblin_knight",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:skeleton_thrasher",
+          "weight": 250
+        },
+        {
+          "mob_id": "born_in_chaos_v1:door_knight ",
+          "weight": 250
+        }
+      ],
+      "tags": {
+        "tags": [
+          "bridge"
+        ]
+      },
+      "weight": 1000
+    },
+    "name": "Bridge",
+    "name_source": "derived"
+  },
+  {
+    "id": "evil_villager",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/evil_villager.json",
+    "data": {
+      "id": "evil_villager",
+      "mobs": [
+        {
+          "mob_id": "minecraft:blaze",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:zombie",
+          "weight": 750
+        },
+        {
+          "mob_id": "minecraft:skeleton",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:endermite",
+          "weight": 50
+        },
+        {
+          "mob_id": "minecraft:cave_spider",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:spider",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:pillager",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:witch",
+          "weight": 100
+        },
+        {
+          "mob_id": "minecraft:vindicator",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:slime",
+          "weight": 5
+        },
+        {
+          "mob_id": "minecraft:evoker",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:husk",
+          "weight": 500
+        },
+        {
+          "mob_id": "minecraft:stray",
+          "weight": 250
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_skeleton",
+          "weight": 25
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_zombie",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:blockchain_goblin",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:redcap",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:redcap_sapper",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:troll",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:minotaur",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:pillager",
+          "weight": 500
+        },
+        {
+          "mob_id": "minecraft:witch",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:vindicator",
+          "weight": 500
+        },
+        {
+          "mob_id": "minecraft:evoker",
+          "weight": 50
+        },
+        {
+          "mob_id": "minecraft:illusioner",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:ravager",
+          "weight": 75
+        },
+        {
+          "mob_id": "illagerinvasion:basher",
+          "weight": 250
+        },
+        {
+          "mob_id": "illagerinvasion:marauder",
+          "weight": 250
+        },
+        {
+          "mob_id": "illagerinvasion:provoker",
+          "weight": 250
+        },
+        {
+          "mob_id": "illagerinvasion:archivist",
+          "weight": 75
+        },
+        {
+          "mob_id": "illagerinvasion:inquisitor",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:barrel_zombie",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:dread_hound",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:decrepit_skeleton",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:door_knight",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:fallen_chaos_knight",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:skeleton_thrasher",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_bruiser",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_clown",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_fisherman",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_lumberjack",
+          "weight": 50
+        }
+      ],
+      "tags": {
+        "tags": [
+          "illagers"
+        ]
+      },
+      "weight": 1000
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_mob_list/evil_villager.json",
+    "name": "Evil Villager",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/fairy.json",
+    "data": {
+      "id": "fairy",
+      "mobs": [
+        {
+          "mob_id": "twilightforest:troll",
+          "weight": 250
+        },
+        {
+          "mob_id": "twilightforest:redcap_sapper",
+          "weight": 50
+        },
+        {
+          "mob_id": "twilightforest:redcap",
+          "weight": 150
+        },
+        {
+          "mob_id": "twilightforest:skeleton_druid",
+          "weight": 125
+        },
+        {
+          "mob_id": "monsterplus:glow_skeleton",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:witch",
+          "weight": 250
+        }
+      ],
+      "tags": {
+        "tags": [
+          "fairy"
+        ]
+      },
+      "weight": 1000
+    },
+    "name": "Fairy",
+    "name_source": "derived"
+  },
+  {
+    "id": "forest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/forest.json",
+    "data": {
+      "id": "forest",
+      "mobs": [
+        {
+          "mob_id": "minecraft:blaze",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:zombie",
+          "weight": 750
+        },
+        {
+          "mob_id": "minecraft:skeleton",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:endermite",
+          "weight": 50
+        },
+        {
+          "mob_id": "minecraft:cave_spider",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:spider",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:pillager",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:witch",
+          "weight": 100
+        },
+        {
+          "mob_id": "minecraft:vindicator",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:slime",
+          "weight": 5
+        },
+        {
+          "mob_id": "minecraft:evoker",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:husk",
+          "weight": 500
+        },
+        {
+          "mob_id": "minecraft:stray",
+          "weight": 250
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_skeleton",
+          "weight": 25
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_zombie",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:blockchain_goblin",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:redcap",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:redcap_sapper",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:troll",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:minotaur",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:cave_spider",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:spider",
+          "weight": 750
+        },
+        {
+          "mob_id": "minecraft:witch",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:slime",
+          "weight": 50
+        },
+        {
+          "mob_id": "blue_skies:emberback",
+          "weight": 250
+        },
+        {
+          "mob_id": "blue_skies:infested_swarmer",
+          "weight": 125
+        },
+        {
+          "mob_id": "blue_skies:venom_spider",
+          "weight": 250
+        },
+        {
+          "mob_id": "blue_skies:nyctofly",
+          "weight": 125
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_creeper",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:hedge_spider",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:maze_slime",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:mosquito_swarm",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:skeleton_druid",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:slime_beetle",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:barrel_zombie",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:dread_hound",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:decrepit_skeleton",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:door_knight",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:fallen_chaos_knight",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:mother_spider",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:skeleton_thrasher",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_bruiser",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_clown",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_fisherman",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_lumberjack",
+          "weight": 50
+        }
+      ],
+      "tags": {
+        "tags": [
+          "forest"
+        ]
+      },
+      "weight": 1000
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_mob_list/forest.json",
+    "name": "Forest",
+    "name_source": "derived"
+  },
+  {
+    "id": "generic_undead",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/generic_undead.json",
+    "data": {
+      "id": "generic_undead",
+      "mobs": [
+        {
+          "mob_id": "minecraft:zombie",
+          "weight": 1000
+        },
+        {
+          "mob_id": "minecraft:skeleton",
+          "weight": 300
+        },
+        {
+          "mob_id": "minecraft:husk",
+          "weight": 500
+        },
+        {
+          "mob_id": "born_in_chaos_v1:barrel_zombie",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:dread_hound",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:decrepit_skeleton",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:door_knight",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:fallen_chaos_knight",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:skeleton_thrasher",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_bruiser",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_clown",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_fisherman",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_lumberjack",
+          "weight": 50
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_skeleton",
+          "weight": 25
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_zombie",
+          "weight": 25
+        }
+      ],
+      "tags": {
+        "tags": [
+          "generic_undead"
+        ]
+      },
+      "weight": 1000
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_mob_list/generic_undead.json",
+    "name": "Generic Undead",
+    "name_source": "derived"
+  },
+  {
+    "id": "green",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/green.json",
+    "data": {
+      "id": "green",
+      "mobs": [
+        {
+          "mob_id": "minecraft:slime",
+          "weight": 50
+        },
+        {
+          "mob_id": "minecraft:creeper",
+          "weight": 300
+        },
+        {
+          "mob_id": "minecraft:phantom",
+          "weight": 50
+        },
+        {
+          "mob_id": "minecraft:zombie",
+          "weight": 1000
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_bruiser",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_clown",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_fisherman",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_lumberjack",
+          "weight": 50
+        },
+        {
+          "mob_id": "twilightforest:blockchain_goblin",
+          "weight": 125
+        }
+      ],
+      "tags": {
+        "tags": [
+          "has_flying_mobs"
+        ]
+      },
+      "weight": 1000
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_mob_list/green.json",
+    "name": "Green",
+    "name_source": "derived"
+  },
+  {
+    "id": "harvest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/harvest.json",
+    "data": {
+      "id": "harvest",
+      "mobs": [
+        {
+          "mob_id": "minecraft:blaze",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:zombie",
+          "weight": 750
+        },
+        {
+          "mob_id": "minecraft:skeleton",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:endermite",
+          "weight": 50
+        },
+        {
+          "mob_id": "minecraft:cave_spider",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:spider",
+          "weight": 500
+        },
+        {
+          "mob_id": "minecraft:pillager",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:witch",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:vindicator",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:slime",
+          "weight": 50
+        },
+        {
+          "mob_id": "minecraft:evoker",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:husk",
+          "weight": 500
+        },
+        {
+          "mob_id": "minecraft:stray",
+          "weight": 250
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_skeleton",
+          "weight": 25
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_zombie",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:barrel_zombie",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:dread_hound",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:decrepit_skeleton",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:door_knight",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:fallen_chaos_knight",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:mother_spider",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:skeleton_thrasher",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_bruiser",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_clown",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_fisherman",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_lumberjack",
+          "weight": 50
+        }
+      ],
+      "tags": {
+        "tags": [
+          "harvest"
+        ]
+      },
+      "weight": 1000
+    },
+    "name": "Harvest",
+    "name_source": "derived"
+  },
+  {
+    "id": "map_default",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/map_default.json",
+    "data": {
+      "id": "map_default",
+      "mobs": [
+        {
+          "mob_id": "minecraft:blaze",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:zombie",
+          "weight": 750
+        },
+        {
+          "mob_id": "minecraft:skeleton",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:endermite",
+          "weight": 50
+        },
+        {
+          "mob_id": "minecraft:cave_spider",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:spider",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:pillager",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:witch",
+          "weight": 100
+        },
+        {
+          "mob_id": "minecraft:vindicator",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:slime",
+          "weight": 5
+        },
+        {
+          "mob_id": "minecraft:evoker",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:husk",
+          "weight": 500
+        },
+        {
+          "mob_id": "minecraft:stray",
+          "weight": 250
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_skeleton",
+          "weight": 25
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_zombie",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:blockchain_goblin",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:redcap",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:redcap_sapper",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:troll",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:minotaur",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:barrel_zombie",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:dread_hound",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:decrepit_skeleton",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:door_knight",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:fallen_chaos_knight",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:skeleton_thrasher",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_bruiser",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_clown",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_fisherman",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_lumberjack",
+          "weight": 50
+        }
+      ],
+      "tags": {
+        "tags": [
+          "map"
+        ]
+      },
+      "weight": 1000
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_mob_list/map_default.json",
+    "name": "Map Default",
+    "name_source": "derived"
+  },
+  {
+    "id": "moo",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/moo.json",
+    "data": {
+      "id": "moo",
+      "mobs": [
+        {
+          "mob_id": "twilightforest:minotaur",
+          "weight": 2000
+        }
+      ],
+      "tags": {
+        "tags": [
+          "moo"
+        ]
+      },
+      "weight": 1000
+    },
+    "name": "Moo",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/nether.json",
+    "data": {
+      "id": "nether",
+      "mobs": [
+        {
+          "mob_id": "minecraft:blaze",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:zombie",
+          "weight": 750
+        },
+        {
+          "mob_id": "minecraft:skeleton",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:endermite",
+          "weight": 50
+        },
+        {
+          "mob_id": "minecraft:cave_spider",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:spider",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:pillager",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:witch",
+          "weight": 100
+        },
+        {
+          "mob_id": "minecraft:vindicator",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:slime",
+          "weight": 5
+        },
+        {
+          "mob_id": "minecraft:evoker",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:husk",
+          "weight": 500
+        },
+        {
+          "mob_id": "minecraft:stray",
+          "weight": 250
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_skeleton",
+          "weight": 25
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_zombie",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:blockchain_goblin",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:redcap",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:redcap_sapper",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:troll",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:minotaur",
+          "weight": 25
+        },
+        {
+          "mob_id": "realmrpg_wyrms:red_wyrm",
+          "weight": 125
+        },
+        {
+          "mob_id": "friendsandfoes:wildfire",
+          "weight": 25
+        },
+        {
+          "mob_id": "monsterplus:lava_squid",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:wither_skeleton",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:blaze",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:zombified_piglin",
+          "weight": 750
+        },
+        {
+          "mob_id": "blue_skies:emberback",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:magma_cube",
+          "weight": 250
+        },
+        {
+          "mob_id": "twilightforest:fire_beetle",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:carminite_broodling",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:carminite_ghastling",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:carminite_golem",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:barrel_zombie",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:dread_hound",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:decrepit_skeleton",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:door_knight",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:fallen_chaos_knight",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:skeleton_thrasher",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_bruiser",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_clown",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_fisherman",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_lumberjack",
+          "weight": 50
+        }
+      ],
+      "tags": {
+        "tags": [
+          "fire",
+          "has_flying_mobs"
+        ]
+      },
+      "weight": 1000
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_mob_list/nether.json",
+    "name": "Nether",
+    "name_source": "derived"
+  },
+  {
+    "id": "obelisk",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/obelisk.json",
+    "data": {
+      "id": "obelisk",
+      "mobs": [
+        {
+          "mob_id": "minecraft:blaze",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:zombie",
+          "weight": 750
+        },
+        {
+          "mob_id": "minecraft:skeleton",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:endermite",
+          "weight": 50
+        },
+        {
+          "mob_id": "minecraft:cave_spider",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:spider",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:pillager",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:witch",
+          "weight": 100
+        },
+        {
+          "mob_id": "minecraft:vindicator",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:slime",
+          "weight": 5
+        },
+        {
+          "mob_id": "minecraft:evoker",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:husk",
+          "weight": 500
+        },
+        {
+          "mob_id": "minecraft:stray",
+          "weight": 250
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_skeleton",
+          "weight": 25
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_zombie",
+          "weight": 25
+        }
+      ],
+      "tags": {
+        "tags": [
+          "obelisk"
+        ]
+      },
+      "weight": 1000
+    },
+    "name": "Obelisk",
+    "name_source": "derived"
+  },
+  {
+    "id": "otherworldly",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/otherworldly.json",
+    "data": {
+      "id": "otherworldly",
+      "mobs": [
+        {
+          "mob_id": "minecraft:blaze",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:zombie",
+          "weight": 750
+        },
+        {
+          "mob_id": "minecraft:skeleton",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:endermite",
+          "weight": 50
+        },
+        {
+          "mob_id": "minecraft:cave_spider",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:spider",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:pillager",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:witch",
+          "weight": 100
+        },
+        {
+          "mob_id": "minecraft:vindicator",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:slime",
+          "weight": 5
+        },
+        {
+          "mob_id": "minecraft:evoker",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:husk",
+          "weight": 500
+        },
+        {
+          "mob_id": "minecraft:stray",
+          "weight": 250
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_skeleton",
+          "weight": 25
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_zombie",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:blockchain_goblin",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:redcap",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:redcap_sapper",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:troll",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:minotaur",
+          "weight": 25
+        },
+        {
+          "mob_id": "undergarden:forgotten",
+          "weight": 500
+        },
+        {
+          "mob_id": "undergarden:rotbeast",
+          "weight": 125
+        },
+        {
+          "mob_id": "undergarden:rotwalker",
+          "weight": 125
+        },
+        {
+          "mob_id": "riskofrain_mobs:lemurian_entity",
+          "weight": 125
+        },
+        {
+          "mob_id": "realmrpg_wyrms:ender_wyrm",
+          "weight": 125
+        },
+        {
+          "mob_id": "deeperdarker:shriek_worm",
+          "weight": 100
+        },
+        {
+          "mob_id": "deeperdarker:stalker",
+          "weight": 25
+        },
+        {
+          "mob_id": "deeperdarker:shattered",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:endermite",
+          "weight": 125
+        },
+        {
+          "mob_id": "monsterplus:glow_skeleton",
+          "weight": 350
+        },
+        {
+          "mob_id": "monsterplus:crystal_zombie",
+          "weight": 250
+        },
+        {
+          "mob_id": "monsterplus:abyssologer",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:death_tome",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:mist_wolf",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:carminite_broodling",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:carminite_ghastling",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:carminite_golem",
+          "weight": 25
+        },
+        {
+          "mob_id": "outer_end:entombed",
+          "weight": 125
+        },
+        {
+          "mob_id": "outer_end:himmelite",
+          "weight": 125
+        },
+        {
+          "mob_id": "outer_end:sinker",
+          "weight": 125
+        },
+        {
+          "mob_id": "outer_end:purpur_golem",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:barrel_zombie",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:dread_hound",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:decrepit_skeleton",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:door_knight",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:fallen_chaos_knight",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:skeleton_thrasher",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_bruiser",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_clown",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_fisherman",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_lumberjack",
+          "weight": 50
+        }
+      ],
+      "tags": {
+        "tags": [
+          "otherworldly"
+        ]
+      },
+      "weight": 1000
+    },
+    "name": "Otherworldly",
+    "name_source": "derived"
+  },
+  {
+    "id": "spider_forest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/spider_forest.json",
+    "data": {
+      "id": "spider_forest",
+      "mobs": [
+        {
+          "mob_id": "minecraft:spider",
+          "weight": 1000
+        },
+        {
+          "mob_id": "minecraft:cave_spider",
+          "weight": 300
+        },
+        {
+          "mob_id": "minecraft:witch",
+          "weight": 100
+        },
+        {
+          "mob_id": "minecraft:stray",
+          "weight": 50
+        },
+        {
+          "mob_id": "twilightforest:hedge_spider",
+          "weight": 125
+        },
+        {
+          "mob_id": "blue_skies:emberback",
+          "weight": 250
+        },
+        {
+          "mob_id": "blue_skies:infested_swarmer",
+          "weight": 125
+        },
+        {
+          "mob_id": "blue_skies:venom_spider",
+          "weight": 250
+        },
+        {
+          "mob_id": "twilightforest:maze_slime",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:mosquito_swarm",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:skeleton_druid",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:slime_beetle",
+          "weight": 125
+        }
+      ],
+      "tags": {
+        "tags": [
+          "spider_forest"
+        ]
+      },
+      "weight": 1000
+    },
+    "base_source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_mob_list/spider_forest.json",
+    "name": "Spider Forest",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/undergarden.json",
+    "data": {
+      "id": "undergarden",
+      "mobs": [
+        {
+          "mob_id": "undergarden:rotwalker",
+          "weight": 250
+        },
+        {
+          "mob_id": "undergarden:rotbeast",
+          "weight": 50
+        },
+        {
+          "mob_id": "undergarden:sploogie",
+          "weight": 150
+        },
+        {
+          "mob_id": "undergarden:nargoyle",
+          "weight": 125
+        },
+        {
+          "mob_id": "undergarden:rotling",
+          "weight": 250
+        }
+      ],
+      "tags": {
+        "tags": [
+          "undergarden"
+        ]
+      },
+      "weight": 1000
+    },
+    "name": "Undergarden",
+    "name_source": "derived"
+  },
+  {
+    "id": "water",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/water.json",
+    "data": {
+      "id": "water",
+      "mobs": [
+        {
+          "mob_id": "minecraft:blaze",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:zombie",
+          "weight": 750
+        },
+        {
+          "mob_id": "minecraft:skeleton",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:endermite",
+          "weight": 50
+        },
+        {
+          "mob_id": "minecraft:cave_spider",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:spider",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:pillager",
+          "weight": 250
+        },
+        {
+          "mob_id": "minecraft:witch",
+          "weight": 100
+        },
+        {
+          "mob_id": "minecraft:vindicator",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:slime",
+          "weight": 5
+        },
+        {
+          "mob_id": "minecraft:evoker",
+          "weight": 25
+        },
+        {
+          "mob_id": "minecraft:husk",
+          "weight": 500
+        },
+        {
+          "mob_id": "minecraft:stray",
+          "weight": 250
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_skeleton",
+          "weight": 25
+        },
+        {
+          "mob_id": "mutantmonsters:mutant_zombie",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:blockchain_goblin",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:redcap",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:redcap_sapper",
+          "weight": 125
+        },
+        {
+          "mob_id": "twilightforest:troll",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:minotaur",
+          "weight": 25
+        },
+        {
+          "mob_id": "aquamirae:tortured_soul",
+          "weight": 250
+        },
+        {
+          "mob_id": "aquamirae:maw",
+          "weight": 125
+        },
+        {
+          "mob_id": "blue_skies:armored_frost_spirit",
+          "weight": 250
+        },
+        {
+          "mob_id": "blue_skies:crynocerous",
+          "weight": 125
+        },
+        {
+          "mob_id": "blue_skies:diophyde_prowler",
+          "weight": 125
+        },
+        {
+          "mob_id": "blue_skies:polargeist",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:stray",
+          "weight": 350
+        },
+        {
+          "mob_id": "minecraft:drowned",
+          "weight": 500
+        },
+        {
+          "mob_id": "riskofrain_mobs:stone_golem_entity",
+          "weight": 25
+        },
+        {
+          "mob_id": "twilightforest:winter_wolf",
+          "weight": 250
+        },
+        {
+          "mob_id": "twilightforest:snow_guardian",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:barrel_zombie",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:dread_hound",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:decrepit_skeleton",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:door_knight",
+          "weight": 125
+        },
+        {
+          "mob_id": "born_in_chaos_v1:fallen_chaos_knight",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:skeleton_thrasher",
+          "weight": 25
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_bruiser",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_clown",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_fisherman",
+          "weight": 50
+        },
+        {
+          "mob_id": "born_in_chaos_v1:zombie_lumberjack",
+          "weight": 50
+        }
+      ],
+      "tags": {
+        "tags": [
+          "water"
+        ]
+      },
+      "weight": 1000
+    },
+    "name": "Water",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/wild_west.json",
+    "data": {
+      "id": "wild_west",
+      "mobs": [
+        {
+          "mob_id": "born_in_chaos_v1:skeleton_demoman",
+          "weight": 150
+        },
+        {
+          "mob_id": "born_in_chaos_v1:spirit_guide",
+          "weight": 150
+        },
+        {
+          "mob_id": "born_in_chaos_v1:spirit_guide_assistant",
+          "weight": 100
+        },
+        {
+          "mob_id": "born_in_chaos_v1:barrel_zombie",
+          "weight": 125
+        },
+        {
+          "mob_id": "minecraft:husk",
+          "weight": 250
+        },
+        {
+          "mob_id": "alexsmobs:guster",
+          "weight": 5
+        },
+        {
+          "mob_id": "alexsmobs:rattlesnake",
+          "weight": 25
+        }
+      ],
+      "tags": {
+        "tags": [
+          "wild_west"
+        ]
+      },
+      "weight": 1000
+    },
+    "name": "Wild West",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_mob_list/worm.json",
+    "data": {
+      "id": "worm",
+      "mobs": [
+        {
+          "mob_id": "monsterplus:overgrown_skeleton",
+          "weight": 250
+        },
+        {
+          "mob_id": "blue_skies:shrumpty",
+          "weight": 150
+        },
+        {
+          "mob_id": "born_in_chaos_v1:firelight",
+          "weight": 125
+        },
+        {
+          "mob_id": "pots_and_mimics:poison_pot_crab",
+          "weight": 250
+        },
+        {
+          "mob_id": "blue_skies:infested_swarmer",
+          "weight": 250
+        },
+        {
+          "mob_id": "blue_skies:spewter",
+          "weight": 250
+        }
+      ],
+      "tags": {
+        "tags": [
+          "worm"
+        ]
+      },
+      "weight": 1000
+    },
+    "name": "Worm",
+    "name_source": "derived"
+  }
+]

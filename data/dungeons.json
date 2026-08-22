@@ -1,0 +1,1814 @@
+[
+  {
+    "id": "bastion",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/bastion.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "barracks",
+          "basic0",
+          "parkour",
+          "rings",
+          "winding"
+        ],
+        "ends": [
+          "basalt_boss",
+          "boss",
+          "prison",
+          "tree_farm"
+        ],
+        "entrances": [
+          "lava_fountains",
+          "nether_wastes"
+        ],
+        "folder": "bastion",
+        "four_ways": [
+          "4pillars",
+          "basic3",
+          "lava_basins",
+          "pillar1",
+          "treasure_room"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "nether"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "basic1",
+          "bridge",
+          "furnaces",
+          "ores",
+          "pillar0"
+        ],
+        "triple_hallway": [
+          "basalt0",
+          "basalt1",
+          "basic2",
+          "underbridge",
+          "woodcutter"
+        ]
+      },
+      "id": "bastion",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/bastion.json",
+    "name": "Bastion",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/bridge.json",
+    "data": {
+      "author": "FeelingOwl",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "ch_bridge1",
+          "ch_bridge2",
+          "ch_bridge3",
+          "ch_bridge4",
+          "ch_bridge5"
+        ],
+        "ends": [
+          "end_bridge1",
+          "end_bridge2",
+          "end_bridge3",
+          "end_bridge4"
+        ],
+        "entrances": [
+          "e_bridge1"
+        ],
+        "folder": "bridge",
+        "four_ways": [
+          "4w_bridge",
+          "4w_bridge1",
+          "4w_bridge2",
+          "4w_bridge3",
+          "4w_bridge4",
+          "4w_bridge5"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "bridge"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "sh_bridge1",
+          "sh_bridge2",
+          "sh_bridge3"
+        ],
+        "triple_hallway": [
+          "3h_bridge1",
+          "3h_bridge2",
+          "3h_bridge3"
+        ]
+      },
+      "id": "bridge",
+      "weight": 1000
+    },
+    "name": "Bridge",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/cement.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "cemetry_corner01",
+          "cemetry_corner02",
+          "cemetry_corner03",
+          "cemetry_corner04"
+        ],
+        "ends": [
+          "boss_room01",
+          "boss_room02"
+        ],
+        "entrances": [
+          "cemetry_entrance01",
+          "cemetry_entrance02"
+        ],
+        "folder": "cement",
+        "four_ways": [
+          "cemetry_fourway01",
+          "cemetry_fourway02",
+          "cemetry_fourway03",
+          "cemetry_fourway04"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "generic_undead"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "cemetry_straight01",
+          "cemetry_straight02",
+          "cemetry_straight03",
+          "cemetry_straight04"
+        ],
+        "triple_hallway": [
+          "cemetry_tsec01",
+          "cemetry_tsec02",
+          "cemetry_tsec03",
+          "cemetry_tsec04"
+        ]
+      },
+      "id": "cement",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/cement.json",
+    "name": "Cement",
+    "name_source": "derived"
+  },
+  {
+    "id": "end",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/end.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "end_ch1",
+          "end_ch2",
+          "end_ch3",
+          "end_ch4"
+        ],
+        "ends": [
+          "end_e1",
+          "end_e2",
+          "end_e3",
+          "end_e4"
+        ],
+        "entrances": [
+          "end_enter"
+        ],
+        "folder": "end",
+        "four_ways": [
+          "end_fw1",
+          "end_fw2",
+          "end_fw3",
+          "end_fw4"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "otherworldly"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "end_sh1",
+          "end_sh2",
+          "end_sh3",
+          "end_sh4"
+        ],
+        "triple_hallway": [
+          "end_th1",
+          "end_th2",
+          "end_th4",
+          "end_th4",
+          "end_th5"
+        ]
+      },
+      "id": "end",
+      "weight": 1000
+    },
+    "name": "End",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/fairy.json",
+    "data": {
+      "author": "Owls wife",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "ch_fairy1",
+          "ch_fairy2"
+        ],
+        "ends": [
+          "end_fairy1",
+          "end_fairy2",
+          "end_fairy3"
+        ],
+        "entrances": [
+          "e_fairy1"
+        ],
+        "folder": "fairy",
+        "four_ways": [
+          "4w_fairy1",
+          "4w_fairy2",
+          "4w_fairy3"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "fairy"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "sh_fairy1",
+          "sh_fairy2"
+        ],
+        "triple_hallway": [
+          "3h_fairy1",
+          "3h_fairy2"
+        ]
+      },
+      "id": "fairy",
+      "weight": 1000
+    },
+    "name": "Fairy",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/garden.json",
+    "data": {
+      "author": "Neksy21",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "ch_stairs",
+          "ch_1",
+          "ch_2",
+          "ch_3"
+        ],
+        "ends": [
+          "end_throne",
+          "end_terrace",
+          "end_tree",
+          "end_fire_tree",
+          "end_stairs",
+          "end_arches"
+        ],
+        "entrances": [
+          "entrance_down",
+          "entrance_up"
+        ],
+        "folder": "garden",
+        "four_ways": [
+          "4w_fountain",
+          "4w_4trees",
+          "4w_tree"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "sh_basic",
+          "sh_trunk",
+          "sh_tree",
+          "sh_stairs"
+        ],
+        "triple_hallway": [
+          "3h_trunk",
+          "3h_basic",
+          "3h_stairs"
+        ]
+      },
+      "id": "garden",
+      "weight": 1000
+    },
+    "name": "Garden",
+    "name_source": "derived"
+  },
+  {
+    "id": "it",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/it.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "caverns",
+          "ice_windows",
+          "ice_rooms",
+          "prayer_room"
+        ],
+        "ends": [
+          "boss_pool",
+          "evoker_boss",
+          "prison"
+        ],
+        "entrances": [
+          "pit"
+        ],
+        "folder": "it",
+        "four_ways": [
+          "strongmobs",
+          "waterfall_stairway",
+          "ziggurat"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "water",
+                "generic_undead"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "arch",
+          "broken_bridge"
+        ],
+        "triple_hallway": [
+          "altar",
+          "fort_trader",
+          "pool0"
+        ]
+      },
+      "id": "it",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/it.json",
+    "name": "It",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/mine.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "nasty_lava_parkour",
+          "infested_house",
+          "hideout"
+        ],
+        "ends": [
+          "boss1",
+          "lava_boss_room"
+        ],
+        "entrances": [
+          "simple2"
+        ],
+        "folder": "mine",
+        "four_ways": [
+          "shaft0",
+          "huge_pit",
+          "trader"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "illagers",
+                "otherworldly"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "parkour0",
+          "chest_down_pit",
+          "tight_mine"
+        ],
+        "triple_hallway": [
+          "redstone_ore_hidden_room",
+          "simple2",
+          "train_station"
+        ]
+      },
+      "id": "mine",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/mine.json",
+    "name": "Mine",
+    "name_source": "derived"
+  },
+  {
+    "id": "moo",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/moo.json",
+    "data": {
+      "author": "mahjerion",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "simple"
+        ],
+        "ends": [
+          "boss"
+        ],
+        "entrances": [
+          "simple"
+        ],
+        "folder": "moo",
+        "four_ways": [
+          "simple"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "moo"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "simple"
+        ],
+        "triple_hallway": [
+          "simple"
+        ]
+      },
+      "id": "moo",
+      "weight": 0
+    },
+    "name": "Moo",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/mossy_brick.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "2",
+          "parkour0"
+        ],
+        "ends": [
+          "6",
+          "7",
+          "boss0"
+        ],
+        "entrances": [
+          "prismarine",
+          "begin"
+        ],
+        "folder": "mossy_brick",
+        "four_ways": [
+          "0",
+          "double_level_chest"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "illagers",
+                "fire"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "4",
+          "5",
+          "8",
+          "parkour_maze",
+          "safe_room",
+          "underwater_chest"
+        ],
+        "triple_hallway": [
+          "1",
+          "3",
+          "camo_chest"
+        ]
+      },
+      "id": "mossy_brick",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/mossy_brick.json",
+    "name": "Mossy Brick",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/nature.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "trader",
+          "0"
+        ],
+        "ends": [
+          "boss_evoker",
+          "mythic_mob_house"
+        ],
+        "entrances": [
+          "simple"
+        ],
+        "folder": "nature",
+        "four_ways": [
+          "simple2"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "forest",
+                "spider_forest"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "hard_to_find_mobs",
+          "tent_treasure"
+        ],
+        "triple_hallway": [
+          "simple4",
+          "simple5"
+        ]
+      },
+      "id": "nature",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/nature.json",
+    "name": "Nature",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/nether.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "climb_to_treasure",
+          "the_witch"
+        ],
+        "ends": [
+          "boss2",
+          "nether0",
+          "hidden_lever_boss"
+        ],
+        "entrances": [
+          "0",
+          "hidden_chest_lava"
+        ],
+        "folder": "nether",
+        "four_ways": [
+          "blazes",
+          "wart_farm",
+          "tower_of_doom"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "fire"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "lava_detour",
+          "skeletons0"
+        ],
+        "triple_hallway": [
+          "dangerous_lava",
+          "easy0"
+        ]
+      },
+      "id": "nether",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/nether.json",
+    "name": "Nether",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/night_terror.json",
+    "data": {
+      "author": "CTE2 Team",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "abandoned",
+          "cemetary",
+          "escape",
+          "witch_hut"
+        ],
+        "ends": [
+          "cauldron",
+          "dracula",
+          "crop_circle",
+          "skull"
+        ],
+        "entrances": [
+          "pump_spawn"
+        ],
+        "folder": "night_terror",
+        "four_ways": [
+          "barn",
+          "portal",
+          "pumpkin",
+          "spider"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "generic_undead",
+                "otherworldly"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "door_maze",
+          "spider_cave",
+          "crimson_rose",
+          "festival"
+        ],
+        "triple_hallway": [
+          "forest",
+          "neighborhood",
+          "gas_station",
+          "library"
+        ]
+      },
+      "id": "night_terror",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/night_terror.json",
+    "name": "Night Terror",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/pirate_lair.json",
+    "data": {
+      "author": "Jarky2203/Blubberbert2209",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "curved_1",
+          "curved_2",
+          "curved_3"
+        ],
+        "ends": [
+          "end_1",
+          "end_2",
+          "end_3",
+          "end_4",
+          "end_5",
+          "end_6"
+        ],
+        "entrances": [
+          "entrance_1"
+        ],
+        "folder": "pirate_lair",
+        "four_ways": [
+          "4w_1",
+          "4w_2",
+          "4w_3"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "straight_1",
+          "straight_2",
+          "straight_3",
+          "straight_4"
+        ],
+        "triple_hallway": [
+          "triple_1",
+          "triple_2",
+          "triple_3"
+        ]
+      },
+      "id": "pirate_lair",
+      "weight": 1000
+    },
+    "name": "Pirate Lair",
+    "name_source": "derived"
+  },
+  {
+    "id": "pyramid",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/pyramid.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "atumrun_corner01",
+          "atumrun_corner02",
+          "atumrun_corner03",
+          "atumrun_corner04",
+          "atumrun_corner05",
+          "atumrun_corner06"
+        ],
+        "ends": [
+          "atumrun_bossroom01",
+          "atumrun_bossroom02",
+          "atumrun_bossroom03",
+          "atumrun_bossroom04",
+          "atumrun_bossroom05",
+          "atumrun_bossroom06"
+        ],
+        "entrances": [
+          "atumrun_entrance"
+        ],
+        "folder": "pyramid",
+        "four_ways": [
+          "atumrun_cross01",
+          "atumrun_cross02",
+          "atumrun_cross03",
+          "atumrun_cross04",
+          "atumrun_cross05",
+          "atumrun_cross06"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "atumrun_straight01",
+          "atumrun_straight02",
+          "atumrun_straight03",
+          "atumrun_straight04",
+          "atumrun_straight05",
+          "atumrun_straight06"
+        ],
+        "triple_hallway": [
+          "atumrun_tsection01",
+          "atumrun_tsection02",
+          "atumrun_tsection03",
+          "atumrun_tsection04",
+          "atumrun_tsection05",
+          "atumrun_tsection06"
+        ]
+      },
+      "id": "pyramid",
+      "weight": 0
+    },
+    "name": "Pyramid",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/sandstone.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "prison",
+          "trap_puzzle0",
+          "hidden_button0"
+        ],
+        "ends": [
+          "boss_and_skellies",
+          "boss",
+          "trap_prison0",
+          "tnt_pyramid"
+        ],
+        "entrances": [
+          "basic"
+        ],
+        "folder": "sandstone",
+        "four_ways": [
+          "treasure0",
+          "trap",
+          "simple1"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "fire"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "treasure_lava_pyramid",
+          "puzzle0",
+          "simple0",
+          "simple_magma0"
+        ],
+        "triple_hallway": [
+          "dorm0",
+          "cactus",
+          "simple_maze0",
+          "parkour_puzzle_magma"
+        ]
+      },
+      "id": "sandstone",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/sandstone.json",
+    "name": "Sandstone",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/sewer2.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "sewers_corner_01vcf",
+          "sewers_corner_01vf",
+          "sewers_corner_02vcf",
+          "sewers_corner_02vf",
+          "sewers_corner_03vcf",
+          "sewers_corner_03vf"
+        ],
+        "ends": [
+          "sewers_bossroom_01",
+          "sewers_bossroom_02",
+          "sewers_bossroom_03",
+          "sewers_bossroom_04",
+          "sewers_bossroom_05",
+          "sewers_bossroom_06"
+        ],
+        "entrances": [
+          "sewers_beginroom_base"
+        ],
+        "folder": "sewer2",
+        "four_ways": [
+          "sewers_cross_01vcf",
+          "sewers_cross_01vf",
+          "sewers_cross_02vcf",
+          "sewers_cross_02vf",
+          "sewers_cross_03vcf",
+          "sewers_cross_03vf"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "water"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "sewers_straight_01vcf",
+          "sewers_straight_01vf",
+          "sewers_straight_02vf",
+          "sewers_straight_02vcf",
+          "sewers_straight_03vcf",
+          "sewers_straight_03vf",
+          "sewers_straight_04vcf"
+        ],
+        "triple_hallway": [
+          "sewers_tsection_01vcf",
+          "sewers_tsection_01vf",
+          "sewers_tsection_02vcf",
+          "sewers_tsection_02vf",
+          "sewers_tsection_03vcf",
+          "sewers_tsection_03vf"
+        ]
+      },
+      "id": "sewer2",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/sewer2.json",
+    "name": "Sewer2",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/sewers.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "sewers"
+        ],
+        "ends": [
+          "sewers_treasure"
+        ],
+        "entrances": [
+          "sewers"
+        ],
+        "folder": "sewers",
+        "four_ways": [
+          "sewers",
+          "sewers_flow"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "water"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "sewers"
+        ],
+        "triple_hallway": [
+          "sewers_puzzle_easy"
+        ]
+      },
+      "id": "sewers",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/sewers.json",
+    "name": "Sewers",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/spruce_mansion.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "2"
+        ],
+        "ends": [
+          "boss_bedroom",
+          "boss_chest_behind_throne",
+          "boss0",
+          "parkour_hidden_slime",
+          "slime_parkour_hidden",
+          "under_snow_room"
+        ],
+        "entrances": [
+          "0"
+        ],
+        "folder": "spruce_mansion",
+        "four_ways": [
+          "ice_pillar",
+          "redstone_ore_secret"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "illagers",
+                "water"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "1",
+          "blocked_but_under_snow",
+          "crouching",
+          "dangerous_underground",
+          "peek_secret_ice",
+          "simple3"
+        ],
+        "triple_hallway": [
+          "hidden_trapdoor_room",
+          "simple",
+          "2"
+        ]
+      },
+      "id": "spruce_mansion",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/spruce_mansion.json",
+    "name": "Spruce Mansion",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/steampunk.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "easy_sandstone_puzzle"
+        ],
+        "ends": [
+          "royal_plus_sewer"
+        ],
+        "entrances": [
+          "0",
+          "royal"
+        ],
+        "folder": "steampunk",
+        "four_ways": [
+          "lava_pit",
+          "slow_cooker_parkour"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "otherworldly"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "flower_lever_combo"
+        ],
+        "triple_hallway": [
+          "no_puzzle_trick",
+          "royal_dwarves"
+        ]
+      },
+      "id": "steampunk",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/steampunk.json",
+    "name": "Steampunk",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/stone_brick.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "drowned_puzzle",
+          "shooting_gallery",
+          "slime_puzzle",
+          "basic",
+          "simple_trap0"
+        ],
+        "ends": [
+          "throne_boss",
+          "trader",
+          "hidden_lever0",
+          "boss",
+          "simple_prison0"
+        ],
+        "entrances": [
+          "loot_behind_portal",
+          "basic"
+        ],
+        "folder": "stone_brick",
+        "four_ways": [
+          "dark_lever",
+          "hidden_ceiling",
+          "simple1",
+          "basic",
+          "simple0"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "illagers",
+                "fire"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "crypt",
+          "fast_or_slow",
+          "blocked_spiders",
+          "boss_trap",
+          "simple2",
+          "basic",
+          "simple0"
+        ],
+        "triple_hallway": [
+          "hidden_button2",
+          "puzzle_plus_web",
+          "parkour",
+          "simple_maze0"
+        ]
+      },
+      "id": "stone_brick",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/stone_brick.json",
+    "name": "Stone Brick",
+    "name_source": "derived"
+  },
+  {
+    "id": "template",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/template.json",
+    "data": {
+      "author": "Your IGN",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "ch_template1",
+          "ch_template2",
+          "ch_template3",
+          "ch_template4",
+          "ch_template5",
+          "ch_template6"
+        ],
+        "ends": [
+          "end_template1",
+          "end_template2",
+          "end_template3",
+          "end_template4",
+          "end_template5",
+          "end_template6"
+        ],
+        "entrances": [
+          "e_template1",
+          "e_template1",
+          "e_template1",
+          "e_template1",
+          "e_template1",
+          "e_template1"
+        ],
+        "folder": "template",
+        "four_ways": [
+          "4w_template1",
+          "4w_template2",
+          "4w_template3",
+          "4w_template4",
+          "4w_template5",
+          "4w_template6"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "sh_template1",
+          "sh_template2",
+          "sh_template3",
+          "sh_template4",
+          "sh_template5",
+          "sh_template6"
+        ],
+        "triple_hallway": [
+          "3h_template1",
+          "3h_template2",
+          "3h_template3",
+          "3h_template4",
+          "3h_template5",
+          "3h_template6"
+        ]
+      },
+      "id": "template",
+      "weight": 0
+    },
+    "name": "Template",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/tent.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "4"
+        ],
+        "ends": [
+          "6"
+        ],
+        "entrances": [
+          "0"
+        ],
+        "folder": "tent",
+        "four_ways": [
+          "3"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "1",
+          "trader0"
+        ],
+        "triple_hallway": [
+          "boss1",
+          "2"
+        ]
+      },
+      "id": "tent",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/tent.json",
+    "name": "Tent",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/undergarden.json",
+    "data": {
+      "author": "Helester",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "ch_1",
+          "ch_2",
+          "ch_3"
+        ],
+        "ends": [
+          "end_1",
+          "end_2",
+          "end_3",
+          "end_4",
+          "end_5"
+        ],
+        "entrances": [
+          "e_1",
+          "e_2"
+        ],
+        "folder": "undergarden",
+        "four_ways": [
+          "4w_1",
+          "4w_2",
+          "4w_3"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "undergarden"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "sh_1",
+          "sh_2",
+          "sh_3",
+          "sh_4",
+          "sh_5",
+          "sh_6"
+        ],
+        "triple_hallway": [
+          "3h_1",
+          "3h_2",
+          "3h_3"
+        ]
+      },
+      "id": "undergarden",
+      "weight": 1000
+    },
+    "name": "Undergarden",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/warped.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "basic",
+          "bastion",
+          "blocked",
+          "cottage"
+        ],
+        "ends": [
+          "boss",
+          "crimson",
+          "overgrown_fortress",
+          "parkour"
+        ],
+        "entrances": [
+          "basic",
+          "crimson"
+        ],
+        "folder": "warped",
+        "four_ways": [
+          "campsite",
+          "crossroads",
+          "gazeebo",
+          "portal"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "forest",
+                "otherworldly"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "basic",
+          "bridge",
+          "dig",
+          "fortress"
+        ],
+        "triple_hallway": [
+          "abandoned_house",
+          "overgrown_lab",
+          "depot",
+          "lake"
+        ]
+      },
+      "id": "warped",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/warped.json",
+    "name": "Warped",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/watcher.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "w_c_0",
+          "w_c_1",
+          "w_c_2",
+          "w_c_3"
+        ],
+        "ends": [
+          "w_e_0",
+          "w_e_1",
+          "w_e_2",
+          "w_e_3",
+          "w_e_4",
+          "w_e_5"
+        ],
+        "entrances": [
+          "w_e_0",
+          "w_entr_0"
+        ],
+        "folder": "watcher",
+        "four_ways": [
+          "w_4w_0",
+          "w_4w_1",
+          "w_4w_2"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "forest",
+                "fire"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "w_s_0",
+          "w_s_1",
+          "w_s_2",
+          "w_s_3"
+        ],
+        "triple_hallway": [
+          "w_3w_0",
+          "w_3w_1",
+          "w_3w_2"
+        ]
+      },
+      "id": "watcher",
+      "weight": 1000
+    },
+    "name": "Watcher",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/wild_west.json",
+    "data": {
+      "author": "AnnekuS",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "ch_1",
+          "ch_2",
+          "ch_3",
+          "ch_4",
+          "ch_5",
+          "ch_6"
+        ],
+        "ends": [
+          "end_1",
+          "end_2",
+          "end_3",
+          "end_4",
+          "end_5",
+          "end_6"
+        ],
+        "entrances": [
+          "e_1",
+          "e_2",
+          "e_3"
+        ],
+        "folder": "wild_west",
+        "four_ways": [
+          "4w_1",
+          "4w_2",
+          "4w_3",
+          "4w_4",
+          "4w_5",
+          "4w_6"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "wild_west"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "sh_1",
+          "sh_2",
+          "sh_3",
+          "sh_4",
+          "sh_5",
+          "sh_6"
+        ],
+        "triple_hallway": [
+          "3h_1",
+          "3h_2",
+          "3h_3",
+          "3h_4",
+          "3h_5",
+          "3h_6"
+        ]
+      },
+      "id": "wild_west",
+      "weight": 1000
+    },
+    "name": "Wild West",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/wn.json",
+    "data": {
+      "author": "",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "pond",
+          "basement_boss",
+          "hanging_platforms"
+        ],
+        "ends": [
+          "cave0",
+          "zombie_boss_shrooms"
+        ],
+        "entrances": [
+          "roses",
+          "camp_site"
+        ],
+        "folder": "wn",
+        "four_ways": [
+          "crossroad0",
+          "big_tree"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "map",
+                "forest",
+                "spider_forest"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "tunnel",
+          "ambush_cave",
+          "winding_road"
+        ],
+        "triple_hallway": [
+          "webhouse",
+          "webhouse",
+          "log",
+          "spider_cave"
+        ]
+      },
+      "id": "wn",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_dungeon/wn.json",
+    "name": "Wn",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_dungeon/worm.json",
+    "data": {
+      "author": "Owls wife",
+      "data": {
+        "max_rooms": 0,
+        "min_rooms": 0,
+        "room_size": 16,
+        "curved_hallways": [
+          "ch_1",
+          "ch_2",
+          "ch_3",
+          "ch_4",
+          "ch_5",
+          "ch_6"
+        ],
+        "ends": [
+          "end_1",
+          "end_2",
+          "end_3",
+          "end_4",
+          "end_5"
+        ],
+        "entrances": [
+          "e_1"
+        ],
+        "folder": "worm",
+        "four_ways": [
+          "4w_1",
+          "4w_2",
+          "4w_3",
+          "4w_4",
+          "4w_5"
+        ],
+        "mob_list_tag_check": {
+          "checks": [
+            {
+              "check": "HAS_ANY",
+              "tags": [
+                "worm"
+              ]
+            }
+          ]
+        },
+        "straight_hallways": [
+          "sh_1",
+          "sh_2",
+          "sh_3",
+          "sh_4",
+          "sh_5",
+          "sh_6"
+        ],
+        "triple_hallway": [
+          "3h_1",
+          "3h_2",
+          "3h_3",
+          "3h_4",
+          "3h_5",
+          "3h_6"
+        ]
+      },
+      "id": "worm",
+      "weight": 1000
+    },
+    "name": "Worm",
+    "name_source": "derived"
+  }
+]

@@ -1,0 +1,848 @@
+[
+  {
+    "id": "accurate",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/accurate.json",
+    "data": {
+      "type": "prefix",
+      "format": "GREEN",
+      "icon": "",
+      "id": "accurate",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 8.0,
+          "min": 8.0,
+          "stat": "accuracy"
+        },
+        {
+          "type": "MORE",
+          "max": 20.0,
+          "min": 20.0,
+          "stat": "accuracy"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Accurate",
+    "name_source": "lang"
+  },
+  {
+    "id": "armored",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/armored.json",
+    "data": {
+      "type": "prefix",
+      "format": "GRAY",
+      "icon": "",
+      "id": "armored",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 10.0,
+          "stat": "armor"
+        },
+        {
+          "type": "MORE",
+          "max": 20.0,
+          "min": 20.0,
+          "stat": "armor"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Armored",
+    "name_source": "lang"
+  },
+  {
+    "id": "chaos_mob_affix",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/chaos_mob_affix.json",
+    "data": {
+      "type": "suffix",
+      "format": "DARK_PURPLE",
+      "icon": "",
+      "id": "chaos_mob_affix",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "plus_phys_to_chaos"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 15.0,
+          "stat": "all_chaos_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "proc_chaos_id"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/chaos_mob_affix.json",
+    "name": "of Chaos",
+    "name_source": "lang"
+  },
+  {
+    "id": "critical",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/critical.json",
+    "data": {
+      "type": "prefix",
+      "format": "GOLD",
+      "icon": "",
+      "id": "critical",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 20.0,
+          "stat": "critical_hit"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Critical",
+    "name_source": "lang"
+  },
+  {
+    "id": "fire_lord",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/fire_lord.json",
+    "data": {
+      "type": "prefix",
+      "format": "RED",
+      "icon": "§c☀",
+      "id": "fire_lord",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 15.0,
+          "stat": "health"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 5.0,
+          "stat": "burn_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 75.0,
+          "min": 75.0,
+          "stat": "phys_to_fire"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "plus_phys_to_fire"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 20.0,
+          "stat": "extra_mob_drops"
+        },
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "proc_fire_id"
+        }
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/fire_lord.json",
+    "name": "Fire Lord",
+    "name_source": "lang"
+  },
+  {
+    "id": "fire_mob_affix",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/fire_mob_affix.json",
+    "data": {
+      "type": "suffix",
+      "format": "RED",
+      "icon": "",
+      "id": "fire_mob_affix",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "plus_phys_to_fire"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 15.0,
+          "stat": "all_fire_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "proc_fire_id"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/fire_mob_affix.json",
+    "name": "of Flames",
+    "name_source": "lang"
+  },
+  {
+    "id": "full_chaos",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/full_chaos.json",
+    "data": {
+      "type": "suffix",
+      "format": "DARK_PURPLE",
+      "icon": "",
+      "id": "full_chaos",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "phys_to_chaos"
+        },
+        {
+          "type": "FLAT",
+          "max": 75.0,
+          "min": 75.0,
+          "stat": "chaos_resist"
+        }
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/full_chaos.json",
+    "name": "Of Chaos",
+    "name_source": "lang"
+  },
+  {
+    "id": "full_fire",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/full_fire.json",
+    "data": {
+      "type": "suffix",
+      "format": "RED",
+      "icon": "",
+      "id": "full_fire",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "phys_to_fire"
+        },
+        {
+          "type": "FLAT",
+          "max": 75.0,
+          "min": 75.0,
+          "stat": "fire_resist"
+        }
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/full_fire.json",
+    "name": "Of Fire",
+    "name_source": "lang"
+  },
+  {
+    "id": "full_lightning",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/full_lightning.json",
+    "data": {
+      "type": "suffix",
+      "format": "YELLOW",
+      "icon": "",
+      "id": "full_lightning",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "phys_to_lightning"
+        },
+        {
+          "type": "FLAT",
+          "max": 75.0,
+          "min": 75.0,
+          "stat": "fire_resist"
+        }
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/full_lightning.json",
+    "name": "Of Lightning",
+    "name_source": "lang"
+  },
+  {
+    "id": "full_water",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/full_water.json",
+    "data": {
+      "type": "suffix",
+      "format": "AQUA",
+      "icon": "",
+      "id": "full_water",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "phys_to_water"
+        },
+        {
+          "type": "FLAT",
+          "max": 75.0,
+          "min": 75.0,
+          "stat": "water_resist"
+        }
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/full_water.json",
+    "name": "Of Cold",
+    "name_source": "lang"
+  },
+  {
+    "id": "lightning_lord",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/lightning_lord.json",
+    "data": {
+      "type": "prefix",
+      "format": "RED",
+      "icon": "§c☀",
+      "id": "lightning_lord",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 15.0,
+          "stat": "health"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 5.0,
+          "stat": "electrify_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 75.0,
+          "min": 75.0,
+          "stat": "phys_to_lightning"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "plus_phys_to_lightning"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 20.0,
+          "stat": "extra_mob_drops"
+        },
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "proc_lightning_id"
+        }
+      ],
+      "weight": 0
+    },
+    "name": "Electro Lord",
+    "name_source": "lang"
+  },
+  {
+    "id": "lightning_mob_affix",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/lightning_mob_affix.json",
+    "data": {
+      "type": "suffix",
+      "format": "YELLOW",
+      "icon": "",
+      "id": "lightning_mob_affix",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "plus_phys_to_lightning"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 15.0,
+          "stat": "all_lightning_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "proc_lightning_id"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/lightning_mob_affix.json",
+    "name": "of Lightning",
+    "name_source": "lang"
+  },
+  {
+    "id": "massive",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/massive.json",
+    "data": {
+      "type": "prefix",
+      "format": "RED",
+      "icon": "",
+      "id": "massive",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 25.0,
+          "min": 25.0,
+          "stat": "health"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "knockback_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Massive",
+    "name_source": "lang"
+  },
+  {
+    "id": "nature_lord",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/nature_lord.json",
+    "data": {
+      "type": "prefix",
+      "format": "DARK_PURPLE",
+      "icon": "§5☀",
+      "id": "nature_lord",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 15.0,
+          "stat": "health"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 5.0,
+          "stat": "poison_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 75.0,
+          "min": 75.0,
+          "stat": "phys_to_chaos"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "plus_phys_to_chaos"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 20.0,
+          "stat": "extra_mob_drops"
+        },
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "proc_chaos_id"
+        }
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/nature_lord.json",
+    "name": "Chaos Lord",
+    "name_source": "lang"
+  },
+  {
+    "id": "of_elemental_resistance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/of_elemental_resistance.json",
+    "data": {
+      "type": "suffix",
+      "format": "BLUE",
+      "icon": "",
+      "id": "of_elemental_resistance",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 40.0,
+          "min": 40.0,
+          "stat": "elemental_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "of Elemental Resistance",
+    "name_source": "lang"
+  },
+  {
+    "id": "of_evasion",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/of_evasion.json",
+    "data": {
+      "type": "suffix",
+      "format": "YELLOW",
+      "icon": "",
+      "id": "of_evasion",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 20.0,
+          "stat": "dodge"
+        },
+        {
+          "type": "MORE",
+          "max": 10.0,
+          "min": 10.0,
+          "stat": "dodge"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 10.0,
+          "stat": "spell_dodge"
+        },
+        {
+          "type": "MORE",
+          "max": 10.0,
+          "min": 10.0,
+          "stat": "spell_dodge"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "of Evasion",
+    "name_source": "lang"
+  },
+  {
+    "id": "of_the_vampire",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/of_the_vampire.json",
+    "data": {
+      "type": "suffix",
+      "format": "DARK_RED",
+      "icon": "",
+      "id": "of_the_vampire",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 15.0,
+          "stat": "lifesteal"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "of the Vampire",
+    "name_source": "lang"
+  },
+  {
+    "id": "of_wealth",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/of_wealth.json",
+    "data": {
+      "type": "suffix",
+      "format": "GOLD",
+      "icon": "",
+      "id": "of_wealth",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 500.0,
+          "min": 500.0,
+          "stat": "extra_mob_drops"
+        }
+      ],
+      "weight": 10
+    },
+    "name": "of Wealth",
+    "name_source": "lang"
+  },
+  {
+    "id": "penetrating",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/penetrating.json",
+    "data": {
+      "type": "prefix",
+      "format": "BLUE",
+      "icon": "",
+      "id": "penetrating",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 6.0,
+          "stat": "armor_penetration"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 25.0,
+          "stat": "elemental_penetration"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 25.0,
+          "stat": "chaos_penetration"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Penetrating",
+    "name_source": "lang"
+  },
+  {
+    "id": "phys_lord",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/phys_lord.json",
+    "data": {
+      "type": "prefix",
+      "format": "GRAY",
+      "icon": "",
+      "id": "phys_lord",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 15.0,
+          "stat": "health"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "plus_phys_to_physical"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 20.0,
+          "stat": "extra_mob_drops"
+        }
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/phys_lord.json",
+    "name": "Fighter Lord",
+    "name_source": "lang"
+  },
+  {
+    "id": "savage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/savage.json",
+    "data": {
+      "type": "prefix",
+      "format": "DARK_AQUA",
+      "icon": "",
+      "id": "savage",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 25.0,
+          "stat": "total_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Savage",
+    "name_source": "lang"
+  },
+  {
+    "id": "swift",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/swift.json",
+    "data": {
+      "type": "prefix",
+      "format": "AQUA",
+      "icon": "",
+      "id": "swift",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "move_speed"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Swift",
+    "name_source": "lang"
+  },
+  {
+    "id": "vampire",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/vampire.json",
+    "data": {
+      "type": "prefix",
+      "format": "DARK_RED",
+      "icon": "",
+      "id": "vampire",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 0.5,
+          "min": 0.5,
+          "stat": "health_per_sec"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 5.0,
+          "stat": "health_on_hit_hit"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/vampire.json",
+    "name": "Sanguine",
+    "name_source": "lang"
+  },
+  {
+    "id": "water_mob_affix",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/water_mob_affix.json",
+    "data": {
+      "type": "suffix",
+      "format": "AQUA",
+      "icon": "",
+      "id": "water_mob_affix",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "plus_phys_to_water"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 15.0,
+          "stat": "all_water_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "proc_cold_id"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/water_mob_affix.json",
+    "name": "of Frost",
+    "name_source": "lang"
+  },
+  {
+    "id": "winter",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_mob_affix/winter.json",
+    "data": {
+      "type": "prefix",
+      "format": "AQUA",
+      "icon": "§b☀",
+      "id": "winter",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 15.0,
+          "stat": "health"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 5.0,
+          "stat": "freeze_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 75.0,
+          "min": 75.0,
+          "stat": "phys_to_water"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "plus_phys_to_water"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 20.0,
+          "stat": "extra_mob_drops"
+        },
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "proc_cold_id"
+        }
+      ],
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_mob_affix/winter.json",
+    "name": "Frost Lord",
+    "name_source": "lang"
+  }
+]

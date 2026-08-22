@@ -1,0 +1,3170 @@
+[
+  {
+    "id": "amethyst0",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/amethyst0.json",
+    "data": {
+      "gem_type": "amethyst",
+      "identifier": "amethyst0",
+      "item_id": "mmorpg:gems/amethyst/0",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "mana",
+          "v1": 6.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "intelligence",
+          "v1": 3.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "increase_healing",
+          "v1": 9.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "DARK_PURPLE",
+      "tier": 0,
+      "weight": 729
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/amethyst0.json",
+    "name": "Amethyst0",
+    "name_source": "derived"
+  },
+  {
+    "id": "amethyst1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/amethyst1.json",
+    "data": {
+      "gem_type": "amethyst",
+      "identifier": "amethyst1",
+      "item_id": "mmorpg:gems/amethyst/1",
+      "min_lvl_multi": 0.1,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "mana",
+          "v1": 7.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "intelligence",
+          "v1": 3.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "increase_healing",
+          "v1": 10.5
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "DARK_PURPLE",
+      "tier": 1,
+      "weight": 243
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/amethyst1.json",
+    "name": "Amethyst1",
+    "name_source": "derived"
+  },
+  {
+    "id": "amethyst2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/amethyst2.json",
+    "data": {
+      "gem_type": "amethyst",
+      "identifier": "amethyst2",
+      "item_id": "mmorpg:gems/amethyst/2",
+      "min_lvl_multi": 0.2,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "mana",
+          "v1": 8.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "intelligence",
+          "v1": 4.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "increase_healing",
+          "v1": 12.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "uncommon",
+      "text_format": "DARK_PURPLE",
+      "tier": 2,
+      "weight": 81
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/amethyst2.json",
+    "name": "Amethyst2",
+    "name_source": "derived"
+  },
+  {
+    "id": "amethyst3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/amethyst3.json",
+    "data": {
+      "gem_type": "amethyst",
+      "identifier": "amethyst3",
+      "item_id": "mmorpg:gems/amethyst/3",
+      "min_lvl_multi": 0.3,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "mana",
+          "v1": 9.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "intelligence",
+          "v1": 4.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "increase_healing",
+          "v1": 13.5
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "rare",
+      "text_format": "DARK_PURPLE",
+      "tier": 3,
+      "weight": 27
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/amethyst3.json",
+    "name": "Amethyst3",
+    "name_source": "derived"
+  },
+  {
+    "id": "amethyst4",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/amethyst4.json",
+    "data": {
+      "gem_type": "amethyst",
+      "identifier": "amethyst4",
+      "item_id": "mmorpg:gems/amethyst/4",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "mana",
+          "v1": 10.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "intelligence",
+          "v1": 5.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "increase_healing",
+          "v1": 15.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "epic",
+      "text_format": "DARK_PURPLE",
+      "tier": 4,
+      "weight": 9
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/amethyst4.json",
+    "name": "Amethyst4",
+    "name_source": "derived"
+  },
+  {
+    "id": "amethyst5",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/amethyst5.json",
+    "data": {
+      "gem_type": "amethyst",
+      "identifier": "amethyst5",
+      "item_id": "mmorpg:gems/amethyst/5",
+      "min_lvl_multi": 0.5,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "mana",
+          "v1": 11.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "intelligence",
+          "v1": 5.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "increase_healing",
+          "v1": 16.5
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "legendary",
+      "text_format": "DARK_PURPLE",
+      "tier": 5,
+      "weight": 3
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/amethyst5.json",
+    "name": "Amethyst5",
+    "name_source": "derived"
+  },
+  {
+    "id": "amethyst6",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/amethyst6.json",
+    "data": {
+      "gem_type": "amethyst",
+      "identifier": "amethyst6",
+      "item_id": "mmorpg:gems/amethyst/6",
+      "min_lvl_multi": 0.6,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "mana",
+          "v1": 12.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "intelligence",
+          "v1": 6.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "increase_healing",
+          "v1": 18.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "DARK_PURPLE",
+      "tier": 6,
+      "weight": 1
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/amethyst6.json",
+    "name": "Amethyst6",
+    "name_source": "derived"
+  },
+  {
+    "id": "amethyst7",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/amethyst7.json",
+    "data": {
+      "gem_type": "amethyst",
+      "identifier": "amethyst7",
+      "item_id": "mmorpg:gems/amethyst/7",
+      "min_lvl_multi": 0.7,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "mana",
+          "v1": 14.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "intelligence",
+          "v1": 7.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "increase_healing",
+          "v1": 21.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "DARK_PURPLE",
+      "tier": 7,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/amethyst7.json",
+    "name": "Amethyst7",
+    "name_source": "derived"
+  },
+  {
+    "id": "azurite0",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/azurite0.json",
+    "data": {
+      "gem_type": "azurite",
+      "identifier": "azurite0",
+      "item_id": "mmorpg:gems/azurite/0",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "energy",
+          "v1": 9.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "dexterity",
+          "v1": 3.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "critical_damage",
+          "v1": 12.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "AQUA",
+      "tier": 0,
+      "weight": 729
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/azurite0.json",
+    "name": "Azurite0",
+    "name_source": "derived"
+  },
+  {
+    "id": "azurite1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/azurite1.json",
+    "data": {
+      "gem_type": "azurite",
+      "identifier": "azurite1",
+      "item_id": "mmorpg:gems/azurite/1",
+      "min_lvl_multi": 0.1,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "energy",
+          "v1": 10.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "dexterity",
+          "v1": 3.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "critical_damage",
+          "v1": 14.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "AQUA",
+      "tier": 1,
+      "weight": 243
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/azurite1.json",
+    "name": "Azurite1",
+    "name_source": "derived"
+  },
+  {
+    "id": "azurite2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/azurite2.json",
+    "data": {
+      "gem_type": "azurite",
+      "identifier": "azurite2",
+      "item_id": "mmorpg:gems/azurite/2",
+      "min_lvl_multi": 0.2,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "energy",
+          "v1": 12.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "dexterity",
+          "v1": 4.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "critical_damage",
+          "v1": 16.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "uncommon",
+      "text_format": "AQUA",
+      "tier": 2,
+      "weight": 81
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/azurite2.json",
+    "name": "Azurite2",
+    "name_source": "derived"
+  },
+  {
+    "id": "azurite3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/azurite3.json",
+    "data": {
+      "gem_type": "azurite",
+      "identifier": "azurite3",
+      "item_id": "mmorpg:gems/azurite/3",
+      "min_lvl_multi": 0.3,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "energy",
+          "v1": 13.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "dexterity",
+          "v1": 4.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "critical_damage",
+          "v1": 18.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "rare",
+      "text_format": "AQUA",
+      "tier": 3,
+      "weight": 27
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/azurite3.json",
+    "name": "Azurite3",
+    "name_source": "derived"
+  },
+  {
+    "id": "azurite4",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/azurite4.json",
+    "data": {
+      "gem_type": "azurite",
+      "identifier": "azurite4",
+      "item_id": "mmorpg:gems/azurite/4",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "energy",
+          "v1": 15.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "dexterity",
+          "v1": 5.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "critical_damage",
+          "v1": 20.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "epic",
+      "text_format": "AQUA",
+      "tier": 4,
+      "weight": 9
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/azurite4.json",
+    "name": "Azurite4",
+    "name_source": "derived"
+  },
+  {
+    "id": "azurite5",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/azurite5.json",
+    "data": {
+      "gem_type": "azurite",
+      "identifier": "azurite5",
+      "item_id": "mmorpg:gems/azurite/5",
+      "min_lvl_multi": 0.5,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "energy",
+          "v1": 16.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "dexterity",
+          "v1": 5.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "critical_damage",
+          "v1": 22.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "legendary",
+      "text_format": "AQUA",
+      "tier": 5,
+      "weight": 3
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/azurite5.json",
+    "name": "Azurite5",
+    "name_source": "derived"
+  },
+  {
+    "id": "azurite6",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/azurite6.json",
+    "data": {
+      "gem_type": "azurite",
+      "identifier": "azurite6",
+      "item_id": "mmorpg:gems/azurite/6",
+      "min_lvl_multi": 0.6,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "energy",
+          "v1": 18.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "dexterity",
+          "v1": 6.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "critical_damage",
+          "v1": 24.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "AQUA",
+      "tier": 6,
+      "weight": 1
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/azurite6.json",
+    "name": "Azurite6",
+    "name_source": "derived"
+  },
+  {
+    "id": "azurite7",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/azurite7.json",
+    "data": {
+      "gem_type": "azurite",
+      "identifier": "azurite7",
+      "item_id": "mmorpg:gems/azurite/7",
+      "min_lvl_multi": 0.7,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "energy",
+          "v1": 21.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "dexterity",
+          "v1": 7.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "critical_damage",
+          "v1": 28.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "AQUA",
+      "tier": 7,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/azurite7.json",
+    "name": "Azurite7",
+    "name_source": "derived"
+  },
+  {
+    "id": "emerald0",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/emerald0.json",
+    "data": {
+      "gem_type": "emerald",
+      "identifier": "emerald0",
+      "item_id": "mmorpg:gems/emerald/0",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "chaos_resist",
+          "v1": 9.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "cdr",
+          "v1": 3.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_chaos_damage",
+          "v1": 6.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "GREEN",
+      "tier": 0,
+      "weight": 729
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/emerald0.json",
+    "name": "Emerald0",
+    "name_source": "derived"
+  },
+  {
+    "id": "emerald1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/emerald1.json",
+    "data": {
+      "gem_type": "emerald",
+      "identifier": "emerald1",
+      "item_id": "mmorpg:gems/emerald/1",
+      "min_lvl_multi": 0.1,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "chaos_resist",
+          "v1": 10.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "cdr",
+          "v1": 3.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_chaos_damage",
+          "v1": 7.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "GREEN",
+      "tier": 1,
+      "weight": 243
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/emerald1.json",
+    "name": "Emerald1",
+    "name_source": "derived"
+  },
+  {
+    "id": "emerald2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/emerald2.json",
+    "data": {
+      "gem_type": "emerald",
+      "identifier": "emerald2",
+      "item_id": "mmorpg:gems/emerald/2",
+      "min_lvl_multi": 0.2,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "chaos_resist",
+          "v1": 12.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "cdr",
+          "v1": 4.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_chaos_damage",
+          "v1": 8.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "uncommon",
+      "text_format": "GREEN",
+      "tier": 2,
+      "weight": 81
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/emerald2.json",
+    "name": "Emerald2",
+    "name_source": "derived"
+  },
+  {
+    "id": "emerald3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/emerald3.json",
+    "data": {
+      "gem_type": "emerald",
+      "identifier": "emerald3",
+      "item_id": "mmorpg:gems/emerald/3",
+      "min_lvl_multi": 0.3,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "chaos_resist",
+          "v1": 13.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "cdr",
+          "v1": 4.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_chaos_damage",
+          "v1": 9.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "rare",
+      "text_format": "GREEN",
+      "tier": 3,
+      "weight": 27
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/emerald3.json",
+    "name": "Emerald3",
+    "name_source": "derived"
+  },
+  {
+    "id": "emerald4",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/emerald4.json",
+    "data": {
+      "gem_type": "emerald",
+      "identifier": "emerald4",
+      "item_id": "mmorpg:gems/emerald/4",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "chaos_resist",
+          "v1": 15.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "cdr",
+          "v1": 5.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_chaos_damage",
+          "v1": 10.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "epic",
+      "text_format": "GREEN",
+      "tier": 4,
+      "weight": 9
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/emerald4.json",
+    "name": "Emerald4",
+    "name_source": "derived"
+  },
+  {
+    "id": "emerald5",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/emerald5.json",
+    "data": {
+      "gem_type": "emerald",
+      "identifier": "emerald5",
+      "item_id": "mmorpg:gems/emerald/5",
+      "min_lvl_multi": 0.5,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "chaos_resist",
+          "v1": 16.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "cdr",
+          "v1": 5.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_chaos_damage",
+          "v1": 11.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "legendary",
+      "text_format": "GREEN",
+      "tier": 5,
+      "weight": 3
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/emerald5.json",
+    "name": "Emerald5",
+    "name_source": "derived"
+  },
+  {
+    "id": "emerald6",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/emerald6.json",
+    "data": {
+      "gem_type": "emerald",
+      "identifier": "emerald6",
+      "item_id": "mmorpg:gems/emerald/6",
+      "min_lvl_multi": 0.6,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "chaos_resist",
+          "v1": 18.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "cdr",
+          "v1": 6.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_chaos_damage",
+          "v1": 12.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "GREEN",
+      "tier": 6,
+      "weight": 1
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/emerald6.json",
+    "name": "Emerald6",
+    "name_source": "derived"
+  },
+  {
+    "id": "emerald7",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/emerald7.json",
+    "data": {
+      "gem_type": "emerald",
+      "identifier": "emerald7",
+      "item_id": "mmorpg:gems/emerald/7",
+      "min_lvl_multi": 0.7,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "chaos_resist",
+          "v1": 21.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "cdr",
+          "v1": 7.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_chaos_damage",
+          "v1": 14.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "GREEN",
+      "tier": 7,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/emerald7.json",
+    "name": "Emerald7",
+    "name_source": "derived"
+  },
+  {
+    "id": "garnet0",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/garnet0.json",
+    "data": {
+      "gem_type": "garnet",
+      "identifier": "garnet0",
+      "item_id": "mmorpg:gems/garnet/0",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_leech",
+          "v1": 12.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "ailment_damage",
+          "v1": 9.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "dot_dmg",
+          "v1": 6.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "GREEN",
+      "tier": 0,
+      "weight": 729
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/garnet0.json",
+    "name": "Garnet0",
+    "name_source": "derived"
+  },
+  {
+    "id": "garnet1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/garnet1.json",
+    "data": {
+      "gem_type": "garnet",
+      "identifier": "garnet1",
+      "item_id": "mmorpg:gems/garnet/1",
+      "min_lvl_multi": 0.1,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_leech",
+          "v1": 14.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "ailment_damage",
+          "v1": 10.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "dot_dmg",
+          "v1": 7.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "GREEN",
+      "tier": 1,
+      "weight": 243
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/garnet1.json",
+    "name": "Garnet1",
+    "name_source": "derived"
+  },
+  {
+    "id": "garnet2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/garnet2.json",
+    "data": {
+      "gem_type": "garnet",
+      "identifier": "garnet2",
+      "item_id": "mmorpg:gems/garnet/2",
+      "min_lvl_multi": 0.2,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_leech",
+          "v1": 16.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "ailment_damage",
+          "v1": 12.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "dot_dmg",
+          "v1": 8.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "uncommon",
+      "text_format": "GREEN",
+      "tier": 2,
+      "weight": 81
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/garnet2.json",
+    "name": "Garnet2",
+    "name_source": "derived"
+  },
+  {
+    "id": "garnet3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/garnet3.json",
+    "data": {
+      "gem_type": "garnet",
+      "identifier": "garnet3",
+      "item_id": "mmorpg:gems/garnet/3",
+      "min_lvl_multi": 0.3,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_leech",
+          "v1": 18.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "ailment_damage",
+          "v1": 13.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "dot_dmg",
+          "v1": 9.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "rare",
+      "text_format": "GREEN",
+      "tier": 3,
+      "weight": 27
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/garnet3.json",
+    "name": "Garnet3",
+    "name_source": "derived"
+  },
+  {
+    "id": "garnet4",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/garnet4.json",
+    "data": {
+      "gem_type": "garnet",
+      "identifier": "garnet4",
+      "item_id": "mmorpg:gems/garnet/4",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_leech",
+          "v1": 20.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "ailment_damage",
+          "v1": 15.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "dot_dmg",
+          "v1": 10.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "epic",
+      "text_format": "GREEN",
+      "tier": 4,
+      "weight": 9
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/garnet4.json",
+    "name": "Garnet4",
+    "name_source": "derived"
+  },
+  {
+    "id": "garnet5",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/garnet5.json",
+    "data": {
+      "gem_type": "garnet",
+      "identifier": "garnet5",
+      "item_id": "mmorpg:gems/garnet/5",
+      "min_lvl_multi": 0.5,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_leech",
+          "v1": 22.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "ailment_damage",
+          "v1": 16.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "dot_dmg",
+          "v1": 11.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "legendary",
+      "text_format": "GREEN",
+      "tier": 5,
+      "weight": 3
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/garnet5.json",
+    "name": "Garnet5",
+    "name_source": "derived"
+  },
+  {
+    "id": "garnet6",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/garnet6.json",
+    "data": {
+      "gem_type": "garnet",
+      "identifier": "garnet6",
+      "item_id": "mmorpg:gems/garnet/6",
+      "min_lvl_multi": 0.6,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_leech",
+          "v1": 24.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "ailment_damage",
+          "v1": 18.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "dot_dmg",
+          "v1": 12.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "GREEN",
+      "tier": 6,
+      "weight": 1
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/garnet6.json",
+    "name": "Garnet6",
+    "name_source": "derived"
+  },
+  {
+    "id": "garnet7",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/garnet7.json",
+    "data": {
+      "gem_type": "garnet",
+      "identifier": "garnet7",
+      "item_id": "mmorpg:gems/garnet/7",
+      "min_lvl_multi": 0.7,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_leech",
+          "v1": 28.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "ailment_damage",
+          "v1": 21.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "dot_dmg",
+          "v1": 14.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "GREEN",
+      "tier": 7,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/garnet7.json",
+    "name": "Garnet7",
+    "name_source": "derived"
+  },
+  {
+    "id": "opal0",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/opal0.json",
+    "data": {
+      "gem_type": "opal",
+      "identifier": "opal0",
+      "item_id": "mmorpg:gems/opal/0",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "health",
+          "v1": 6.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "strength",
+          "v1": 3.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_physical_damage",
+          "v1": 6.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "GOLD",
+      "tier": 0,
+      "weight": 729
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/opal0.json",
+    "name": "Opal0",
+    "name_source": "derived"
+  },
+  {
+    "id": "opal1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/opal1.json",
+    "data": {
+      "gem_type": "opal",
+      "identifier": "opal1",
+      "item_id": "mmorpg:gems/opal/1",
+      "min_lvl_multi": 0.1,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "health",
+          "v1": 7.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "strength",
+          "v1": 3.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_physical_damage",
+          "v1": 7.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "GOLD",
+      "tier": 1,
+      "weight": 243
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/opal1.json",
+    "name": "Opal1",
+    "name_source": "derived"
+  },
+  {
+    "id": "opal2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/opal2.json",
+    "data": {
+      "gem_type": "opal",
+      "identifier": "opal2",
+      "item_id": "mmorpg:gems/opal/2",
+      "min_lvl_multi": 0.2,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "health",
+          "v1": 8.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "strength",
+          "v1": 4.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_physical_damage",
+          "v1": 8.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "uncommon",
+      "text_format": "GOLD",
+      "tier": 2,
+      "weight": 81
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/opal2.json",
+    "name": "Opal2",
+    "name_source": "derived"
+  },
+  {
+    "id": "opal3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/opal3.json",
+    "data": {
+      "gem_type": "opal",
+      "identifier": "opal3",
+      "item_id": "mmorpg:gems/opal/3",
+      "min_lvl_multi": 0.3,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "health",
+          "v1": 9.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "strength",
+          "v1": 4.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_physical_damage",
+          "v1": 9.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "rare",
+      "text_format": "GOLD",
+      "tier": 3,
+      "weight": 27
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/opal3.json",
+    "name": "Opal3",
+    "name_source": "derived"
+  },
+  {
+    "id": "opal4",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/opal4.json",
+    "data": {
+      "gem_type": "opal",
+      "identifier": "opal4",
+      "item_id": "mmorpg:gems/opal/4",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "health",
+          "v1": 10.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "strength",
+          "v1": 5.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_physical_damage",
+          "v1": 10.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "epic",
+      "text_format": "GOLD",
+      "tier": 4,
+      "weight": 9
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/opal4.json",
+    "name": "Opal4",
+    "name_source": "derived"
+  },
+  {
+    "id": "opal5",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/opal5.json",
+    "data": {
+      "gem_type": "opal",
+      "identifier": "opal5",
+      "item_id": "mmorpg:gems/opal/5",
+      "min_lvl_multi": 0.5,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "health",
+          "v1": 11.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "strength",
+          "v1": 5.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_physical_damage",
+          "v1": 11.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "legendary",
+      "text_format": "GOLD",
+      "tier": 5,
+      "weight": 3
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/opal5.json",
+    "name": "Opal5",
+    "name_source": "derived"
+  },
+  {
+    "id": "opal6",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/opal6.json",
+    "data": {
+      "gem_type": "opal",
+      "identifier": "opal6",
+      "item_id": "mmorpg:gems/opal/6",
+      "min_lvl_multi": 0.6,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "health",
+          "v1": 12.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "strength",
+          "v1": 6.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_physical_damage",
+          "v1": 12.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "GOLD",
+      "tier": 6,
+      "weight": 1
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/opal6.json",
+    "name": "Opal6",
+    "name_source": "derived"
+  },
+  {
+    "id": "opal7",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/opal7.json",
+    "data": {
+      "gem_type": "opal",
+      "identifier": "opal7",
+      "item_id": "mmorpg:gems/opal/7",
+      "min_lvl_multi": 0.7,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "health",
+          "v1": 14.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "strength",
+          "v1": 7.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_physical_damage",
+          "v1": 14.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "GOLD",
+      "tier": 7,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/opal7.json",
+    "name": "Opal7",
+    "name_source": "derived"
+  },
+  {
+    "id": "ruby0",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/ruby0.json",
+    "data": {
+      "gem_type": "ruby",
+      "identifier": "ruby0",
+      "item_id": "mmorpg:gems/ruby/0",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "fire_resist",
+          "v1": 9.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "accuracy",
+          "v1": 12.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_fire_damage",
+          "v1": 6.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "RED",
+      "tier": 0,
+      "weight": 729
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/ruby0.json",
+    "name": "Ruby0",
+    "name_source": "derived"
+  },
+  {
+    "id": "ruby1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/ruby1.json",
+    "data": {
+      "gem_type": "ruby",
+      "identifier": "ruby1",
+      "item_id": "mmorpg:gems/ruby/1",
+      "min_lvl_multi": 0.1,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "fire_resist",
+          "v1": 10.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "accuracy",
+          "v1": 14.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_fire_damage",
+          "v1": 7.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "RED",
+      "tier": 1,
+      "weight": 243
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/ruby1.json",
+    "name": "Ruby1",
+    "name_source": "derived"
+  },
+  {
+    "id": "ruby2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/ruby2.json",
+    "data": {
+      "gem_type": "ruby",
+      "identifier": "ruby2",
+      "item_id": "mmorpg:gems/ruby/2",
+      "min_lvl_multi": 0.2,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "fire_resist",
+          "v1": 12.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "accuracy",
+          "v1": 16.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_fire_damage",
+          "v1": 8.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "uncommon",
+      "text_format": "RED",
+      "tier": 2,
+      "weight": 81
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/ruby2.json",
+    "name": "Ruby2",
+    "name_source": "derived"
+  },
+  {
+    "id": "ruby3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/ruby3.json",
+    "data": {
+      "gem_type": "ruby",
+      "identifier": "ruby3",
+      "item_id": "mmorpg:gems/ruby/3",
+      "min_lvl_multi": 0.3,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "fire_resist",
+          "v1": 13.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "accuracy",
+          "v1": 18.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_fire_damage",
+          "v1": 9.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "rare",
+      "text_format": "RED",
+      "tier": 3,
+      "weight": 27
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/ruby3.json",
+    "name": "Ruby3",
+    "name_source": "derived"
+  },
+  {
+    "id": "ruby4",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/ruby4.json",
+    "data": {
+      "gem_type": "ruby",
+      "identifier": "ruby4",
+      "item_id": "mmorpg:gems/ruby/4",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "fire_resist",
+          "v1": 15.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "accuracy",
+          "v1": 20.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_fire_damage",
+          "v1": 10.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "epic",
+      "text_format": "RED",
+      "tier": 4,
+      "weight": 9
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/ruby4.json",
+    "name": "Ruby4",
+    "name_source": "derived"
+  },
+  {
+    "id": "ruby5",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/ruby5.json",
+    "data": {
+      "gem_type": "ruby",
+      "identifier": "ruby5",
+      "item_id": "mmorpg:gems/ruby/5",
+      "min_lvl_multi": 0.5,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "fire_resist",
+          "v1": 16.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "accuracy",
+          "v1": 22.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_fire_damage",
+          "v1": 11.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "legendary",
+      "text_format": "RED",
+      "tier": 5,
+      "weight": 3
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/ruby5.json",
+    "name": "Ruby5",
+    "name_source": "derived"
+  },
+  {
+    "id": "ruby6",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/ruby6.json",
+    "data": {
+      "gem_type": "ruby",
+      "identifier": "ruby6",
+      "item_id": "mmorpg:gems/ruby/6",
+      "min_lvl_multi": 0.6,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "fire_resist",
+          "v1": 18.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "accuracy",
+          "v1": 24.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_fire_damage",
+          "v1": 12.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "RED",
+      "tier": 6,
+      "weight": 1
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/ruby6.json",
+    "name": "Ruby6",
+    "name_source": "derived"
+  },
+  {
+    "id": "ruby7",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/ruby7.json",
+    "data": {
+      "gem_type": "ruby",
+      "identifier": "ruby7",
+      "item_id": "mmorpg:gems/ruby/7",
+      "min_lvl_multi": 0.7,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "fire_resist",
+          "v1": 21.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "scale_to_lvl": false,
+          "stat": "accuracy",
+          "v1": 28.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_fire_damage",
+          "v1": 14.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "RED",
+      "tier": 7,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/ruby7.json",
+    "name": "Ruby7",
+    "name_source": "derived"
+  },
+  {
+    "id": "sapphire0",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/sapphire0.json",
+    "data": {
+      "gem_type": "sapphire",
+      "identifier": "sapphire0",
+      "item_id": "mmorpg:gems/sapphire/0",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "water_resist",
+          "v1": 9.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "elemental_resist",
+          "v1": 6.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_water_damage",
+          "v1": 6.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "BLUE",
+      "tier": 0,
+      "weight": 729
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/sapphire0.json",
+    "name": "Sapphire0",
+    "name_source": "derived"
+  },
+  {
+    "id": "sapphire1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/sapphire1.json",
+    "data": {
+      "gem_type": "sapphire",
+      "identifier": "sapphire1",
+      "item_id": "mmorpg:gems/sapphire/1",
+      "min_lvl_multi": 0.1,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "water_resist",
+          "v1": 10.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "elemental_resist",
+          "v1": 7.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_water_damage",
+          "v1": 7.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "BLUE",
+      "tier": 1,
+      "weight": 243
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/sapphire1.json",
+    "name": "Sapphire1",
+    "name_source": "derived"
+  },
+  {
+    "id": "sapphire2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/sapphire2.json",
+    "data": {
+      "gem_type": "sapphire",
+      "identifier": "sapphire2",
+      "item_id": "mmorpg:gems/sapphire/2",
+      "min_lvl_multi": 0.2,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "water_resist",
+          "v1": 12.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "elemental_resist",
+          "v1": 8.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_water_damage",
+          "v1": 8.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "uncommon",
+      "text_format": "BLUE",
+      "tier": 2,
+      "weight": 81
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/sapphire2.json",
+    "name": "Sapphire2",
+    "name_source": "derived"
+  },
+  {
+    "id": "sapphire3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/sapphire3.json",
+    "data": {
+      "gem_type": "sapphire",
+      "identifier": "sapphire3",
+      "item_id": "mmorpg:gems/sapphire/3",
+      "min_lvl_multi": 0.3,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "water_resist",
+          "v1": 13.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "elemental_resist",
+          "v1": 9.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_water_damage",
+          "v1": 9.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "rare",
+      "text_format": "BLUE",
+      "tier": 3,
+      "weight": 27
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/sapphire3.json",
+    "name": "Sapphire3",
+    "name_source": "derived"
+  },
+  {
+    "id": "sapphire4",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/sapphire4.json",
+    "data": {
+      "gem_type": "sapphire",
+      "identifier": "sapphire4",
+      "item_id": "mmorpg:gems/sapphire/4",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "water_resist",
+          "v1": 15.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "elemental_resist",
+          "v1": 10.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_water_damage",
+          "v1": 10.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "epic",
+      "text_format": "BLUE",
+      "tier": 4,
+      "weight": 9
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/sapphire4.json",
+    "name": "Sapphire4",
+    "name_source": "derived"
+  },
+  {
+    "id": "sapphire5",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/sapphire5.json",
+    "data": {
+      "gem_type": "sapphire",
+      "identifier": "sapphire5",
+      "item_id": "mmorpg:gems/sapphire/5",
+      "min_lvl_multi": 0.5,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "water_resist",
+          "v1": 16.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "elemental_resist",
+          "v1": 11.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_water_damage",
+          "v1": 11.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "legendary",
+      "text_format": "BLUE",
+      "tier": 5,
+      "weight": 3
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/sapphire5.json",
+    "name": "Sapphire5",
+    "name_source": "derived"
+  },
+  {
+    "id": "sapphire6",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/sapphire6.json",
+    "data": {
+      "gem_type": "sapphire",
+      "identifier": "sapphire6",
+      "item_id": "mmorpg:gems/sapphire/6",
+      "min_lvl_multi": 0.6,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "water_resist",
+          "v1": 18.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "elemental_resist",
+          "v1": 12.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_water_damage",
+          "v1": 12.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "BLUE",
+      "tier": 6,
+      "weight": 1
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/sapphire6.json",
+    "name": "Sapphire6",
+    "name_source": "derived"
+  },
+  {
+    "id": "sapphire7",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/sapphire7.json",
+    "data": {
+      "gem_type": "sapphire",
+      "identifier": "sapphire7",
+      "item_id": "mmorpg:gems/sapphire/7",
+      "min_lvl_multi": 0.7,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "water_resist",
+          "v1": 21.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "elemental_resist",
+          "v1": 14.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_water_damage",
+          "v1": 14.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "BLUE",
+      "tier": 7,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/sapphire7.json",
+    "name": "Sapphire7",
+    "name_source": "derived"
+  },
+  {
+    "id": "topaz0",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/topaz0.json",
+    "data": {
+      "gem_type": "topaz",
+      "identifier": "topaz0",
+      "item_id": "mmorpg:gems/topaz/0",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "lightning_resist",
+          "v1": 9.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "magic_find",
+          "v1": 6.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_lightning_damage",
+          "v1": 6.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "YELLOW",
+      "tier": 0,
+      "weight": 729
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/topaz0.json",
+    "name": "Topaz0",
+    "name_source": "derived"
+  },
+  {
+    "id": "topaz1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/topaz1.json",
+    "data": {
+      "gem_type": "topaz",
+      "identifier": "topaz1",
+      "item_id": "mmorpg:gems/topaz/1",
+      "min_lvl_multi": 0.1,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "lightning_resist",
+          "v1": 10.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "magic_find",
+          "v1": 7.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_lightning_damage",
+          "v1": 7.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "YELLOW",
+      "tier": 1,
+      "weight": 243
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/topaz1.json",
+    "name": "Topaz1",
+    "name_source": "derived"
+  },
+  {
+    "id": "topaz2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/topaz2.json",
+    "data": {
+      "gem_type": "topaz",
+      "identifier": "topaz2",
+      "item_id": "mmorpg:gems/topaz/2",
+      "min_lvl_multi": 0.2,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "lightning_resist",
+          "v1": 12.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "magic_find",
+          "v1": 8.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_lightning_damage",
+          "v1": 8.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "uncommon",
+      "text_format": "YELLOW",
+      "tier": 2,
+      "weight": 81
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/topaz2.json",
+    "name": "Topaz2",
+    "name_source": "derived"
+  },
+  {
+    "id": "topaz3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/topaz3.json",
+    "data": {
+      "gem_type": "topaz",
+      "identifier": "topaz3",
+      "item_id": "mmorpg:gems/topaz/3",
+      "min_lvl_multi": 0.3,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "lightning_resist",
+          "v1": 13.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "magic_find",
+          "v1": 9.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_lightning_damage",
+          "v1": 9.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "rare",
+      "text_format": "YELLOW",
+      "tier": 3,
+      "weight": 27
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/topaz3.json",
+    "name": "Topaz3",
+    "name_source": "derived"
+  },
+  {
+    "id": "topaz4",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/topaz4.json",
+    "data": {
+      "gem_type": "topaz",
+      "identifier": "topaz4",
+      "item_id": "mmorpg:gems/topaz/4",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "lightning_resist",
+          "v1": 15.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "magic_find",
+          "v1": 10.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_lightning_damage",
+          "v1": 10.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "epic",
+      "text_format": "YELLOW",
+      "tier": 4,
+      "weight": 9
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/topaz4.json",
+    "name": "Topaz4",
+    "name_source": "derived"
+  },
+  {
+    "id": "topaz5",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/topaz5.json",
+    "data": {
+      "gem_type": "topaz",
+      "identifier": "topaz5",
+      "item_id": "mmorpg:gems/topaz/5",
+      "min_lvl_multi": 0.5,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "lightning_resist",
+          "v1": 16.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "magic_find",
+          "v1": 11.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_lightning_damage",
+          "v1": 11.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "legendary",
+      "text_format": "YELLOW",
+      "tier": 5,
+      "weight": 3
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/topaz5.json",
+    "name": "Topaz5",
+    "name_source": "derived"
+  },
+  {
+    "id": "topaz6",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/topaz6.json",
+    "data": {
+      "gem_type": "topaz",
+      "identifier": "topaz6",
+      "item_id": "mmorpg:gems/topaz/6",
+      "min_lvl_multi": 0.6,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "lightning_resist",
+          "v1": 18.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "magic_find",
+          "v1": 12.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_lightning_damage",
+          "v1": 12.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "YELLOW",
+      "tier": 6,
+      "weight": 1
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/topaz6.json",
+    "name": "Topaz6",
+    "name_source": "derived"
+  },
+  {
+    "id": "topaz7",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/topaz7.json",
+    "data": {
+      "gem_type": "topaz",
+      "identifier": "topaz7",
+      "item_id": "mmorpg:gems/topaz/7",
+      "min_lvl_multi": 0.7,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "lightning_resist",
+          "v1": 21.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "magic_find",
+          "v1": 14.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "all_lightning_damage",
+          "v1": 14.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "YELLOW",
+      "tier": 7,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/topaz7.json",
+    "name": "Topaz7",
+    "name_source": "derived"
+  },
+  {
+    "id": "tourmaline0",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/tourmaline0.json",
+    "data": {
+      "gem_type": "tourmaline",
+      "identifier": "tourmaline0",
+      "item_id": "mmorpg:gems/tourmaline/0",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_defensive_buff_given",
+          "v1": 3.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "eff_dur_u_cast",
+          "v1": 9.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_negative_buff_given",
+          "v1": 6.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "LIGHT_PURPLE",
+      "tier": 0,
+      "weight": 729
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/tourmaline0.json",
+    "name": "Tourmaline0",
+    "name_source": "derived"
+  },
+  {
+    "id": "tourmaline1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/tourmaline1.json",
+    "data": {
+      "gem_type": "tourmaline",
+      "identifier": "tourmaline1",
+      "item_id": "mmorpg:gems/tourmaline/1",
+      "min_lvl_multi": 0.1,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_defensive_buff_given",
+          "v1": 3.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "eff_dur_u_cast",
+          "v1": 10.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_negative_buff_given",
+          "v1": 7.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "common",
+      "text_format": "LIGHT_PURPLE",
+      "tier": 1,
+      "weight": 243
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/tourmaline1.json",
+    "name": "Tourmaline1",
+    "name_source": "derived"
+  },
+  {
+    "id": "tourmaline2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/tourmaline2.json",
+    "data": {
+      "gem_type": "tourmaline",
+      "identifier": "tourmaline2",
+      "item_id": "mmorpg:gems/tourmaline/2",
+      "min_lvl_multi": 0.2,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_defensive_buff_given",
+          "v1": 4.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "eff_dur_u_cast",
+          "v1": 12.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_negative_buff_given",
+          "v1": 8.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "uncommon",
+      "text_format": "LIGHT_PURPLE",
+      "tier": 2,
+      "weight": 81
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/tourmaline2.json",
+    "name": "Tourmaline2",
+    "name_source": "derived"
+  },
+  {
+    "id": "tourmaline3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/tourmaline3.json",
+    "data": {
+      "gem_type": "tourmaline",
+      "identifier": "tourmaline3",
+      "item_id": "mmorpg:gems/tourmaline/3",
+      "min_lvl_multi": 0.3,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_defensive_buff_given",
+          "v1": 4.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "eff_dur_u_cast",
+          "v1": 13.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_negative_buff_given",
+          "v1": 9.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "rare",
+      "text_format": "LIGHT_PURPLE",
+      "tier": 3,
+      "weight": 27
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/tourmaline3.json",
+    "name": "Tourmaline3",
+    "name_source": "derived"
+  },
+  {
+    "id": "tourmaline4",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/tourmaline4.json",
+    "data": {
+      "gem_type": "tourmaline",
+      "identifier": "tourmaline4",
+      "item_id": "mmorpg:gems/tourmaline/4",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_defensive_buff_given",
+          "v1": 5.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "eff_dur_u_cast",
+          "v1": 15.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_negative_buff_given",
+          "v1": 10.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "epic",
+      "text_format": "LIGHT_PURPLE",
+      "tier": 4,
+      "weight": 9
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/tourmaline4.json",
+    "name": "Tourmaline4",
+    "name_source": "derived"
+  },
+  {
+    "id": "tourmaline5",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/tourmaline5.json",
+    "data": {
+      "gem_type": "tourmaline",
+      "identifier": "tourmaline5",
+      "item_id": "mmorpg:gems/tourmaline/5",
+      "min_lvl_multi": 0.5,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_defensive_buff_given",
+          "v1": 5.5
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "eff_dur_u_cast",
+          "v1": 16.5
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_negative_buff_given",
+          "v1": 11.0
+        }
+      ],
+      "perc_upgrade_chance": 100,
+      "rar": "legendary",
+      "text_format": "LIGHT_PURPLE",
+      "tier": 5,
+      "weight": 3
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/tourmaline5.json",
+    "name": "Tourmaline5",
+    "name_source": "derived"
+  },
+  {
+    "id": "tourmaline6",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/tourmaline6.json",
+    "data": {
+      "gem_type": "tourmaline",
+      "identifier": "tourmaline6",
+      "item_id": "mmorpg:gems/tourmaline/6",
+      "min_lvl_multi": 0.6,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_defensive_buff_given",
+          "v1": 6.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "eff_dur_u_cast",
+          "v1": 18.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_negative_buff_given",
+          "v1": 12.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "LIGHT_PURPLE",
+      "tier": 6,
+      "weight": 1
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/tourmaline6.json",
+    "name": "Tourmaline6",
+    "name_source": "derived"
+  },
+  {
+    "id": "tourmaline7",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gems/tourmaline7.json",
+    "data": {
+      "gem_type": "tourmaline",
+      "identifier": "tourmaline7",
+      "item_id": "mmorpg:gems/tourmaline/7",
+      "min_lvl_multi": 0.6,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_defensive_buff_given",
+          "v1": 7.0
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "eff_dur_u_cast",
+          "v1": 21.0
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "scale_to_lvl": false,
+          "stat": "inc_effect_of_negative_buff_given",
+          "v1": 14.0
+        }
+      ],
+      "perc_upgrade_chance": 0,
+      "rar": "mythic",
+      "text_format": "LIGHT_PURPLE",
+      "tier": 7,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gems/tourmaline7.json",
+    "name": "Tourmaline7",
+    "name_source": "derived"
+  }
+]

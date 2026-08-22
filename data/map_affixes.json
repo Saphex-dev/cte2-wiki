@@ -1,0 +1,2140 @@
+[
+  {
+    "id": "accurate",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/accurate.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "accurate",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 30.0,
+          "min": 15.0,
+          "stat": "accuracy"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Accurate",
+    "name_source": "derived"
+  },
+  {
+    "id": "agony_curse",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/agony_curse.json",
+    "data": {
+      "affected": "Players",
+      "id": "agony_curse",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "cursed_by_agony"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Agony Curse",
+    "name_source": "derived"
+  },
+  {
+    "id": "all_ele_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/all_ele_res.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "all_ele_res",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 15.0,
+          "stat": "elemental_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/all_ele_res.json",
+    "name": "All Ele Res",
+    "name_source": "derived"
+  },
+  {
+    "id": "armor",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/armor.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "armor",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 40.0,
+          "min": 20.0,
+          "stat": "armor"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/armor.json",
+    "name": "Armor",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_exp",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/bonus_exp.json",
+    "data": {
+      "affected": "Players",
+      "id": "bonus_exp",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "bonus_exp"
+        }
+      ],
+      "weight": 0
+    },
+    "name": "Bonus Exp",
+    "name_source": "derived"
+  },
+  {
+    "id": "chaos_atk",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/chaos_atk.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "chaos_atk",
+      "map_resist": "Shadow",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 30.0,
+          "stat": "phys_to_chaos"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 30.0,
+          "stat": "all_chaos_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 15.0,
+          "stat": "poison_chance"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/chaos_atk.json",
+    "name": "Chaos Atk",
+    "name_source": "derived"
+  },
+  {
+    "id": "chaos_minus_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/chaos_minus_dmg.json",
+    "data": {
+      "affected": "Players",
+      "id": "chaos_minus_dmg",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -15.0,
+          "stat": "all_chaos_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Chaos Minus Dmg",
+    "name_source": "derived"
+  },
+  {
+    "id": "chaos_minus_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/chaos_minus_res.json",
+    "data": {
+      "affected": "Players",
+      "id": "chaos_minus_res",
+      "map_resist": "Shadow",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -4.0,
+          "min": -2.0,
+          "stat": "max_chaos_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": -40.0,
+          "min": -20.0,
+          "stat": "chaos_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/chaos_minus_res.json",
+    "name": "Chaos Minus Res",
+    "name_source": "derived"
+  },
+  {
+    "id": "chaos_pene",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/chaos_pene.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "chaos_pene",
+      "map_resist": "Shadow",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 10.0,
+          "stat": "chaos_penetration"
+        }
+      ],
+      "weight": 0
+    },
+    "name": "Chaos Pene",
+    "name_source": "derived"
+  },
+  {
+    "id": "chaos_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/chaos_res.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "chaos_res",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 30.0,
+          "stat": "chaos_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/chaos_res.json",
+    "name": "Chaos Res",
+    "name_source": "derived"
+  },
+  {
+    "id": "crit",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/crit.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "crit",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "critical_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 5.0,
+          "stat": "critical_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/crit.json",
+    "name": "Crit",
+    "name_source": "derived"
+  },
+  {
+    "id": "crit_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/crit_dmg.json",
+    "data": {
+      "affected": "Players",
+      "id": "crit_dmg",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -10.0,
+          "stat": "critical_hit"
+        },
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -15.0,
+          "stat": "critical_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/crit_dmg.json",
+    "name": "Crit Dmg",
+    "name_source": "derived"
+  },
+  {
+    "id": "despair_curse",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/despair_curse.json",
+    "data": {
+      "affected": "Players",
+      "id": "despair_curse",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "cursed_by_despair"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Despair Curse",
+    "name_source": "derived"
+  },
+  {
+    "id": "dodge",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/dodge.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "dodge",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 30.0,
+          "min": 15.0,
+          "stat": "dodge"
+        },
+        {
+          "type": "MORE",
+          "max": 30.0,
+          "min": 15.0,
+          "stat": "spell_dodge"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Dodge",
+    "name_source": "derived"
+  },
+  {
+    "id": "ele_weakness",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/ele_weakness.json",
+    "data": {
+      "affected": "Players",
+      "id": "ele_weakness",
+      "map_resist": "Elemental",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -2.0,
+          "min": -1.0,
+          "stat": "max_elemental_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": -10.0,
+          "min": -5.0,
+          "stat": "elemental_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Ele Weakness",
+    "name_source": "derived"
+  },
+  {
+    "id": "elemental_pene",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/elemental_pene.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "elemental_pene",
+      "map_resist": "Elemental",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 10.0,
+          "stat": "elemental_penetration"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Elemental Pene",
+    "name_source": "derived"
+  },
+  {
+    "id": "extra_mob_drops",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/extra_mob_drops.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "extra_mob_drops",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "extra_mob_drops"
+        }
+      ],
+      "weight": 0
+    },
+    "name": "Extra Mob Drops",
+    "name_source": "derived"
+  },
+  {
+    "id": "fire_atk",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/fire_atk.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "fire_atk",
+      "map_resist": "Fire",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 30.0,
+          "stat": "phys_to_fire"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 30.0,
+          "stat": "all_fire_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 15.0,
+          "stat": "burn_chance"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/fire_atk.json",
+    "name": "Fire Atk",
+    "name_source": "derived"
+  },
+  {
+    "id": "fire_minus_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/fire_minus_dmg.json",
+    "data": {
+      "affected": "Players",
+      "id": "fire_minus_dmg",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -15.0,
+          "stat": "all_fire_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Fire Minus Dmg",
+    "name_source": "derived"
+  },
+  {
+    "id": "fire_minus_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/fire_minus_res.json",
+    "data": {
+      "affected": "Players",
+      "id": "fire_minus_res",
+      "map_resist": "Fire",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -4.0,
+          "min": -2.0,
+          "stat": "max_fire_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": -40.0,
+          "min": -20.0,
+          "stat": "fire_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/fire_minus_res.json",
+    "name": "Fire Minus Res",
+    "name_source": "derived"
+  },
+  {
+    "id": "fire_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/fire_res.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "fire_res",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 30.0,
+          "stat": "fire_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/fire_res.json",
+    "name": "Fire Res",
+    "name_source": "derived"
+  },
+  {
+    "id": "health",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/health.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "health",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 30.0,
+          "min": 15.0,
+          "stat": "health"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/health.json",
+    "name": "Health",
+    "name_source": "derived"
+  },
+  {
+    "id": "lifesteal",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/lifesteal.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "lifesteal",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 15.0,
+          "stat": "lifesteal"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Lifesteal",
+    "name_source": "derived"
+  },
+  {
+    "id": "lightning_atk",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/lightning_atk.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "lightning_atk",
+      "map_resist": "Nature",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 30.0,
+          "stat": "phys_to_lightning"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 30.0,
+          "stat": "all_lightning_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 15.0,
+          "stat": "electrify_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 10.0,
+          "stat": "electrify_proc_chance"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/lightning_atk.json",
+    "name": "Lightning Atk",
+    "name_source": "derived"
+  },
+  {
+    "id": "lightning_minus_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/lightning_minus_dmg.json",
+    "data": {
+      "affected": "Players",
+      "id": "lightning_minus_dmg",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -15.0,
+          "stat": "all_lightning_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Lightning Minus Dmg",
+    "name_source": "derived"
+  },
+  {
+    "id": "lightning_minus_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/lightning_minus_res.json",
+    "data": {
+      "affected": "Players",
+      "id": "lightning_minus_res",
+      "map_resist": "Nature",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -4.0,
+          "min": -2.0,
+          "stat": "max_lightning_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": -40.0,
+          "min": -20.0,
+          "stat": "lightning_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/lightning_minus_res.json",
+    "name": "Lightning Minus Res",
+    "name_source": "derived"
+  },
+  {
+    "id": "lightning_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/lightning_res.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "lightning_res",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 30.0,
+          "stat": "lightning_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/lightning_res.json",
+    "name": "Lightning Res",
+    "name_source": "derived"
+  },
+  {
+    "id": "minus_armor",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/minus_armor.json",
+    "data": {
+      "affected": "Players",
+      "id": "minus_armor",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -10.0,
+          "stat": "armor"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Minus Armor",
+    "name_source": "derived"
+  },
+  {
+    "id": "minus_dodge",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/minus_dodge.json",
+    "data": {
+      "affected": "Players",
+      "id": "minus_dodge",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -10.0,
+          "stat": "dodge"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Minus Dodge",
+    "name_source": "derived"
+  },
+  {
+    "id": "minus_ene_reg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/minus_ene_reg.json",
+    "data": {
+      "affected": "Players",
+      "id": "minus_ene_reg",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -10.0,
+          "stat": "energy_regen"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/minus_ene_reg.json",
+    "name": "Minus Ene Reg",
+    "name_source": "derived"
+  },
+  {
+    "id": "minus_hp_reg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/minus_hp_reg.json",
+    "data": {
+      "affected": "Players",
+      "id": "minus_hp_reg",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -10.0,
+          "stat": "health_regen"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/minus_hp_reg.json",
+    "name": "Minus Hp Reg",
+    "name_source": "derived"
+  },
+  {
+    "id": "minus_mana_reg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/minus_mana_reg.json",
+    "data": {
+      "affected": "Players",
+      "id": "minus_mana_reg",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -10.0,
+          "stat": "mana_regen"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/minus_mana_reg.json",
+    "name": "Minus Mana Reg",
+    "name_source": "derived"
+  },
+  {
+    "id": "minus_ms_reg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/minus_ms_reg.json",
+    "data": {
+      "affected": "Players",
+      "id": "minus_ms_reg",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -10.0,
+          "stat": "magic_shield_regen"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/minus_ms_reg.json",
+    "name": "Minus Ms Reg",
+    "name_source": "derived"
+  },
+  {
+    "id": "movespeed",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/movespeed.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "movespeed",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 25.0,
+          "stat": "knockback_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 10.0,
+          "stat": "move_speed"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Movespeed",
+    "name_source": "derived"
+  },
+  {
+    "id": "ms",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/ms.json",
+    "data": {
+      "affected": "Players",
+      "id": "ms",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -10.0,
+          "stat": "magic_shield_regen"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Ms",
+    "name_source": "derived"
+  },
+  {
+    "id": "penetrating",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/penetrating.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "penetrating",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 30.0,
+          "min": 15.0,
+          "stat": "armor_penetration"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Penetrating",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_agony",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_agony.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_agony",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "curse",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "cursed_by_agony"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Prophecy Agony",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_ailment",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_ailment.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_ailment",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_done",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "ailment_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Prophecy Ailment",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_ailment_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_ailment_chance.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_ailment_chance",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_done",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "bleed_chance"
+        },
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "burn_chance"
+        },
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "freeze_chance"
+        },
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "electrify_chance"
+        },
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "poison_chance"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Prophecy Ailment Chance",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_always_critchaos",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_always_critchaos.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_always_critchaos",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "chaos_vuln_crit"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_always_critchaos.json",
+    "name": "Prophecy Always Critchaos",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_always_critfire",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_always_critfire.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_always_critfire",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "fire_vuln_crit"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_always_critfire.json",
+    "name": "Prophecy Always Critfire",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_always_critlightning",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_always_critlightning.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_always_critlightning",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "lightning_vuln_crit"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_always_critlightning.json",
+    "name": "Prophecy Always Critlightning",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_always_critphysical",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_always_critphysical.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_always_critphysical",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "physical_vuln_crit"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_always_critphysical.json",
+    "name": "Prophecy Always Critphysical",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_always_critwater",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_always_critwater.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_always_critwater",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "water_vuln_crit"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_always_critwater.json",
+    "name": "Prophecy Always Critwater",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_armor",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_armor.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_armor",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "armor"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_armor.json",
+    "name": "Prophecy Armor",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_crit",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_crit.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_crit",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "less_crit",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "critical_hit"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_crit.json",
+    "name": "Prophecy Crit",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_crit_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_crit_dmg.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_crit_dmg",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "less_crit",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "critical_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_crit_dmg.json",
+    "name": "Prophecy Crit Dmg",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_despair",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_despair.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_despair",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "curse",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "cursed_by_despair"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Prophecy Despair",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_dodge",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_dodge.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_dodge",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "dodge"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_dodge.json",
+    "name": "Prophecy Dodge",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_ele_dmgchaos",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_ele_dmgchaos.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_ele_dmgchaos",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_done",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "all_chaos_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_ele_dmgchaos.json",
+    "name": "Prophecy Ele Dmgchaos",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_ele_dmgfire",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_ele_dmgfire.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_ele_dmgfire",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_done",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "all_fire_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_ele_dmgfire.json",
+    "name": "Prophecy Ele Dmgfire",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_ele_dmglightning",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_ele_dmglightning.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_ele_dmglightning",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_done",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "all_lightning_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_ele_dmglightning.json",
+    "name": "Prophecy Ele Dmglightning",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_ele_dmgphysical",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_ele_dmgphysical.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_ele_dmgphysical",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_done",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "all_physical_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_ele_dmgphysical.json",
+    "name": "Prophecy Ele Dmgphysical",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_ele_dmgwater",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_ele_dmgwater.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_ele_dmgwater",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_done",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "all_water_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_ele_dmgwater.json",
+    "name": "Prophecy Ele Dmgwater",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_ene",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_ene.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_ene",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "less_resource",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -20.0,
+          "stat": "energy"
+        },
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -20.0,
+          "stat": "energy_regen"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_ene.json",
+    "name": "Prophecy Ene",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_hp",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_hp.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_hp",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -20.0,
+          "stat": "health"
+        },
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -20.0,
+          "stat": "health_regen"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_hp.json",
+    "name": "Prophecy Hp",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_mana",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_mana.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_mana",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "less_resource",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -20.0,
+          "stat": "mana"
+        },
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -20.0,
+          "stat": "mana_regen"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_mana.json",
+    "name": "Prophecy Mana",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_max_ele_reschaos",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_max_ele_reschaos.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_max_ele_reschaos",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -10.0,
+          "min": -10.0,
+          "stat": "max_chaos_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_max_ele_reschaos.json",
+    "name": "Prophecy Max Ele Reschaos",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_max_ele_resfire",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_max_ele_resfire.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_max_ele_resfire",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -10.0,
+          "min": -10.0,
+          "stat": "max_fire_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_max_ele_resfire.json",
+    "name": "Prophecy Max Ele Resfire",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_max_ele_reslightning",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_max_ele_reslightning.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_max_ele_reslightning",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -10.0,
+          "min": -10.0,
+          "stat": "max_lightning_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_max_ele_reslightning.json",
+    "name": "Prophecy Max Ele Reslightning",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_max_ele_resphysical",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_max_ele_resphysical.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_max_ele_resphysical",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 20.0,
+          "stat": "dmg_received"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_max_ele_resphysical.json",
+    "name": "Prophecy Max Ele Resphysical",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_max_ele_reswater",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_max_ele_reswater.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_max_ele_reswater",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -10.0,
+          "min": -10.0,
+          "stat": "max_water_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_max_ele_reswater.json",
+    "name": "Prophecy Max Ele Reswater",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_ms",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_ms.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_ms",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_taken",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -20.0,
+          "stat": "magic_shield"
+        },
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -20.0,
+          "stat": "magic_shield_regen"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_ms.json",
+    "name": "Prophecy Ms",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_slow",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_slow.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_slow",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "curse",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "cursed_by_slow"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Prophecy Slow",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_total_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/prophecy_total_dmg.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_total_dmg",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "damage_done",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -25.0,
+          "min": -25.0,
+          "stat": "total_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_total_dmg.json",
+    "name": "Prophecy Total Dmg",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_weak",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_weak.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_weak",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "curse",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "cursed_by_weak"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Prophecy Weak",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_wounds",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/prophecy_wounds.json",
+    "data": {
+      "affected": "Players",
+      "id": "prophecy_wounds",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "curse",
+      "req": "prophecy",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "cursed_by_wounds"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Prophecy Wounds",
+    "name_source": "derived"
+  },
+  {
+    "id": "reduced_aoe",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/reduced_aoe.json",
+    "data": {
+      "affected": "Players",
+      "id": "reduced_aoe",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -30.0,
+          "min": -15.0,
+          "stat": "inc_aoe"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Reduced Aoe",
+    "name_source": "derived"
+  },
+  {
+    "id": "reduced_leech",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/reduced_leech.json",
+    "data": {
+      "affected": "Players",
+      "id": "reduced_leech",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -15.0,
+          "stat": "inc_leech"
+        }
+      ],
+      "weight": 500
+    },
+    "name": "Reduced Leech",
+    "name_source": "derived"
+  },
+  {
+    "id": "slow_curse",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/slow_curse.json",
+    "data": {
+      "affected": "Players",
+      "id": "slow_curse",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "cursed_by_slow"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Slow Curse",
+    "name_source": "derived"
+  },
+  {
+    "id": "slower_projectiles",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/slower_projectiles.json",
+    "data": {
+      "affected": "Players",
+      "id": "slower_projectiles",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -30.0,
+          "min": -15.0,
+          "stat": "faster_projectiles"
+        },
+        {
+          "type": "MORE",
+          "max": -20.0,
+          "min": -10.0,
+          "stat": "projectile_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Slower Projectiles",
+    "name_source": "derived"
+  },
+  {
+    "id": "water_atk",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/water_atk.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "water_atk",
+      "map_resist": "Cold",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 30.0,
+          "stat": "phys_to_water"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 30.0,
+          "stat": "all_water_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 15.0,
+          "stat": "freeze_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 10.0,
+          "stat": "freeze_proc_chance"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/water_atk.json",
+    "name": "Water Atk",
+    "name_source": "derived"
+  },
+  {
+    "id": "water_minus_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/water_minus_dmg.json",
+    "data": {
+      "affected": "Players",
+      "id": "water_minus_dmg",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "MORE",
+          "max": -30.0,
+          "min": -15.0,
+          "stat": "all_water_damage"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Water Minus Dmg",
+    "name_source": "derived"
+  },
+  {
+    "id": "water_minus_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/water_minus_res.json",
+    "data": {
+      "affected": "Players",
+      "id": "water_minus_res",
+      "map_resist": "Cold",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -4.0,
+          "min": -2.0,
+          "stat": "max_water_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": -40.0,
+          "min": -20.0,
+          "stat": "water_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/water_minus_res.json",
+    "name": "Water Minus Res",
+    "name_source": "derived"
+  },
+  {
+    "id": "water_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_map_affix/water_res.json",
+    "data": {
+      "affected": "Mobs",
+      "id": "water_res",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 30.0,
+          "stat": "water_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/water_res.json",
+    "name": "Water Res",
+    "name_source": "derived"
+  },
+  {
+    "id": "weak_curse",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/weak_curse.json",
+    "data": {
+      "affected": "Players",
+      "id": "weak_curse",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "cursed_by_weak"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Weak Curse",
+    "name_source": "derived"
+  },
+  {
+    "id": "wounds_curse",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_map_affix/wounds_curse.json",
+    "data": {
+      "affected": "Players",
+      "id": "wounds_curse",
+      "map_resist": "Physical",
+      "map_resist_bonus_needed": 0,
+      "prophecy_type": "",
+      "req": "",
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "cursed_by_wounds"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Wounds Curse",
+    "name_source": "derived"
+  }
+]

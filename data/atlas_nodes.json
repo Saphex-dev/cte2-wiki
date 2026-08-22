@@ -1,0 +1,5832 @@
+[
+  {
+    "id": "bastion",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bastion.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "bastion",
+      "id": "bastion",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/bastion.json",
+    "name": "Bastion",
+    "name_source": "derived"
+  },
+  {
+    "id": "bastion_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/bastion_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bastion",
+      "id": "bastion_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bastion Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "bastion_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/bastion_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bastion",
+      "id": "bastion_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bastion Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "bastion_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/bastion_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bastion",
+      "id": "bastion_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bastion Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "bastion_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/bastion_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bastion",
+      "id": "bastion_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bastion Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "bastion_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/bastion_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bastion",
+      "id": "bastion_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bastion Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "bastion_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/bastion_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bastion",
+      "id": "bastion_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bastion Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "bastion_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/bastion_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bastion",
+      "id": "bastion_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bastion Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "bastion_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/bastion_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bastion",
+      "id": "bastion_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bastion Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "bastion_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/bastion_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bastion",
+      "id": "bastion_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bastion Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "bastion_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/bastion_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bastion",
+      "id": "bastion_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bastion Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "bastion_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bastion_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "bastion",
+      "id": "bastion_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/bastion_uber.json",
+    "name": "Bastion Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "bridge",
+      "id": "bridge",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bridge",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge_apex",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge_apex.json",
+    "data": {
+      "atlas_points_reward": 3,
+      "dungeon": "bridge",
+      "id": "bridge_apex",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 15,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Bridge Apex",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge_tier10",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bridge",
+      "id": "bridge_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bridge Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge_tier100",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bridge",
+      "id": "bridge_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bridge Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge_tier20",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bridge",
+      "id": "bridge_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bridge Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge_tier30",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bridge",
+      "id": "bridge_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bridge Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge_tier40",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bridge",
+      "id": "bridge_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bridge Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge_tier50",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bridge",
+      "id": "bridge_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bridge Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge_tier60",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bridge",
+      "id": "bridge_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bridge Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge_tier70",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bridge",
+      "id": "bridge_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bridge Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge_tier80",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bridge",
+      "id": "bridge_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bridge Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge_tier90",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "bridge",
+      "id": "bridge_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Bridge Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "bridge_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/bridge_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "bridge",
+      "id": "bridge_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Bridge Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/cement.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "cement",
+      "id": "cement",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/cement.json",
+    "name": "Cement",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/cement_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "cement",
+      "id": "cement_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Cement Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/cement_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "cement",
+      "id": "cement_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Cement Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/cement_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "cement",
+      "id": "cement_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Cement Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/cement_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "cement",
+      "id": "cement_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Cement Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/cement_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "cement",
+      "id": "cement_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Cement Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/cement_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "cement",
+      "id": "cement_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Cement Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/cement_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "cement",
+      "id": "cement_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Cement Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/cement_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "cement",
+      "id": "cement_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Cement Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/cement_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "cement",
+      "id": "cement_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Cement Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/cement_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "cement",
+      "id": "cement_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Cement Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "cement_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/cement_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "cement",
+      "id": "cement_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/cement_uber.json",
+    "name": "Cement Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "end",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "end",
+      "id": "end",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "End",
+    "name_source": "derived"
+  },
+  {
+    "id": "end_apex",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end_apex.json",
+    "data": {
+      "atlas_points_reward": 3,
+      "dungeon": "end",
+      "id": "end_apex",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 15,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "End Apex",
+    "name_source": "derived"
+  },
+  {
+    "id": "end_tier10",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "end",
+      "id": "end_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "End Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "end_tier100",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "end",
+      "id": "end_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "End Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "end_tier20",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "end",
+      "id": "end_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "End Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "end_tier30",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "end",
+      "id": "end_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "End Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "end_tier40",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "end",
+      "id": "end_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "End Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "end_tier50",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "end",
+      "id": "end_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "End Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "end_tier60",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "end",
+      "id": "end_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "End Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "end_tier70",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "end",
+      "id": "end_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "End Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "end_tier80",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "end",
+      "id": "end_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "End Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "end_tier90",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "end",
+      "id": "end_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "End Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "end_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/end_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "end",
+      "id": "end_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "End Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "fairy",
+      "id": "fairy",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Fairy",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy_apex",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy_apex.json",
+    "data": {
+      "atlas_points_reward": 3,
+      "dungeon": "fairy",
+      "id": "fairy_apex",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 15,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Fairy Apex",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy_tier10",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "fairy",
+      "id": "fairy_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Fairy Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy_tier100",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "fairy",
+      "id": "fairy_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Fairy Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy_tier20",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "fairy",
+      "id": "fairy_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Fairy Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy_tier30",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "fairy",
+      "id": "fairy_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Fairy Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy_tier40",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "fairy",
+      "id": "fairy_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Fairy Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy_tier50",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "fairy",
+      "id": "fairy_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Fairy Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy_tier60",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "fairy",
+      "id": "fairy_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Fairy Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy_tier70",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "fairy",
+      "id": "fairy_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Fairy Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy_tier80",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "fairy",
+      "id": "fairy_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Fairy Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy_tier90",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "fairy",
+      "id": "fairy_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Fairy Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "fairy_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/fairy_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "fairy",
+      "id": "fairy_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Fairy Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "garden",
+      "id": "garden",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": true
+    },
+    "name": "Garden",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden_apex",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden_apex.json",
+    "data": {
+      "atlas_points_reward": 3,
+      "dungeon": "garden",
+      "id": "garden_apex",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 15,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Garden Apex",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden_tier10",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "garden",
+      "id": "garden_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Garden Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden_tier100",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "garden",
+      "id": "garden_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Garden Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden_tier20",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "garden",
+      "id": "garden_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Garden Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden_tier30",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "garden",
+      "id": "garden_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Garden Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden_tier40",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "garden",
+      "id": "garden_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Garden Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden_tier50",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "garden",
+      "id": "garden_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Garden Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden_tier60",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "garden",
+      "id": "garden_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Garden Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden_tier70",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "garden",
+      "id": "garden_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Garden Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden_tier80",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "garden",
+      "id": "garden_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Garden Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden_tier90",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "garden",
+      "id": "garden_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Garden Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "garden_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/garden_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "garden",
+      "id": "garden_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Garden Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "it",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/it.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "it",
+      "id": "it",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": true
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/it.json",
+    "name": "It",
+    "name_source": "derived"
+  },
+  {
+    "id": "it_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/it_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "it",
+      "id": "it_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "It Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "it_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/it_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "it",
+      "id": "it_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "It Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "it_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/it_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "it",
+      "id": "it_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "It Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "it_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/it_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "it",
+      "id": "it_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "It Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "it_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/it_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "it",
+      "id": "it_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "It Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "it_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/it_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "it",
+      "id": "it_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "It Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "it_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/it_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "it",
+      "id": "it_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "It Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "it_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/it_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "it",
+      "id": "it_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "It Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "it_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/it_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "it",
+      "id": "it_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "It Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "it_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/it_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "it",
+      "id": "it_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "It Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "it_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/it_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "it",
+      "id": "it_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/it_uber.json",
+    "name": "It Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/mine.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "mine",
+      "id": "mine",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mine.json",
+    "name": "Mine",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mine_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mine",
+      "id": "mine_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mine Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mine_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mine",
+      "id": "mine_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mine Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mine_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mine",
+      "id": "mine_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mine Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mine_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mine",
+      "id": "mine_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mine Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mine_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mine",
+      "id": "mine_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mine Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mine_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mine",
+      "id": "mine_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mine Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mine_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mine",
+      "id": "mine_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mine Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mine_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mine",
+      "id": "mine_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mine Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mine_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mine",
+      "id": "mine_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mine Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mine_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mine",
+      "id": "mine_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mine Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/mine_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "mine",
+      "id": "mine_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mine_uber.json",
+    "name": "Mine Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "mossy_brick",
+      "id": "mossy_brick",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick.json",
+    "name": "Mossy Brick",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mossy_brick",
+      "id": "mossy_brick_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mossy Brick Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mossy_brick",
+      "id": "mossy_brick_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mossy Brick Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mossy_brick",
+      "id": "mossy_brick_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mossy Brick Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mossy_brick",
+      "id": "mossy_brick_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mossy Brick Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mossy_brick",
+      "id": "mossy_brick_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mossy Brick Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mossy_brick",
+      "id": "mossy_brick_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mossy Brick Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mossy_brick",
+      "id": "mossy_brick_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mossy Brick Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mossy_brick",
+      "id": "mossy_brick_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mossy Brick Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mossy_brick",
+      "id": "mossy_brick_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mossy Brick Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "mossy_brick",
+      "id": "mossy_brick_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Mossy Brick Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "mossy_brick_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "mossy_brick",
+      "id": "mossy_brick_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/mossy_brick_uber.json",
+    "name": "Mossy Brick Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/nature.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "nature",
+      "id": "nature",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nature.json",
+    "name": "Nature",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nature_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nature",
+      "id": "nature_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nature Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nature_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nature",
+      "id": "nature_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nature Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nature_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nature",
+      "id": "nature_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nature Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nature_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nature",
+      "id": "nature_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nature Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nature_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nature",
+      "id": "nature_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nature Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nature_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nature",
+      "id": "nature_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nature Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nature_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nature",
+      "id": "nature_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nature Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nature_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nature",
+      "id": "nature_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nature Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nature_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nature",
+      "id": "nature_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nature Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nature_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nature",
+      "id": "nature_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nature Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "nature_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/nature_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "nature",
+      "id": "nature_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nature_uber.json",
+    "name": "Nature Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/nether.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "nether",
+      "id": "nether",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nether.json",
+    "name": "Nether",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nether_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nether",
+      "id": "nether_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nether Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nether_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nether",
+      "id": "nether_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nether Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nether_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nether",
+      "id": "nether_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nether Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nether_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nether",
+      "id": "nether_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nether Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nether_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nether",
+      "id": "nether_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nether Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nether_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nether",
+      "id": "nether_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nether Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nether_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nether",
+      "id": "nether_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nether Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nether_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nether",
+      "id": "nether_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nether Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nether_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nether",
+      "id": "nether_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nether Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nether_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "nether",
+      "id": "nether_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Nether Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "nether_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/nether_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "nether",
+      "id": "nether_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/nether_uber.json",
+    "name": "Nether Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/night_terror.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "night_terror",
+      "id": "night_terror",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror.json",
+    "name": "Night Terror",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror_apex",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_apex.json",
+    "data": {
+      "atlas_points_reward": 3,
+      "dungeon": "night_terror",
+      "id": "night_terror_apex",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 15,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Night Terror Apex",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "night_terror",
+      "id": "night_terror_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Night Terror Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "night_terror",
+      "id": "night_terror_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Night Terror Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "night_terror",
+      "id": "night_terror_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Night Terror Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "night_terror",
+      "id": "night_terror_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Night Terror Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "night_terror",
+      "id": "night_terror_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Night Terror Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "night_terror",
+      "id": "night_terror_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Night Terror Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "night_terror",
+      "id": "night_terror_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Night Terror Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "night_terror",
+      "id": "night_terror_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Night Terror Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "night_terror",
+      "id": "night_terror_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Night Terror Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "night_terror",
+      "id": "night_terror_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Night Terror Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "night_terror_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "night_terror",
+      "id": "night_terror_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/night_terror_uber.json",
+    "name": "Night Terror Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Pirate Lair",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair_apex",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair_apex.json",
+    "data": {
+      "atlas_points_reward": 3,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair_apex",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 15,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Pirate Lair Apex",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair_tier10",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Pirate Lair Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair_tier100",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Pirate Lair Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair_tier20",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Pirate Lair Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair_tier30",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Pirate Lair Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair_tier40",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Pirate Lair Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair_tier50",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Pirate Lair Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair_tier60",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Pirate Lair Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair_tier70",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Pirate Lair Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair_tier80",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Pirate Lair Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair_tier90",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Pirate Lair Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "pirate_lair_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/pirate_lair_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "pirate_lair",
+      "id": "pirate_lair_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Pirate Lair Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/sandstone.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "sandstone",
+      "id": "sandstone",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sandstone.json",
+    "name": "Sandstone",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sandstone_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sandstone",
+      "id": "sandstone_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sandstone Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sandstone_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sandstone",
+      "id": "sandstone_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sandstone Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sandstone_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sandstone",
+      "id": "sandstone_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sandstone Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sandstone_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sandstone",
+      "id": "sandstone_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sandstone Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sandstone_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sandstone",
+      "id": "sandstone_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sandstone Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sandstone_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sandstone",
+      "id": "sandstone_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sandstone Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sandstone_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sandstone",
+      "id": "sandstone_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sandstone Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sandstone_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sandstone",
+      "id": "sandstone_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sandstone Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sandstone_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sandstone",
+      "id": "sandstone_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sandstone Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sandstone_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sandstone",
+      "id": "sandstone_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sandstone Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/sandstone_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "sandstone",
+      "id": "sandstone_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sandstone_uber.json",
+    "name": "Sandstone Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/sewer2.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "sewer2",
+      "id": "sewer2",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewer2.json",
+    "name": "Sewer2",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewer2_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewer2",
+      "id": "sewer2_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewer2 Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewer2_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewer2",
+      "id": "sewer2_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewer2 Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewer2_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewer2",
+      "id": "sewer2_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewer2 Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewer2_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewer2",
+      "id": "sewer2_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewer2 Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewer2_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewer2",
+      "id": "sewer2_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewer2 Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewer2_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewer2",
+      "id": "sewer2_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewer2 Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewer2_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewer2",
+      "id": "sewer2_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewer2 Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewer2_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewer2",
+      "id": "sewer2_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewer2 Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewer2_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewer2",
+      "id": "sewer2_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewer2 Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewer2_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewer2",
+      "id": "sewer2_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewer2 Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewer2_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/sewer2_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "sewer2",
+      "id": "sewer2_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewer2_uber.json",
+    "name": "Sewer2 Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/sewers.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "sewers",
+      "id": "sewers",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": true
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewers.json",
+    "name": "Sewers",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewers_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewers",
+      "id": "sewers_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewers Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewers_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewers",
+      "id": "sewers_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewers Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewers_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewers",
+      "id": "sewers_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewers Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewers_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewers",
+      "id": "sewers_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewers Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewers_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewers",
+      "id": "sewers_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewers Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewers_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewers",
+      "id": "sewers_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewers Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewers_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewers",
+      "id": "sewers_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewers Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewers_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewers",
+      "id": "sewers_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewers Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewers_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewers",
+      "id": "sewers_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewers Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewers_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "sewers",
+      "id": "sewers_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Sewers Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "sewers_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/sewers_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "sewers",
+      "id": "sewers_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/sewers_uber.json",
+    "name": "Sewers Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "spruce_mansion",
+      "id": "spruce_mansion",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion.json",
+    "name": "Spruce Mansion",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "spruce_mansion",
+      "id": "spruce_mansion_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Spruce Mansion Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "spruce_mansion",
+      "id": "spruce_mansion_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Spruce Mansion Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "spruce_mansion",
+      "id": "spruce_mansion_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Spruce Mansion Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "spruce_mansion",
+      "id": "spruce_mansion_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Spruce Mansion Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "spruce_mansion",
+      "id": "spruce_mansion_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Spruce Mansion Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "spruce_mansion",
+      "id": "spruce_mansion_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Spruce Mansion Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "spruce_mansion",
+      "id": "spruce_mansion_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Spruce Mansion Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "spruce_mansion",
+      "id": "spruce_mansion_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Spruce Mansion Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "spruce_mansion",
+      "id": "spruce_mansion_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Spruce Mansion Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "spruce_mansion",
+      "id": "spruce_mansion_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Spruce Mansion Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "spruce_mansion_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "spruce_mansion",
+      "id": "spruce_mansion_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/spruce_mansion_uber.json",
+    "name": "Spruce Mansion Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/steampunk.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "steampunk",
+      "id": "steampunk",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/steampunk.json",
+    "name": "Steampunk",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/steampunk_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "steampunk",
+      "id": "steampunk_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Steampunk Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/steampunk_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "steampunk",
+      "id": "steampunk_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Steampunk Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/steampunk_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "steampunk",
+      "id": "steampunk_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Steampunk Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/steampunk_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "steampunk",
+      "id": "steampunk_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Steampunk Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/steampunk_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "steampunk",
+      "id": "steampunk_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Steampunk Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/steampunk_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "steampunk",
+      "id": "steampunk_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Steampunk Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/steampunk_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "steampunk",
+      "id": "steampunk_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Steampunk Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/steampunk_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "steampunk",
+      "id": "steampunk_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Steampunk Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/steampunk_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "steampunk",
+      "id": "steampunk_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Steampunk Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/steampunk_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "steampunk",
+      "id": "steampunk_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Steampunk Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "steampunk_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/steampunk_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "steampunk",
+      "id": "steampunk_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/steampunk_uber.json",
+    "name": "Steampunk Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "stone_brick",
+      "id": "stone_brick",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick.json",
+    "name": "Stone Brick",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "stone_brick",
+      "id": "stone_brick_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Stone Brick Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "stone_brick",
+      "id": "stone_brick_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Stone Brick Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "stone_brick",
+      "id": "stone_brick_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Stone Brick Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "stone_brick",
+      "id": "stone_brick_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Stone Brick Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "stone_brick",
+      "id": "stone_brick_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Stone Brick Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "stone_brick",
+      "id": "stone_brick_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Stone Brick Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "stone_brick",
+      "id": "stone_brick_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Stone Brick Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "stone_brick",
+      "id": "stone_brick_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Stone Brick Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "stone_brick",
+      "id": "stone_brick_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Stone Brick Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "stone_brick",
+      "id": "stone_brick_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Stone Brick Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "stone_brick_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "stone_brick",
+      "id": "stone_brick_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/stone_brick_uber.json",
+    "name": "Stone Brick Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/tent.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "tent",
+      "id": "tent",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/tent.json",
+    "name": "Tent",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/tent_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "tent",
+      "id": "tent_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Tent Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/tent_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "tent",
+      "id": "tent_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Tent Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/tent_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "tent",
+      "id": "tent_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Tent Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/tent_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "tent",
+      "id": "tent_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Tent Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/tent_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "tent",
+      "id": "tent_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Tent Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/tent_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "tent",
+      "id": "tent_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Tent Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/tent_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "tent",
+      "id": "tent_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Tent Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/tent_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "tent",
+      "id": "tent_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Tent Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/tent_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "tent",
+      "id": "tent_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Tent Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/tent_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "tent",
+      "id": "tent_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Tent Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "tent_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/tent_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "tent",
+      "id": "tent_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/tent_uber.json",
+    "name": "Tent Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "undergarden",
+      "id": "undergarden",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Undergarden",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden_apex",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden_apex.json",
+    "data": {
+      "atlas_points_reward": 3,
+      "dungeon": "undergarden",
+      "id": "undergarden_apex",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 15,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Undergarden Apex",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden_tier10",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "undergarden",
+      "id": "undergarden_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Undergarden Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden_tier100",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "undergarden",
+      "id": "undergarden_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Undergarden Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden_tier20",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "undergarden",
+      "id": "undergarden_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Undergarden Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden_tier30",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "undergarden",
+      "id": "undergarden_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Undergarden Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden_tier40",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "undergarden",
+      "id": "undergarden_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Undergarden Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden_tier50",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "undergarden",
+      "id": "undergarden_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Undergarden Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden_tier60",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "undergarden",
+      "id": "undergarden_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Undergarden Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden_tier70",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "undergarden",
+      "id": "undergarden_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Undergarden Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden_tier80",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "undergarden",
+      "id": "undergarden_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Undergarden Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden_tier90",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "undergarden",
+      "id": "undergarden_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Undergarden Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/undergarden_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "undergarden",
+      "id": "undergarden_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Undergarden Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/warped.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "warped",
+      "id": "warped",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/warped.json",
+    "name": "Warped",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/warped_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "warped",
+      "id": "warped_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Warped Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/warped_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "warped",
+      "id": "warped_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Warped Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/warped_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "warped",
+      "id": "warped_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Warped Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/warped_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "warped",
+      "id": "warped_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Warped Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/warped_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "warped",
+      "id": "warped_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Warped Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/warped_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "warped",
+      "id": "warped_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Warped Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/warped_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "warped",
+      "id": "warped_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Warped Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/warped_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "warped",
+      "id": "warped_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Warped Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/warped_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "warped",
+      "id": "warped_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Warped Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/warped_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "warped",
+      "id": "warped_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Warped Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "warped_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/warped_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "warped",
+      "id": "warped_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/warped_uber.json",
+    "name": "Warped Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "watcher",
+      "id": "watcher",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": true
+    },
+    "name": "Watcher",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher_apex",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher_apex.json",
+    "data": {
+      "atlas_points_reward": 3,
+      "dungeon": "watcher",
+      "id": "watcher_apex",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 15,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Watcher Apex",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher_tier10",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "watcher",
+      "id": "watcher_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Watcher Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher_tier100",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "watcher",
+      "id": "watcher_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Watcher Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher_tier20",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "watcher",
+      "id": "watcher_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Watcher Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher_tier30",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "watcher",
+      "id": "watcher_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Watcher Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher_tier40",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "watcher",
+      "id": "watcher_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Watcher Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher_tier50",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "watcher",
+      "id": "watcher_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Watcher Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher_tier60",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "watcher",
+      "id": "watcher_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Watcher Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher_tier70",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "watcher",
+      "id": "watcher_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Watcher Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher_tier80",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "watcher",
+      "id": "watcher_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Watcher Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher_tier90",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "watcher",
+      "id": "watcher_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Watcher Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "watcher_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/watcher_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "watcher",
+      "id": "watcher_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Watcher Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "wild_west",
+      "id": "wild_west",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wild West",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west_apex",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west_apex.json",
+    "data": {
+      "atlas_points_reward": 3,
+      "dungeon": "wild_west",
+      "id": "wild_west_apex",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 15,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Wild West Apex",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west_tier10",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wild_west",
+      "id": "wild_west_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wild West Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west_tier100",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wild_west",
+      "id": "wild_west_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wild West Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west_tier20",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wild_west",
+      "id": "wild_west_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wild West Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west_tier30",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wild_west",
+      "id": "wild_west_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wild West Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west_tier40",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wild_west",
+      "id": "wild_west_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wild West Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west_tier50",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wild_west",
+      "id": "wild_west_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wild West Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west_tier60",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wild_west",
+      "id": "wild_west_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wild West Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west_tier70",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wild_west",
+      "id": "wild_west_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wild West Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west_tier80",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wild_west",
+      "id": "wild_west_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wild West Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west_tier90",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wild_west",
+      "id": "wild_west_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wild West Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "wild_west_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wild_west_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "wild_west",
+      "id": "wild_west_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Wild West Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wn.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "wn",
+      "id": "wn",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/wn.json",
+    "name": "Wn",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn_tier10",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/wn_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wn",
+      "id": "wn_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wn Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn_tier100",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/wn_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wn",
+      "id": "wn_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wn Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn_tier20",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/wn_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wn",
+      "id": "wn_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wn Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn_tier30",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/wn_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wn",
+      "id": "wn_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wn Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn_tier40",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/wn_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wn",
+      "id": "wn_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wn Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn_tier50",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/wn_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wn",
+      "id": "wn_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wn Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn_tier60",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/wn_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wn",
+      "id": "wn_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wn Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn_tier70",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/wn_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wn",
+      "id": "wn_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wn Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn_tier80",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/wn_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wn",
+      "id": "wn_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wn Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn_tier90",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/wn_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "wn",
+      "id": "wn_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Wn Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "wn_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/wn_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "wn",
+      "id": "wn_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_atlas_node/wn_uber.json",
+    "name": "Wn Uber",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "worm",
+      "id": "worm",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Worm",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm_apex",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm_apex.json",
+    "data": {
+      "atlas_points_reward": 3,
+      "dungeon": "worm",
+      "id": "worm_apex",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 15,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Worm Apex",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm_tier10",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm_tier10.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "worm",
+      "id": "worm_tier10",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 10,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Worm Tier10",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm_tier100",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm_tier100.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "worm",
+      "id": "worm_tier100",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 100,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Worm Tier100",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm_tier20",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm_tier20.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "worm",
+      "id": "worm_tier20",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 20,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Worm Tier20",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm_tier30",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm_tier30.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "worm",
+      "id": "worm_tier30",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 30,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Worm Tier30",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm_tier40",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm_tier40.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "worm",
+      "id": "worm_tier40",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 40,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Worm Tier40",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm_tier50",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm_tier50.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "worm",
+      "id": "worm_tier50",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 50,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Worm Tier50",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm_tier60",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm_tier60.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "worm",
+      "id": "worm_tier60",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 60,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Worm Tier60",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm_tier70",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm_tier70.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "worm",
+      "id": "worm_tier70",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 70,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Worm Tier70",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm_tier80",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm_tier80.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "worm",
+      "id": "worm_tier80",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 80,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Worm Tier80",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm_tier90",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm_tier90.json",
+    "data": {
+      "atlas_points_reward": 1,
+      "dungeon": "worm",
+      "id": "worm_tier90",
+      "is_pinnacle_unlock": false,
+      "min_rarity": "",
+      "min_tier": 90,
+      "require_uber": false,
+      "starting_node": false
+    },
+    "name": "Worm Tier90",
+    "name_source": "derived"
+  },
+  {
+    "id": "worm_uber",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_atlas_node/worm_uber.json",
+    "data": {
+      "atlas_points_reward": 0,
+      "dungeon": "worm",
+      "id": "worm_uber",
+      "is_pinnacle_unlock": true,
+      "min_rarity": "",
+      "min_tier": 0,
+      "require_uber": true,
+      "starting_node": false
+    },
+    "name": "Worm Uber",
+    "name_source": "derived"
+  }
+]

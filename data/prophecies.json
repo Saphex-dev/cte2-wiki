@@ -1,0 +1,1058 @@
+[
+  {
+    "id": "axe",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/axe.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "axe",
+      "id": "axe",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Axe",
+    "name_source": "derived"
+  },
+  {
+    "id": "bow",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/bow.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "bow",
+      "id": "bow",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/bow.json",
+    "name": "Bow",
+    "name_source": "derived"
+  },
+  {
+    "id": "brigandine_boots",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/brigandine_boots.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "brigandine_boots",
+      "id": "brigandine_boots",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Brigandine Boots",
+    "name_source": "derived"
+  },
+  {
+    "id": "brigandine_chest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/brigandine_chest.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "brigandine_chest",
+      "id": "brigandine_chest",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Brigandine Chest",
+    "name_source": "derived"
+  },
+  {
+    "id": "brigandine_helmet",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/brigandine_helmet.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "brigandine_helmet",
+      "id": "brigandine_helmet",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Brigandine Helmet",
+    "name_source": "derived"
+  },
+  {
+    "id": "brigandine_pants",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/brigandine_pants.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "brigandine_pants",
+      "id": "brigandine_pants",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Brigandine Pants",
+    "name_source": "derived"
+  },
+  {
+    "id": "chainmail_boots",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/chainmail_boots.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "chainmail_boots",
+      "id": "chainmail_boots",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Chainmail Boots",
+    "name_source": "derived"
+  },
+  {
+    "id": "chainmail_chest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/chainmail_chest.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "chainmail_chest",
+      "id": "chainmail_chest",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Chainmail Chest",
+    "name_source": "derived"
+  },
+  {
+    "id": "chainmail_helmet",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/chainmail_helmet.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "chainmail_helmet",
+      "id": "chainmail_helmet",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Chainmail Helmet",
+    "name_source": "derived"
+  },
+  {
+    "id": "chainmail_pants",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/chainmail_pants.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "chainmail_pants",
+      "id": "chainmail_pants",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Chainmail Pants",
+    "name_source": "derived"
+  },
+  {
+    "id": "cloth_boots",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/cloth_boots.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "cloth_boots",
+      "id": "cloth_boots",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/cloth_boots.json",
+    "name": "Cloth Boots",
+    "name_source": "derived"
+  },
+  {
+    "id": "cloth_chest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/cloth_chest.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "cloth_chest",
+      "id": "cloth_chest",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/cloth_chest.json",
+    "name": "Cloth Chest",
+    "name_source": "derived"
+  },
+  {
+    "id": "cloth_helmet",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/cloth_helmet.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "cloth_helmet",
+      "id": "cloth_helmet",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/cloth_helmet.json",
+    "name": "Cloth Helmet",
+    "name_source": "derived"
+  },
+  {
+    "id": "cloth_pants",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/cloth_pants.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "cloth_pants",
+      "id": "cloth_pants",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/cloth_pants.json",
+    "name": "Cloth Pants",
+    "name_source": "derived"
+  },
+  {
+    "id": "common",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/common.json",
+    "data": {
+      "cost_multi": 1.0,
+      "data": "common",
+      "id": "common",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_RARITY",
+      "tier_req": 0,
+      "weight": 0
+    },
+    "name": "Common",
+    "name_source": "derived"
+  },
+  {
+    "id": "common_gem",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/common_gem.json",
+    "data": {
+      "cost_multi": 1.0,
+      "data": "common",
+      "id": "common_gem",
+      "lvl_req": 0,
+      "modifier_type": "SKILL_GEM_RARITY",
+      "tier_req": 0,
+      "weight": 0
+    },
+    "name": "Common Gem",
+    "name_source": "derived"
+  },
+  {
+    "id": "common_jewel",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/common_jewel.json",
+    "data": {
+      "cost_multi": 1.0,
+      "data": "common",
+      "id": "common_jewel",
+      "lvl_req": 0,
+      "modifier_type": "JEWEL_RARITY",
+      "tier_req": 0,
+      "weight": 0
+    },
+    "name": "Common Jewel",
+    "name_source": "derived"
+  },
+  {
+    "id": "crossbow",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/crossbow.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "crossbow",
+      "id": "crossbow",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/crossbow.json",
+    "name": "Crossbow",
+    "name_source": "derived"
+  },
+  {
+    "id": "dagger",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/dagger.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "dagger",
+      "id": "dagger",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Dagger",
+    "name_source": "derived"
+  },
+  {
+    "id": "epic",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/epic.json",
+    "data": {
+      "cost_multi": 3.0,
+      "data": "epic",
+      "id": "epic",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_RARITY",
+      "tier_req": 0,
+      "weight": 500000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/epic.json",
+    "name": "Epic",
+    "name_source": "derived"
+  },
+  {
+    "id": "epic_gem",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/epic_gem.json",
+    "data": {
+      "cost_multi": 4.0,
+      "data": "epic",
+      "id": "epic_gem",
+      "lvl_req": 0,
+      "modifier_type": "SKILL_GEM_RARITY",
+      "tier_req": 0,
+      "weight": 500000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/epic_gem.json",
+    "name": "Epic Gem",
+    "name_source": "derived"
+  },
+  {
+    "id": "epic_jewel",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/epic_jewel.json",
+    "data": {
+      "cost_multi": 4.0,
+      "data": "epic",
+      "id": "epic_jewel",
+      "lvl_req": 0,
+      "modifier_type": "JEWEL_RARITY",
+      "tier_req": 0,
+      "weight": 500000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/epic_jewel.json",
+    "name": "Epic Jewel",
+    "name_source": "derived"
+  },
+  {
+    "id": "gauntlet",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/gauntlet.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "gauntlet",
+      "id": "gauntlet",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Gauntlet",
+    "name_source": "derived"
+  },
+  {
+    "id": "greatsword",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/greatsword.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "greatsword",
+      "id": "greatsword",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Greatsword",
+    "name_source": "derived"
+  },
+  {
+    "id": "hammer",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/hammer.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "hammer",
+      "id": "hammer",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Hammer",
+    "name_source": "derived"
+  },
+  {
+    "id": "leather_boots",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/leather_boots.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "leather_boots",
+      "id": "leather_boots",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/leather_boots.json",
+    "name": "Leather Boots",
+    "name_source": "derived"
+  },
+  {
+    "id": "leather_chest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/leather_chest.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "leather_chest",
+      "id": "leather_chest",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/leather_chest.json",
+    "name": "Leather Chest",
+    "name_source": "derived"
+  },
+  {
+    "id": "leather_helmet",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/leather_helmet.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "leather_helmet",
+      "id": "leather_helmet",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/leather_helmet.json",
+    "name": "Leather Helmet",
+    "name_source": "derived"
+  },
+  {
+    "id": "leather_pants",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/leather_pants.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "leather_pants",
+      "id": "leather_pants",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/leather_pants.json",
+    "name": "Leather Pants",
+    "name_source": "derived"
+  },
+  {
+    "id": "legendary",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/legendary.json",
+    "data": {
+      "cost_multi": 4.0,
+      "data": "legendary",
+      "id": "legendary",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_RARITY",
+      "tier_req": 20,
+      "weight": 250000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/legendary.json",
+    "name": "Legendary",
+    "name_source": "derived"
+  },
+  {
+    "id": "legendary_gem",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/legendary_gem.json",
+    "data": {
+      "cost_multi": 5.5,
+      "data": "legendary",
+      "id": "legendary_gem",
+      "lvl_req": 0,
+      "modifier_type": "SKILL_GEM_RARITY",
+      "tier_req": 20,
+      "weight": 250000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/legendary_gem.json",
+    "name": "Legendary Gem",
+    "name_source": "derived"
+  },
+  {
+    "id": "legendary_jewel",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/legendary_jewel.json",
+    "data": {
+      "cost_multi": 5.5,
+      "data": "legendary",
+      "id": "legendary_jewel",
+      "lvl_req": 0,
+      "modifier_type": "JEWEL_RARITY",
+      "tier_req": 20,
+      "weight": 250000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/legendary_jewel.json",
+    "name": "Legendary Jewel",
+    "name_source": "derived"
+  },
+  {
+    "id": "mythic",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/mythic.json",
+    "data": {
+      "cost_multi": 5.0,
+      "data": "mythic",
+      "id": "mythic",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_RARITY",
+      "tier_req": 40,
+      "weight": 125000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/mythic.json",
+    "name": "Mythic",
+    "name_source": "derived"
+  },
+  {
+    "id": "mythic_gem",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/mythic_gem.json",
+    "data": {
+      "cost_multi": 7.0,
+      "data": "mythic",
+      "id": "mythic_gem",
+      "lvl_req": 0,
+      "modifier_type": "SKILL_GEM_RARITY",
+      "tier_req": 40,
+      "weight": 125000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/mythic_gem.json",
+    "name": "Mythic Gem",
+    "name_source": "derived"
+  },
+  {
+    "id": "mythic_jewel",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/mythic_jewel.json",
+    "data": {
+      "cost_multi": 7.0,
+      "data": "mythic",
+      "id": "mythic_jewel",
+      "lvl_req": 0,
+      "modifier_type": "JEWEL_RARITY",
+      "tier_req": 40,
+      "weight": 125000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/mythic_jewel.json",
+    "name": "Mythic Jewel",
+    "name_source": "derived"
+  },
+  {
+    "id": "necklace",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/necklace.json",
+    "data": {
+      "cost_multi": 2.5,
+      "data": "necklace",
+      "id": "necklace",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1500
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/necklace.json",
+    "name": "Necklace",
+    "name_source": "derived"
+  },
+  {
+    "id": "plate_boots",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/plate_boots.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "plate_boots",
+      "id": "plate_boots",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/plate_boots.json",
+    "name": "Plate Boots",
+    "name_source": "derived"
+  },
+  {
+    "id": "plate_chest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/plate_chest.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "plate_chest",
+      "id": "plate_chest",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/plate_chest.json",
+    "name": "Plate Chest",
+    "name_source": "derived"
+  },
+  {
+    "id": "plate_helmet",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/plate_helmet.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "plate_helmet",
+      "id": "plate_helmet",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/plate_helmet.json",
+    "name": "Plate Helmet",
+    "name_source": "derived"
+  },
+  {
+    "id": "plate_pants",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/plate_pants.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "plate_pants",
+      "id": "plate_pants",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/plate_pants.json",
+    "name": "Plate Pants",
+    "name_source": "derived"
+  },
+  {
+    "id": "rare",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/rare.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "rare",
+      "id": "rare",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_RARITY",
+      "tier_req": 0,
+      "weight": 1000000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/rare.json",
+    "name": "Rare",
+    "name_source": "derived"
+  },
+  {
+    "id": "rare_gem",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/rare_gem.json",
+    "data": {
+      "cost_multi": 2.5,
+      "data": "rare",
+      "id": "rare_gem",
+      "lvl_req": 0,
+      "modifier_type": "SKILL_GEM_RARITY",
+      "tier_req": 0,
+      "weight": 1000000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/rare_gem.json",
+    "name": "Rare Gem",
+    "name_source": "derived"
+  },
+  {
+    "id": "rare_jewel",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/rare_jewel.json",
+    "data": {
+      "cost_multi": 2.5,
+      "data": "rare",
+      "id": "rare_jewel",
+      "lvl_req": 0,
+      "modifier_type": "JEWEL_RARITY",
+      "tier_req": 0,
+      "weight": 1000000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/rare_jewel.json",
+    "name": "Rare Jewel",
+    "name_source": "derived"
+  },
+  {
+    "id": "ring",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/ring.json",
+    "data": {
+      "cost_multi": 2.5,
+      "data": "ring",
+      "id": "ring",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1500
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/ring.json",
+    "name": "Ring",
+    "name_source": "derived"
+  },
+  {
+    "id": "scythe",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/scythe.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "scythe",
+      "id": "scythe",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Scythe",
+    "name_source": "derived"
+  },
+  {
+    "id": "shield",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/shield.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "shield",
+      "id": "shield",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/shield.json",
+    "name": "Shield",
+    "name_source": "derived"
+  },
+  {
+    "id": "spear",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/spear.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "spear",
+      "id": "spear",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Spear",
+    "name_source": "derived"
+  },
+  {
+    "id": "staff",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/staff.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "staff",
+      "id": "staff",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/staff.json",
+    "name": "Staff",
+    "name_source": "derived"
+  },
+  {
+    "id": "sword",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/sword.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "sword",
+      "id": "sword",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/sword.json",
+    "name": "Sword",
+    "name_source": "derived"
+  },
+  {
+    "id": "tome",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/tome.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "tome",
+      "id": "tome",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/tome.json",
+    "name": "Tome",
+    "name_source": "derived"
+  },
+  {
+    "id": "totem",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/totem.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "totem",
+      "id": "totem",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/totem.json",
+    "name": "Totem",
+    "name_source": "derived"
+  },
+  {
+    "id": "trident",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/trident.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "trident",
+      "id": "trident",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/trident.json",
+    "name": "Trident",
+    "name_source": "derived"
+  },
+  {
+    "id": "uncommon",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/uncommon.json",
+    "data": {
+      "cost_multi": 1.0,
+      "data": "uncommon",
+      "id": "uncommon",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_RARITY",
+      "tier_req": 0,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/uncommon.json",
+    "name": "Uncommon",
+    "name_source": "derived"
+  },
+  {
+    "id": "uncommon_gem",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/uncommon_gem.json",
+    "data": {
+      "cost_multi": 1.0,
+      "data": "uncommon",
+      "id": "uncommon_gem",
+      "lvl_req": 0,
+      "modifier_type": "SKILL_GEM_RARITY",
+      "tier_req": 0,
+      "weight": 0
+    },
+    "name": "Uncommon Gem",
+    "name_source": "derived"
+  },
+  {
+    "id": "uncommon_jewel",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/uncommon_jewel.json",
+    "data": {
+      "cost_multi": 1.0,
+      "data": "uncommon",
+      "id": "uncommon_jewel",
+      "lvl_req": 0,
+      "modifier_type": "JEWEL_RARITY",
+      "tier_req": 0,
+      "weight": 0
+    },
+    "name": "Uncommon Jewel",
+    "name_source": "derived"
+  },
+  {
+    "id": "unique",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/unique.json",
+    "data": {
+      "cost_multi": 8.0,
+      "data": "unique",
+      "id": "unique",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_RARITY",
+      "tier_req": 0,
+      "weight": 125000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_prophecy_modifier/unique.json",
+    "name": "Unique",
+    "name_source": "derived"
+  },
+  {
+    "id": "vest_boots",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/vest_boots.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "vest_boots",
+      "id": "vest_boots",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Vest Boots",
+    "name_source": "derived"
+  },
+  {
+    "id": "vest_chest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/vest_chest.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "vest_chest",
+      "id": "vest_chest",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Vest Chest",
+    "name_source": "derived"
+  },
+  {
+    "id": "vest_helmet",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/vest_helmet.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "vest_helmet",
+      "id": "vest_helmet",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Vest Helmet",
+    "name_source": "derived"
+  },
+  {
+    "id": "vest_pants",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_prophecy_modifier/vest_pants.json",
+    "data": {
+      "cost_multi": 2.0,
+      "data": "vest_pants",
+      "id": "vest_pants",
+      "lvl_req": 0,
+      "modifier_type": "GEAR_TYPE",
+      "tier_req": 0,
+      "weight": 1000
+    },
+    "name": "Vest Pants",
+    "name_source": "derived"
+  }
+]

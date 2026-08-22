@@ -1,0 +1,621 @@
+[
+  {
+    "id": "bonus_content_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_content_chance.json",
+    "data": {
+      "id": "bonus_content_chance",
+      "mods": [
+        {
+          "max": 45.0,
+          "min": 15.0,
+          "stat": "bonus_content_chance"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_content_chance.json",
+    "name": "Bonus Content Chance",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_currency",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_currency.json",
+    "data": {
+      "id": "bonus_currency",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "bonus_currency"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_currency.json",
+    "name": "Bonus Currency",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_gear",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_gear.json",
+    "data": {
+      "id": "bonus_gear",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "bonus_gear"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_gear.json",
+    "name": "Bonus Gear",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_gem",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_gem.json",
+    "data": {
+      "id": "bonus_gem",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "bonus_gem"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_gem.json",
+    "name": "Bonus Gem",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_harvest_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_harvest_chance.json",
+    "data": {
+      "id": "bonus_harvest_chance",
+      "mods": [
+        {
+          "max": 45.0,
+          "min": 15.0,
+          "stat": "bonus_harvest_chance"
+        }
+      ],
+      "relic_type": "the_harvest",
+      "weight": 0
+    },
+    "base_source": "mods/The-Harvest-1.20.1-1.1.6.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_harvest_chance.json",
+    "name": "Bonus Harvest Chance",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_jewel",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_jewel.json",
+    "data": {
+      "id": "bonus_jewel",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "bonus_jewel"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_jewel.json",
+    "name": "Bonus Jewel",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_loot_chest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_loot_chest.json",
+    "data": {
+      "id": "bonus_loot_chest",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "bonus_loot_chest"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_loot_chest.json",
+    "name": "Bonus Loot Chest",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_map",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_map.json",
+    "data": {
+      "id": "bonus_map",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "bonus_map"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_map.json",
+    "name": "Bonus Map",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_obelisk_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_obelisk_chance.json",
+    "data": {
+      "id": "bonus_obelisk_chance",
+      "mods": [
+        {
+          "max": 45.0,
+          "min": 15.0,
+          "stat": "bonus_obelisk_chance"
+        }
+      ],
+      "relic_type": "ancient_obelisks",
+      "weight": 0
+    },
+    "base_source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_obelisk_chance.json",
+    "name": "Bonus Obelisk Chance",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_omen",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_omen.json",
+    "data": {
+      "id": "bonus_omen",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "bonus_omen"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_omen.json",
+    "name": "Bonus Omen",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_prophecy_coin",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_prophecy_coin.json",
+    "data": {
+      "id": "bonus_prophecy_coin",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "bonus_prophecy_coin"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_prophecy_coin.json",
+    "name": "Bonus Prophecy Coin",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_rune",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_rune.json",
+    "data": {
+      "id": "bonus_rune",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "bonus_rune"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_rune.json",
+    "name": "Bonus Rune",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_skill_gem",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_skill_gem.json",
+    "data": {
+      "id": "bonus_skill_gem",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "bonus_skill_gem"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_skill_gem.json",
+    "name": "Bonus Skill Gem",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_watcher_eye",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/bonus_watcher_eye.json",
+    "data": {
+      "id": "bonus_watcher_eye",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "bonus_watcher_eye"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_affix/bonus_watcher_eye.json",
+    "name": "Bonus Watcher Eye",
+    "name_source": "derived"
+  },
+  {
+    "id": "double_harvest_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/double_harvest_chance.json",
+    "data": {
+      "id": "double_harvest_chance",
+      "mods": [
+        {
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "double_harvest_chance"
+        }
+      ],
+      "relic_type": "the_harvest",
+      "weight": 0
+    },
+    "base_source": "mods/The-Harvest-1.20.1-1.1.6.jar!/data/library_of_exile/library_of_exile_relic_affix/double_harvest_chance.json",
+    "name": "Double Harvest Chance",
+    "name_source": "derived"
+  },
+  {
+    "id": "empty",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_relic_affix/empty.json",
+    "data": {
+      "id": "empty",
+      "mods": [],
+      "relic_type": "",
+      "weight": 1000
+    },
+    "name": "Empty",
+    "name_source": "derived"
+  },
+  {
+    "id": "extra_map_boss_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/extra_map_boss_chance.json",
+    "data": {
+      "id": "extra_map_boss_chance",
+      "mods": [
+        {
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "extra_map_boss_chance"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_relic_affix/extra_map_boss_chance.json",
+    "name": "Extra Map Boss Chance",
+    "name_source": "derived"
+  },
+  {
+    "id": "harvest_content",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/harvest_content.json",
+    "data": {
+      "id": "harvest_content",
+      "mods": [
+        {
+          "max": 100.0,
+          "min": 33.0,
+          "stat": "harvest_content"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/The-Harvest-1.20.1-1.1.6.jar!/data/library_of_exile/library_of_exile_relic_affix/harvest_content.json",
+    "name": "Harvest Content",
+    "name_source": "derived"
+  },
+  {
+    "id": "imprisoned_monster_content",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/imprisoned_monster_content.json",
+    "data": {
+      "id": "imprisoned_monster_content",
+      "mods": [
+        {
+          "max": 100.0,
+          "min": 33.0,
+          "stat": "imprisoned_monster_content"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "name": "Imprisoned Monster Content",
+    "name_source": "derived"
+  },
+  {
+    "id": "mob_spawn_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/mob_spawn_chance.json",
+    "data": {
+      "id": "mob_spawn_chance",
+      "mods": [
+        {
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "mob_spawn_chance"
+        }
+      ],
+      "relic_type": "ancient_obelisks",
+      "weight": 1000
+    },
+    "base_source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_affix/mob_spawn_chance.json",
+    "name": "Mob Spawn Chance",
+    "name_source": "derived"
+  },
+  {
+    "id": "mob_spawns",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/mob_spawns.json",
+    "data": {
+      "id": "mob_spawns",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "mobs_spawned"
+        }
+      ],
+      "relic_type": "the_harvest",
+      "weight": 1000
+    },
+    "base_source": "mods/The-Harvest-1.20.1-1.1.6.jar!/data/library_of_exile/library_of_exile_relic_affix/mob_spawns.json",
+    "name": "Mob Spawns",
+    "name_source": "derived"
+  },
+  {
+    "id": "obelisk_content",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/obelisk_content.json",
+    "data": {
+      "id": "obelisk_content",
+      "mods": [
+        {
+          "max": 100.0,
+          "min": 33.0,
+          "stat": "obelisk_content"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_affix/obelisk_content.json",
+    "name": "Obelisk Content",
+    "name_source": "derived"
+  },
+  {
+    "id": "pack_size",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/pack_size.json",
+    "data": {
+      "id": "pack_size",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "pack_size"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_relic_affix/pack_size.json",
+    "name": "Pack Size",
+    "name_source": "derived"
+  },
+  {
+    "id": "prophecy_content",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/prophecy_content.json",
+    "data": {
+      "id": "prophecy_content",
+      "mods": [
+        {
+          "max": 100.0,
+          "min": 33.0,
+          "stat": "prophecy_content"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "name": "Prophecy Content",
+    "name_source": "derived"
+  },
+  {
+    "id": "shrine_content",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/shrine_content.json",
+    "data": {
+      "id": "shrine_content",
+      "mods": [
+        {
+          "max": 100.0,
+          "min": 33.0,
+          "stat": "shrine_content"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "name": "Shrine Content",
+    "name_source": "derived"
+  },
+  {
+    "id": "strongbox_content",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/strongbox_content.json",
+    "data": {
+      "id": "strongbox_content",
+      "mods": [
+        {
+          "max": 100.0,
+          "min": 33.0,
+          "stat": "strongbox_content"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "name": "Strongbox Content",
+    "name_source": "derived"
+  },
+  {
+    "id": "total_wave_mobs",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/total_wave_mobs.json",
+    "data": {
+      "id": "total_wave_mobs",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "total_wave_mobs"
+        }
+      ],
+      "relic_type": "ancient_obelisks",
+      "weight": 1000
+    },
+    "base_source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_affix/total_wave_mobs.json",
+    "name": "Total Wave Mobs",
+    "name_source": "derived"
+  },
+  {
+    "id": "triple_chest_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/triple_chest_chance.json",
+    "data": {
+      "id": "triple_chest_chance",
+      "mods": [
+        {
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "triple_chest_chance"
+        }
+      ],
+      "relic_type": "ancient_obelisks",
+      "weight": 1000
+    },
+    "base_source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_affix/triple_chest_chance.json",
+    "name": "Triple Chest Chance",
+    "name_source": "derived"
+  },
+  {
+    "id": "triple_obelisk_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/triple_obelisk_chance.json",
+    "data": {
+      "id": "triple_obelisk_chance",
+      "mods": [
+        {
+          "max": 15.0,
+          "min": 5.0,
+          "stat": "triple_obelisk_chance"
+        }
+      ],
+      "relic_type": "ancient_obelisks",
+      "weight": 0
+    },
+    "base_source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_affix/triple_obelisk_chance.json",
+    "name": "Triple Obelisk Chance",
+    "name_source": "derived"
+  },
+  {
+    "id": "uber_frag_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_affix/uber_frag_chance.json",
+    "data": {
+      "id": "uber_frag_chance",
+      "mods": [
+        {
+          "max": 30.0,
+          "min": 10.0,
+          "stat": "bonus_boss_frag_chance"
+        }
+      ],
+      "relic_type": "mmorpg",
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_relic_affix/uber_frag_chance.json",
+    "name": "Uber Frag Chance",
+    "name_source": "derived"
+  }
+]

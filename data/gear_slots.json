@@ -1,0 +1,444 @@
+[
+  {
+    "id": "axe",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/axe.json",
+    "data": {
+      "fam": "Weapon",
+      "id": "axe",
+      "model_num": 4,
+      "weapon_data": {
+        "damage_multiplier": 1.6,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "name": "Axe",
+    "name_source": "lang"
+  },
+  {
+    "id": "boots",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/boots.json",
+    "data": {
+      "fam": "Armor",
+      "id": "boots",
+      "model_num": 7,
+      "weapon_data": {
+        "damage_multiplier": 0.0,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "name": "Boots",
+    "name_source": "lang"
+  },
+  {
+    "id": "bow",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/bow.json",
+    "data": {
+      "fam": "Weapon",
+      "id": "bow",
+      "model_num": 5,
+      "weapon_data": {
+        "damage_multiplier": 1.4,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/bow.json",
+    "name": "Bow",
+    "name_source": "lang"
+  },
+  {
+    "id": "chest",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/chest.json",
+    "data": {
+      "fam": "Armor",
+      "id": "chest",
+      "model_num": 9,
+      "weapon_data": {
+        "damage_multiplier": 0.0,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "name": "Chest",
+    "name_source": "lang"
+  },
+  {
+    "id": "crossbow",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/crossbow.json",
+    "data": {
+      "fam": "Weapon",
+      "id": "crossbow",
+      "model_num": 6,
+      "weapon_data": {
+        "damage_multiplier": 2.8,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 750
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/crossbow.json",
+    "name": "Crossbow",
+    "name_source": "lang"
+  },
+  {
+    "id": "dagger",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/dagger.json",
+    "data": {
+      "fam": "Weapon",
+      "id": "dagger",
+      "model_num": 15,
+      "weapon_data": {
+        "damage_multiplier": 1.0,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "name": "Dagger",
+    "name_source": "lang"
+  },
+  {
+    "id": "elytra",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/elytra.json",
+    "data": {
+      "fam": "Jewelry",
+      "id": "elytra",
+      "model_num": 17,
+      "weapon_data": {
+        "damage_multiplier": 0.0,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 0
+    },
+    "name": "Elytra",
+    "name_source": "lang"
+  },
+  {
+    "id": "gauntlet",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/gauntlet.json",
+    "data": {
+      "fam": "Weapon",
+      "id": "gauntlet",
+      "model_num": 19,
+      "weapon_data": {
+        "damage_multiplier": 0.9,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "name": "Gauntlet",
+    "name_source": "lang"
+  },
+  {
+    "id": "greatsword",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/greatsword.json",
+    "data": {
+      "fam": "Weapon",
+      "id": "greatsword",
+      "model_num": 21,
+      "weapon_data": {
+        "damage_multiplier": 1.6,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "name": "Greatsword",
+    "name_source": "lang"
+  },
+  {
+    "id": "hammer",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/hammer.json",
+    "data": {
+      "fam": "Weapon",
+      "id": "hammer",
+      "model_num": 14,
+      "weapon_data": {
+        "damage_multiplier": 1.4,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "name": "Hammer",
+    "name_source": "lang"
+  },
+  {
+    "id": "head",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/head.json",
+    "data": {
+      "fam": "Jewelry",
+      "id": "head",
+      "model_num": 18,
+      "weapon_data": {
+        "damage_multiplier": 0.0,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 0
+    },
+    "name": "Hat",
+    "name_source": "lang"
+  },
+  {
+    "id": "helmet",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/helmet.json",
+    "data": {
+      "fam": "Armor",
+      "id": "helmet",
+      "model_num": 10,
+      "weapon_data": {
+        "damage_multiplier": 0.0,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "name": "Helmet",
+    "name_source": "lang"
+  },
+  {
+    "id": "necklace",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/necklace.json",
+    "data": {
+      "fam": "Jewelry",
+      "id": "necklace",
+      "model_num": 13,
+      "weapon_data": {
+        "damage_multiplier": 0.0,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 500
+    },
+    "name": "Necklace",
+    "name_source": "lang"
+  },
+  {
+    "id": "pants",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/pants.json",
+    "data": {
+      "fam": "Armor",
+      "id": "pants",
+      "model_num": 8,
+      "weapon_data": {
+        "damage_multiplier": 0.0,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "name": "Pants",
+    "name_source": "lang"
+  },
+  {
+    "id": "ring",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/ring.json",
+    "data": {
+      "fam": "Jewelry",
+      "id": "ring",
+      "model_num": 12,
+      "weapon_data": {
+        "damage_multiplier": 0.0,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 500
+    },
+    "name": "Ring",
+    "name_source": "lang"
+  },
+  {
+    "id": "scythe",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/scythe.json",
+    "data": {
+      "fam": "Weapon",
+      "id": "scythe",
+      "model_num": 20,
+      "weapon_data": {
+        "damage_multiplier": 1.4,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "name": "Scythe",
+    "name_source": "lang"
+  },
+  {
+    "id": "shield",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/shield.json",
+    "data": {
+      "fam": "OffHand",
+      "id": "shield",
+      "model_num": 11,
+      "weapon_data": {
+        "damage_multiplier": 0.0,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 500
+    },
+    "name": "Shield",
+    "name_source": "lang"
+  },
+  {
+    "id": "spear",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/spear.json",
+    "data": {
+      "fam": "Weapon",
+      "id": "spear",
+      "model_num": 16,
+      "weapon_data": {
+        "damage_multiplier": 1.4,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "name": "Spear",
+    "name_source": "lang"
+  },
+  {
+    "id": "staff",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/staff.json",
+    "data": {
+      "fam": "Weapon",
+      "id": "staff",
+      "model_num": 3,
+      "weapon_data": {
+        "damage_multiplier": 1.1,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/staff.json",
+    "name": "Staff",
+    "name_source": "lang"
+  },
+  {
+    "id": "sword",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/sword.json",
+    "data": {
+      "fam": "Weapon",
+      "id": "sword",
+      "model_num": 1,
+      "weapon_data": {
+        "damage_multiplier": 1.3,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/sword.json",
+    "name": "Sword",
+    "name_source": "lang"
+  },
+  {
+    "id": "tome",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/tome.json",
+    "data": {
+      "fam": "OffHand",
+      "id": "tome",
+      "model_num": 11,
+      "weapon_data": {
+        "damage_multiplier": 0.0,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 500
+    },
+    "name": "Tome",
+    "name_source": "lang"
+  },
+  {
+    "id": "totem",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/totem.json",
+    "data": {
+      "fam": "OffHand",
+      "id": "totem",
+      "model_num": 11,
+      "weapon_data": {
+        "damage_multiplier": 0.0,
+        "energy_cost_per_mob_attacked": 0.0,
+        "energy_cost_per_swing": 0.0
+      },
+      "weight": 500
+    },
+    "name": "Totem",
+    "name_source": "lang"
+  },
+  {
+    "id": "trident",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_gear_slot/trident.json",
+    "data": {
+      "fam": "Weapon",
+      "id": "trident",
+      "model_num": 14,
+      "weapon_data": {
+        "damage_multiplier": 1.0,
+        "energy_cost_per_mob_attacked": 2.0,
+        "energy_cost_per_swing": 5.0
+      },
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_gear_slot/trident.json",
+    "name": "Trident",
+    "name_source": "lang"
+  }
+]

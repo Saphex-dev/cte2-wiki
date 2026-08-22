@@ -1,0 +1,841 @@
+[
+  {
+    "id": "alchemy",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_profession/alchemy.json",
+    "data": {
+      "chance_drops": [],
+      "exp_sources": {
+        "default_xp": {
+          "exp": 50,
+          "req": [],
+          "tier": 0
+        },
+        "map": {}
+      },
+      "id": "alchemy",
+      "misc_chance": 5.0,
+      "tiered_drops": {},
+      "tool_tag": ""
+    },
+    "name": "Alchemy",
+    "name_source": "lang"
+  },
+  {
+    "id": "cooking",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_profession/cooking.json",
+    "data": {
+      "chance_drops": [],
+      "exp_sources": {
+        "default_xp": {
+          "exp": 50,
+          "req": [],
+          "tier": 0
+        },
+        "map": {}
+      },
+      "id": "cooking",
+      "misc_chance": 5.0,
+      "tiered_drops": {},
+      "tool_tag": ""
+    },
+    "name": "Cooking",
+    "name_source": "lang"
+  },
+  {
+    "id": "enchanting",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_profession/enchanting.json",
+    "data": {
+      "chance_drops": [],
+      "exp_sources": {
+        "default_xp": {
+          "exp": 50,
+          "req": [],
+          "tier": 0
+        },
+        "map": {}
+      },
+      "id": "enchanting",
+      "misc_chance": 5.0,
+      "tiered_drops": {},
+      "tool_tag": ""
+    },
+    "name": "Infusing",
+    "name_source": "lang"
+  },
+  {
+    "id": "farming",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_profession/farming.json",
+    "data": {
+      "chance_drops": [],
+      "exp_sources": {
+        "default_xp": {
+          "exp": 50,
+          "req": [],
+          "tier": 0
+        },
+        "map": {
+          "0": [
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "minecraft:wheat",
+              "req": [
+                "req_growth_stage"
+              ]
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "minecraft:beetroot",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "minecraft:potato",
+              "req": [
+                "req_growth_stage"
+              ]
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "minecraft:carrot",
+              "req": [
+                "req_growth_stage"
+              ]
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 5,
+              "id": "minecraft:sweet_berries",
+              "req": []
+            }
+          ],
+          "1": [
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "minecraft:melon_slice",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 1,
+              "id": "minecraft:pumpkin",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "supplementaries:flax",
+              "req": [
+                "req_growth_stage"
+              ]
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "farmersdelight:cabbage",
+              "req": [
+                "req_growth_stage"
+              ]
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "farmersdelight:tomato",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "farmersdelight:onion",
+              "req": [
+                "req_growth_stage"
+              ]
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 3,
+              "id": "minecraft:cocoa_beans",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 5,
+              "id": "minecraft:glow_berries",
+              "req": []
+            }
+          ],
+          "2": [
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "corn_delight:corn",
+              "req": [
+                "req_growth_stage"
+              ]
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "chococraft:gysahl_green",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 3,
+              "id": "minecraft:nether_wart",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "farmersdelight:rice_panicle",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "doggytalents:rice_wheat",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 1,
+              "id": "undergarden:gloomgourd",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 5,
+              "id": "moresnifferflowers:dawnberry",
+              "req": []
+            }
+          ],
+          "3": [
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "blue_skies:pine_fruit",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "blue_skies:winter_leaves",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 5,
+              "id": "undergarden:blisterberry",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "minecraft:pitcher_crop",
+              "req": [
+                "req_growth_stage"
+              ]
+            }
+          ],
+          "4": [
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "blue_skies:scalefruit",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 30,
+              "id": "blue_skies:fiery_beans",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 5,
+              "id": "undergarden:brewberry",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 5,
+              "id": "undergarden:pink_brewberry",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 5,
+              "id": "undergarden:black_brewberry",
+              "req": []
+            }
+          ],
+          "5": [
+            {
+              "type": "FARM_ITEM",
+              "exp": 3,
+              "id": "blue_skies:cryo_root",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 3,
+              "id": "blue_skies:solnut",
+              "req": []
+            },
+            {
+              "type": "FARM_ITEM",
+              "exp": 5,
+              "id": "undergarden:comet_berries",
+              "req": []
+            }
+          ]
+        }
+      },
+      "id": "farming",
+      "misc_chance": 5.0,
+      "tiered_drops": {
+        "TIER0": [
+          {
+            "type": "MAIN",
+            "chance": 10.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/farming/0",
+                "min_lvl": 0.0,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER1": [
+          {
+            "type": "MAIN",
+            "chance": 10.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/farming/1",
+                "min_lvl": 0.2,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER2": [
+          {
+            "type": "MAIN",
+            "chance": 10.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/farming/2",
+                "min_lvl": 0.4,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER3": [
+          {
+            "type": "MAIN",
+            "chance": 10.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/farming/3",
+                "min_lvl": 0.6,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER4": [
+          {
+            "type": "MAIN",
+            "chance": 10.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/farming/4",
+                "min_lvl": 0.8,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER5": [
+          {
+            "type": "MAIN",
+            "chance": 10.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/farming/5",
+                "min_lvl": 1.0,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ]
+      },
+      "tool_tag": "farming_tool"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_profession/farming.json",
+    "name": "Farming",
+    "name_source": "lang"
+  },
+  {
+    "id": "fishing",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_profession/fishing.json",
+    "data": {
+      "chance_drops": [],
+      "exp_sources": {
+        "default_xp": {
+          "exp": 150,
+          "req": [],
+          "tier": 0
+        },
+        "map": {}
+      },
+      "id": "fishing",
+      "misc_chance": 5.0,
+      "tiered_drops": {
+        "TIER0": [
+          {
+            "type": "MAIN",
+            "chance": 35.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/fishing/0",
+                "min_lvl": 0.0,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER1": [
+          {
+            "type": "MAIN",
+            "chance": 35.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/fishing/1",
+                "min_lvl": 0.2,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER2": [
+          {
+            "type": "MAIN",
+            "chance": 35.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/fishing/2",
+                "min_lvl": 0.4,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER3": [
+          {
+            "type": "MAIN",
+            "chance": 35.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/fishing/3",
+                "min_lvl": 0.6,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER4": [
+          {
+            "type": "MAIN",
+            "chance": 35.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/fishing/4",
+                "min_lvl": 0.8,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER5": [
+          {
+            "type": "MAIN",
+            "chance": 35.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/fishing/5",
+                "min_lvl": 1.0,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ]
+      },
+      "tool_tag": "fishing_tool"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_profession/fishing.json",
+    "name": "Fishing",
+    "name_source": "lang"
+  },
+  {
+    "id": "gear_crafting",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_profession/gear_crafting.json",
+    "data": {
+      "chance_drops": [],
+      "exp_sources": {
+        "default_xp": {
+          "exp": 50,
+          "req": [],
+          "tier": 0
+        },
+        "map": {}
+      },
+      "id": "gear_crafting",
+      "misc_chance": 5.0,
+      "tiered_drops": {},
+      "tool_tag": ""
+    },
+    "name": "Gear Crafting",
+    "name_source": "lang"
+  },
+  {
+    "id": "husbandry",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_profession/husbandry.json",
+    "data": {
+      "chance_drops": [],
+      "exp_sources": {
+        "default_xp": {
+          "exp": 0,
+          "req": [],
+          "tier": 0
+        },
+        "map": {}
+      },
+      "id": "husbandry",
+      "misc_chance": 0.0,
+      "tiered_drops": {},
+      "tool_tag": ""
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_profession/husbandry.json",
+    "name": "Bounty Hunting",
+    "name_source": "lang"
+  },
+  {
+    "id": "mining",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_profession/mining.json",
+    "data": {
+      "chance_drops": [],
+      "exp_sources": {
+        "default_xp": {
+          "exp": 50,
+          "req": [],
+          "tier": 0
+        },
+        "map": {
+          "0": [
+            {
+              "type": "BLOCK_TAG",
+              "exp": 10,
+              "id": "minecraft:coal_ores",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 15,
+              "id": "minecraft:iron_ores",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 15,
+              "id": "minecraft:copper_ores",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 12,
+              "id": "forge:ores/zinc",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 12,
+              "id": "forge:ores/silver",
+              "req": []
+            }
+          ],
+          "1": [
+            {
+              "type": "BLOCK_TAG",
+              "exp": 10,
+              "id": "minecraft:redstone_ores",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 15,
+              "id": "minecraft:lapis_ores",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 20,
+              "id": "minecraft:gold_ores",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 15,
+              "id": "forge:ores/quartz",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 25,
+              "id": "minecraft:emerald_ores",
+              "req": []
+            }
+          ],
+          "2": [
+            {
+              "type": "BLOCK_TAG",
+              "exp": 20,
+              "id": "forge:ores/cloggrum",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 30,
+              "id": "minecraft:diamond_ores",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 30,
+              "id": "forge:ores/froststeel",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 35,
+              "id": "forge:ores/utherium",
+              "req": []
+            }
+          ],
+          "3": [
+            {
+              "type": "BLOCK_TAG",
+              "exp": 40,
+              "id": "forge:ores/regalium",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 40,
+              "id": "blue_skies:ores/moonstone",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 50,
+              "id": "blue_skies:ores/pyrope",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 50,
+              "id": "blue_skies:ores/aquite",
+              "req": []
+            }
+          ],
+          "4": [
+            {
+              "type": "BLOCK_TAG",
+              "exp": 60,
+              "id": "blue_skies:ores/falsite",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 60,
+              "id": "blue_skies:ores/ventium",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 75,
+              "id": "blue_skies:ores/horizonite",
+              "req": []
+            }
+          ],
+          "5": [
+            {
+              "type": "BLOCK_TAG",
+              "exp": 80,
+              "id": "blue_skies:ores/charoite",
+              "req": []
+            },
+            {
+              "type": "BLOCK_TAG",
+              "exp": 80,
+              "id": "blue_skies:ores/diopside",
+              "req": []
+            }
+          ]
+        }
+      },
+      "id": "mining",
+      "misc_chance": 5.0,
+      "tiered_drops": {
+        "TIER0": [
+          {
+            "type": "MAIN",
+            "chance": 20.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/mining/0",
+                "min_lvl": 0.0,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER1": [
+          {
+            "type": "MAIN",
+            "chance": 20.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/mining/1",
+                "min_lvl": 0.2,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER2": [
+          {
+            "type": "MAIN",
+            "chance": 20.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/mining/2",
+                "min_lvl": 0.4,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER3": [
+          {
+            "type": "MAIN",
+            "chance": 20.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/mining/3",
+                "min_lvl": 0.6,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER4": [
+          {
+            "type": "MAIN",
+            "chance": 20.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/mining/4",
+                "min_lvl": 0.8,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ],
+        "TIER5": [
+          {
+            "type": "MAIN",
+            "chance": 20.0,
+            "drops": [
+              {
+                "item_id": "mmorpg:material/mining/5",
+                "min_lvl": 1.0,
+                "num": 1,
+                "weight": 1000
+              }
+            ]
+          }
+        ]
+      },
+      "tool_tag": "mining_tool"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_profession/mining.json",
+    "name": "Mining",
+    "name_source": "lang"
+  },
+  {
+    "id": "salvaging",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_profession/salvaging.json",
+    "data": {
+      "chance_drops": [],
+      "exp_sources": {
+        "default_xp": {
+          "exp": 50,
+          "req": [],
+          "tier": 0
+        },
+        "map": {}
+      },
+      "id": "salvaging",
+      "misc_chance": 5.0,
+      "tiered_drops": {},
+      "tool_tag": ""
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_profession/salvaging.json",
+    "name": "Salvaging",
+    "name_source": "lang"
+  }
+]

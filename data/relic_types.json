@@ -1,0 +1,76 @@
+[
+  {
+    "id": "ancient_obelisks",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_type/ancient_obelisks.json",
+    "data": {
+      "id": "ancient_obelisks",
+      "item_id": "ancient_obelisks:relic",
+      "max_equipped": 1,
+      "weight": 1000
+    },
+    "base_source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_type/ancient_obelisks.json",
+    "name": "Ancient Obelisks",
+    "name_source": "derived"
+  },
+  {
+    "id": "dungeon_realm",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_type/dungeon_realm.json",
+    "data": {
+      "id": "dungeon_realm",
+      "item_id": "dungeon_realm:general_relic",
+      "max_equipped": 1,
+      "weight": 0
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_relic_type/dungeon_realm.json",
+    "name": "Dungeon Realm",
+    "name_source": "derived"
+  },
+  {
+    "id": "empty",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_relic_type/empty.json",
+    "data": {
+      "id": "empty",
+      "item_id": "",
+      "max_equipped": 3,
+      "weight": 0
+    },
+    "name": "Empty",
+    "name_source": "derived"
+  },
+  {
+    "id": "mmorpg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_type/mmorpg.json",
+    "data": {
+      "id": "mmorpg",
+      "item_id": "mmorpg:relic",
+      "max_equipped": 3,
+      "weight": 3000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_type/mmorpg.json",
+    "name": "Mmorpg",
+    "name_source": "derived"
+  },
+  {
+    "id": "the_harvest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_type/the_harvest.json",
+    "data": {
+      "id": "the_harvest",
+      "item_id": "the_harvest:relic",
+      "max_equipped": 1,
+      "weight": 1000
+    },
+    "base_source": "mods/The-Harvest-1.20.1-1.1.6.jar!/data/library_of_exile/library_of_exile_relic_type/the_harvest.json",
+    "name": "The Harvest",
+    "name_source": "derived"
+  }
+]

@@ -1,0 +1,6483 @@
+[
+  {
+    "id": "alexsmobs",
+    "group": "all_mobs_in_mod",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/all_mobs_in_mod/alexsmobs.json",
+    "data": {
+      "dmg_multi": 0.75,
+      "exp_multi": 1.0,
+      "hp_multi": 0.5,
+      "identifier": "alexsmobs",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Alexsmobs",
+    "name_source": "derived"
+  },
+  {
+    "id": "aquamirae",
+    "group": "all_mobs_in_mod",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/all_mobs_in_mod/aquamirae.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "aquamirae",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_water"
+          }
+        ]
+      }
+    },
+    "name": "Aquamirae",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies",
+    "group": "all_mobs_in_mod",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/all_mobs_in_mod/blue_skies.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": true,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/all_mobs_in_mod/blue_skies.json",
+    "name": "Blue Skies",
+    "name_source": "derived"
+  },
+  {
+    "id": "chococraft",
+    "group": "all_mobs_in_mod",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/all_mobs_in_mod/chococraft.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.5,
+      "hp_multi": 3.0,
+      "identifier": "chococraft",
+      "loot_multi": 0.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 2.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Chococraft",
+    "name_source": "derived"
+  },
+  {
+    "id": "creeperoverhaul",
+    "group": "all_mobs_in_mod",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/all_mobs_in_mod/creeperoverhaul.json",
+    "data": {
+      "dmg_multi": 1.5,
+      "exp_multi": 1.0,
+      "hp_multi": 0.33,
+      "identifier": "creeperoverhaul",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Creeperoverhaul",
+    "name_source": "derived"
+  },
+  {
+    "id": "deeperdarker",
+    "group": "all_mobs_in_mod",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/all_mobs_in_mod/deeperdarker.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "deeperdarker",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 50,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          }
+        ]
+      }
+    },
+    "name": "Deeperdarker",
+    "name_source": "derived"
+  },
+  {
+    "id": "easy_npc",
+    "group": "all_mobs_in_mod",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/all_mobs_in_mod/easy_npc.json",
+    "data": {
+      "dmg_multi": 0.5,
+      "exp_multi": 0.0,
+      "hp_multi": 100.0,
+      "identifier": "easy_npc",
+      "loot_multi": 0.0,
+      "max_lvl": 100,
+      "min_lvl": 100,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 100.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Easy Npc",
+    "name_source": "derived"
+  },
+  {
+    "id": "lycanite_mobs",
+    "group": "all_mobs_in_mod",
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/all_mobs_in_mod/lycanite_mobs.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.2000000476837158,
+      "hp_multi": 1.0,
+      "identifier": "lycanite_mobs",
+      "loot_multi": 1.2000000476837158,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Lycanite Mobs",
+    "name_source": "derived"
+  },
+  {
+    "id": "mutantmonsters",
+    "group": "all_mobs_in_mod",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/all_mobs_in_mod/mutantmonsters.json",
+    "data": {
+      "dmg_multi": 0.75,
+      "exp_multi": 1.25,
+      "hp_multi": 0.75,
+      "identifier": "mutantmonsters",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Mutantmonsters",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest",
+    "group": "all_mobs_in_mod",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/all_mobs_in_mod/twilightforest.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 90,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Twilightforest",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden",
+    "group": "all_mobs_in_mod",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/all_mobs_in_mod/undergarden.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "undergarden",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 25,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          }
+        ]
+      }
+    },
+    "name": "Undergarden",
+    "name_source": "derived"
+  },
+  {
+    "id": "ambient",
+    "group": "mob_types",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/mob_types/ambient.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "ambient",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/mob_types/ambient.json",
+    "name": "Ambient",
+    "name_source": "derived"
+  },
+  {
+    "id": "animal",
+    "group": "mob_types",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/mob_types/animal.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 0.5,
+      "identifier": "animal",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/mob_types/animal.json",
+    "name": "Animal",
+    "name_source": "derived"
+  },
+  {
+    "id": "mob",
+    "group": "mob_types",
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/mob_types/mob.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "mob",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Mob",
+    "name_source": "derived"
+  },
+  {
+    "id": "npc",
+    "group": "mob_types",
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/mob_types/npc.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.2000000029802322,
+      "identifier": "npc",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Npc",
+    "name_source": "derived"
+  },
+  {
+    "id": "other",
+    "group": "mob_types",
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/mob_types/other.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "other",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Other",
+    "name_source": "derived"
+  },
+  {
+    "id": "player",
+    "group": "mob_types",
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/mob_types/player.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "player",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Player",
+    "name_source": "derived"
+  },
+  {
+    "id": "alexsmobs:blobfish",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/alexsmobs_blobfish.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "alexsmobs:blobfish",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Alexsmobs:Blobfish",
+    "name_source": "derived"
+  },
+  {
+    "id": "alexsmobs:catfish",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/alexsmobs_catfish.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "alexsmobs:catfish",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Alexsmobs:Catfish",
+    "name_source": "derived"
+  },
+  {
+    "id": "alexsmobs:cosmic_cod",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/alexsmobs_cosmic_cod.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "alexsmobs:cosmic_cod",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Alexsmobs:Cosmic Cod",
+    "name_source": "derived"
+  },
+  {
+    "id": "alexsmobs:devils_hole_pupfish",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/alexsmobs_devils_hole_pupfish.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "alexsmobs:devils_hole_pupfish",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Alexsmobs:Devils Hole Pupfish",
+    "name_source": "derived"
+  },
+  {
+    "id": "alexsmobs:mudskipper",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/alexsmobs_mudskipper.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "alexsmobs:mudskipper",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Alexsmobs:Mudskipper",
+    "name_source": "derived"
+  },
+  {
+    "id": "alexsmobs:skelewag",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/alexsmobs_skelewag.json",
+    "data": {
+      "dmg_multi": 0.75,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "alexsmobs:skelewag",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_water"
+          }
+        ]
+      }
+    },
+    "name": "Alexsmobs:Skelewag",
+    "name_source": "derived"
+  },
+  {
+    "id": "alexsmobs:void_worm",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/alexsmobs_void_worm.json",
+    "data": {
+      "dmg_multi": 0.6,
+      "exp_multi": 1.5,
+      "hp_multi": 0.5,
+      "identifier": "alexsmobs:void_worm",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Alexsmobs:Void Worm",
+    "name_source": "derived"
+  },
+  {
+    "id": "alexsmobs:warped_mosco",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/alexsmobs_warped_mosco.json",
+    "data": {
+      "dmg_multi": 0.66,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "alexsmobs:warped_mosco",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "armor"
+          }
+        ]
+      }
+    },
+    "name": "Alexsmobs:Warped Mosco",
+    "name_source": "derived"
+  },
+  {
+    "id": "aquamirae:anglerfish",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/aquamirae_anglerfish.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "aquamirae:anglerfish",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_water"
+          }
+        ]
+      }
+    },
+    "name": "Aquamirae:Anglerfish",
+    "name_source": "derived"
+  },
+  {
+    "id": "aquamirae:captain_cornelia",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/aquamirae_captain_cornelia.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "aquamirae:captain_cornelia",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 40,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_water"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "critical_hit"
+          }
+        ]
+      }
+    },
+    "name": "Aquamirae:Captain Cornelia",
+    "name_source": "derived"
+  },
+  {
+    "id": "aquamirae:eel",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/aquamirae_eel.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "aquamirae:eel",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_water"
+          }
+        ]
+      }
+    },
+    "name": "Aquamirae:Eel",
+    "name_source": "derived"
+  },
+  {
+    "id": "aquamirae:maze_mother",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/aquamirae_maze_mother.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "aquamirae:maze_mother",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_water"
+          }
+        ]
+      }
+    },
+    "name": "Aquamirae:Maze Mother",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:alchemist",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_alchemist.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:alchemist",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 45,
+      "set_health_damage_override": true,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "proj_dmg_received"
+          }
+        ]
+      }
+    },
+    "name": "Blue Skies:Alchemist",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:arachnarch",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_arachnarch.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:arachnarch",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 50,
+      "set_health_damage_override": true,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 33.0,
+            "stat": "poison_chance"
+          }
+        ]
+      }
+    },
+    "name": "Blue Skies:Arachnarch",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:armored_frost_spirit",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_crynocerous.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:armored_frost_spirit",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": true,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_water"
+          }
+        ]
+      }
+    },
+    "name": "Blue Skies:Armored Frost Spirit",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:charscale_moki",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_charscale_moki.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:charscale_moki",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Blue Skies:Charscale Moki",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:emberback",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_emberback.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:emberback",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": true,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          }
+        ]
+      }
+    },
+    "name": "Blue Skies:Emberback",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:ent_wall",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_ent_wall.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.5,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:ent_wall",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 50,
+      "set_health_damage_override": true,
+      "set_rar": "common",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Blue Skies:Ent Wall",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:grittle_flatfish",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_grittle_flatfish.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:grittle_flatfish",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Blue Skies:Grittle Flatfish",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:horizofin_tunid",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_horizofin_tunid.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:horizofin_tunid",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Blue Skies:Horizofin Tunid",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:infested_swarmed",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_infested_swarmer.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:infested_swarmed",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": true,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          }
+        ]
+      }
+    },
+    "name": "Blue Skies:Infested Swarmed",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:jelly_drifter",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_jelly_drifter.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:jelly_drifter",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Blue Skies:Jelly Drifter",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:municipal_monkfish",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_municipal_monkfish.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:municipal_monkfish",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Blue Skies:Municipal Monkfish",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:nyctofly",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_nyctofly.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:nyctofly",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": true,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 10.0,
+            "stat": "dodge"
+          }
+        ]
+      }
+    },
+    "name": "Blue Skies:Nyctofly",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:starlit_crusher",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_starlit_crusher.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:starlit_crusher",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 50,
+      "set_health_damage_override": true,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_lightning"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "electrify_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "electrify_proc_chance"
+          }
+        ]
+      }
+    },
+    "name": "Blue Skies:Starlit Crusher",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:summoner",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_summoner.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:summoner",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 45,
+      "set_health_damage_override": true,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_lightning"
+          }
+        ]
+      }
+    },
+    "name": "Blue Skies:Summoner",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:venom_spider",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/blue_skies_venom_spider.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "blue_skies:venom_spider",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": true,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "poison_chance"
+          }
+        ]
+      }
+    },
+    "name": "Blue Skies:Venom Spider",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:barrel_zombie",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_barrel_zombie.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:barrel_zombie",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "water_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Barrel Zombie",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:bonescaller",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_bonescaller.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 0.75,
+      "identifier": "born_in_chaos_v1:bonescaller",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 20.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Bonescaller",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:bonescaller_not_despawn",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_bonescaller_not_despawn.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 0.75,
+      "identifier": "born_in_chaos_v1:bonescaller_not_despawn",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 20.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Bonescaller Not Despawn",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:dire_hound_leader",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_dire_hound_leader.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:dire_hound_leader",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 60.0,
+            "stat": "bleed_chance"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "dodge"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Dire Hound Leader",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:door_knight",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_door_knight.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:door_knight",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "armor"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Door Knight",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:door_knight_not_despawn",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_door_knight_not_despawn.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:door_knight_not_despawn",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "armor"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Door Knight Not Despawn",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:fallen_chaos_knight",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_fallen_chaos_knight.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:fallen_chaos_knight",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_chaos"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Fallen Chaos Knight",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:krampus",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_krampus.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:krampus",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_water"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "water_penetration"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 33.0,
+            "stat": "freeze_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "water_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Krampus",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:krampus_henchman",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_krampus_henchman.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:krampus_henchman",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_water"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "water_penetration"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "freeze_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "water_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Krampus Henchman",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:lifestealer",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_lifestealer.json",
+    "data": {
+      "dmg_multi": 0.8,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:lifestealer",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 2.0,
+            "stat": "lifesteal"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Lifestealer",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:lifestealer_true_form",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_lifestealer_true_form.json",
+    "data": {
+      "dmg_multi": 0.8,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:lifestealer_true_form",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 2.0,
+            "stat": "lifesteal"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Lifestealer True Form",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:lord_pumpkinhead",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_lord_pumpkinhead.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:lord_pumpkinhead",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 60,
+      "set_health_damage_override": false,
+      "set_rar": "mythic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Lord Pumpkinhead",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:lord_pumpkinhead_head",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_lord_pumpkinhead_head.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:lord_pumpkinhead_head",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 60,
+      "set_health_damage_override": false,
+      "set_rar": "mythic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Lord Pumpkinhead Head",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:lord_pumpkinhead_withouta_horse",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_lord_pumpkinhead_withouta_horse.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:lord_pumpkinhead_withouta_horse",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 60,
+      "set_health_damage_override": false,
+      "set_rar": "mythic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Lord Pumpkinhead Withouta Horse",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:lord_the_headless",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_lord_the_headless.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:lord_the_headless",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 60,
+      "set_health_damage_override": false,
+      "set_rar": "mythic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Lord The Headless",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:lords_felsteed",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_lords_felsteed.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:lords_felsteed",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 60,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Born In Chaos V1:Lords Felsteed",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:maggot",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_maggot.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.5,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:maggot",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "common",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Maggot",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:missionary_raider",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_missionary_raider.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:missionary_raider",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_water"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "freeze_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Missionary Raider",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:missioner",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_missioner.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:missioner",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_water"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "freeze_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Missioner",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:mother_spider",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_mother_spider.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:mother_spider",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 33.0,
+            "stat": "poison_chance"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Mother Spider",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:nightmare_stalker",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_nightmare_stalker.json",
+    "data": {
+      "dmg_multi": 0.8,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:nightmare_stalker",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "bleed_chance"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "dodge"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Nightmare Stalker",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:phantom_creeper",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_phantom_creeper.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:phantom_creeper",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "dodge"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Phantom Creeper",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:phantom_creeper_copy",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_phantom_creeper_copy.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:phantom_creeper_copy",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "dodge"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Phantom Creeper Copy",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:pumpkinhead",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_pumpkinhead.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:pumpkinhead",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Pumpkinhead",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:restless_spirit",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_restless_spirit.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:restless_spirit",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "dodge"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Restless Spirit",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:seared_spirit",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_seared_spirit.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:seared_spirit",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "burn_chance"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Seared Spirit",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:seared_spirit_not_despawn",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_seared_spirit_not_despawn.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:seared_spirit_not_despawn",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "burn_chance"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Seared Spirit Not Despawn",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:sir_pumpkinhead",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_sir_pumpkinhead.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:sir_pumpkinhead",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Sir Pumpkinhead",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:sir_pumpkinhead_without_horse",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_sir_pumpkinhead_without_horse.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:sir_pumpkinhead_without_horse",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Sir Pumpkinhead Without Horse",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:sir_the_headless",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_sir_the_headless.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:sir_the_headless",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Sir The Headless",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:skeleton_thrasher",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_skeleton_thrasher.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:skeleton_thrasher",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Skeleton Thrasher",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:skeleton_thrasher_not_despawn",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_skeleton_thrasher_not_despawn.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:skeleton_thrasher_not_despawn",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Skeleton Thrasher Not Despawn",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:spirit_guide",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_spirit_guide.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:spirit_guide",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 10,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 10.0,
+            "stat": "dmg_reduction_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Spirit Guide",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:spirit_guide_helper",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_spirit_guide_helper.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:spirit_guide_helper",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 10,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 5.0,
+            "stat": "dmg_reduction_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 20.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Spirit Guide Helper",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:supreme_bonescaller",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_supreme_bonescaller.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:supreme_bonescaller",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 45,
+      "set_health_damage_override": false,
+      "set_rar": "mythic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Supreme Bonescaller",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:supreme_bonescaller_not_despawn",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_supreme_bonescaller_not_despawn.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:supreme_bonescaller_not_despawn",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 45,
+      "set_health_damage_override": false,
+      "set_rar": "mythic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Supreme Bonescaller Not Despawn",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:supreme_bonescaller_stage_2",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_supreme_bonescaller_stage_2.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:supreme_bonescaller_stage_2",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 45,
+      "set_health_damage_override": false,
+      "set_rar": "mythic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Supreme Bonescaller Stage 2",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:swarmer",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_swarmer.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:swarmer",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "poison_chance"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Swarmer",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:thornshell_crab",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_thornshell_crab.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:thornshell_crab",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "armor"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Thornshell Crab",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:zombie_clown",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_zombie_clown.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:zombie_clown",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Zombie Clown",
+    "name_source": "derived"
+  },
+  {
+    "id": "born_in_chaos_v1:zombie_clown_not_despawn",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/born_in_chaos_v1_zombie_clown_not_despawn.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "born_in_chaos_v1:zombie_clown_not_despawn",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Born In Chaos V1:Zombie Clown Not Despawn",
+    "name_source": "derived"
+  },
+  {
+    "id": "bosses_of_mass_destruction:gauntlet",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/bosses_of_mass_destruction_gauntlet.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "bosses_of_mass_destruction:gauntlet",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 90,
+      "set_health_damage_override": false,
+      "set_rar": "epic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "burn_chance"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "dodge"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "fire_resist"
+          }
+        ]
+      }
+    },
+    "name": "Bosses Of Mass Destruction:Gauntlet",
+    "name_source": "derived"
+  },
+  {
+    "id": "bosses_of_mass_destruction:lich",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/bosses_of_mass_destruction_lich.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "bosses_of_mass_destruction:lich",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 90,
+      "set_health_damage_override": false,
+      "set_rar": "epic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_water"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "freeze_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "freeze_proc_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Bosses Of Mass Destruction:Lich",
+    "name_source": "derived"
+  },
+  {
+    "id": "bosses_of_mass_destruction:obsidilith",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/bosses_of_mass_destruction_obsidilith.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "bosses_of_mass_destruction:obsidilith",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 90,
+      "set_health_damage_override": false,
+      "set_rar": "epic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_lightning"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "electrify_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "electrify_proc_chance"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "lightning_resist"
+          }
+        ]
+      }
+    },
+    "name": "Bosses Of Mass Destruction:Obsidilith",
+    "name_source": "derived"
+  },
+  {
+    "id": "bosses_of_mass_destruction:void_blossom",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/bosses_of_mass_destruction_void_blossom.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "bosses_of_mass_destruction:void_blossom",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 90,
+      "set_health_damage_override": false,
+      "set_rar": "epic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 33.0,
+            "stat": "poison_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "chaos_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": -25.0,
+            "stat": "fire_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 1.0,
+            "stat": "health_per_sec"
+          }
+        ]
+      }
+    },
+    "name": "Bosses Of Mass Destruction:Void Blossom",
+    "name_source": "derived"
+  },
+  {
+    "id": "botania:doppleganger",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/botania_doppleganger.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "botania:doppleganger",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 45,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "dodge"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "spell_dodge"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Botania:Doppleganger",
+    "name_source": "derived"
+  },
+  {
+    "id": "botania:pixie",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/botania_pixie.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "botania:pixie",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Botania:Pixie",
+    "name_source": "derived"
+  },
+  {
+    "id": "deeperdarker:stalker",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/deeperdarker_stalker.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "deeperdarker:stalker",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 60,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 10.0,
+            "stat": "dodge"
+          }
+        ]
+      }
+    },
+    "name": "Deeperdarker:Stalker",
+    "name_source": "derived"
+  },
+  {
+    "id": "doggytalents:dog",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/doggytalents_dog.json",
+    "data": {
+      "dmg_multi": 0.5,
+      "exp_multi": 0.0,
+      "hp_multi": 2.5,
+      "identifier": "doggytalents:dog",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Doggytalents:Dog",
+    "name_source": "derived"
+  },
+  {
+    "id": "dummmmmmy:target_dummy",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/dummmmmmy_target_dummy.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 0.8889,
+      "identifier": "dummmmmmy:target_dummy",
+      "loot_multi": 0.0,
+      "max_lvl": 1,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "common",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Dummmmmmy:Target Dummy",
+    "name_source": "derived"
+  },
+  {
+    "id": "endertrigon:baby_ender_dragon",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/endertrigon_baby_ender_dragon.json",
+    "data": {
+      "dmg_multi": 0.75,
+      "exp_multi": 0.25,
+      "hp_multi": 1.0,
+      "identifier": "endertrigon:baby_ender_dragon",
+      "loot_multi": 0.25,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "common",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_lightning"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "electrify_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "poison_chance"
+          }
+        ]
+      }
+    },
+    "name": "Endertrigon:Baby Ender Dragon",
+    "name_source": "derived"
+  },
+  {
+    "id": "friendsandfoes:wildfire",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/friendandfoes_wildfire.json",
+    "data": {
+      "dmg_multi": 0.5,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "friendsandfoes:wildfire",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "burn_chance"
+          }
+        ]
+      }
+    },
+    "name": "Friendsandfoes:Wildfire",
+    "name_source": "derived"
+  },
+  {
+    "id": "illagerinvasion:firecaller",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/illagerinvasion_firecaller.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "illagerinvasion:firecaller",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          }
+        ]
+      }
+    },
+    "name": "Illagerinvasion:Firecaller",
+    "name_source": "derived"
+  },
+  {
+    "id": "illagerinvasion:invoker",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/illagerinvasion_invoker.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "illagerinvasion:invoker",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 15,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 20.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Illagerinvasion:Invoker",
+    "name_source": "derived"
+  },
+  {
+    "id": "illagerinvasion:surrendered",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/illagerinvasion_surrendered.json",
+    "data": {
+      "dmg_multi": 1.1,
+      "exp_multi": 1.0,
+      "hp_multi": 0.75,
+      "identifier": "illagerinvasion:surrendered",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 15,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Illagerinvasion:Surrendered",
+    "name_source": "derived"
+  },
+  {
+    "id": "infinitygolem:infinity_golem",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/infinitygolem_infinity_golem.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "infinitygolem:infinity_golem",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "epic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "plus_phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "burn_chance"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 60.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "fire_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "water_resist"
+          }
+        ]
+      }
+    },
+    "name": "Infinitygolem:Infinity Golem",
+    "name_source": "derived"
+  },
+  {
+    "id": "mca:female_villager",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mca_female_villager.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.1,
+      "hp_multi": 1.0,
+      "identifier": "mca:female_villager",
+      "loot_multi": 0.1,
+      "max_lvl": 1000000,
+      "min_lvl": 40,
+      "set_health_damage_override": false,
+      "set_rar": "common",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "dmg_reduction"
+          }
+        ]
+      }
+    },
+    "name": "Mca:Female Villager",
+    "name_source": "derived"
+  },
+  {
+    "id": "mca:grim_reaper",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mca_grim_reaper.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "mca:grim_reaper",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 30,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 1.0,
+            "stat": "lifesteal"
+          }
+        ]
+      }
+    },
+    "name": "Mca:Grim Reaper",
+    "name_source": "derived"
+  },
+  {
+    "id": "mca:male_villager",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mca_male_villager.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.1,
+      "hp_multi": 1.0,
+      "identifier": "mca:male_villager",
+      "loot_multi": 0.1,
+      "max_lvl": 1000000,
+      "min_lvl": 40,
+      "set_health_damage_override": false,
+      "set_rar": "common",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "dmg_reduction"
+          }
+        ]
+      }
+    },
+    "name": "Mca:Male Villager",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:bee",
+    "group": "specific_mobs",
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_bee.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.800000011920929,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:bee",
+      "loot_multi": 0.800000011920929,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Bee",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:blaze",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_blaze.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:blaze",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "burn_chance"
+          }
+        ]
+      }
+    },
+    "name": "Minecraft:Blaze",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:cave_spider",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_cave_spider.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:cave_spider",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "poison_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 5.0,
+            "stat": "dodge"
+          }
+        ]
+      }
+    },
+    "name": "Minecraft:Cave Spider",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:chicken",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_chicken.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 0.5,
+      "identifier": "minecraft:chicken",
+      "loot_multi": 0.25,
+      "max_lvl": 1,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Chicken",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:cow",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_cow.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 0.5,
+      "identifier": "minecraft:cow",
+      "loot_multi": 0.25,
+      "max_lvl": 1,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Cow",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:creeper",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_creeper.json",
+    "data": {
+      "dmg_multi": 1.5,
+      "exp_multi": 1.0,
+      "hp_multi": 0.33,
+      "identifier": "minecraft:creeper",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Creeper",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:drowned",
+    "group": "specific_mobs",
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_drowned.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.75,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:drowned",
+      "loot_multi": 0.75,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Drowned",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:ender_dragon",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_ender_dragon.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:ender_dragon",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 50,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "phys_to_lightning"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 35.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_ender_dragon.json",
+    "name": "Minecraft:Ender Dragon",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:enderman",
+    "group": "specific_mobs",
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_enderman.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:enderman",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Enderman",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:ghast",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_ghast.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:ghast",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "burn_chance"
+          }
+        ]
+      }
+    },
+    "name": "Minecraft:Ghast",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:hoglin",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_hoglin.json",
+    "data": {
+      "dmg_multi": 0.85,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:hoglin",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Hoglin",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:iron_golem",
+    "group": "specific_mobs",
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_iron_golem.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:iron_golem",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Iron Golem",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:magma_cube",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_magma_cube.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.2,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:magma_cube",
+      "loot_multi": 0.2,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          }
+        ]
+      }
+    },
+    "name": "Minecraft:Magma Cube",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:pig",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_pig.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 0.5,
+      "identifier": "minecraft:pig",
+      "loot_multi": 0.25,
+      "max_lvl": 1,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Pig",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:pillager",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_pillager.json",
+    "data": {
+      "dmg_multi": 0.8,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:pillager",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Pillager",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:polar_bear",
+    "group": "specific_mobs",
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_polar_bear.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:polar_bear",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Polar Bear",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:rabbit",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_rabbit.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 0.5,
+      "identifier": "minecraft:rabbit",
+      "loot_multi": 0.25,
+      "max_lvl": 1,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Rabbit",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:sheep",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_sheep.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 0.5,
+      "identifier": "minecraft:sheep",
+      "loot_multi": 0.25,
+      "max_lvl": 1,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Sheep",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:silverfish",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_silverfish.json",
+    "data": {
+      "dmg_multi": 1.25,
+      "exp_multi": 0.25,
+      "hp_multi": 1.5,
+      "identifier": "minecraft:silverfish",
+      "loot_multi": 0.25,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Silverfish",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:slime",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_slime.json",
+    "data": {
+      "dmg_multi": 1.25,
+      "exp_multi": 0.15,
+      "hp_multi": 1.5,
+      "identifier": "minecraft:slime",
+      "loot_multi": 0.15,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "poison_chance"
+          }
+        ]
+      }
+    },
+    "name": "Minecraft:Slime",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:snow_golem",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_snow_golem.json",
+    "data": {
+      "dmg_multi": 0.5,
+      "exp_multi": 0.5,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:snow_golem",
+      "loot_multi": 0.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "freeze_chance"
+          }
+        ]
+      }
+    },
+    "name": "Minecraft:Snow Golem",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:vex",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_vex.json",
+    "data": {
+      "dmg_multi": 0.75,
+      "exp_multi": 0.25,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:vex",
+      "loot_multi": 0.25,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "common",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_lightning"
+          }
+        ]
+      }
+    },
+    "name": "Minecraft:Vex",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:vindicator",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_vindicator.json",
+    "data": {
+      "dmg_multi": 0.9,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:vindicator",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Vindicator",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:warden",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_warden.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:warden",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 60,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 35.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 35.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Minecraft:Warden",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:wither",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_wither.json",
+    "data": {
+      "dmg_multi": 0.75,
+      "exp_multi": 1.5,
+      "hp_multi": 0.75,
+      "identifier": "minecraft:wither",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 30,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 20.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_wither.json",
+    "name": "Minecraft:Wither",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:wolf",
+    "group": "specific_mobs",
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_wolf.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.5,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:wolf",
+      "loot_multi": 0.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Wolf",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:zombie",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_zombie.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:zombie",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "move_speed"
+          }
+        ]
+      }
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_zombie.json",
+    "name": "Minecraft:Zombie",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:zombified_piglin",
+    "group": "specific_mobs",
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_entity/specific_mobs/minecraft_zombified_piglin.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.5,
+      "hp_multi": 1.0,
+      "identifier": "minecraft:zombified_piglin",
+      "loot_multi": 0.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Minecraft:Zombified Piglin",
+    "name_source": "derived"
+  },
+  {
+    "id": "monsterplus:abyssologer",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/monsterplus_abyssologer.json",
+    "data": {
+      "dmg_multi": 0.75,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "monsterplus:abyssologer",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "armor"
+          }
+        ]
+      }
+    },
+    "name": "Monsterplus:Abyssologer",
+    "name_source": "derived"
+  },
+  {
+    "id": "monsterplus:crystal_zombie",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/monsterplus_crystal_zombie.json",
+    "data": {
+      "dmg_multi": 0.5,
+      "exp_multi": 1.1,
+      "hp_multi": 0.8,
+      "identifier": "monsterplus:crystal_zombie",
+      "loot_multi": 1.1,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Monsterplus:Crystal Zombie",
+    "name_source": "derived"
+  },
+  {
+    "id": "monsterplus:lava_squid",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/monsterplus_lava_squid.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "monsterplus:lava_squid",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          }
+        ]
+      }
+    },
+    "name": "Monsterplus:Lava Squid",
+    "name_source": "derived"
+  },
+  {
+    "id": "monsterplus:mother_lava_squid",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/monsterplus_mother_lava_squid.json",
+    "data": {
+      "dmg_multi": 0.75,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "monsterplus:mother_lava_squid",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          }
+        ]
+      }
+    },
+    "name": "Monsterplus:Mother Lava Squid",
+    "name_source": "derived"
+  },
+  {
+    "id": "mowziesmobs:ferrous_wroughtnaut",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mowziesmobs_ferrous_wroughtnaut.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "mowziesmobs:ferrous_wroughtnaut",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": true,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "bleed_chance"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Mowziesmobs:Ferrous Wroughtnaut",
+    "name_source": "derived"
+  },
+  {
+    "id": "mowziesmobs:foliaath",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mowziesmobs_foliaath.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "mowziesmobs:foliaath",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 25,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "poison_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "chaos_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": -25.0,
+            "stat": "fire_resist"
+          }
+        ]
+      }
+    },
+    "name": "Mowziesmobs:Foliaath",
+    "name_source": "derived"
+  },
+  {
+    "id": "mowziesmobs:frostmaw",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mowziesmobs_frostmaw.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "mowziesmobs:frostmaw",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 50,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 20.0,
+            "stat": "health"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_water"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 33.0,
+            "stat": "freeze_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Mowziesmobs:Frostmaw",
+    "name_source": "derived"
+  },
+  {
+    "id": "mowziesmobs:naga",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mowziesmobs_naga.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "mowziesmobs:naga",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 25,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "poison_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "poison_damage"
+          }
+        ]
+      }
+    },
+    "name": "Mowziesmobs:Naga",
+    "name_source": "derived"
+  },
+  {
+    "id": "mowziesmobs:sculptor",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mowziesmobs_sculptor.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "mowziesmobs:sculptor",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": true,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "phys_to_water"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "water_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Mowziesmobs:Sculptor",
+    "name_source": "derived"
+  },
+  {
+    "id": "mowziesmobs:umvuthi",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mowziesmobs_umvuthi.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "mowziesmobs:umvuthi",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "burn_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "fire_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "lightning_resist"
+          }
+        ]
+      }
+    },
+    "name": "Mowziesmobs:Umvuthi",
+    "name_source": "derived"
+  },
+  {
+    "id": "mutantmonsters:creeper",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mutantmonsters_mutant_creeper.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.25,
+      "hp_multi": 0.33,
+      "identifier": "mutantmonsters:creeper",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Mutantmonsters:Creeper",
+    "name_source": "derived"
+  },
+  {
+    "id": "mutantmonsters:creeper_minion",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mutantmonsters_creeper_minion.json",
+    "data": {
+      "dmg_multi": 0.8,
+      "exp_multi": 0.05,
+      "hp_multi": 0.33,
+      "identifier": "mutantmonsters:creeper_minion",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Mutantmonsters:Creeper Minion",
+    "name_source": "derived"
+  },
+  {
+    "id": "mutantmonsters:mutant_snow_golem",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mutantmonsters_mutant_snow_golem.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.25,
+      "hp_multi": 2.0,
+      "identifier": "mutantmonsters:mutant_snow_golem",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 50,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.2,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Mutantmonsters:Mutant Snow Golem",
+    "name_source": "derived"
+  },
+  {
+    "id": "mutantmonsters:skeleton",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/mutantmonsters_mutant_skeleton.json",
+    "data": {
+      "dmg_multi": 0.4,
+      "exp_multi": 1.25,
+      "hp_multi": 0.75,
+      "identifier": "mutantmonsters:skeleton",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Mutantmonsters:Skeleton",
+    "name_source": "derived"
+  },
+  {
+    "id": "outer_end:purpur_golem",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/outer_end_purpur_golem.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.25,
+      "hp_multi": 1.0,
+      "identifier": "outer_end:purpur_golem",
+      "loot_multi": 1.25,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Outer End:Purpur Golem",
+    "name_source": "derived"
+  },
+  {
+    "id": "realmrpg_wyrms:ender_wyrm",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/realmrpg_wyrm_ender_wyrm.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "realmrpg_wyrms:ender_wyrm",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_lightning"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "electrify_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "poison_chance"
+          }
+        ]
+      }
+    },
+    "name": "Realmrpg Wyrms:Ender Wyrm",
+    "name_source": "derived"
+  },
+  {
+    "id": "realmrpg_wyrms:red_wyrm",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/realmrpg_wyrm_red_wyrm.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "realmrpg_wyrms:red_wyrm",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "burn_chance"
+          }
+        ]
+      }
+    },
+    "name": "Realmrpg Wyrms:Red Wyrm",
+    "name_source": "derived"
+  },
+  {
+    "id": "remnant_bosses:bone_tyrant",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/remnant_bosses_bone_tyrant.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "remnant_bosses:bone_tyrant",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 60,
+      "set_health_damage_override": false,
+      "set_rar": "epic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": true,
+            "v1": 30.0,
+            "stat": "health"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": true,
+            "v1": 10.0,
+            "stat": "armor"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Remnant Bosses:Bone Tyrant",
+    "name_source": "derived"
+  },
+  {
+    "id": "remnant_bosses:remnant_ossukage",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/remnant_bosses_ossukage.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "remnant_bosses:remnant_ossukage",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 60,
+      "set_health_damage_override": false,
+      "set_rar": "epic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": true,
+            "v1": 8.0,
+            "stat": "armor_penetration"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "accuracy"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 20.0,
+            "stat": "critical_hit"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "critical_damage"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 20.0,
+            "stat": "move_speed"
+          }
+        ]
+      }
+    },
+    "name": "Remnant Bosses:Remnant Ossukage",
+    "name_source": "derived"
+  },
+  {
+    "id": "riskofrain_mobs:stone_golem_entity",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/riskofrain_mobs_stone_golem_entity.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.25,
+      "hp_multi": 1.25,
+      "identifier": "riskofrain_mobs:stone_golem_entity",
+      "loot_multi": 1.1,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Riskofrain Mobs:Stone Golem Entity",
+    "name_source": "derived"
+  },
+  {
+    "id": "stalwart_dungeons:awful_ghast",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/stalwart_dungeons_awful_ghast.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "stalwart_dungeons:awful_ghast",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Stalwart Dungeons:Awful Ghast",
+    "name_source": "derived"
+  },
+  {
+    "id": "stalwart_dungeons:nether_keeper",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/stalwart_dungeons_nether_keeper.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "stalwart_dungeons:nether_keeper",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "armor"
+          }
+        ]
+      }
+    },
+    "name": "Stalwart Dungeons:Nether Keeper",
+    "name_source": "derived"
+  },
+  {
+    "id": "stalwart_dungeons:shelterer",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/stalwart_dungeons_shelterer.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "stalwart_dungeons:shelterer",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": true,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "health"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "dmg_reduction_chance"
+          }
+        ]
+      }
+    },
+    "name": "Stalwart Dungeons:Shelterer",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:alpha_yeti",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_alpha_yeti.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.5,
+      "identifier": "twilightforest:alpha_yeti",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_water"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": true,
+            "v1": 8.0,
+            "stat": "armor_penetration"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "water_penetration"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "physical_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "water_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Alpha Yeti",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:armored_giant",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_armored_giant.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:armored_giant",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "health"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "armor"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Armored Giant",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:blockchain_goblin",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_blockchain_goblin.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:blockchain_goblin",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": true,
+            "v1": 8.0,
+            "stat": "armor_penetration"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Blockchain Goblin",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:carminite_broodling",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_carminite_broodling.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:carminite_broodling",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "burn_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Carminite Broodling",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:carminite_ghastguard",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_carminite_ghastguard.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:carminite_ghastguard",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "armor"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Carminite Ghastguard",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:carminite_ghastling",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_carminite_ghastling.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:carminite_ghastling",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "burn_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Carminite Ghastling",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:carminite_golem",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_carminite_golem.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:carminite_golem",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 20.0,
+            "stat": "dmg_reduction"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Carminite Golem",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:death_tome",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_death_tome.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:death_tome",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_lightning"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Death Tome",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:fire_beetle",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_fire_beetle.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:fire_beetle",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "fire_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Fire Beetle",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:hydra",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_hydra.json",
+    "data": {
+      "dmg_multi": 1.5,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:hydra",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": true,
+      "set_rar": "mythic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 60.0,
+            "stat": "burn_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "fire_penetration"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "dmg_reduction"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 35.0,
+            "stat": "lightning_resistance"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Hydra",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:king_spider",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_king_spider.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:king_spider",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "chaos_penetration"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:King Spider",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:knight_phantom",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_knight_phantom.json",
+    "data": {
+      "dmg_multi": 1.5,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:knight_phantom",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_lightning"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "dodge"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "spell_dodge"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "critical_hit"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Knight Phantom",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:lich",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_lich.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:lich",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "mythic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_lightning"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "electrify_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "electrify_proc_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "lightning_penetration"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 75.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Lich",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:lower_goblin_knight",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_lower_goblin_knight.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:lower_goblin_knight",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "armor"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Lower Goblin Knight",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:maze_slime",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_maze_slime.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:maze_slime",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "armor"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "physical_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "lightning_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Maze Slime",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:minoshroom",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_minoshroom.json",
+    "data": {
+      "dmg_multi": 1.5,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:minoshroom",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": true,
+            "v1": 10.0,
+            "stat": "armor_penetration"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "accuracy"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "physical_resist"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 20.0,
+            "stat": "health_regen"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Minoshroom",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:minotaur",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_minotaur.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:minotaur",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": true,
+            "v1": 8.0,
+            "stat": "armor_penetration"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Minotaur",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:mist_wolf",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_mist_wolf.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:mist_wolf",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "dodge"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "spell_dodge"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Mist Wolf",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:mosquito_swarm",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_mosquito_swarm.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:mosquito_swarm",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "bleed_damage"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "poison_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "poison_damage"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "bleed_chance"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Mosquito Swarm",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:naga",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_naga.json",
+    "data": {
+      "dmg_multi": 0.75,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:naga",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "mythic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "poison_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "chaos_penetration"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "water_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Naga",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:quest_ram",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_quest_ram.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 20.0,
+      "identifier": "twilightforest:quest_ram",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "mythic",
+      "stat_multi": 5.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "dmg_reduction"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Quest Ram",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:skeleton_druid",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_skeleton_druid.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:skeleton_druid",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "poison_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Skeleton Druid",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:slime_beetle",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_slime_beetle.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:slime_beetle",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_water"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Slime Beetle",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:snow_guardian",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_snow_guardian.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:snow_guardian",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_water"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "freeze_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Snow Guardian",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:snow_queen",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_snow_queen.json",
+    "data": {
+      "dmg_multi": 1.2,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:snow_queen",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "mythic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_water"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 80.0,
+            "stat": "freeze_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "freeze_proc_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "water_penetration"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "dmg_reduction"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Snow Queen",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:troll",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_troll.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:troll",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "health"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": true,
+            "v1": 10.0,
+            "stat": "health_regen"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Troll",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:upper_goblin_knight",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_upper_goblin_knight.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:upper_goblin_knight",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 40.0,
+            "stat": "armor"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Upper Goblin Knight",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:ur_ghast",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_ur_ghast.json",
+    "data": {
+      "dmg_multi": 1.5,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:ur_ghast",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "mythic",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_fire"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "burn_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "burn_damage"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 5.0,
+            "stat": "max_fire_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "fire_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Ur Ghast",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:winter_wolf",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_winter_wolf.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:winter_wolf",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_water"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "water_penetration"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "water_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Winter Wolf",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:wraith",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_wraith.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:wraith",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 100.0,
+            "stat": "phys_to_lightning"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "electrify_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "electrify_proc_chance"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "lightning_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Wraith",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:yeti",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/twilightforest_yeti.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "twilightforest:yeti",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 55,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 0.5,
+            "stat": "health_per_sec"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 30.0,
+            "stat": "water_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Yeti",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden:forgotten_guardian",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/undergarden_forgotten_guardian.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.5,
+      "hp_multi": 1.0,
+      "identifier": "undergarden:forgotten_guardian",
+      "loot_multi": 1.5,
+      "max_lvl": 1000000,
+      "min_lvl": 35,
+      "set_health_damage_override": false,
+      "set_rar": "rare",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "elemental_resist"
+          }
+        ]
+      }
+    },
+    "name": "Undergarden:Forgotten Guardian",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden:gwibling",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/undergarden_gwibling.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 0.0,
+      "hp_multi": 1.0,
+      "identifier": "undergarden:gwibling",
+      "loot_multi": 0.0,
+      "max_lvl": 1000000,
+      "min_lvl": 1,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Undergarden:Gwibling",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden:nargoyle",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/undergarden_nargoyle.json",
+    "data": {
+      "dmg_multi": 0.8,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "undergarden:nargoyle",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 25,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Undergarden:Nargoyle",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden:rotbeast",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/undergarden_rotbeast.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "undergarden:rotbeast",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 25,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          }
+        ]
+      }
+    },
+    "name": "Undergarden:Rotbeast",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden:rotwalker",
+    "group": "specific_mobs",
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_entity/specific_mobs/undergarden_rotwalker.json",
+    "data": {
+      "dmg_multi": 1.0,
+      "exp_multi": 1.0,
+      "hp_multi": 1.0,
+      "identifier": "undergarden:rotwalker",
+      "loot_multi": 1.0,
+      "max_lvl": 1000000,
+      "min_lvl": 25,
+      "set_health_damage_override": false,
+      "set_rar": "",
+      "stat_multi": 1.0,
+      "stats": {
+        "stats": [
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 50.0,
+            "stat": "phys_to_chaos"
+          }
+        ]
+      }
+    },
+    "name": "Undergarden:Rotwalker",
+    "name_source": "derived"
+  }
+]

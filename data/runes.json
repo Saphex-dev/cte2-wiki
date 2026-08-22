@@ -1,0 +1,904 @@
+[
+  {
+    "id": "ano",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/ano.json",
+    "data": {
+      "id": "ano",
+      "item_id": "mmorpg:runes/ano",
+      "min_lvl_multi": 0.2,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "health_regen"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "health_regen"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 2.5,
+          "min": 1.5,
+          "stat": "lifesteal"
+        }
+      ],
+      "tier": 1,
+      "uses_unlucky_ran": false,
+      "weight": 800
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/ano.json",
+    "name": "Ano",
+    "name_source": "derived"
+  },
+  {
+    "id": "bri",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/bri.json",
+    "data": {
+      "id": "bri",
+      "item_id": "mmorpg:runes/bri",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 9.0,
+          "stat": "lightning_resist"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 9.0,
+          "stat": "lightning_resist"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "all_lightning_damage"
+        }
+      ],
+      "tier": 3,
+      "uses_unlucky_ran": false,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/bri.json",
+    "name": "Bri",
+    "name_source": "derived"
+  },
+  {
+    "id": "cen",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/cen.json",
+    "data": {
+      "id": "cen",
+      "item_id": "mmorpg:runes/cen",
+      "min_lvl_multi": 0.1,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "armor"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "armor"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "health_regen"
+        }
+      ],
+      "tier": 1,
+      "uses_unlucky_ran": false,
+      "weight": 900
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/cen.json",
+    "name": "Cen",
+    "name_source": "derived"
+  },
+  {
+    "id": "daw",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/daw.json",
+    "data": {
+      "id": "daw",
+      "item_id": "mmorpg:runes/daw",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": 12.5,
+          "min": 7.5,
+          "stat": "chaos_resist"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": 12.5,
+          "min": 7.5,
+          "stat": "chaos_resist"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "all_chaos_damage"
+        }
+      ],
+      "tier": 3,
+      "uses_unlucky_ran": false,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/daw.json",
+    "name": "Daw",
+    "name_source": "derived"
+  },
+  {
+    "id": "dos",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/dos.json",
+    "data": {
+      "id": "dos",
+      "item_id": "mmorpg:runes/dos",
+      "min_lvl_multi": 0.1,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "dodge"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "dodge"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "energy_regen"
+        }
+      ],
+      "tier": 1,
+      "uses_unlucky_ran": false,
+      "weight": 900
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/dos.json",
+    "name": "Dos",
+    "name_source": "derived"
+  },
+  {
+    "id": "end",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/end.json",
+    "data": {
+      "id": "end",
+      "item_id": "mmorpg:runes/end",
+      "min_lvl_multi": 0.55,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.0,
+          "min": 4.0,
+          "stat": "dmg_reduction_chance"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.0,
+          "min": 4.0,
+          "stat": "dmg_reduction_chance"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "all_physical_damage"
+        }
+      ],
+      "tier": 4,
+      "uses_unlucky_ran": false,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/end.json",
+    "name": "End",
+    "name_source": "derived"
+  },
+  {
+    "id": "eno",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/eno.json",
+    "data": {
+      "id": "eno",
+      "item_id": "mmorpg:runes/eno",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": -6.5,
+          "min": -3.0,
+          "stat": "mana_cost"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": -6.5,
+          "min": -3.0,
+          "stat": "mana_cost"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": -6.5,
+          "min": -3.0,
+          "stat": "mana_cost"
+        }
+      ],
+      "tier": 3,
+      "uses_unlucky_ran": false,
+      "weight": 600
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/eno.json",
+    "name": "Eno",
+    "name_source": "derived"
+  },
+  {
+    "id": "fey",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/fey.json",
+    "data": {
+      "id": "fey",
+      "item_id": "mmorpg:runes/fey",
+      "min_lvl_multi": 0.2,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "energy_regen"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "energy_regen"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 9.0,
+          "stat": "attack_speed"
+        }
+      ],
+      "tier": 1,
+      "uses_unlucky_ran": false,
+      "weight": 800
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/fey.json",
+    "name": "Fey",
+    "name_source": "derived"
+  },
+  {
+    "id": "har",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/har.json",
+    "data": {
+      "id": "har",
+      "item_id": "mmorpg:runes/har",
+      "min_lvl_multi": 0.3,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "increase_healing"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "increase_healing"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "increase_healing"
+        }
+      ],
+      "tier": 2,
+      "uses_unlucky_ran": false,
+      "weight": 700
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/har.json",
+    "name": "Har",
+    "name_source": "derived"
+  },
+  {
+    "id": "ita",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/ita.json",
+    "data": {
+      "id": "ita",
+      "item_id": "mmorpg:runes/ita",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "mana_regen"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "mana_regen"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 2.5,
+          "min": 1.5,
+          "stat": "mana_on_kill"
+        }
+      ],
+      "tier": 0,
+      "uses_unlucky_ran": false,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/ita.json",
+    "name": "Ita",
+    "name_source": "derived"
+  },
+  {
+    "id": "mos",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/mos.json",
+    "data": {
+      "id": "mos",
+      "item_id": "mmorpg:runes/mos",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "magic_shield"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "magic_shield"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "magic_shield_regen"
+        }
+      ],
+      "tier": 0,
+      "uses_unlucky_ran": false,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/mos.json",
+    "name": "Mos",
+    "name_source": "derived"
+  },
+  {
+    "id": "net",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/net.json",
+    "data": {
+      "id": "net",
+      "item_id": "mmorpg:runes/net",
+      "min_lvl_multi": 0.15,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 9.0,
+          "stat": "fire_resist"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 9.0,
+          "stat": "fire_resist"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "all_fire_damage"
+        }
+      ],
+      "tier": 1,
+      "uses_unlucky_ran": false,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/net.json",
+    "name": "Net",
+    "name_source": "derived"
+  },
+  {
+    "id": "nos",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/nos.json",
+    "data": {
+      "id": "nos",
+      "item_id": "mmorpg:runes/nos",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "health"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "health"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 2.5,
+          "min": 1.5,
+          "stat": "health_on_kill"
+        }
+      ],
+      "tier": 0,
+      "uses_unlucky_ran": false,
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/nos.json",
+    "name": "Nos",
+    "name_source": "derived"
+  },
+  {
+    "id": "oru",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/oru.json",
+    "data": {
+      "id": "oru",
+      "item_id": "mmorpg:runes/oru",
+      "min_lvl_multi": 0.5,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 9.0,
+          "stat": "critical_damage"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 9.0,
+          "stat": "critical_damage"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "PERCENT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "gear_weapon_damage"
+        }
+      ],
+      "tier": 4,
+      "uses_unlucky_ran": false,
+      "weight": 400
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/oru.json",
+    "name": "Oru",
+    "name_source": "derived"
+  },
+  {
+    "id": "owd",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/owd.json",
+    "data": {
+      "id": "owd",
+      "item_id": "mmorpg:runes/owd",
+      "min_lvl_multi": 0.0,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "max": 15.0,
+          "min": 9.0,
+          "stat": "accuracy"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "max": 15.0,
+          "min": 9.0,
+          "stat": "accuracy"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "PERCENT",
+          "max": 20.0,
+          "min": 12.0,
+          "stat": "accuracy"
+        }
+      ],
+      "tier": 0,
+      "uses_unlucky_ran": false,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/owd.json",
+    "name": "Owd",
+    "name_source": "derived"
+  },
+  {
+    "id": "sid",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/sid.json",
+    "data": {
+      "id": "sid",
+      "item_id": "mmorpg:runes/sid",
+      "min_lvl_multi": 0.65,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "magic_find"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "magic_find"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "magic_find"
+        }
+      ],
+      "tier": 4,
+      "uses_unlucky_ran": false,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/sid.json",
+    "name": "Sid",
+    "name_source": "derived"
+  },
+  {
+    "id": "toq",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/toq.json",
+    "data": {
+      "id": "toq",
+      "item_id": "mmorpg:runes/toq",
+      "min_lvl_multi": 0.3,
+      "on_armor_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "critical_hit"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "critical_hit"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 2.5,
+          "min": 1.5,
+          "stat": "critical_hit"
+        }
+      ],
+      "tier": 2,
+      "uses_unlucky_ran": false,
+      "weight": 700
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/toq.json",
+    "name": "Toq",
+    "name_source": "derived"
+  },
+  {
+    "id": "und",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/und.json",
+    "data": {
+      "id": "und",
+      "item_id": "mmorpg:runes/und",
+      "min_lvl_multi": 0.3,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 9.0,
+          "stat": "water_resist"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 9.0,
+          "stat": "water_resist"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "all_water_damage"
+        }
+      ],
+      "tier": 2,
+      "uses_unlucky_ran": false,
+      "weight": 0
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/und.json",
+    "name": "Und",
+    "name_source": "derived"
+  },
+  {
+    "id": "ven",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/ven.json",
+    "data": {
+      "id": "ven",
+      "item_id": "mmorpg:runes/ven",
+      "min_lvl_multi": 0.6,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "spirit_cost"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "spirit_cost"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "heal_effect_on_self"
+        }
+      ],
+      "tier": 4,
+      "uses_unlucky_ran": false,
+      "weight": 100
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/ven.json",
+    "name": "Ven",
+    "name_source": "derived"
+  },
+  {
+    "id": "wir",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/wir.json",
+    "data": {
+      "id": "wir",
+      "item_id": "mmorpg:runes/wir",
+      "min_lvl_multi": 0.5,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": 8.0,
+          "min": 5.0,
+          "stat": "elemental_resist"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": 8.0,
+          "min": 5.0,
+          "stat": "elemental_resist"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 8.0,
+          "min": 5.0,
+          "stat": "elemental_resist"
+        }
+      ],
+      "tier": 4,
+      "uses_unlucky_ran": false,
+      "weight": 200
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/wir.json",
+    "name": "Wir",
+    "name_source": "derived"
+  },
+  {
+    "id": "xer",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/xer.json",
+    "data": {
+      "id": "xer",
+      "item_id": "mmorpg:runes/xer",
+      "min_lvl_multi": 0.4,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "summon_damage"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "summon_damage"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "summon_damage"
+        }
+      ],
+      "tier": 3,
+      "uses_unlucky_ran": false,
+      "weight": 600
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/xer.json",
+    "name": "Xer",
+    "name_source": "derived"
+  },
+  {
+    "id": "yun",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runes/yun.json",
+    "data": {
+      "id": "yun",
+      "item_id": "mmorpg:runes/yun",
+      "min_lvl_multi": 0.6,
+      "on_armor_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "aura_effect"
+        }
+      ],
+      "on_jewelry_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "aura_effect"
+        }
+      ],
+      "on_weapons_stats": [
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 4.5,
+          "stat": "aura_effect"
+        }
+      ],
+      "tier": 4,
+      "uses_unlucky_ran": false,
+      "weight": 50
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runes/yun.json",
+    "name": "Yun",
+    "name_source": "derived"
+  }
+]

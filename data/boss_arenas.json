@@ -1,0 +1,166 @@
+[
+  {
+    "id": "arena",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_boss_arena/arena.json",
+    "data": {
+      "id": "arena",
+      "possible_bosses": [
+        "minecraft:evoker",
+        "mutantmonsters:mutant_skeleton",
+        "mutantmonsters:mutant_zombie",
+        "friendsandfoes:wildfire",
+        "mutantmonsters:mutant_creeper",
+        "illagerinvasion:inquisitor",
+        "monsterplus:abyssologer",
+        "aquamirae:maw",
+        "riskofrain_mobs:stone_golem_entity",
+        "born_in_chaos_v1:dire_hound_leader",
+        "born_in_chaos_v1:bonescaller",
+        "born_in_chaos_v1:spirit_guide",
+        "born_in_chaos_v1:skeleton_thrasher"
+      ],
+      "structure": {
+        "rooms_folder": "dungeon_realm:map_boss/arena",
+        "size": 1,
+        "teleport_offset_x": 0,
+        "teleport_offset_y": 0,
+        "teleport_offset_z": 0
+      },
+      "size": 2,
+      "weight": 1000
+    },
+    "name": "Arena",
+    "name_source": "derived"
+  },
+  {
+    "id": "biome",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_boss_arena/biome.json",
+    "data": {
+      "id": "biome",
+      "possible_bosses": [
+        "minecraft:evoker",
+        "mutantmonsters:mutant_skeleton",
+        "mutantmonsters:mutant_zombie",
+        "friendsandfoes:wildfire",
+        "mutantmonsters:mutant_creeper",
+        "illagerinvasion:inquisitor",
+        "monsterplus:abyssologer",
+        "aquamirae:maw",
+        "riskofrain_mobs:stone_golem_entity",
+        "born_in_chaos_v1:dire_hound_leader",
+        "born_in_chaos_v1:bonescaller",
+        "born_in_chaos_v1:spirit_guide",
+        "born_in_chaos_v1:skeleton_thrasher"
+      ],
+      "structure": {
+        "rooms_folder": "dungeon_realm:map_boss/biome",
+        "size": 1,
+        "teleport_offset_x": 0,
+        "teleport_offset_y": 0,
+        "teleport_offset_z": 0
+      },
+      "size": 2,
+      "weight": 1000
+    },
+    "name": "Biome",
+    "name_source": "derived"
+  },
+  {
+    "id": "mine",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_boss_arena/mine.json",
+    "data": {
+      "id": "mine",
+      "possible_bosses": [
+        "minecraft:evoker",
+        "mutantmonsters:mutant_skeleton",
+        "mutantmonsters:mutant_zombie",
+        "friendsandfoes:wildfire",
+        "mutantmonsters:mutant_creeper",
+        "illagerinvasion:inquisitor",
+        "monsterplus:abyssologer",
+        "aquamirae:maw",
+        "riskofrain_mobs:stone_golem_entity",
+        "born_in_chaos_v1:dire_hound_leader",
+        "born_in_chaos_v1:bonescaller",
+        "born_in_chaos_v1:spirit_guide",
+        "born_in_chaos_v1:skeleton_thrasher"
+      ],
+      "structure": {
+        "rooms_folder": "dungeon_realm:map_boss/mine",
+        "size": 1,
+        "teleport_offset_x": 0,
+        "teleport_offset_y": 0,
+        "teleport_offset_z": 0
+      },
+      "size": 2,
+      "weight": 1000
+    },
+    "name": "Mine",
+    "name_source": "derived"
+  },
+  {
+    "id": "moo",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_boss_arena/moo.json",
+    "data": {
+      "id": "moo",
+      "possible_bosses": [
+        "twilightforest:minoshroom"
+      ],
+      "structure": {
+        "rooms_folder": "dungeon_realm:map_boss/moo",
+        "size": 1,
+        "teleport_offset_x": 0,
+        "teleport_offset_y": 0,
+        "teleport_offset_z": 0
+      },
+      "size": 2,
+      "weight": 0
+    },
+    "name": "Moo",
+    "name_source": "derived"
+  },
+  {
+    "id": "sandstone",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_boss_arena/sandstone.json",
+    "data": {
+      "id": "sandstone",
+      "possible_bosses": [
+        "minecraft:evoker",
+        "mutantmonsters:mutant_skeleton",
+        "mutantmonsters:mutant_zombie",
+        "friendsandfoes:wildfire",
+        "mutantmonsters:mutant_creeper",
+        "illagerinvasion:inquisitor",
+        "monsterplus:abyssologer",
+        "aquamirae:maw",
+        "riskofrain_mobs:stone_golem_entity",
+        "born_in_chaos_v1:dire_hound_leader",
+        "born_in_chaos_v1:bonescaller",
+        "born_in_chaos_v1:spirit_guide",
+        "born_in_chaos_v1:skeleton_thrasher"
+      ],
+      "structure": {
+        "rooms_folder": "dungeon_realm:map_boss/sandstone",
+        "size": 1,
+        "teleport_offset_x": 0,
+        "teleport_offset_y": 3,
+        "teleport_offset_z": 0
+      },
+      "size": 2,
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_boss_arena/sandstone.json",
+    "name": "Sandstone",
+    "name_source": "derived"
+  }
+]

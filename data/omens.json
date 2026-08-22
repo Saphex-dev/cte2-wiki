@@ -1,0 +1,334 @@
+[
+  {
+    "id": "blood",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_omen/blood.json",
+    "data": {
+      "affix_types": [
+        "chaos_stat"
+      ],
+      "id": "blood",
+      "lvl_req": 0.5,
+      "mods": [
+        {
+          "type": "PERCENT",
+          "max": 25.0,
+          "min": 5.0,
+          "stat": "health"
+        },
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "armor"
+        },
+        {
+          "type": "PERCENT",
+          "max": 5.0,
+          "min": 1.0,
+          "stat": "strength"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_omen/blood.json",
+    "name": "Blood",
+    "name_source": "derived"
+  },
+  {
+    "id": "echoes",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_omen/echoes.json",
+    "data": {
+      "affix_types": [
+        "chaos_stat"
+      ],
+      "id": "echoes",
+      "lvl_req": 0.5,
+      "mods": [
+        {
+          "type": "PERCENT",
+          "max": 25.0,
+          "min": 5.0,
+          "stat": "magic_shield"
+        },
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "mana"
+        },
+        {
+          "type": "PERCENT",
+          "max": 5.0,
+          "min": 1.0,
+          "stat": "intelligence"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_omen/echoes.json",
+    "name": "Echoes",
+    "name_source": "derived"
+  },
+  {
+    "id": "fangs",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_omen/fangs.json",
+    "data": {
+      "affix_types": [
+        "chaos_stat"
+      ],
+      "id": "fangs",
+      "lvl_req": 0.5,
+      "mods": [
+        {
+          "type": "MORE",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "all_physical_damage"
+        },
+        {
+          "type": "PERCENT",
+          "max": 20.0,
+          "min": 4.0,
+          "stat": "accuracy"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 1.0,
+          "stat": "physical_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_omen/fangs.json",
+    "name": "Fangs",
+    "name_source": "derived"
+  },
+  {
+    "id": "flames",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_omen/flames.json",
+    "data": {
+      "affix_types": [
+        "chaos_stat"
+      ],
+      "id": "flames",
+      "lvl_req": 0.5,
+      "mods": [
+        {
+          "type": "MORE",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "all_fire_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 3.0,
+          "stat": "fire_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 0.6,
+          "stat": "max_fire_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_omen/flames.json",
+    "name": "Flames",
+    "name_source": "derived"
+  },
+  {
+    "id": "mirrors",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_omen/mirrors.json",
+    "data": {
+      "affix_types": [
+        "chaos_stat"
+      ],
+      "id": "mirrors",
+      "lvl_req": 0.5,
+      "mods": [
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 1.0,
+          "stat": "dmg_reduction_chance"
+        },
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "dodge"
+        },
+        {
+          "type": "PERCENT",
+          "max": 5.0,
+          "min": 1.0,
+          "stat": "dexterity"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_omen/mirrors.json",
+    "name": "Mirrors",
+    "name_source": "derived"
+  },
+  {
+    "id": "shadows",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_omen/shadows.json",
+    "data": {
+      "affix_types": [
+        "chaos_stat"
+      ],
+      "id": "shadows",
+      "lvl_req": 0.5,
+      "mods": [
+        {
+          "type": "MORE",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "all_chaos_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "chaos_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 0.6,
+          "stat": "max_chaos_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_omen/shadows.json",
+    "name": "Shadows",
+    "name_source": "derived"
+  },
+  {
+    "id": "spite",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_omen/spite.json",
+    "data": {
+      "affix_types": [
+        "chaos_stat"
+      ],
+      "id": "spite",
+      "lvl_req": 0.5,
+      "mods": [
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 5.0,
+          "stat": "roll_cooldown"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 3.0,
+          "stat": "resource_regen"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 0.6,
+          "stat": "critical_hit"
+        }
+      ],
+      "weight": 1000
+    },
+    "name": "Spite",
+    "name_source": "derived"
+  },
+  {
+    "id": "storms",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_omen/storms.json",
+    "data": {
+      "affix_types": [
+        "chaos_stat"
+      ],
+      "id": "storms",
+      "lvl_req": 0.5,
+      "mods": [
+        {
+          "type": "MORE",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "all_lightning_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 3.0,
+          "stat": "lightning_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 0.6,
+          "stat": "max_lightning_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_omen/storms.json",
+    "name": "Storms",
+    "name_source": "derived"
+  },
+  {
+    "id": "waves",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_omen/waves.json",
+    "data": {
+      "affix_types": [
+        "chaos_stat"
+      ],
+      "id": "waves",
+      "lvl_req": 0.5,
+      "mods": [
+        {
+          "type": "MORE",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "all_water_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 3.0,
+          "stat": "water_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 0.6,
+          "stat": "max_water_resist"
+        }
+      ],
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_omen/waves.json",
+    "name": "Waves",
+    "name_source": "derived"
+  }
+]

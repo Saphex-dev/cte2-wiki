@@ -1,0 +1,143 @@
+[
+  {
+    "id": "uber1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_uber_boss/uber1.json",
+    "data": {
+      "id": "uber1",
+      "possible_bosses": [
+        "minecraft:wither",
+        "stalwart_dungeons:awful_ghast",
+        "stalwart_dungeons:nether_keeper",
+        "blue_skies:arachnarch",
+        "twilightforest:minoshroom",
+        "twilightforest:snow_queen",
+        "mowziesmobs:frostmaw",
+        "born_in_chaos_v1:nightmare_stalker",
+        "infinitygolem:infinity_golem"
+      ],
+      "possible_pinnacle_bosses": [
+        "mowziesmobs:umvuthi",
+        "blue_skies:starlit_crusher",
+        "twilightforest:snow_queen"
+      ],
+      "structure_data": {
+        "rooms_folder": "dungeon_realm:uber/river",
+        "size": 3,
+        "teleport_offset_x": 0,
+        "teleport_offset_y": 8,
+        "teleport_offset_z": 0
+      },
+      "weight": 1000
+    },
+    "base_source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/dungeon_realm/dungeon_realm_uber_boss/uber1.json",
+    "name": "Uber1",
+    "name_source": "derived"
+  },
+  {
+    "id": "uber2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_uber_boss/uber2.json",
+    "data": {
+      "id": "uber2",
+      "possible_bosses": [
+        "minecraft:wither",
+        "stalwart_dungeons:awful_ghast",
+        "stalwart_dungeons:nether_keeper",
+        "blue_skies:arachnarch",
+        "twilightforest:minoshroom",
+        "twilightforest:snow_queen",
+        "mowziesmobs:frostmaw",
+        "born_in_chaos_v1:nightmare_stalker",
+        "infinitygolem:infinity_golem"
+      ],
+      "possible_pinnacle_bosses": [
+        "mowziesmobs:umvuthi",
+        "blue_skies:starlit_crusher",
+        "twilightforest:snow_queen"
+      ],
+      "structure_data": {
+        "rooms_folder": "dungeon_realm:uber/abyss",
+        "size": 3,
+        "teleport_offset_x": 48,
+        "teleport_offset_y": -4,
+        "teleport_offset_z": 16
+      },
+      "weight": 1000
+    },
+    "name": "Uber2",
+    "name_source": "derived"
+  },
+  {
+    "id": "uber3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_uber_boss/uber3.json",
+    "data": {
+      "id": "uber3",
+      "possible_bosses": [
+        "minecraft:wither",
+        "stalwart_dungeons:awful_ghast",
+        "stalwart_dungeons:nether_keeper",
+        "blue_skies:arachnarch",
+        "twilightforest:minoshroom",
+        "twilightforest:snow_queen",
+        "mowziesmobs:frostmaw",
+        "born_in_chaos_v1:nightmare_stalker",
+        "infinitygolem:infinity_golem"
+      ],
+      "possible_pinnacle_bosses": [
+        "mowziesmobs:umvuthi",
+        "blue_skies:starlit_crusher",
+        "twilightforest:snow_queen"
+      ],
+      "structure_data": {
+        "rooms_folder": "dungeon_realm:uber/dragon",
+        "size": 3,
+        "teleport_offset_x": 11,
+        "teleport_offset_y": 10,
+        "teleport_offset_z": 34
+      },
+      "weight": 1000
+    },
+    "name": "Uber3",
+    "name_source": "derived"
+  },
+  {
+    "id": "uber_nature_dungeon",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/dungeon_realm/dungeon_realm_uber_boss/uber_nature_dungeon.json",
+    "data": {
+      "id": "uber_nature_dungeon",
+      "possible_bosses": [
+        "minecraft:wither",
+        "stalwart_dungeons:awful_ghast",
+        "stalwart_dungeons:nether_keeper",
+        "blue_skies:arachnarch",
+        "twilightforest:minoshroom",
+        "twilightforest:snow_queen",
+        "mowziesmobs:frostmaw",
+        "born_in_chaos_v1:nightmare_stalker",
+        "infinitygolem:infinity_golem"
+      ],
+      "possible_pinnacle_bosses": [
+        "mowziesmobs:umvuthi",
+        "blue_skies:starlit_crusher",
+        "twilightforest:snow_queen"
+      ],
+      "structure_data": {
+        "rooms_folder": "dungeon_realm:uber/nature_dungeon",
+        "size": 5,
+        "teleport_offset_x": 15,
+        "teleport_offset_y": 0,
+        "teleport_offset_z": 30
+      },
+      "weight": 1000
+    },
+    "name": "Uber Nature Dungeon",
+    "name_source": "derived"
+  }
+]

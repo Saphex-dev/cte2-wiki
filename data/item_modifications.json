@@ -1,0 +1,1539 @@
+[
+  {
+    "id": "add_10_perc_unique_stats",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/add_10_perc_unique_stats.json",
+    "data": {
+      "data": {
+        "num": 10
+      },
+      "id": "add_10_perc_unique_stats",
+      "serializer": "modify_unique_stats",
+      "weight": 1000
+    },
+    "name": "Adds %1$s Percent to Unique Stats",
+    "name_source": "lang"
+  },
+  {
+    "id": "add_1_to_5_gear_quality",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/add_1_to_5_gear_quality.json",
+    "data": {
+      "data": {
+        "add_quality": {
+          "max": 10,
+          "min": 1
+        }
+      },
+      "id": "add_1_to_5_gear_quality",
+      "serializer": "add_quality",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/add_1_to_5_gear_quality.json",
+    "name": "Add %1$s Quality",
+    "name_source": "lang"
+  },
+  {
+    "id": "add_20_potential",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/add_20_potential.json",
+    "data": {
+      "data": {
+        "add_potential": 20
+      },
+      "id": "add_20_potential",
+      "serializer": "add_potential",
+      "weight": 1000
+    },
+    "name": "Add %1$s Potential",
+    "name_source": "lang"
+  },
+  {
+    "id": "add_50_potential",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/add_50_potential.json",
+    "data": {
+      "data": {
+        "add_potential": 50
+      },
+      "id": "add_50_potential",
+      "serializer": "add_potential",
+      "weight": 1000
+    },
+    "name": "Add %1$s Potential",
+    "name_source": "lang"
+  },
+  {
+    "id": "add_5_perc_unique_stats",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/add_5_perc_unique_stats.json",
+    "data": {
+      "data": {
+        "num": 5
+      },
+      "id": "add_5_perc_unique_stats",
+      "serializer": "modify_unique_stats",
+      "weight": 1000
+    },
+    "name": "Adds %1$s Percent to Unique Stats",
+    "name_source": "lang"
+  },
+  {
+    "id": "add_gear_level",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/add_gear_level.json",
+    "data": {
+      "data": {
+        "add_levels": 1
+      },
+      "id": "add_gear_level",
+      "serializer": "add_level",
+      "weight": 1000
+    },
+    "name": "Adds %1$s Gear Levels",
+    "name_source": "lang"
+  },
+  {
+    "id": "add_gear_quality",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/add_gear_quality.json",
+    "data": {
+      "data": {
+        "add_quality": {
+          "max": 1,
+          "min": 1
+        }
+      },
+      "id": "add_gear_quality",
+      "serializer": "add_quality",
+      "weight": 1000
+    },
+    "name": "Add %1$s Quality",
+    "name_source": "lang"
+  },
+  {
+    "id": "add_potential",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/add_potential.json",
+    "data": {
+      "data": {
+        "add_potential": 25
+      },
+      "id": "add_potential",
+      "serializer": "add_potential",
+      "weight": 1000
+    },
+    "name": "Add %1$s Potential",
+    "name_source": "lang"
+  },
+  {
+    "id": "add_socket",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/add_socket.json",
+    "data": {
+      "data": {
+        "add_sockets": 1
+      },
+      "id": "add_socket",
+      "serializer": "add_socket",
+      "weight": 1000
+    },
+    "name": "Adds %1$s Socket",
+    "name_source": "lang"
+  },
+  {
+    "id": "add_spawn_rate",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_item_modification/add_spawn_rate.json",
+    "data": {
+      "data": {
+        "spawn_rate": 10
+      },
+      "id": "add_spawn_rate",
+      "serializer": "add_obelisk_spawn_rate",
+      "weight": 1000
+    },
+    "name": "Add Spawn Rate",
+    "name_source": "derived"
+  },
+  {
+    "id": "add_tier",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_item_modification/add_tier.json",
+    "data": {
+      "data": {
+        "tier": 1
+      },
+      "id": "add_tier",
+      "serializer": "add_obelisk_tier",
+      "weight": 1000
+    },
+    "name": "Add Tier",
+    "name_source": "derived"
+  },
+  {
+    "id": "add_wave",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_item_modification/add_wave.json",
+    "data": {
+      "data": {
+        "waves": 1
+      },
+      "id": "add_wave",
+      "serializer": "add_obelisk_wave",
+      "weight": 1000
+    },
+    "name": "Add Wave",
+    "name_source": "derived"
+  },
+  {
+    "id": "affix_number_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/affix_number_reroll.json",
+    "data": {
+      "data": "AFFIX",
+      "id": "affix_number_reroll",
+      "serializer": "reroll_affix_numbers",
+      "weight": 1000
+    },
+    "name": "Re-rolls %1$s Numbers",
+    "name_source": "lang"
+  },
+  {
+    "id": "base_number_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/base_number_reroll.json",
+    "data": {
+      "id": "base_number_reroll",
+      "serializer": "reroll_base_numbers",
+      "weight": 1000
+    },
+    "name": "Re-rolls Base Numbers",
+    "name_source": "lang"
+  },
+  {
+    "id": "common_to_epic_with_tag_dexterity",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/common_to_epic_with_tag_dexterity.json",
+    "data": {
+      "data": {
+        "tag_guid": "dexterity"
+      },
+      "id": "common_to_epic_with_tag_dexterity",
+      "serializer": "common_to_epic_guaranteed_tag",
+      "weight": 1000
+    },
+    "name": "Turns Common Item into Epic Item and guarantees an Epic Finesse (tag) Affix",
+    "name_source": "lang"
+  },
+  {
+    "id": "common_to_epic_with_tag_intelligence",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/common_to_epic_with_tag_intelligence.json",
+    "data": {
+      "data": {
+        "tag_guid": "intelligence"
+      },
+      "id": "common_to_epic_with_tag_intelligence",
+      "serializer": "common_to_epic_guaranteed_tag",
+      "weight": 1000
+    },
+    "name": "Turns Common Item into Epic Item and guarantees an Epic Ingenuity (tag) Affix",
+    "name_source": "lang"
+  },
+  {
+    "id": "common_to_epic_with_tag_strength",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/common_to_epic_with_tag_strength.json",
+    "data": {
+      "data": {
+        "tag_guid": "strength"
+      },
+      "id": "common_to_epic_with_tag_strength",
+      "serializer": "common_to_epic_guaranteed_tag",
+      "weight": 1000
+    },
+    "name": "Turns Common Item into Epic Item and guarantees an Epic Might (tag) Affix",
+    "name_source": "lang"
+  },
+  {
+    "id": "common_to_mythic_with_tag_dexterity",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/common_to_mythic_with_tag_dexterity.json",
+    "data": {
+      "data": {
+        "tag_guid": "dexterity"
+      },
+      "id": "common_to_mythic_with_tag_dexterity",
+      "serializer": "common_to_mythic_guaranteed_tag",
+      "weight": 1000
+    },
+    "name": "Turns Common Item into Mythic Item and guarantees a Mythic Finesse (tag) Affix",
+    "name_source": "lang"
+  },
+  {
+    "id": "common_to_mythic_with_tag_intelligence",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/common_to_mythic_with_tag_intelligence.json",
+    "data": {
+      "data": {
+        "tag_guid": "intelligence"
+      },
+      "id": "common_to_mythic_with_tag_intelligence",
+      "serializer": "common_to_mythic_guaranteed_tag",
+      "weight": 1000
+    },
+    "name": "Turns Common Item into Mythic Item and guarantees a Mythic Ingenuinty (tag) Affix",
+    "name_source": "lang"
+  },
+  {
+    "id": "common_to_mythic_with_tag_strength",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/common_to_mythic_with_tag_strength.json",
+    "data": {
+      "data": {
+        "tag_guid": "strength"
+      },
+      "id": "common_to_mythic_with_tag_strength",
+      "serializer": "common_to_mythic_guaranteed_tag",
+      "weight": 1000
+    },
+    "name": "Turns Common Item into Mythic Item and guarantees a Mythic Might (tag) Affix",
+    "name_source": "lang"
+  },
+  {
+    "id": "common_to_runed",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/common_to_runed.json",
+    "data": {
+      "id": "common_to_runed",
+      "serializer": "common_to_runed",
+      "weight": 1000
+    },
+    "name": "Turns Common Item into Runed Item, adding sockets",
+    "name_source": "lang"
+  },
+  {
+    "id": "corrupt_gear",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/corrupt_gear.json",
+    "data": {
+      "data": {
+        "adds_affixes": true
+      },
+      "id": "corrupt_gear",
+      "serializer": "corrupt_gear",
+      "weight": 1000
+    },
+    "name": "Corrupts the Item, making it unmodifiable and adds a Random amount of Corruption Affixes",
+    "name_source": "lang"
+  },
+  {
+    "id": "corrupt_gear_no_affix",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/corrupt_gear_no_affix.json",
+    "data": {
+      "data": {
+        "adds_affixes": false
+      },
+      "id": "corrupt_gear_no_affix",
+      "serializer": "corrupt_gear",
+      "weight": 1000
+    },
+    "name": "Corrupts the Item, making it unmodifiable",
+    "name_source": "lang"
+  },
+  {
+    "id": "destroy_item",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_item_modification/destroy_item.json",
+    "data": {
+      "id": "destroy_item",
+      "serializer": "destroy_item",
+      "weight": 1000
+    },
+    "name": "Destroy Item",
+    "name_source": "derived"
+  },
+  {
+    "id": "do_nothing",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_item_modification/do_nothing.json",
+    "data": {
+      "id": "do_nothing",
+      "serializer": "do_nothing",
+      "weight": 1000
+    },
+    "name": "Do Nothing",
+    "name_source": "derived"
+  },
+  {
+    "id": "downgrade_random_affix",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/downgrade_random_affix.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "RANDOM_AFFIX",
+          "target_rar": ""
+        }
+      },
+      "id": "downgrade_random_affix",
+      "serializer": "downgrade_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Downgrades Rarity and re-rolls Numbers of %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "enchant_with_10_levels",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_item_modification/enchant_with_10_levels.json",
+    "data": {
+      "id": "enchant_with_10_levels",
+      "serializer": "vanilla_function",
+      "vanillaFunction": {
+        "function": "minecraft:enchant_with_levels",
+        "levels": 10.0,
+        "treasure": true
+      },
+      "weight": 1000
+    },
+    "name": "Enchant With 10 Levels",
+    "name_source": "derived"
+  },
+  {
+    "id": "enchant_with_20_levels",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_item_modification/enchant_with_20_levels.json",
+    "data": {
+      "id": "enchant_with_20_levels",
+      "serializer": "vanilla_function",
+      "vanillaFunction": {
+        "function": "minecraft:enchant_with_levels",
+        "levels": 20.0,
+        "treasure": true
+      },
+      "weight": 1000
+    },
+    "name": "Enchant With 20 Levels",
+    "name_source": "derived"
+  },
+  {
+    "id": "enchant_with_30_levels",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_item_modification/enchant_with_30_levels.json",
+    "data": {
+      "id": "enchant_with_30_levels",
+      "serializer": "vanilla_function",
+      "vanillaFunction": {
+        "function": "minecraft:enchant_with_levels",
+        "levels": 30.0,
+        "treasure": true
+      },
+      "weight": 1000
+    },
+    "name": "Enchant With 30 Levels",
+    "name_source": "derived"
+  },
+  {
+    "id": "extract_gem",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/extract_gem.json",
+    "data": {
+      "type": "GEM",
+      "id": "extract_gem",
+      "serializer": "extract_socket",
+      "weight": 1000
+    },
+    "name": "Extracts %1$s from a Socket",
+    "name_source": "lang"
+  },
+  {
+    "id": "extract_rune",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/extract_rune.json",
+    "data": {
+      "type": "RUNE",
+      "id": "extract_rune",
+      "serializer": "extract_socket",
+      "weight": 1000
+    },
+    "name": "Extracts %1$s from a Socket",
+    "name_source": "lang"
+  },
+  {
+    "id": "force_soul_tag_armor_dodge_stat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/force_soul_tag_armor_dodge_stat.json",
+    "data": {
+      "data": {
+        "gear_tag": "brigandine"
+      },
+      "id": "force_soul_tag_armor_dodge_stat",
+      "serializer": "force_soul_tag",
+      "weight": 1000
+    },
+    "name": "Forces Soul to Produce %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "force_soul_tag_armor_magic_shield_stat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/force_soul_tag_armor_magic_shield_stat.json",
+    "data": {
+      "data": {
+        "gear_tag": "chainmail"
+      },
+      "id": "force_soul_tag_armor_magic_shield_stat",
+      "serializer": "force_soul_tag",
+      "weight": 1000
+    },
+    "name": "Forces Soul to Produce %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "force_soul_tag_armor_stat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/force_soul_tag_armor_stat.json",
+    "data": {
+      "data": {
+        "gear_tag": "plate"
+      },
+      "id": "force_soul_tag_armor_stat",
+      "serializer": "force_soul_tag",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/force_soul_tag_armor_stat.json",
+    "name": "Forces Soul to Produce %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "force_soul_tag_dodge_stat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/force_soul_tag_dodge_stat.json",
+    "data": {
+      "data": {
+        "gear_tag": "leather"
+      },
+      "id": "force_soul_tag_dodge_stat",
+      "serializer": "force_soul_tag",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/force_soul_tag_dodge_stat.json",
+    "name": "Forces Soul to Produce %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "force_soul_tag_magic_shield_dodge_stat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/force_soul_tag_magic_shield_dodge_stat.json",
+    "data": {
+      "data": {
+        "gear_tag": "vest"
+      },
+      "id": "force_soul_tag_magic_shield_dodge_stat",
+      "serializer": "force_soul_tag",
+      "weight": 1000
+    },
+    "name": "Forces Soul to Produce %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "force_soul_tag_magic_shield_stat",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/force_soul_tag_magic_shield_stat.json",
+    "data": {
+      "data": {
+        "gear_tag": "cloth"
+      },
+      "id": "force_soul_tag_magic_shield_stat",
+      "serializer": "force_soul_tag",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/force_soul_tag_magic_shield_stat.json",
+    "name": "Forces Soul to Produce %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "gear_rarity_random",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/gear_rarity_random.json",
+    "data": {
+      "type": "RANDOMIZE",
+      "id": "gear_rarity_random",
+      "serializer": "upgrade_gear_rarity",
+      "weight": 1000
+    },
+    "name": "%1$s, increasing Numbers and adding %2$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "gear_rarity_upgrade",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/gear_rarity_upgrade.json",
+    "data": {
+      "type": "UPGRADE",
+      "id": "gear_rarity_upgrade",
+      "serializer": "upgrade_gear_rarity",
+      "weight": 1000
+    },
+    "name": "%1$s, increasing Numbers and adding %2$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "implicit_affix_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/implicit_affix_reroll.json",
+    "data": {
+      "id": "implicit_affix_reroll",
+      "serializer": "reroll_implicit_affix",
+      "weight": 1000
+    },
+    "name": "Re-rolls Implicit Affix",
+    "name_source": "lang"
+  },
+  {
+    "id": "implicit_number_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/implicit_number_reroll.json",
+    "data": {
+      "id": "implicit_number_reroll",
+      "serializer": "reroll_implicit_numbers",
+      "weight": 1000
+    },
+    "name": "Re-rolls Implicit Numbers",
+    "name_source": "lang"
+  },
+  {
+    "id": "increment_uses_codex_rarity_uses",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/increment_uses_codex_rarity_uses.json",
+    "data": {
+      "id": "increment_uses_codex_rarity_uses",
+      "serializer": "increment_uses",
+      "use_key": "codex_rarity_uses",
+      "weight": 1000
+    },
+    "name": "Increments Uses",
+    "name_source": "lang"
+  },
+  {
+    "id": "increment_uses_level_up",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/increment_uses_level_up.json",
+    "data": {
+      "id": "increment_uses_level_up",
+      "serializer": "increment_uses",
+      "use_key": "level_up",
+      "weight": 1000
+    },
+    "name": "Increments Uses",
+    "name_source": "lang"
+  },
+  {
+    "id": "increment_uses_omen_rarity_uses",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/increment_uses_omen_rarity_uses.json",
+    "data": {
+      "id": "increment_uses_omen_rarity_uses",
+      "serializer": "increment_uses",
+      "use_key": "omen_rarity_uses",
+      "weight": 1000
+    },
+    "name": "Increments Uses",
+    "name_source": "lang"
+  },
+  {
+    "id": "increment_uses_random_mythic_affix",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/increment_uses_random_mythic_affix.json",
+    "data": {
+      "id": "increment_uses_random_mythic_affix",
+      "serializer": "increment_uses",
+      "use_key": "random_mythic_affix",
+      "weight": 1000
+    },
+    "name": "Increments Uses",
+    "name_source": "lang"
+  },
+  {
+    "id": "increment_uses_relief",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/increment_uses_relief.json",
+    "data": {
+      "id": "increment_uses_relief",
+      "serializer": "increment_uses",
+      "use_key": "relief",
+      "weight": 1000
+    },
+    "name": "Increments Uses",
+    "name_source": "lang"
+  },
+  {
+    "id": "increment_uses_seed_uses",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/increment_uses_seed_uses.json",
+    "data": {
+      "id": "increment_uses_seed_uses",
+      "serializer": "increment_uses",
+      "use_key": "seed_uses",
+      "weight": 1000
+    },
+    "name": "Increments Uses",
+    "name_source": "lang"
+  },
+  {
+    "id": "increment_uses_sharpening_stone",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/increment_uses_sharpening_stone.json",
+    "data": {
+      "id": "increment_uses_sharpening_stone",
+      "serializer": "increment_uses",
+      "use_key": "sharpening_stone",
+      "weight": 1000
+    },
+    "name": "Increments Uses",
+    "name_source": "lang"
+  },
+  {
+    "id": "increment_uses_sure_jewel_up",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/increment_uses_sure_jewel_up.json",
+    "data": {
+      "id": "increment_uses_sure_jewel_up",
+      "serializer": "increment_uses",
+      "use_key": "sure_jewel_up",
+      "weight": 1000
+    },
+    "name": "Increments Uses",
+    "name_source": "lang"
+  },
+  {
+    "id": "jewel_corrupt",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/jewel_corrupt.json",
+    "data": {
+      "id": "jewel_corrupt",
+      "serializer": "corrupt_jewel",
+      "weight": 1000
+    },
+    "name": "Corrupts the Jewel",
+    "name_source": "lang"
+  },
+  {
+    "id": "map_rarity_upgrade",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/map_rarity_upgrade.json",
+    "data": {
+      "id": "map_rarity_upgrade",
+      "serializer": "upgrade_map_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Map Rarity",
+    "name_source": "lang"
+  },
+  {
+    "id": "mirror",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/mirror.json",
+    "data": {
+      "id": "mirror",
+      "serializer": "mirror",
+      "weight": 1000
+    },
+    "name": "Creates an unmodifiable Mirrored copy of the Item",
+    "name_source": "lang"
+  },
+  {
+    "id": "pinnacle_upgrade",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_item_modification/pinnacle_upgrade.json",
+    "data": {
+      "id": "pinnacle_upgrade",
+      "serializer": "pinnacle_upgrade",
+      "weight": 1000
+    },
+    "name": "Pinnacle Upgrade",
+    "name_source": "derived"
+  },
+  {
+    "id": "prefix_number_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/prefix_number_reroll.json",
+    "data": {
+      "data": "PREFIX",
+      "id": "prefix_number_reroll",
+      "serializer": "reroll_affix_numbers",
+      "weight": 1000
+    },
+    "name": "Re-rolls %1$s Numbers",
+    "name_source": "lang"
+  },
+  {
+    "id": "reduce_5_perc_unique_stats",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/reduce_5_perc_unique_stats.json",
+    "data": {
+      "data": {
+        "num": -5
+      },
+      "id": "reduce_5_perc_unique_stats",
+      "serializer": "modify_unique_stats",
+      "weight": 1000
+    },
+    "name": "Reduces %1$s Percent to Unique Stats",
+    "name_source": "lang"
+  },
+  {
+    "id": "reroll_all_affixes",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/reroll_all_affixes.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "ALL_AFFIXES",
+          "target_rar": ""
+        },
+        "result_rar": "random"
+      },
+      "id": "reroll_all_affixes",
+      "serializer": "reroll_affix",
+      "weight": 1000
+    },
+    "name": "Rerolls %1$s into a new %2$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "reroll_all_prefixes",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/reroll_all_prefixes.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "ALL_PREFIXES",
+          "target_rar": ""
+        },
+        "result_rar": "random"
+      },
+      "id": "reroll_all_prefixes",
+      "serializer": "reroll_affix",
+      "weight": 1000
+    },
+    "name": "Rerolls %1$s into a new %2$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "reroll_all_suffixes",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/reroll_all_suffixes.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "ALL_SUFFIXES",
+          "target_rar": ""
+        },
+        "result_rar": "random"
+      },
+      "id": "reroll_all_suffixes",
+      "serializer": "reroll_affix",
+      "weight": 1000
+    },
+    "name": "Rerolls %1$s into a new %2$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "reroll_infusion",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/reroll_infusion.json",
+    "data": {
+      "id": "reroll_infusion",
+      "serializer": "reroll_infusion",
+      "weight": 1000
+    },
+    "name": "Re-rolls Infusion Affix",
+    "name_source": "lang"
+  },
+  {
+    "id": "reroll_lowest_affix",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/reroll_lowest_affix.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "LOWEST_RARITY_AFFIX",
+          "target_rar": ""
+        },
+        "result_rar": "random"
+      },
+      "id": "reroll_lowest_affix",
+      "serializer": "reroll_affix",
+      "weight": 1000
+    },
+    "name": "Rerolls %1$s into a new %2$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "reroll_omen_stats",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/reroll_omen_stats.json",
+    "data": {
+      "id": "reroll_omen_stats",
+      "serializer": "reroll_omen_stats",
+      "weight": 1000
+    },
+    "name": "Rerolls the Affixes of the Codex",
+    "name_source": "lang"
+  },
+  {
+    "id": "reroll_random_affix",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/reroll_random_affix.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "RANDOM_AFFIX",
+          "target_rar": ""
+        },
+        "result_rar": "random"
+      },
+      "id": "reroll_random_affix",
+      "serializer": "reroll_affix",
+      "weight": 1000
+    },
+    "name": "Rerolls %1$s into a new %2$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "reroll_random_affix_to_mythic",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/reroll_random_affix_to_mythic.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "RANDOM_AFFIX",
+          "target_rar": ""
+        },
+        "result_rar": "mythic"
+      },
+      "id": "reroll_random_affix_to_mythic",
+      "serializer": "reroll_affix",
+      "weight": 1000
+    },
+    "name": "Rerolls %1$s into a new %2$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "reroll_skill_gem_stats",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/reroll_skill_gem_stats.json",
+    "data": {
+      "id": "reroll_skill_gem_stats",
+      "serializer": "reroll_skill_gem_stats",
+      "weight": 1000
+    },
+    "name": "Rerolls the stat value of the Skill Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "set_lowest_affix_rar_common",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/set_lowest_affix_rar_common.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "LOWEST_RARITY_AFFIX",
+          "target_rar": ""
+        },
+        "rar": "common"
+      },
+      "id": "set_lowest_affix_rar_common",
+      "serializer": "set_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades %1$s to %2$s Rarity",
+    "name_source": "lang"
+  },
+  {
+    "id": "set_lowest_affix_rar_epic",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/set_lowest_affix_rar_epic.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "LOWEST_RARITY_AFFIX",
+          "target_rar": ""
+        },
+        "rar": "epic"
+      },
+      "id": "set_lowest_affix_rar_epic",
+      "serializer": "set_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades %1$s to %2$s Rarity",
+    "name_source": "lang"
+  },
+  {
+    "id": "set_lowest_affix_rar_legendary",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/set_lowest_affix_rar_legendary.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "LOWEST_RARITY_AFFIX",
+          "target_rar": ""
+        },
+        "rar": "legendary"
+      },
+      "id": "set_lowest_affix_rar_legendary",
+      "serializer": "set_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades %1$s to %2$s Rarity",
+    "name_source": "lang"
+  },
+  {
+    "id": "set_lowest_affix_rar_mythic",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/set_lowest_affix_rar_mythic.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "LOWEST_RARITY_AFFIX",
+          "target_rar": ""
+        },
+        "rar": "mythic"
+      },
+      "id": "set_lowest_affix_rar_mythic",
+      "serializer": "set_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades %1$s to %2$s Rarity",
+    "name_source": "lang"
+  },
+  {
+    "id": "set_lowest_affix_rar_rare",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/set_lowest_affix_rar_rare.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "LOWEST_RARITY_AFFIX",
+          "target_rar": ""
+        },
+        "rar": "rare"
+      },
+      "id": "set_lowest_affix_rar_rare",
+      "serializer": "set_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades %1$s to %2$s Rarity",
+    "name_source": "lang"
+  },
+  {
+    "id": "set_lowest_affix_rar_runeword",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/set_lowest_affix_rar_runeword.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "LOWEST_RARITY_AFFIX",
+          "target_rar": ""
+        },
+        "rar": "runeword"
+      },
+      "id": "set_lowest_affix_rar_runeword",
+      "serializer": "set_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades %1$s to %2$s Rarity",
+    "name_source": "lang"
+  },
+  {
+    "id": "set_lowest_affix_rar_uncommon",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/set_lowest_affix_rar_uncommon.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "LOWEST_RARITY_AFFIX",
+          "target_rar": ""
+        },
+        "rar": "uncommon"
+      },
+      "id": "set_lowest_affix_rar_uncommon",
+      "serializer": "set_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades %1$s to %2$s Rarity",
+    "name_source": "lang"
+  },
+  {
+    "id": "set_lowest_affix_rar_unique",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/set_lowest_affix_rar_unique.json",
+    "data": {
+      "data": {
+        "finder_data": {
+          "finder": "LOWEST_RARITY_AFFIX",
+          "target_rar": ""
+        },
+        "rar": "unique"
+      },
+      "id": "set_lowest_affix_rar_unique",
+      "serializer": "set_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades %1$s to %2$s Rarity",
+    "name_source": "lang"
+  },
+  {
+    "id": "sharpening_stone_quality_0",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/sharpening_stone_quality_0.json",
+    "data": {
+      "data": {
+        "add_quality": {
+          "max": 2,
+          "min": 2
+        }
+      },
+      "id": "sharpening_stone_quality_0",
+      "serializer": "add_quality",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/sharpening_stone_quality_0.json",
+    "name": "Add %1$s Quality",
+    "name_source": "lang"
+  },
+  {
+    "id": "sharpening_stone_quality_1",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/sharpening_stone_quality_1.json",
+    "data": {
+      "data": {
+        "add_quality": {
+          "max": 4,
+          "min": 4
+        }
+      },
+      "id": "sharpening_stone_quality_1",
+      "serializer": "add_quality",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/sharpening_stone_quality_1.json",
+    "name": "Add %1$s Quality",
+    "name_source": "lang"
+  },
+  {
+    "id": "sharpening_stone_quality_2",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/sharpening_stone_quality_2.json",
+    "data": {
+      "data": {
+        "add_quality": {
+          "max": 6,
+          "min": 6
+        }
+      },
+      "id": "sharpening_stone_quality_2",
+      "serializer": "add_quality",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/sharpening_stone_quality_2.json",
+    "name": "Add %1$s Quality",
+    "name_source": "lang"
+  },
+  {
+    "id": "sharpening_stone_quality_3",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/sharpening_stone_quality_3.json",
+    "data": {
+      "data": {
+        "add_quality": {
+          "max": 8,
+          "min": 8
+        }
+      },
+      "id": "sharpening_stone_quality_3",
+      "serializer": "add_quality",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/sharpening_stone_quality_3.json",
+    "name": "Add %1$s Quality",
+    "name_source": "lang"
+  },
+  {
+    "id": "sharpening_stone_quality_4",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/sharpening_stone_quality_4.json",
+    "data": {
+      "data": {
+        "add_quality": {
+          "max": 10,
+          "min": 10
+        }
+      },
+      "id": "sharpening_stone_quality_4",
+      "serializer": "add_quality",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/sharpening_stone_quality_4.json",
+    "name": "Add %1$s Quality",
+    "name_source": "lang"
+  },
+  {
+    "id": "sharpening_stone_quality_5",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_item_modification/sharpening_stone_quality_5.json",
+    "data": {
+      "data": {
+        "add_quality": {
+          "max": 12,
+          "min": 12
+        }
+      },
+      "id": "sharpening_stone_quality_5",
+      "serializer": "add_quality",
+      "weight": 1000
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/sharpening_stone_quality_5.json",
+    "name": "Add %1$s Quality",
+    "name_source": "lang"
+  },
+  {
+    "id": "suffix_number_reroll",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/suffix_number_reroll.json",
+    "data": {
+      "data": "SUFFIX",
+      "id": "suffix_number_reroll",
+      "serializer": "reroll_affix_numbers",
+      "weight": 1000
+    },
+    "name": "Re-rolls %1$s Numbers",
+    "name_source": "lang"
+  },
+  {
+    "id": "uber_upgrade",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_item_modification/uber_upgrade.json",
+    "data": {
+      "id": "uber_upgrade",
+      "serializer": "uber_upgrade",
+      "weight": 1000
+    },
+    "name": "Uber Upgrade",
+    "name_source": "derived"
+  },
+  {
+    "id": "up_corrupt_affix",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/up_corrupt_affix.json",
+    "data": {
+      "data": {
+        "finder": "RANDOM_AFFIX",
+        "target_rar": ""
+      },
+      "id": "up_corrupt_affix",
+      "serializer": "upgrade_corrupt_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Rarity of %1$s of Corruption",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_jewel_affix_rarity",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_jewel_affix_rarity.json",
+    "data": {
+      "data": {
+        "finder": "RANDOM_AFFIX",
+        "target_rar": ""
+      },
+      "id": "upgrade_jewel_affix_rarity",
+      "serializer": "upgrade_jewel_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Rarity and re-rolls Numbers of %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_lowest_affix",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_lowest_affix.json",
+    "data": {
+      "data": {
+        "finder": "LOWEST_RARITY_AFFIX",
+        "target_rar": ""
+      },
+      "id": "upgrade_lowest_affix",
+      "serializer": "upgrade_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Rarity and re-rolls Numbers of %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_omen_rarity",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_omen_rarity.json",
+    "data": {
+      "id": "upgrade_omen_rarity",
+      "serializer": "upgrade_omen_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades the Codex to a random higher rarity",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_random_affix",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_random_affix.json",
+    "data": {
+      "data": {
+        "finder": "RANDOM_AFFIX",
+        "target_rar": ""
+      },
+      "id": "upgrade_random_affix",
+      "serializer": "upgrade_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Rarity and re-rolls Numbers of %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_skill_gem_rarity",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_skill_gem_rarity.json",
+    "data": {
+      "id": "upgrade_skill_gem_rarity",
+      "serializer": "upgrade_skill_gem_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades the rarity of the Skill Gem",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_specific_rar_common",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_specific_rar_common.json",
+    "data": {
+      "data": {
+        "finder": "SPECIFIC_RARITY",
+        "target_rar": "common"
+      },
+      "id": "upgrade_specific_rar_common",
+      "serializer": "upgrade_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Rarity and re-rolls Numbers of %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_specific_rar_epic",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_specific_rar_epic.json",
+    "data": {
+      "data": {
+        "finder": "SPECIFIC_RARITY",
+        "target_rar": "epic"
+      },
+      "id": "upgrade_specific_rar_epic",
+      "serializer": "upgrade_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Rarity and re-rolls Numbers of %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_specific_rar_legendary",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_specific_rar_legendary.json",
+    "data": {
+      "data": {
+        "finder": "SPECIFIC_RARITY",
+        "target_rar": "legendary"
+      },
+      "id": "upgrade_specific_rar_legendary",
+      "serializer": "upgrade_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Rarity and re-rolls Numbers of %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_specific_rar_mythic",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_specific_rar_mythic.json",
+    "data": {
+      "data": {
+        "finder": "SPECIFIC_RARITY",
+        "target_rar": "mythic"
+      },
+      "id": "upgrade_specific_rar_mythic",
+      "serializer": "upgrade_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Rarity and re-rolls Numbers of %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_specific_rar_rare",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_specific_rar_rare.json",
+    "data": {
+      "data": {
+        "finder": "SPECIFIC_RARITY",
+        "target_rar": "rare"
+      },
+      "id": "upgrade_specific_rar_rare",
+      "serializer": "upgrade_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Rarity and re-rolls Numbers of %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_specific_rar_runeword",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_specific_rar_runeword.json",
+    "data": {
+      "data": {
+        "finder": "SPECIFIC_RARITY",
+        "target_rar": "runeword"
+      },
+      "id": "upgrade_specific_rar_runeword",
+      "serializer": "upgrade_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Rarity and re-rolls Numbers of %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_specific_rar_uncommon",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_specific_rar_uncommon.json",
+    "data": {
+      "data": {
+        "finder": "SPECIFIC_RARITY",
+        "target_rar": "uncommon"
+      },
+      "id": "upgrade_specific_rar_uncommon",
+      "serializer": "upgrade_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Rarity and re-rolls Numbers of %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "upgrade_specific_rar_unique",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_item_modification/upgrade_specific_rar_unique.json",
+    "data": {
+      "data": {
+        "finder": "SPECIFIC_RARITY",
+        "target_rar": "unique"
+      },
+      "id": "upgrade_specific_rar_unique",
+      "serializer": "upgrade_affix_rarity",
+      "weight": 1000
+    },
+    "name": "Upgrades Rarity and re-rolls Numbers of %1$s",
+    "name_source": "lang"
+  }
+]

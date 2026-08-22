@@ -1,0 +1,714 @@
+[
+  {
+    "id": "armor",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/armor.json",
+    "data": {
+      "id": "armor",
+      "min_lvl": 10,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 30.0,
+          "min": 6.0,
+          "stat": "armor"
+        }
+      ],
+      "style": "STR"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/armor.json",
+    "name": "Armor Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "back_to_basics",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/back_to_basics.json",
+    "data": {
+      "id": "back_to_basics",
+      "min_lvl": 1,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 10.0,
+          "stat": "basic_attack_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 5.0,
+          "stat": "attack_speed"
+        }
+      ],
+      "style": "DEX"
+    },
+    "name": "Basic Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "block",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/block.json",
+    "data": {
+      "id": "block",
+      "min_lvl": 20,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 10.0,
+          "stat": "block_chance"
+        }
+      ],
+      "style": "INT"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/block.json",
+    "name": "Guardian Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "chaos_ailment",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/chaos_ailment.json",
+    "data": {
+      "id": "chaos_ailment",
+      "min_lvl": 10,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 6.0,
+          "stat": "all_chaos_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 5.0,
+          "stat": "poison_chance"
+        }
+      ],
+      "style": "DEX"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/chaos_ailment.json",
+    "name": "Decree of Chaos Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "chaos_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/chaos_damage.json",
+    "data": {
+      "id": "chaos_damage",
+      "min_lvl": 30,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 20.0,
+          "min": 4.0,
+          "stat": "all_chaos_damage"
+        }
+      ],
+      "style": "DEX"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/chaos_damage.json",
+    "name": "Chaos Damage Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "chaos_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/chaos_res.json",
+    "data": {
+      "id": "chaos_res",
+      "min_lvl": 20,
+      "reservation": 0.35,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 45.0,
+          "min": 9.0,
+          "stat": "chaos_resist"
+        }
+      ],
+      "style": "INT"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/chaos_res.json",
+    "name": "Chaos Barrier Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "cold_ailment",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/cold_ailment.json",
+    "data": {
+      "id": "cold_ailment",
+      "min_lvl": 10,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 6.0,
+          "stat": "all_water_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 5.0,
+          "stat": "freeze_chance"
+        }
+      ],
+      "style": "DEX"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/cold_ailment.json",
+    "name": "Decree of Frost Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "cold_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/cold_damage.json",
+    "data": {
+      "id": "cold_damage",
+      "min_lvl": 30,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 20.0,
+          "min": 4.0,
+          "stat": "all_water_damage"
+        }
+      ],
+      "style": "DEX"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/cold_damage.json",
+    "name": "Cold Damage Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "cold_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/cold_res.json",
+    "data": {
+      "id": "cold_res",
+      "min_lvl": 20,
+      "reservation": 0.35,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 10.0,
+          "stat": "water_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 1.0,
+          "stat": "max_water_resist"
+        }
+      ],
+      "style": "DEX"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/cold_res.json",
+    "name": "Frost Barrier Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "critical_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/critical_damage.json",
+    "data": {
+      "id": "critical_damage",
+      "min_lvl": 20,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 10.0,
+          "stat": "critical_damage"
+        }
+      ],
+      "style": "STR"
+    },
+    "name": "Critical Magnitude Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "critical_hit",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/critical_hit.json",
+    "data": {
+      "id": "critical_hit",
+      "min_lvl": 10,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "critical_hit"
+        },
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 10.0,
+          "stat": "critical_hit"
+        }
+      ],
+      "style": "DEX"
+    },
+    "name": "Critical Strikes Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "dodge",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/dodge.json",
+    "data": {
+      "id": "dodge",
+      "min_lvl": 10,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 40.0,
+          "min": 8.0,
+          "stat": "dodge"
+        },
+        {
+          "type": "FLAT",
+          "max": 7.5,
+          "min": 1.5,
+          "stat": "dodge"
+        }
+      ],
+      "style": "DEX"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/dodge.json",
+    "name": "Dodge Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "ele_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/ele_res.json",
+    "data": {
+      "id": "ele_res",
+      "min_lvl": 20,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 5.0,
+          "stat": "elemental_resist"
+        }
+      ],
+      "style": "INT"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/ele_res.json",
+    "name": "Elemental Barrier Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "energy_reg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/energy_reg.json",
+    "data": {
+      "id": "energy_reg",
+      "min_lvl": 1,
+      "reservation": 0.25,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 1.0,
+          "stat": "energy_regen"
+        }
+      ],
+      "style": "DEX"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/energy_reg.json",
+    "name": "Energy Regen Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "fire_ailment",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/fire_ailment.json",
+    "data": {
+      "id": "fire_ailment",
+      "min_lvl": 10,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 6.0,
+          "stat": "all_fire_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 5.0,
+          "stat": "burn_chance"
+        }
+      ],
+      "style": "STR"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/fire_ailment.json",
+    "name": "Decree of Fire Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "fire_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/fire_damage.json",
+    "data": {
+      "id": "fire_damage",
+      "min_lvl": 30,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 20.0,
+          "min": 4.0,
+          "stat": "all_fire_damage"
+        }
+      ],
+      "style": "STR"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/fire_damage.json",
+    "name": "Fire Damage Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "fire_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/fire_res.json",
+    "data": {
+      "id": "fire_res",
+      "min_lvl": 20,
+      "reservation": 0.35,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 10.0,
+          "stat": "fire_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 1.0,
+          "stat": "max_fire_resist"
+        }
+      ],
+      "style": "STR"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/fire_res.json",
+    "name": "Flame Barrier Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "guardian",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/guardian.json",
+    "data": {
+      "id": "guardian",
+      "min_lvl": 20,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "health"
+        },
+        {
+          "type": "MORE",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "magic_shield"
+        }
+      ],
+      "style": "INT"
+    },
+    "name": "Vitality Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "health_reg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/health_reg.json",
+    "data": {
+      "id": "health_reg",
+      "min_lvl": 1,
+      "reservation": 0.25,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "health_regen"
+        }
+      ],
+      "style": "STR"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/health_reg.json",
+    "name": "Health Regen Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "light_res",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/light_res.json",
+    "data": {
+      "id": "light_res",
+      "min_lvl": 20,
+      "reservation": 0.35,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 10.0,
+          "stat": "lightning_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 1.0,
+          "stat": "max_lightning_resist"
+        }
+      ],
+      "style": "INT"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/light_res.json",
+    "name": "Thunder Barrier Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "lightning_ailment",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/lightning_ailment.json",
+    "data": {
+      "id": "lightning_ailment",
+      "min_lvl": 10,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 6.0,
+          "stat": "all_lightning_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 5.0,
+          "stat": "electrify_chance"
+        }
+      ],
+      "style": "INT"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/lightning_ailment.json",
+    "name": "Decree of Lightning Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "lightning_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/lightning_damage.json",
+    "data": {
+      "id": "lightning_damage",
+      "min_lvl": 30,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 20.0,
+          "min": 4.0,
+          "stat": "all_lightning_damage"
+        }
+      ],
+      "style": "INT"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/lightning_damage.json",
+    "name": "Lightning Damage Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "magic_shield",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/magic_shield.json",
+    "data": {
+      "id": "magic_shield",
+      "min_lvl": 10,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 5.0,
+          "stat": "magic_shield"
+        }
+      ],
+      "style": "INT"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/magic_shield.json",
+    "name": "Magic Shield Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "magic_shield_reg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/magic_shield_reg.json",
+    "data": {
+      "id": "magic_shield_reg",
+      "min_lvl": 1,
+      "reservation": 0.25,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 2.0,
+          "stat": "magic_shield_regen"
+        }
+      ],
+      "style": "INT"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/magic_shield_reg.json",
+    "name": "MS Regen Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "mana_reg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/mana_reg.json",
+    "data": {
+      "id": "mana_reg",
+      "min_lvl": 1,
+      "reservation": 0.25,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 1.0,
+          "stat": "mana_regen"
+        }
+      ],
+      "style": "INT"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/mana_reg.json",
+    "name": "Mana Regen Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "physical_ailment",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/physical_ailment.json",
+    "data": {
+      "id": "physical_ailment",
+      "min_lvl": 10,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 6.0,
+          "stat": "all_physical_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 5.0,
+          "stat": "bleed_chance"
+        }
+      ],
+      "style": "STR"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/physical_ailment.json",
+    "name": "Decree of Pain Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "physical_damage",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/physical_damage.json",
+    "data": {
+      "id": "physical_damage",
+      "min_lvl": 30,
+      "reservation": 0.4,
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 20.0,
+          "min": 4.0,
+          "stat": "all_physical_damage"
+        }
+      ],
+      "style": "STR"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/physical_damage.json",
+    "name": "Physical Damage Augment",
+    "name_source": "lang"
+  },
+  {
+    "id": "summon_dmg",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_aura/summon_dmg.json",
+    "data": {
+      "id": "summon_dmg",
+      "min_lvl": 20,
+      "reservation": 0.3,
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 40.0,
+          "min": 8.0,
+          "stat": "summon_damage"
+        }
+      ],
+      "style": "INT"
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_aura/summon_dmg.json",
+    "name": "Overlord Augment",
+    "name_source": "lang"
+  }
+]

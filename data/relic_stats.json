@@ -1,0 +1,556 @@
+[
+  {
+    "id": "bonus_boss_frag_chance",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_boss_frag_chance.json",
+    "data": {
+      "base": 0.0,
+      "id": "bonus_boss_frag_chance",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "manual_stat"
+    },
+    "name": "%1$s Uber Fragment Drop Rate",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_content_chance",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_content_chance.json",
+    "data": {
+      "base": 0.0,
+      "id": "bonus_content_chance",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "manual_stat"
+    },
+    "name": "%1$s Chance of Any Content",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_currency",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_currency.json",
+    "data": {
+      "type": "Currency",
+      "base": 0.0,
+      "id": "bonus_currency",
+      "is_percent": true,
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "mns_loot_type_bonus"
+    },
+    "name": "%1$s Currency Drop Rate",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_gear",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_gear.json",
+    "data": {
+      "type": "Gear",
+      "base": 0.0,
+      "id": "bonus_gear",
+      "is_percent": true,
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "mns_loot_type_bonus"
+    },
+    "name": "%1$s Gear Drop Rate",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_gem",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_gem.json",
+    "data": {
+      "type": "Gem",
+      "base": 0.0,
+      "id": "bonus_gem",
+      "is_percent": true,
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "mns_loot_type_bonus"
+    },
+    "name": "%1$s Gem Drop Rate",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_harvest_chance",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/The-Harvest-1.20.1-1.1.6.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_harvest_chance.json",
+    "data": {
+      "base": 0.0,
+      "data": {
+        "type": "ADDITION",
+        "extra": 1,
+        "map_content_id": "the_harvest"
+      },
+      "id": "bonus_harvest_chance",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "extra_content"
+    },
+    "name": "%1$s Chance for +1 Harvest",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_jewel",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_jewel.json",
+    "data": {
+      "type": "Jewel",
+      "base": 0.0,
+      "id": "bonus_jewel",
+      "is_percent": true,
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "mns_loot_type_bonus"
+    },
+    "name": "%1$s Jewel Drop Rate",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_loot_chest",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_loot_chest.json",
+    "data": {
+      "type": "LootChest",
+      "base": 0.0,
+      "id": "bonus_loot_chest",
+      "is_percent": true,
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "mns_loot_type_bonus"
+    },
+    "name": "%1$s Loot Chest Drop Rate",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_map",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_map.json",
+    "data": {
+      "type": "Map",
+      "base": 0.0,
+      "id": "bonus_map",
+      "is_percent": true,
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "mns_loot_type_bonus"
+    },
+    "name": "%1$s Map Drop Rate",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_map_from_boss_chance",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_map_from_boss_chance.json",
+    "data": {
+      "base": 0.0,
+      "id": "bonus_map_from_boss_chance",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "manual_stat"
+    },
+    "name": "%1$s Chance for Extra Boss Map Drop",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_obelisk_chance",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_obelisk_chance.json",
+    "data": {
+      "base": 0.0,
+      "data": {
+        "type": "ADDITION",
+        "extra": 1,
+        "map_content_id": "ancient_obelisks"
+      },
+      "id": "bonus_obelisk_chance",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "extra_content"
+    },
+    "name": "%1$s Chance for +1 Obelisk",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_omen",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_omen.json",
+    "data": {
+      "type": "Omen",
+      "base": 0.0,
+      "id": "bonus_omen",
+      "is_percent": true,
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "mns_loot_type_bonus"
+    },
+    "name": "Codex Drop rate %1$s",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_prophecy_chance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_stat/bonus_prophecy_chance.json",
+    "data": {
+      "base": 0.0,
+      "data": {
+        "type": "ADDITION",
+        "extra": 1,
+        "map_content_id": "prophecy"
+      },
+      "id": "bonus_prophecy_chance",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "extra_content"
+    },
+    "name": "Bonus Prophecy Chance",
+    "name_source": "derived"
+  },
+  {
+    "id": "bonus_prophecy_coin",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_prophecy_coin.json",
+    "data": {
+      "type": "ProphecyCoin",
+      "base": 0.0,
+      "id": "bonus_prophecy_coin",
+      "is_percent": true,
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "mns_loot_type_bonus"
+    },
+    "name": "%1$s Prophecy Coin Drop Rate",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_rune",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_rune.json",
+    "data": {
+      "type": "Rune",
+      "base": 0.0,
+      "id": "bonus_rune",
+      "is_percent": true,
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "mns_loot_type_bonus"
+    },
+    "name": "%1$s Rune Drop Rate",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_skill_gem",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_skill_gem.json",
+    "data": {
+      "type": "SkillGem",
+      "base": 0.0,
+      "id": "bonus_skill_gem",
+      "is_percent": true,
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "mns_loot_type_bonus"
+    },
+    "name": "%1$s Support and Augment Gem Drop Rate",
+    "name_source": "lang"
+  },
+  {
+    "id": "bonus_watcher_eye",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/library_of_exile/library_of_exile_relic_stat/bonus_watcher_eye.json",
+    "data": {
+      "type": "WatcherEye",
+      "base": 0.0,
+      "id": "bonus_watcher_eye",
+      "is_percent": true,
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "mns_loot_type_bonus"
+    },
+    "name": "%1$s Watcher Eye Drop Rate",
+    "name_source": "lang"
+  },
+  {
+    "id": "double_harvest_chance",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/The-Harvest-1.20.1-1.1.6.jar!/data/library_of_exile/library_of_exile_relic_stat/double_harvest_chance.json",
+    "data": {
+      "base": 0.0,
+      "data": {
+        "type": "MULTIPLY",
+        "extra": 2,
+        "map_content_id": "the_harvest"
+      },
+      "id": "double_harvest_chance",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "extra_content"
+    },
+    "name": "%1$s Chance for 3x Harvests",
+    "name_source": "lang"
+  },
+  {
+    "id": "empty",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Library_of_Exile-1.20.1-2.1.11.jar!/data/library_of_exile/library_of_exile_relic_stat/empty.json",
+    "data": {
+      "base": 0.0,
+      "id": "empty",
+      "is_percent": true,
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "empty"
+    },
+    "name": "Empty",
+    "name_source": "derived"
+  },
+  {
+    "id": "extra_map_boss_chance",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_relic_stat/extra_map_boss_chance.json",
+    "data": {
+      "base": 0.0,
+      "id": "extra_map_boss_chance",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "manual_stat"
+    },
+    "name": "%1$s Chance for Twin Bosses",
+    "name_source": "lang"
+  },
+  {
+    "id": "harvest_content",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/The-Harvest-1.20.1-1.1.6.jar!/data/library_of_exile/library_of_exile_relic_stat/harvest_content.json",
+    "data": {
+      "base": 0.0,
+      "id": "harvest_content",
+      "is_percent": true,
+      "map_content_id": "the_harvest",
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "content_weight"
+    },
+    "name": "%1$s Chance of Harvest Content",
+    "name_source": "lang"
+  },
+  {
+    "id": "imprisoned_monster_content",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_stat/imprisoned_monster_content.json",
+    "data": {
+      "base": 0.0,
+      "id": "imprisoned_monster_content",
+      "is_percent": true,
+      "map_content_id": "imprisoned_monster",
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "content_weight"
+    },
+    "name": "%1$s Chance of Imprisoned Monster Content",
+    "name_source": "lang"
+  },
+  {
+    "id": "mob_spawn_chance",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_stat/mob_spawn_chance.json",
+    "data": {
+      "base": 0.0,
+      "id": "mob_spawn_chance",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "manual_stat"
+    },
+    "name": "%1$s Mob Spawn Chance",
+    "name_source": "lang"
+  },
+  {
+    "id": "mobs_spawned",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/The-Harvest-1.20.1-1.1.6.jar!/data/library_of_exile/library_of_exile_relic_stat/mobs_spawned.json",
+    "data": {
+      "base": 0.0,
+      "id": "mobs_spawned",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "manual_stat"
+    },
+    "name": "%1$s Harvest Mob Spawns",
+    "name_source": "lang"
+  },
+  {
+    "id": "obelisk_content",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_stat/obelisk_content.json",
+    "data": {
+      "base": 0.0,
+      "id": "obelisk_content",
+      "is_percent": true,
+      "map_content_id": "ancient_obelisks",
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "content_weight"
+    },
+    "name": "%1$s Chance of Obelisk Content",
+    "name_source": "lang"
+  },
+  {
+    "id": "pack_size",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Dungeon-Realm-1.20.1-1.1.13.jar!/data/library_of_exile/library_of_exile_relic_stat/pack_size.json",
+    "data": {
+      "base": 0.0,
+      "id": "pack_size",
+      "is_percent": true,
+      "max": 500.0,
+      "min": 0.0,
+      "serializer": "manual_stat"
+    },
+    "name": "%1$s Mob Pack Size",
+    "name_source": "lang"
+  },
+  {
+    "id": "prophecy_content",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_stat/prophecy_content.json",
+    "data": {
+      "base": 0.0,
+      "id": "prophecy_content",
+      "is_percent": true,
+      "map_content_id": "prophecy",
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "content_weight"
+    },
+    "name": "%1$s Chance of Prophecy Content",
+    "name_source": "lang"
+  },
+  {
+    "id": "shrine_content",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_stat/shrine_content.json",
+    "data": {
+      "base": 0.0,
+      "id": "shrine_content",
+      "is_percent": true,
+      "map_content_id": "shrine",
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "content_weight"
+    },
+    "name": "%1$s Chance of Shrine Content",
+    "name_source": "lang"
+  },
+  {
+    "id": "strongbox_content",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/library_of_exile/library_of_exile_relic_stat/strongbox_content.json",
+    "data": {
+      "base": 0.0,
+      "id": "strongbox_content",
+      "is_percent": true,
+      "map_content_id": "strongbox",
+      "max": 1000.0,
+      "min": 0.0,
+      "serializer": "content_weight"
+    },
+    "name": "%1$s Chance of Strongbox Content",
+    "name_source": "lang"
+  },
+  {
+    "id": "total_wave_mobs",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_stat/total_wave_mobs.json",
+    "data": {
+      "base": 0.0,
+      "id": "total_wave_mobs",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "manual_stat"
+    },
+    "name": "%1$s Mobs Per Wave",
+    "name_source": "lang"
+  },
+  {
+    "id": "triple_chest_chance",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_stat/triple_chest_chance.json",
+    "data": {
+      "base": 0.0,
+      "id": "triple_chest_chance",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "manual_stat"
+    },
+    "name": "%1$s Chance for 3x Reward Chests",
+    "name_source": "lang"
+  },
+  {
+    "id": "triple_obelisk_chance",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Ancient-Obelisks-1.20.1-1.2.6.jar!/data/library_of_exile/library_of_exile_relic_stat/triple_obelisk_chance.json",
+    "data": {
+      "base": 0.0,
+      "data": {
+        "type": "MULTIPLY",
+        "extra": 3,
+        "map_content_id": "ancient_obelisks"
+      },
+      "id": "triple_obelisk_chance",
+      "is_percent": true,
+      "max": 100.0,
+      "min": 0.0,
+      "serializer": "extra_content"
+    },
+    "name": "%1$s Chance for 3x Obelisks",
+    "name_source": "lang"
+  }
+]

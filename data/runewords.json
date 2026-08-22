@@ -1,0 +1,3184 @@
+[
+  {
+    "id": "abyssal_depths",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/abyssal_depths.json",
+    "data": {
+      "id": "abyssal_depths",
+      "runes": [
+        "ano",
+        "net",
+        "mos"
+      ],
+      "slots": [
+        "chest"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 5.0,
+          "stat": "health"
+        },
+        {
+          "type": "FLAT",
+          "max": 12.0,
+          "min": 6.0,
+          "stat": "energy"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 10.0,
+          "stat": "summon_damage"
+        }
+      ]
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runeword/abyssal_depths.json",
+    "name": "Abyssal Depths",
+    "name_source": "lang"
+  },
+  {
+    "id": "ancients_pledge",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/ancients_pledge.json",
+    "data": {
+      "id": "ancients_pledge",
+      "runes": [
+        "cen",
+        "mos",
+        "dos"
+      ],
+      "slots": [
+        "shield",
+        "tome",
+        "totem"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 22.0,
+          "min": 22.0,
+          "stat": "elemental_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 27.0,
+          "min": 27.0,
+          "stat": "chaos_resist"
+        },
+        {
+          "type": "PERCENT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "mana_regen"
+        }
+      ]
+    },
+    "name": "Ancient's Pledge",
+    "name_source": "lang"
+  },
+  {
+    "id": "arcane",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/arcane.json",
+    "data": {
+      "id": "arcane",
+      "runes": [
+        "mos",
+        "bri"
+      ],
+      "slots": [
+        "pants"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 45.0,
+          "min": 35.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 4.0,
+          "stat": "magic_shield"
+        },
+        {
+          "type": "PERCENT",
+          "max": 6.0,
+          "min": 4.0,
+          "stat": "mana"
+        },
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 4.0,
+          "stat": "spell_mssteal"
+        },
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 4.0,
+          "stat": "spell_manasteal"
+        },
+        {
+          "type": "FLAT",
+          "max": -5.0,
+          "min": -5.0,
+          "stat": "mana_cost"
+        }
+      ]
+    },
+    "name": "Arcane",
+    "name_source": "lang"
+  },
+  {
+    "id": "ballista",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/ballista.json",
+    "data": {
+      "id": "ballista",
+      "runes": [
+        "sid",
+        "toq",
+        "end",
+        "dos",
+        "ano"
+      ],
+      "slots": [
+        "crossbow"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "MORE",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "projectile_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 4.0,
+          "stat": "armor_penetration"
+        },
+        {
+          "type": "MORE",
+          "max": -100.0,
+          "min": -100.0,
+          "stat": "projectile_count"
+        },
+        {
+          "type": "FLAT",
+          "max": -40.0,
+          "min": -50.0,
+          "stat": "projectile_cdr"
+        },
+        {
+          "type": "FLAT",
+          "max": -40.0,
+          "min": -50.0,
+          "stat": "attack_speed"
+        }
+      ]
+    },
+    "name": "Ballista",
+    "name_source": "lang"
+  },
+  {
+    "id": "bramble",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/bramble.json",
+    "data": {
+      "id": "bramble",
+      "runes": [
+        "wir",
+        "mos",
+        "ano",
+        "cen"
+      ],
+      "slots": [
+        "chest"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "plus_lvl_physical_spells"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 15.0,
+          "stat": "thorns_spell_dmg"
+        },
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 5.0,
+          "stat": "health"
+        },
+        {
+          "type": "PERCENT",
+          "max": 7.0,
+          "min": 5.0,
+          "stat": "energy"
+        }
+      ]
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runeword/bramble.json",
+    "name": "Bramble",
+    "name_source": "lang"
+  },
+  {
+    "id": "breath_of_the_dying",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/breath_of_the_dying.json",
+    "data": {
+      "id": "breath_of_the_dying",
+      "runes": [
+        "owd",
+        "nos",
+        "oru",
+        "fey",
+        "daw",
+        "ano"
+      ],
+      "slots": [
+        "sword",
+        "staff",
+        "dagger",
+        "hammer",
+        "spear",
+        "axe",
+        "gauntlet",
+        "scythe",
+        "greatsword"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 70.0,
+          "min": 60.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "proc_putrid_breath_on_kill"
+        },
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "phys_to_chaos"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "poison_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "dmg_to_undead"
+        },
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 2.0,
+          "stat": "lifesteal"
+        },
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 2.0,
+          "stat": "manasteal"
+        },
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 40.0,
+          "stat": "attack_speed"
+        }
+      ]
+    },
+    "name": "Breath of the Dying",
+    "name_source": "lang"
+  },
+  {
+    "id": "call_to_arms",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/call_to_arms.json",
+    "data": {
+      "id": "call_to_arms",
+      "runes": [
+        "dos",
+        "owd",
+        "yun",
+        "wir",
+        "end"
+      ],
+      "slots": [
+        "hammer",
+        "spear",
+        "scythe"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 70.0,
+          "min": 60.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "plus_lvl_all_spells"
+        },
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 10.0,
+          "stat": "health_regen"
+        },
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 2.0,
+          "stat": "learn_battle_orders"
+        },
+        {
+          "type": "FLAT",
+          "max": 12.0,
+          "min": 12.0,
+          "stat": "magic_find"
+        }
+      ]
+    },
+    "name": "Call to Arms",
+    "name_source": "lang"
+  },
+  {
+    "id": "carpe_noctem",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/carpe_noctem.json",
+    "data": {
+      "id": "carpe_noctem",
+      "runes": [
+        "yun",
+        "fey",
+        "und",
+        "ano"
+      ],
+      "slots": [
+        "axe",
+        "sword",
+        "greatsword",
+        "hammer",
+        "scythe"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 65.0,
+          "min": 55.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 2.0,
+          "stat": "plus_lvl_cold_spells"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 25.0,
+          "stat": "phys_to_water"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "all_water_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 2.0,
+          "stat": "lifesteal"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "attack_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 10.0,
+          "stat": "move_speed"
+        }
+      ]
+    },
+    "name": "Carpe Noctem",
+    "name_source": "lang"
+  },
+  {
+    "id": "chains_of_honor",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/chains_of_honor.json",
+    "data": {
+      "id": "chains_of_honor",
+      "runes": [
+        "ano",
+        "wir",
+        "sid",
+        "yun",
+        "ita"
+      ],
+      "slots": [
+        "chest"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "plus_lvl_all_spells"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 2.0,
+          "stat": "lifesteal"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "elemental_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 3.0,
+          "stat": "dmg_reduction"
+        },
+        {
+          "type": "FLAT",
+          "max": 8.0,
+          "min": 8.0,
+          "stat": "magic_find"
+        }
+      ]
+    },
+    "name": "Chains of Honor",
+    "name_source": "lang"
+  },
+  {
+    "id": "choosen_of_azuna",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/choosen_of_azuna.json",
+    "data": {
+      "id": "choosen_of_azuna",
+      "runes": [
+        "mos",
+        "nos",
+        "ita"
+      ],
+      "slots": [
+        "ring"
+      ],
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 12.0,
+          "min": 8.0,
+          "stat": "total_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 0.0,
+          "stat": "intelligence"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 0.0,
+          "stat": "strength"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 0.0,
+          "stat": "dexterity"
+        }
+      ]
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runeword/choosen_of_azuna.json",
+    "name": "Chosen of Azuna",
+    "name_source": "lang"
+  },
+  {
+    "id": "concentrate",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/concentrate.json",
+    "data": {
+      "id": "concentrate",
+      "runes": [
+        "eno",
+        "owd",
+        "yun"
+      ],
+      "slots": [
+        "staff",
+        "dagger"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 35.0,
+          "min": 30.0,
+          "stat": "area_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "accuracy"
+        },
+        {
+          "type": "FLAT",
+          "max": -20.0,
+          "min": -25.0,
+          "stat": "inc_aoe"
+        }
+      ]
+    },
+    "name": "Concentrate",
+    "name_source": "lang"
+  },
+  {
+    "id": "crater",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/crater.json",
+    "data": {
+      "id": "crater",
+      "runes": [
+        "daw",
+        "und",
+        "net",
+        "bri"
+      ],
+      "slots": [
+        "dagger",
+        "spear",
+        "gauntlet",
+        "bow",
+        "crossbow"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 70.0,
+          "min": 60.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "instant_traps"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 10.0,
+          "stat": "charge_recovery_rate"
+        },
+        {
+          "type": "FLAT",
+          "max": -30.0,
+          "min": -40.0,
+          "stat": "trap_spell_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": 8.0,
+          "min": 6.0,
+          "stat": "inc_aoe"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "fire_resist"
+        }
+      ]
+    },
+    "name": "Crater",
+    "name_source": "lang"
+  },
+  {
+    "id": "cure",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/cure.json",
+    "data": {
+      "id": "cure",
+      "runes": [
+        "fey",
+        "nos",
+        "har"
+      ],
+      "slots": [
+        "helmet"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "increase_healing"
+        },
+        {
+          "type": "FLAT",
+          "max": -10.0,
+          "min": -10.0,
+          "stat": "mana_cost"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 5.0,
+          "stat": "cdr"
+        }
+      ]
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runeword/cure.json",
+    "name": "Cure",
+    "name_source": "lang"
+  },
+  {
+    "id": "dead_shot",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/dead_shot.json",
+    "data": {
+      "id": "dead_shot",
+      "runes": [
+        "fey",
+        "dos"
+      ],
+      "slots": [
+        "bow"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "projectile_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 10.0,
+          "stat": "faster_projectiles"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 3.0,
+          "stat": "critical_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "accuracy"
+        }
+      ]
+    },
+    "name": "Dead Shot",
+    "name_source": "lang"
+  },
+  {
+    "id": "destruction",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/destruction.json",
+    "data": {
+      "id": "destruction",
+      "runes": [
+        "net",
+        "und",
+        "bri",
+        "daw",
+        "end"
+      ],
+      "slots": [
+        "ring"
+      ],
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 8.0,
+          "min": 8.0,
+          "stat": "proc_fan_of_knives_on_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 15.0,
+          "stat": "proc_chain_lightning_on_attack_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 25.0,
+          "stat": "proc_cyclone_when_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 25.0,
+          "stat": "proc_frost_nova_when_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 33.0,
+          "min": 33.0,
+          "stat": "proc_putrid_breath_on_kill"
+        },
+        {
+          "type": "FLAT",
+          "max": 33.0,
+          "min": 33.0,
+          "stat": "proc_steam_cloud_on_kill"
+        },
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 4.0,
+          "stat": "elemental_resist"
+        }
+      ]
+    },
+    "name": "Destruction",
+    "name_source": "lang"
+  },
+  {
+    "id": "empty",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runeword/empty.json",
+    "data": {
+      "id": "empty",
+      "runes": [
+        "mos",
+        "net",
+        "ita",
+        "xer",
+        "har"
+      ],
+      "slots": [
+        "staff"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "gear_weapon_damage"
+        }
+      ]
+    },
+    "name": "empty",
+    "name_source": "lang"
+  },
+  {
+    "id": "exile",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/exile.json",
+    "data": {
+      "id": "exile",
+      "runes": [
+        "und",
+        "wir",
+        "net",
+        "nos",
+        "yun"
+      ],
+      "slots": [
+        "shield"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 3.0,
+          "stat": "block_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 8.0,
+          "min": 8.0,
+          "stat": "lifesteal"
+        },
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 3.0,
+          "stat": "inc_effect_of_offensive_buff_given"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 1.0,
+          "stat": "max_water_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 1.0,
+          "stat": "max_fire_resist"
+        }
+      ]
+    },
+    "name": "Exile",
+    "name_source": "lang"
+  },
+  {
+    "id": "flickering_flame",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/flickering_flame.json",
+    "data": {
+      "id": "flickering_flame",
+      "runes": [
+        "eno",
+        "mos",
+        "ano",
+        "xer",
+        "har"
+      ],
+      "slots": [
+        "pants"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 70.0,
+          "min": 60.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "plus_lvl_fire_spells"
+        },
+        {
+          "type": "FLAT",
+          "max": -50.0,
+          "min": -25.0,
+          "stat": "fire_res_aura_cost"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "fire_penetration"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 15.0,
+          "stat": "chaos_resist"
+        }
+      ]
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runeword/flickering_flame.json",
+    "name": "Flickering Flame",
+    "name_source": "lang"
+  },
+  {
+    "id": "flourish",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/flourish.json",
+    "data": {
+      "id": "flourish",
+      "runes": [
+        "ita",
+        "owd",
+        "mos"
+      ],
+      "slots": [
+        "staff",
+        "dagger",
+        "scythe",
+        "hammer"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "int_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 4.0,
+          "stat": "cast_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "mana_regen"
+        },
+        {
+          "type": "PERCENT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "critical_hit"
+        }
+      ]
+    },
+    "name": "Flourish",
+    "name_source": "lang"
+  },
+  {
+    "id": "fortitude",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/fortitude.json",
+    "data": {
+      "id": "fortitude",
+      "runes": [
+        "end",
+        "ita",
+        "cen",
+        "nos"
+      ],
+      "slots": [
+        "chest"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 125.0,
+          "min": 125.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 4.0,
+          "stat": "cast_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 8.0,
+          "min": 4.0,
+          "stat": "health"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "elemental_resist"
+        }
+      ]
+    },
+    "name": "Fortitude",
+    "name_source": "lang"
+  },
+  {
+    "id": "grief",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/grief.json",
+    "data": {
+      "id": "grief",
+      "runes": [
+        "cen",
+        "fey",
+        "nos",
+        "ven",
+        "daw"
+      ],
+      "slots": [
+        "axe",
+        "sword",
+        "greatsword",
+        "scythe",
+        "hammer"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 70.0,
+          "min": 60.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "attack_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "armor_penetration"
+        },
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 2.0,
+          "stat": "critical_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "chaos_penetration"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "health_on_kill"
+        }
+      ]
+    },
+    "name": "Grief",
+    "name_source": "lang"
+  },
+  {
+    "id": "hailstorm",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/hailstorm.json",
+    "data": {
+      "id": "hailstorm",
+      "runes": [
+        "dos",
+        "und",
+        "ano",
+        "fey"
+      ],
+      "slots": [
+        "pants"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 1.0,
+          "stat": "learn_hailstorm"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "phys_to_water"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 5.0,
+          "stat": "elemental_attack_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 12.0,
+          "min": 8.0,
+          "stat": "magic_shield"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "water_resist"
+        }
+      ]
+    },
+    "name": "Hailstorm",
+    "name_source": "lang"
+  },
+  {
+    "id": "heart_of_the_oak",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/heart_of_the_oak.json",
+    "data": {
+      "id": "heart_of_the_oak",
+      "runes": [
+        "wir",
+        "mos",
+        "har",
+        "fey"
+      ],
+      "slots": [
+        "hammer"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.9,
+          "min": 1.0,
+          "stat": "plus_lvl_all_spells"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 2.0,
+          "stat": "accuracy"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 2.0,
+          "stat": "manasteal"
+        },
+        {
+          "type": "PERCENT",
+          "max": 10.0,
+          "min": 5.0,
+          "stat": "mana"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "elemental_resist"
+        }
+      ]
+    },
+    "name": "Heart of the Oak",
+    "name_source": "lang"
+  },
+  {
+    "id": "heavenly_tear",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/heavenly_tear.json",
+    "data": {
+      "id": "heavenly_tear",
+      "runes": [
+        "toq",
+        "dos",
+        "yun",
+        "wir"
+      ],
+      "slots": [
+        "necklace"
+      ],
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 2.0,
+          "stat": "plus_lvl_all_spells"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "increase_healing"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 20.0,
+          "stat": "spell_damage_per_perc_of_increase_healing"
+        }
+      ]
+    },
+    "name": "Heavenly Tear",
+    "name_source": "lang"
+  },
+  {
+    "id": "hurricane",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/hurricane.json",
+    "data": {
+      "id": "hurricane",
+      "runes": [
+        "dos",
+        "bri",
+        "und",
+        "fey"
+      ],
+      "slots": [
+        "sword",
+        "gauntlet",
+        "greatsword"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "learn_whirlwind"
+        },
+        {
+          "type": "MORE",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "area_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 25.0,
+          "stat": "inc_aoe"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "phys_to_water"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "phys_to_lightning"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 2.0,
+          "stat": "accuracy"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "attack_speed"
+        }
+      ]
+    },
+    "name": "Hurricane",
+    "name_source": "lang"
+  },
+  {
+    "id": "impedement",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/impedement.json",
+    "data": {
+      "id": "impedement",
+      "runes": [
+        "owd",
+        "ita"
+      ],
+      "slots": [
+        "necklace"
+      ],
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": -10.0,
+          "min": -5.0,
+          "stat": "bonus_exp"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "missing_hp_health_regen_per_2"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 5.0,
+          "stat": "increase_healing"
+        }
+      ]
+    },
+    "name": "Impediment",
+    "name_source": "lang"
+  },
+  {
+    "id": "infinity",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/infinity.json",
+    "data": {
+      "id": "infinity",
+      "runes": [
+        "eno",
+        "toq",
+        "mos",
+        "ita"
+      ],
+      "slots": [
+        "spear"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "move_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 30.0,
+          "stat": "lightning_penetration"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "magic_find"
+        }
+      ]
+    },
+    "name": "Infinity",
+    "name_source": "lang"
+  },
+  {
+    "id": "insight",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/insight.json",
+    "data": {
+      "id": "insight",
+      "runes": [
+        "ita",
+        "dos",
+        "toq"
+      ],
+      "slots": [
+        "bow",
+        "crossbow",
+        "spear",
+        "scythe"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 9.0,
+          "min": 6.0,
+          "stat": "cast_speed"
+        },
+        {
+          "type": "MORE",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "mana_regen"
+        },
+        {
+          "type": "FLAT",
+          "max": 12.0,
+          "min": 8.0,
+          "stat": "magic_find"
+        }
+      ]
+    },
+    "name": "Insight",
+    "name_source": "lang"
+  },
+  {
+    "id": "kinesis",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/kinesis.json",
+    "data": {
+      "id": "kinesis",
+      "runes": [
+        "fey",
+        "oru",
+        "owd",
+        "end",
+        "yun",
+        "dos"
+      ],
+      "slots": [
+        "hammer",
+        "spear",
+        "axe",
+        "gauntlet",
+        "scythe",
+        "greatsword"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 70.0,
+          "min": 60.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 100.0,
+          "min": 100.0,
+          "stat": "proc_focus_on_basic_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": -35.0,
+          "min": -35.0,
+          "stat": "cdr"
+        },
+        {
+          "type": "MORE",
+          "max": -50.0,
+          "min": -50.0,
+          "stat": "attack_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 20.0,
+          "stat": "move_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 80.0,
+          "min": 60.0,
+          "stat": "basic_attack_dmg_per_move_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "skill_damage_per_move_speed"
+        }
+      ]
+    },
+    "name": "Kinesis",
+    "name_source": "lang"
+  },
+  {
+    "id": "lavaspur",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/lavaspur.json",
+    "data": {
+      "id": "lavaspur",
+      "runes": [
+        "wir",
+        "ano",
+        "owd",
+        "net"
+      ],
+      "slots": [
+        "boots"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "max_fire_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "fire_dmg_reduction"
+        },
+        {
+          "type": "FLAT",
+          "max": 35.0,
+          "min": 25.0,
+          "stat": "fire_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "move_speed"
+        }
+      ]
+    },
+    "name": "Lavaspur",
+    "name_source": "lang"
+  },
+  {
+    "id": "leaf",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/leaf.json",
+    "data": {
+      "id": "leaf",
+      "runes": [
+        "net",
+        "mos"
+      ],
+      "slots": [
+        "staff",
+        "dagger"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.9,
+          "min": 1.0,
+          "stat": "plus_lvl_fire_spells"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "all_fire_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 2.0,
+          "stat": "mana_on_kill"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 25.0,
+          "stat": "water_resist"
+        }
+      ]
+    },
+    "name": "Leaf",
+    "name_source": "lang"
+  },
+  {
+    "id": "lore",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/lore.json",
+    "data": {
+      "id": "lore",
+      "runes": [
+        "mos",
+        "ano"
+      ],
+      "slots": [
+        "helmet"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "plus_lvl_all_spells"
+        },
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 3.0,
+          "stat": "magic_shield_regen"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 5.0,
+          "stat": "lightning_resist"
+        }
+      ]
+    },
+    "name": "Lore",
+    "name_source": "lang"
+  },
+  {
+    "id": "malice",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/malice.json",
+    "data": {
+      "id": "malice",
+      "runes": [
+        "end",
+        "toq"
+      ],
+      "slots": [
+        "sword",
+        "axe",
+        "dagger",
+        "gauntlet",
+        "greatsword"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "armor_penetration"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "attack_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 40.0,
+          "stat": "bleed_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 2.0,
+          "stat": "lifesteal"
+        }
+      ]
+    },
+    "name": "Malice",
+    "name_source": "lang"
+  },
+  {
+    "id": "nature_wrath",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/nature_wrath.json",
+    "data": {
+      "id": "nature_wrath",
+      "runes": [
+        "bri",
+        "mos",
+        "und",
+        "ita"
+      ],
+      "slots": [
+        "necklace"
+      ],
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 2.9,
+          "min": 1.0,
+          "stat": "plus_lvl_lightning_spells"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.9,
+          "min": 1.0,
+          "stat": "plus_lvl_cold_spells"
+        },
+        {
+          "type": "PERCENT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "mana"
+        },
+        {
+          "type": "FLAT",
+          "max": -25.0,
+          "min": -35.0,
+          "stat": "fire_resist"
+        }
+      ]
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runeword/nature_wrath.json",
+    "name": "Nature's Wrath",
+    "name_source": "lang"
+  },
+  {
+    "id": "nightstorm",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/nightstorm.json",
+    "data": {
+      "id": "nightstorm",
+      "runes": [
+        "und",
+        "toq",
+        "bri",
+        "ita"
+      ],
+      "slots": [
+        "scythe"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "MORE",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "all_water_damage"
+        },
+        {
+          "type": "MORE",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "all_lightning_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "power_charge_on_crit"
+        },
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 6.0,
+          "stat": "crit_dmg_per_power_charge"
+        },
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 4.0,
+          "stat": "aoe_per_power_charge"
+        }
+      ]
+    },
+    "name": "Nightstorm",
+    "name_source": "lang"
+  },
+  {
+    "id": "overlord",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/overlord.json",
+    "data": {
+      "id": "overlord",
+      "runes": [
+        "bri",
+        "xer",
+        "ano",
+        "nos"
+      ],
+      "slots": [
+        "helmet"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 55.0,
+          "min": 45.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 4.0,
+          "stat": "magic_shield"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 2.0,
+          "stat": "max_undead_summons"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "summon_undead_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 10.0,
+          "stat": "proc_summon_wisp_when_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "chaos_resist"
+        }
+      ]
+    },
+    "name": "Overlord",
+    "name_source": "lang"
+  },
+  {
+    "id": "patience",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/patience.json",
+    "data": {
+      "id": "patience",
+      "runes": [
+        "toq",
+        "fey",
+        "ven"
+      ],
+      "slots": [
+        "bow",
+        "crossbow",
+        "dagger"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "MORE",
+          "max": 10.0,
+          "min": 10.0,
+          "stat": "dot_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "dot_lifesteal"
+        },
+        {
+          "type": "FLAT",
+          "max": -15.0,
+          "min": -20.0,
+          "stat": "cdr"
+        }
+      ]
+    },
+    "name": "Patience",
+    "name_source": "lang"
+  },
+  {
+    "id": "plague",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/plague.json",
+    "data": {
+      "id": "plague",
+      "runes": [
+        "ven",
+        "ano",
+        "ita",
+        "xer",
+        "har"
+      ],
+      "slots": [
+        "bow",
+        "staff"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 70.0,
+          "min": 60.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.9,
+          "min": 1.0,
+          "stat": "plus_lvl_all_spells"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "bleed_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "poison_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "chaos_penetration"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "max_fire_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "fire_resist"
+        }
+      ]
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runeword/plague.json",
+    "name": "Plague",
+    "name_source": "lang"
+  },
+  {
+    "id": "power",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/power.json",
+    "data": {
+      "id": "power",
+      "runes": [
+        "yun",
+        "eno",
+        "nos",
+        "ita",
+        "ven",
+        "wir"
+      ],
+      "slots": [
+        "ring"
+      ],
+      "stats": [
+        {
+          "type": "MORE",
+          "max": 5.0,
+          "min": 5.0,
+          "stat": "all_physical_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "spell_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 2.0,
+          "stat": "health"
+        },
+        {
+          "type": "FLAT",
+          "max": 25.0,
+          "min": 25.0,
+          "stat": "mana_cost"
+        },
+        {
+          "type": "PERCENT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "block_chance"
+        }
+      ]
+    },
+    "name": "Power",
+    "name_source": "lang"
+  },
+  {
+    "id": "prism",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/prism.json",
+    "data": {
+      "id": "prism",
+      "runes": [
+        "ano",
+        "owd",
+        "fey"
+      ],
+      "slots": [
+        "ring"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "health"
+        },
+        {
+          "type": "PERCENT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "magic_shield"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "elemental_resist"
+        }
+      ]
+    },
+    "name": "Prism",
+    "name_source": "lang"
+  },
+  {
+    "id": "radiance",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/radiance.json",
+    "data": {
+      "id": "radiance",
+      "runes": [
+        "ita",
+        "eno",
+        "nos"
+      ],
+      "slots": [
+        "helmet"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 45.0,
+          "min": 35.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 15.0,
+          "stat": "mana_shield"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "magic_shield"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "mana"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "intelligence"
+        }
+      ]
+    },
+    "name": "Radiance",
+    "name_source": "lang"
+  },
+  {
+    "id": "rain",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/rain.json",
+    "data": {
+      "id": "rain",
+      "runes": [
+        "har",
+        "und",
+        "nos"
+      ],
+      "slots": [
+        "necklace"
+      ],
+      "stats": [
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "totem_spell_dmg"
+        },
+        {
+          "type": "PERCENT",
+          "max": 4.0,
+          "min": 4.0,
+          "stat": "mana"
+        },
+        {
+          "type": "PERCENT",
+          "max": 6.0,
+          "min": 6.0,
+          "stat": "energy"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "lightning_resist"
+        }
+      ]
+    },
+    "name": "Rain",
+    "name_source": "lang"
+  },
+  {
+    "id": "resilience",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/resilience.json",
+    "data": {
+      "id": "resilience",
+      "runes": [
+        "nos",
+        "ano"
+      ],
+      "slots": [
+        "helmet"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "health_per_perc_of_armor"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "health_per_sec"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "water_resist"
+        }
+      ]
+    },
+    "name": "Resilience",
+    "name_source": "lang"
+  },
+  {
+    "id": "rhyme",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/rhyme.json",
+    "data": {
+      "id": "rhyme",
+      "runes": [
+        "mos",
+        "ita"
+      ],
+      "slots": [
+        "shield",
+        "tome",
+        "totem"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "PERCENT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "mana_regen"
+        },
+        {
+          "type": "FLAT",
+          "max": 12.0,
+          "min": 8.0,
+          "stat": "elemental_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 12.0,
+          "stat": "magic_find"
+        }
+      ]
+    },
+    "name": "Rhyme",
+    "name_source": "lang"
+  },
+  {
+    "id": "rogue",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/rogue.json",
+    "data": {
+      "id": "rogue",
+      "runes": [
+        "toq",
+        "wir",
+        "eno"
+      ],
+      "slots": [
+        "pants"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "trap_area_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": -30.0,
+          "min": -30.0,
+          "stat": "inc_aoe"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "chaos_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 8.0,
+          "min": 8.0,
+          "stat": "move_speed"
+        }
+      ]
+    },
+    "name": "Rogue",
+    "name_source": "lang"
+  },
+  {
+    "id": "selflessness",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/selflessness.json",
+    "data": {
+      "id": "selflessness",
+      "runes": [
+        "ven",
+        "yun",
+        "wir",
+        "eno"
+      ],
+      "slots": [
+        "tome",
+        "totem",
+        "shield"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "plus_lvl_song_spells"
+        },
+        {
+          "type": "FLAT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "inc_effect_of_song_buff_given"
+        },
+        {
+          "type": "FLAT",
+          "max": -10.0,
+          "min": -15.0,
+          "stat": "total_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 7.0,
+          "stat": "inc_aoe"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 5.0,
+          "stat": "move_speed"
+        }
+      ]
+    },
+    "name": "Selflessness",
+    "name_source": "lang"
+  },
+  {
+    "id": "smoke",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/smoke.json",
+    "data": {
+      "id": "smoke",
+      "runes": [
+        "daw",
+        "oru",
+        "toq",
+        "dos"
+      ],
+      "slots": [
+        "boots"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": -25.0,
+          "min": -20.0,
+          "stat": "proj_dmg_received"
+        },
+        {
+          "type": "FLAT",
+          "max": 18.0,
+          "min": 14.0,
+          "stat": "elemental_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 18.0,
+          "min": 14.0,
+          "stat": "chaos_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "move_speed"
+        }
+      ]
+    },
+    "name": "Smoke",
+    "name_source": "lang"
+  },
+  {
+    "id": "spike",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/spike.json",
+    "data": {
+      "id": "spike",
+      "runes": [
+        "cen",
+        "nos"
+      ],
+      "slots": [
+        "boots"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "learn_pull"
+        },
+        {
+          "type": "PERCENT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "armor"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "endurance_charge_when_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "frenzy_charge_when_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "move_speed"
+        }
+      ]
+    },
+    "name": "Spike",
+    "name_source": "lang"
+  },
+  {
+    "id": "stealth",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/stealth.json",
+    "data": {
+      "id": "stealth",
+      "runes": [
+        "ita",
+        "fey"
+      ],
+      "slots": [
+        "boots",
+        "chest"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "energy"
+        },
+        {
+          "type": "FLAT",
+          "max": 13.0,
+          "min": 13.0,
+          "stat": "chaos_resist"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 1.0,
+          "stat": "energy_regen"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "cast_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "move_speed"
+        }
+      ]
+    },
+    "name": "Stealth",
+    "name_source": "lang"
+  },
+  {
+    "id": "steel",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/steel.json",
+    "data": {
+      "id": "steel",
+      "runes": [
+        "nos",
+        "fey"
+      ],
+      "slots": [
+        "sword",
+        "axe",
+        "greatsword"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "accuracy"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "attack_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 40.0,
+          "stat": "bleed_damage"
+        }
+      ]
+    },
+    "name": "Steel",
+    "name_source": "lang"
+  },
+  {
+    "id": "strength",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/strength.json",
+    "data": {
+      "id": "strength",
+      "runes": [
+        "oru",
+        "ano"
+      ],
+      "slots": [
+        "hammer",
+        "gauntlet"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 5.0,
+          "stat": "critical_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "health_regen"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "strength"
+        }
+      ]
+    },
+    "name": "Strength",
+    "name_source": "lang"
+  },
+  {
+    "id": "supersonic",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/supersonic.json",
+    "data": {
+      "id": "supersonic",
+      "runes": [
+        "yun",
+        "sid"
+      ],
+      "slots": [
+        "boots"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "PERCENT",
+          "max": 24.0,
+          "min": 16.0,
+          "stat": "critical_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 22.0,
+          "min": 16.0,
+          "stat": "move_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 2.0,
+          "stat": "dexterity"
+        }
+      ]
+    },
+    "name": "Supersonic",
+    "name_source": "lang"
+  },
+  {
+    "id": "tempest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/tempest.json",
+    "data": {
+      "id": "tempest",
+      "runes": [
+        "bri",
+        "mos",
+        "cen"
+      ],
+      "slots": [
+        "hammer",
+        "spear",
+        "staff"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 50.0,
+          "stat": "proc_lightning_bolt"
+        },
+        {
+          "type": "FLAT",
+          "max": 5.0,
+          "min": 3.0,
+          "stat": "critical_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 33.0,
+          "min": 33.0,
+          "stat": "attack_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 60.0,
+          "min": 40.0,
+          "stat": "basic_attack_dmg"
+        }
+      ]
+    },
+    "name": "Tempest",
+    "name_source": "lang"
+  },
+  {
+    "id": "the_novice",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/the_novice.json",
+    "data": {
+      "id": "the_novice",
+      "runes": [
+        "nos",
+        "dos",
+        "ita",
+        "mos"
+      ],
+      "slots": [
+        "sword",
+        "bow",
+        "crossbow",
+        "staff",
+        "dagger",
+        "hammer",
+        "spear",
+        "axe",
+        "gauntlet",
+        "scythe",
+        "greatsword"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 70.0,
+          "min": 60.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 3.0,
+          "stat": "health_on_hit_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 3.0,
+          "stat": "energy_on_hit_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 3.0,
+          "stat": "mana_on_hit_hit"
+        }
+      ]
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_runeword/the_novice.json",
+    "name": "The Novice",
+    "name_source": "lang"
+  },
+  {
+    "id": "tranquility",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/tranquility.json",
+    "data": {
+      "id": "tranquility",
+      "runes": [
+        "fey",
+        "ita",
+        "dos"
+      ],
+      "slots": [
+        "shield",
+        "tome",
+        "totem"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 45.0,
+          "min": 35.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "proc_rejuvenation_on_crit"
+        },
+        {
+          "type": "PERCENT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "critical_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 2.0,
+          "stat": "mana_regen"
+        },
+        {
+          "type": "FLAT",
+          "max": 3.0,
+          "min": 2.0,
+          "stat": "energy_regen"
+        },
+        {
+          "type": "FLAT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "chaos_resist"
+        }
+      ]
+    },
+    "name": "Tranquility",
+    "name_source": "lang"
+  },
+  {
+    "id": "turbulence",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/turbulence.json",
+    "data": {
+      "id": "turbulence",
+      "runes": [
+        "nos",
+        "end",
+        "toq"
+      ],
+      "slots": [
+        "chest"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "proc_cyclone_when_hit"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "learn_cyclone"
+        },
+        {
+          "type": "FLAT",
+          "max": 40.0,
+          "min": 30.0,
+          "stat": "physical_spell_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 6.0,
+          "stat": "mana"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 15.0,
+          "stat": "lightning_resist"
+        }
+      ]
+    },
+    "name": "Turbulence",
+    "name_source": "lang"
+  },
+  {
+    "id": "undeath",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/undeath.json",
+    "data": {
+      "id": "undeath",
+      "runes": [
+        "xer",
+        "har",
+        "und"
+      ],
+      "slots": [
+        "staff",
+        "scythe"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": -20.0,
+          "min": -30.0,
+          "stat": "summon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 2.0,
+          "min": 2.0,
+          "stat": "max_undead_summons"
+        },
+        {
+          "type": "PERCENT",
+          "max": 20.0,
+          "min": 10.0,
+          "stat": "health_regen"
+        },
+        {
+          "type": "FLAT",
+          "max": 15.0,
+          "min": 10.0,
+          "stat": "move_speed"
+        }
+      ]
+    },
+    "name": "Undeath",
+    "name_source": "lang"
+  },
+  {
+    "id": "venom",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/venom.json",
+    "data": {
+      "id": "venom",
+      "runes": [
+        "fey",
+        "daw",
+        "ano"
+      ],
+      "slots": [
+        "sword",
+        "bow",
+        "crossbow",
+        "staff",
+        "dagger",
+        "hammer",
+        "spear",
+        "axe",
+        "gauntlet",
+        "scythe",
+        "greatsword"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 40.0,
+          "min": 40.0,
+          "stat": "plus_phys_to_chaos"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 5.0,
+          "stat": "poison_chance"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 5.0,
+          "stat": "attack_speed"
+        },
+        {
+          "type": "FLAT",
+          "max": 4.0,
+          "min": 2.0,
+          "stat": "energy_on_hit_hit"
+        }
+      ]
+    },
+    "name": "Venom",
+    "name_source": "lang"
+  },
+  {
+    "id": "wealth",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/wealth.json",
+    "data": {
+      "id": "wealth",
+      "runes": [
+        "oru",
+        "toq",
+        "fey"
+      ],
+      "slots": [
+        "pants"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 50.0,
+          "min": 40.0,
+          "stat": "gear_defense"
+        },
+        {
+          "type": "FLAT",
+          "max": 20.0,
+          "min": 10.0,
+          "stat": "increased_quantity"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 20.0,
+          "stat": "magic_find"
+        }
+      ]
+    },
+    "name": "Wealth",
+    "name_source": "lang"
+  },
+  {
+    "id": "windfury",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_runeword/windfury.json",
+    "data": {
+      "id": "windfury",
+      "runes": [
+        "ano",
+        "yun",
+        "wir",
+        "oru",
+        "end"
+      ],
+      "slots": [
+        "sword",
+        "greatsword",
+        "hammer",
+        "gauntlet"
+      ],
+      "stats": [
+        {
+          "type": "PERCENT",
+          "max": 60.0,
+          "min": 50.0,
+          "stat": "gear_weapon_damage"
+        },
+        {
+          "type": "FLAT",
+          "max": 1.0,
+          "min": 1.0,
+          "stat": "plus_lvl_physical_spells"
+        },
+        {
+          "type": "FLAT",
+          "max": 30.0,
+          "min": 25.0,
+          "stat": "area_dmg"
+        },
+        {
+          "type": "FLAT",
+          "max": 10.0,
+          "min": 10.0,
+          "stat": "inc_aoe"
+        },
+        {
+          "type": "FLAT",
+          "max": 50.0,
+          "min": 30.0,
+          "stat": "proc_cyclone_on_crit"
+        },
+        {
+          "type": "FLAT",
+          "max": 6.0,
+          "min": 4.0,
+          "stat": "accuracy"
+        }
+      ]
+    },
+    "name": "Windfury",
+    "name_source": "lang"
+  }
+]
