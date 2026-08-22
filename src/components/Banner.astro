@@ -30,7 +30,7 @@ const { src, alt = '', ratio = '3 / 1', class: className = '' } = Astro.props;
 	style={`--banner-ratio:${ratio}`}
 	aria-hidden={src ? undefined : 'true'}
 >
-	{src && <img src={src} alt={alt} width="1920" height="640" />}
+	{src && <img src={src} alt={alt} width="560" height="300" />}
 </div>
 
 <style>
@@ -47,9 +47,16 @@ const { src, alt = '', ratio = '3 / 1', class: className = '' } = Astro.props;
 		display: block;
 		width: 100%;
 		height: 100%;
+		/* `cover` so the slot is always filled. The banner's logo is centred
+		   in the source, so cropping to a wider ratio takes scene off the top
+		   and bottom and leaves the mark whole. */
 		object-fit: cover;
-		/* Pack art is pixel art. Let it stay pixel art when it scales up. */
-		image-rendering: pixelated;
+		object-position: center;
+		/* NOT `pixelated`. The banner is a rendered screenshot with smooth
+		   metallic gradients on the letterforms, not pixel art — hard-edged
+		   upscaling shreds it. Pixel textures elsewhere on the site are a
+		   different case and should set this themselves. */
+		image-rendering: auto;
 	}
 
 	/* A 3:1 slot is most of a phone screen. Let it get taller-but-shorter

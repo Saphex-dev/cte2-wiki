@@ -329,10 +329,11 @@ const description =
 			</nav>
 		</header>
 
-		{/* Reserved for Mahjerion's CTE2 banner. Empty for now; the slot holds
-		    its height so adding the art causes no layout shift. */}
+		{/* Mahjerion's CTE2 banner. Source is 560x300 (28:15); the slot crops
+		    to 3:1, which trims scene from top and bottom and leaves the
+		    centred logo intact. */}
 		<div class="bannerwrap">
-			<Banner />
+			<Banner src="/banner-cte2.webp" alt="Craft to Exile 2" />
 		</div>
 
 		<div class="shell">
