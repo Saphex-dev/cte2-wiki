@@ -1,0 +1,60 @@
+/* Design tokens — shared by the landing page and (later) the Starlight docs shell.
+   Everything here is deliberate: see CLAUDE.md § Visual design.
+   - Hard 16px grid. Every spacing value is a multiple of 16.
+   - No border-radius. Anywhere.
+   - Beveled edges are the signature element, 1px and restrained.
+   Rarity colours are NOT invented: they are the pack's own `text_format` values
+   from mmorpg_gear_rarity, mapped to Minecraft's standard chat colours. */
+
+:root {
+	/* Spacing — 16px grid */
+	--s1: 16px;
+	--s2: 32px;
+	--s3: 48px;
+	--s4: 64px;
+	--s6: 96px;
+	--s8: 128px;
+
+	/* Surfaces */
+	--bg: #0b0d12;
+	--bg-deep: #07080c;
+	--surface: #12151c;
+	--surface-raised: #191d26;
+	--line: #262b36;
+
+	/* Bevel — the signature edge. Light from top-left, shadow bottom-right. */
+	--bevel-light: rgba(255, 255, 255, 0.07);
+	--bevel-dark: rgba(0, 0, 0, 0.55);
+
+	/* Type */
+	--ink: #e7e9ee;
+	--ink-dim: #99a1b0;
+	--ink-faint: #646c7c;
+
+	/* Rarity ladder — extracted from mmorpg_gear_rarity text_format */
+	--r-common: #aaaaaa; /* GRAY */
+	--r-uncommon: #55ff55; /* GREEN */
+	--r-rare: #55ffff; /* AQUA */
+	--r-epic: #ff55ff; /* LIGHT_PURPLE */
+	--r-legendary: #ffaa00; /* GOLD */
+	--r-mythic: #aa00aa; /* DARK_PURPLE */
+	--r-unique: #ff5555; /* RED */
+	--r-runeword: #ffff55; /* YELLOW */
+
+	--accent: var(--r-unique);
+
+	/* Fonts. Monocraft is not on Google Fonts and must be self-hosted before it
+	   resolves; until the file lands in public/fonts, headings fall back to
+	   IBM Plex Mono, which is a deliberate stand-in rather than an accident. */
+	--font-display: 'Monocraft', 'IBM Plex Mono', ui-monospace, monospace;
+	--font-body: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+	--font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', monospace;
+}
+
+/* The signature edge. Kept to 1px — chunky GUI bevels read as costume. */
+.bevel {
+	border: 1px solid var(--line);
+	box-shadow:
+		inset 1px 1px 0 var(--bevel-light),
+		inset -1px -1px 0 var(--bevel-dark);
+}
