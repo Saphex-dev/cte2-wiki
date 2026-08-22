@@ -73,16 +73,21 @@
 	--r-runeword: #ffff55; /* YELLOW */
 
 	/* ---- Type ---------------------------------------------------------- */
-	/* Press Start 2P is a LOGOTYPE, not a typeface (D10). It is caps-only in
-	   practice and very wide; it sets the wordmark and nothing else. Never
-	   put a heading, a label or a stat line in it.
+	/* Press Start 2P now carries the wordmark AND the display face: headings,
+	   panel titles, nav, labels, item names. D10 originally confined it to the
+	   logotype; that was revised deliberately — the blocky face is the point.
 
-	   Monocraft is the display face. It is not on Google Fonts and must be
-	   self-hosted before it resolves; until the file lands in public/fonts,
-	   headings fall back to IBM Plex Mono, which is a stand-in rather than an
-	   accident. */
+	   What has NOT moved, and the measurement behind it: Press Start 2P
+	   advances a full em per glyph, so a line is roughly 1.7x the width of the
+	   same string in Plex Mono. Measured against the 1,151 real stat names,
+	   at 13px the median line is 325px but the p90 is 728px and the longest is
+	   1,859px — against a content column of about 640px. Body prose and stat
+	   lines therefore stay on Plex until that is solved, because the stat
+	   tables are the reason players come.
+
+	   Flip --font-body to var(--font-display) to see the alternative. */
 	--font-logo: 'Press Start 2P', ui-monospace, monospace;
-	--font-display: 'Monocraft', 'IBM Plex Mono', ui-monospace, monospace;
+	--font-display: 'Press Start 2P', 'Monocraft', ui-monospace, monospace;
 	--font-body: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
 	--font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', monospace;
 }

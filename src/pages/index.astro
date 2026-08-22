@@ -13,6 +13,7 @@
    Every number, name and count below is read from data/ at build time.
    Nothing is hand-typed — see CLAUDE.md § Never invent pack data. */
 import '../styles/tokens.css';
+import Wordmark from '../components/Wordmark.astro';
 
 import index from '../../data/_index.json';
 import uniquesData from '../../data/uniques.json';
@@ -295,15 +296,15 @@ const description =
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
 	<body>
 		<header class="topbar">
 			<a class="wordmark" href="/">
-				<span class="mark bevel" aria-hidden="true"></span>
-				<span>CTE2 Wiki</span>
+				<Wordmark text="CTE2" size={20} />
+				<span class="wordmark-suffix">Wiki</span>
 			</a>
 
 			<form class="search" role="search" onsubmit="return false">
@@ -898,8 +899,12 @@ const description =
 			}
 			:global(h1, h2, h3) {
 				font-family: var(--font-display);
-				font-weight: 600;
-				letter-spacing: -0.01em;
+				/* Press Start 2P ships one weight. Asking for 600 makes the
+				   browser synthesise a bold, which smears a pixel face. */
+				font-weight: 400;
+				/* Pixel faces are drawn on a whole-pixel grid; fractional
+				   tracking puts the stems between pixels. */
+				letter-spacing: normal;
 				margin: 0;
 			}
 			:global(a) {
@@ -932,18 +937,17 @@ const description =
 			}
 			.wordmark {
 				display: flex;
-				align-items: center;
-				gap: var(--s1);
-				font-family: var(--font-display);
+				align-items: baseline;
+				gap: 12px;
 				text-decoration: none;
-				font-size: 16px;
 				flex-shrink: 0;
 			}
-			.mark {
-				width: 16px;
-				height: 16px;
-				background: var(--accent);
-				display: block;
+			.wordmark-suffix {
+				font-family: var(--font-display);
+				font-size: 11px;
+				letter-spacing: 0.16em;
+				text-transform: uppercase;
+				color: var(--ink-faint);
 			}
 			.search {
 				margin-left: auto;
@@ -1204,6 +1208,11 @@ const description =
 			}
 			.col h3,
 			.pbody > .cols h3 {
+				/* These sit in 128px columns. "Weapons and offhand" in the
+				   display face is ~255px at this size and clips — the width
+				   cost of a square-advance font lands hardest on the smallest
+				   labels. Small column heads stay on mono. */
+				font-family: var(--font-mono);
 				font-size: 12px;
 				letter-spacing: 0.12em;
 				text-transform: uppercase;

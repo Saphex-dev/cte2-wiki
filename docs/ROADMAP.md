@@ -316,15 +316,49 @@ Therefore:
 from a plain rule on screen, so the element the brief calls the signature was doing no
 work at all.
 
-### D10 — Press Start 2P is a logotype, not a typeface
+### D10 — Press Start 2P is the display face; Plex keeps body and stat lines
 
-Press Start 2P sets the wordmark. It sets nothing else, ever.
+**Revised 2026-08-22, same day.** D10 originally confined Press Start 2P to the
+wordmark. That was overruled deliberately: the blocky face is the character of the
+site, so it now carries headings, panel titles, nav, group labels and item names as
+well as the mark. Monocraft is demoted to a fallback behind it and is no longer
+blocking (D7's install task stands, but nothing waits on it).
 
-*Why the hard line:* it is effectively caps-only and extremely wide — fine for six
-words locked into a mark, punishing for a heading, unusable for a stat line. Monocraft
-remains the display face (D7) and the Plex family keeps body and numerics. Without the
-rule written down, someone reasonably sets an `h2` in the logo font and the line length
-falls apart.
+**Where the line actually falls, and why it is a measurement rather than a taste.**
+Press Start 2P advances a full em per glyph — every character is a square box — so a
+string is roughly 1.7× the width it would be in Plex Mono. Against the 1,151 real stat
+names at 13px:
+
+| | median | p90 | longest |
+|---|---|---|---|
+| Press Start 2P | 325px | 728px | 1,859px |
+| IBM Plex Mono | 195px | 437px | 1,115px |
+
+The content column is about 640px, so at p90 the line is already wider than the column.
+Rendered, a *median-length* stat name — "Physical as Added Lightning Damage" — wraps to
+**three lines** inside an item card, and the 143-character longest would run to roughly
+twelve. Nav labels overflow their rail, and the rarity ladder breaks onto two rows.
+
+So: **body prose and stat lines stay on the Plex family.** Not as a style preference —
+the stat tables are the reason players visit, and a face that triples their height is
+not serving them. Revisit if a narrower blocky face is found that holds up at 13px.
+
+Two smaller rules that fall out of the same fact:
+
+- **Small labels in narrow columns stay on mono.** "Weapons and offhand" in the display
+  face is ~255px inside a 128px column. Anything under ~12px in a constrained column
+  belongs to `--font-mono`.
+- **Never ask for a weight Press Start 2P does not have.** It ships one. Requesting 600
+  makes the browser synthesise a bold and smears the pixel grid. Likewise
+  `letter-spacing` must stay at `normal` — fractional tracking puts stems between
+  pixels.
+
+*The wordmark should still ship as SVG.* The current component reproduces the outer
+rim, dark outline and glow with `-webkit-text-stroke`, `paint-order` on HTML text and a
+`z-index:-1` pseudo-element — Chrome-favouring, fragile against stacking contexts, and
+unable to draw the inner line that gives the original glyphs their neon-tube
+cross-section. A wordmark also has to survive as a favicon, an OG image, a README
+banner and a Discord embed, none of which run CSS.
 
 *The wordmark should ship as SVG, not CSS.* The current study reproduces the outer
 rim, the dark outline and the glow with `-webkit-text-stroke`, `paint-order` on HTML
