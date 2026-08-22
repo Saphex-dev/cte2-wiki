@@ -102,6 +102,45 @@ the pack and are correct, but they violate the extractor rule and they drop
 - The manifest's "Wiki value" column is a set of predictions written before the files
   were opened. Treat every uninspected row the same way.
 
+### 1.5 Icons — the mapping exists, and it is small
+
+The manifest lists "~2,800 textures" as an unsolved problem. The number the wiki
+actually needs is **223**, and the mapping to reach them is already in `data/`.
+
+`base_gear.possible_items` maps each of the 43 base types to concrete item ids, one
+per rarity tier:
+
+```jsonc
+"possible_items": [
+  { "item_id": "roe_weapons:axe_0", "min_rar": "common",    "weight": 1 },
+  { "item_id": "roe_weapons:axe_5", "min_rar": "mythic",    "weight": 100000 }
+]
+```
+
+Add the 54 uniques carrying an explicit `force_item_id` and the set is 223 distinct
+item ids, across 10 namespaces — `roe_weapons` 108, `cte_essentials` 72,
+`cte2modpackarmors` 28, the rest single digits.
+
+Resolution chain, verified end to end: `item_id` →
+`assets/<ns>/models/item/<name>.json` → `textures.layer0` →
+`assets/<ns>/textures/<path>.png`. **220 of 223 resolve.**
+
+Known exceptions:
+
+- `minecraft:elytra` and `minecraft:trident` have no simple item model — they are
+  special-rendered by the game. Two items, need hand-supplied art.
+- `born_in_chaos_v1:great_reaper_axe` has a model whose `layer0` texture is missing
+  from the jar.
+- **Some models are multi-layer.** `blue_skies:horizonite_axe` resolves to
+  `handle_short.png` — the handle, not the axe. Taking `layer0` alone yields a
+  partial icon for these. They need the layers composited. The count of affected
+  items has not been measured yet; measure before building the pipeline.
+
+**There are no per-unique textures.** The M&S jar was searched for `starforge`,
+`voltaxic` and `quill_rain` — nothing. A unique renders as whatever base-gear item it
+sits on, so every greatsword unique shares one icon. This is a design constraint, not
+a gap to be filled: see D5.
+
 ---
 
 ## 2. Decisions
@@ -167,11 +206,94 @@ Three kinds of value appear on this site and they are not interchangeable:
 - **Hand-written** — editorial prose. Must be visibly editorial, and belongs in a
   Starlight doc or a clearly-marked block, never inline in a generated stat table.
 
+### D5 — The item tooltip is the signature component
+
+The in-game item tooltip becomes the core visual unit of the site. Item pages are
+built around it; index pages quote it. Beveled frame, rarity-coloured name, base type
+and level line, stat rolls on a dark scrim.
+
+*Why:* in Path of Exile and in Mine and Slash, the tooltip **is** the visual identity
+of the genre — players read one at a glance. Adopting it gives four things at once:
+a job for the bevel the brief calls its signature, the natural home for rarity colour,
+the natural home for the mandated scrim, and a component that scales to hundreds of
+items with no per-item work.
+
+*It is also forced by the data.* §1.5 establishes there is no per-unique art. If the
+picture cannot carry identity, the frame and the type must. A design that leaned on
+item imagery would have nothing to lean on.
+
+*The line it must not cross:* this is ARPG grammar, not Minecraft cosplay. The brief's
+warning about dirt-texture headers and cobblestone borders still stands. Reference the
+tooltip's structure and proportions, not its literal pixels.
+
+*Consequence for the landing page:* it currently renders three uniques as bespoke
+cards. Those become tooltips, and the component moves out of the page into shared code.
+
+### D6 — Icons are a curated subset, extracted by the pipeline
+
+The extractor gains a step that resolves the 223 item ids of §1.5 and writes only
+those textures into `public/`, with a manifest joining item id to file.
+
+*Why:* it satisfies "do not commit pack assets wholesale" by construction, it
+regenerates on a pack update like everything else, and 223 files is a size nobody has
+to think about. The alternative — dumping ~2,800 textures and filtering at build —
+inverts the rule and bloats the repo permanently.
+
+*Open work before building it:* count the multi-layer models and decide whether to
+composite them at extraction time or accept partial icons. Compositing needs an image
+library, which is a new dependency and therefore needs asking first — the extractor is
+stdlib-only today.
+
+*Scope discipline:* icons are texture, not subject. A 32px mark inside the tooltip.
+They are not hero images, and they must never be the thing a page's layout depends on,
+because 220 of them are shared across base types.
+
+### D7 — Monocraft is self-hosted, and confined to display sizes
+
+Self-host Monocraft. Use it for headings, item names, and the wordmark. Never for body
+copy, and never for stat lines.
+
+*Why the restriction:* pixel faces lose legibility below roughly 16px, and the stat
+tables are the one place on this site where legibility is not negotiable — they are
+the reason players came. Plex Sans and Plex Mono keep body and numerics.
+
+*Why it moved up the queue:* with no per-item art (§1.5), typography is the primary
+carrier of character rather than a finishing touch. Until the font is installed, every
+heading falls back to Plex Mono and **nobody has seen the intended design** — including
+us. Judge nothing until it renders.
+
+*Check before bundling:* confirm the licence permits redistribution in this repo.
+
+### D8 — Chrome and data palettes are separate
+
+Rarity colours are reserved for rarity. UI chrome — headings, rules, links, panel
+borders — draws from its own neutral set.
+
+*Why:* the landing page currently spends `--r-rare` (AQUA) on five panel headings,
+plus `--r-legendary` and `--r-unique` as accent chrome. Harmless in isolation, but the
+site is teaching players that aqua means rare and gold means legendary. Once item pages
+exist, decorative aqua headings actively mislead. A colour cannot be both a label and a
+decoration.
+
+*This is a correction, not a preference.* It falls straight out of D4: rarity colour is
+a rendered pack fact, and pack facts do not get borrowed for atmosphere.
+
 ---
 
 ## 3. Phase order
 
 Dependency order, not priority order. Each phase leaves the build green.
+
+### Phase 0 — Make the design visible
+
+Cheap, and everything after it is judged against the result. Nothing here is new
+design work — it is making the design that was already decided actually render.
+
+- Self-host Monocraft (D7), licence checked, applied to headings and item names only.
+- Split the chrome palette off the rarity palette (D8).
+- Make the bevel read. It is defined in `tokens.css` and currently indistinguishable
+  from a 1px rule on screen.
+- Re-screenshot and re-judge. The current page has never been seen in its own typeface.
 
 ### Phase 1 — Extractor: dimensions and rarities
 
@@ -205,6 +327,11 @@ Decide here whether `data/` becomes a content collection via a `file()` loader o
 view model imports JSON directly. `CLAUDE.md` requires this be proposed before it is
 built — it changes how every page reads data.
 
+### Phase 3.5 — Icon pipeline
+
+Resolve the 223 item ids of §1.5 and emit their textures plus a join manifest (D6).
+Measure the multi-layer models first and decide compositing before writing code.
+
 ### Phase 4 — Item page template + three uniques
 
 The proof-of-concept deliverable. Dimension background, act ladder in the header,
@@ -231,12 +358,41 @@ sampled from the pack's own sky/fog and signature blocks rather than chosen.
 
 | Risk | Detail |
 |---|---|
-| **Icons** | ~2,800 textures across the M&S jar and `resources.zip`, none extracted. Item pages without icons read as unfinished, and "do not commit pack assets wholesale" means someone must choose the subset. Unresolved. |
-| **Monocraft is not installed** | `tokens.css` falls back to IBM Plex Mono for headings. Nobody has yet seen the intended type. Self-host before judging the design. |
+| **Icons** | *Downgraded.* §1.5 resolves the set to 223 ids, 220 of which map cleanly. What remains: measure the multi-layer models, decide compositing, and find art for `minecraft:elytra` and `minecraft:trident`. Note the manifest's `resources.zip` does not exist at that path — the instance has a `resources` **directory**. |
+| **Monocraft is not installed** | *Promoted.* With no per-item art (§1.5), type carries the character. Every heading is currently falling back to IBM Plex Mono, so the design has never been seen as designed. Phase 0. |
+| **No per-unique art** | Every greatsword unique shares one icon. Never promise Mahjerion per-item art, and never let a layout depend on icon distinctiveness. |
 | **No lore copy exists** | `flavor_text` is empty on all 251 uniques (§1.1). Dev-written prose lives in the Patchouli guidebook, which has no parser. Item pages will be all-stats until that changes. |
-| **Uncommitted work** | `src/pages/index.astro` and `src/styles/tokens.css` are untracked, and `src/content/docs/index.mdx` is deleted but unstaged. Commit before the next phase. |
+| ~~**Uncommitted work**~~ | Resolved 2026-08-22. The landing page and tokens are committed and merged; `origin/main` carries everything. An earlier 592-line draft of `index.astro` sits in `stash@{0}` and can be dropped once nobody wants it. |
 | **Starlight scaffold** | `guides/example` and `reference/example` are still the only docs pages, and the landing page's nav links to `/guides/example/`. Replace before showing anyone. |
 | **Cloudflare build ceiling** | 500 builds/month. Batch PR merges once contributions start. |
+
+## 4.5 Known defects on `main`
+
+Found by reading the rendered landing page on 2026-08-22. All three are data-honesty
+issues, which makes them higher priority than they look.
+
+1. **`min_drop_lvl` is labelled "REQUIRES LEVEL".** The item cards print
+   `REQUIRES LEVEL 70` for Starforge and `REQUIRES LEVEL 1` for Quill Rain. That field
+   is the minimum level at which the item can *drop*, not a gate on equipping it. No
+   requirement data exists anywhere in `uniques.json`, and §1.4 rules out
+   `library_of_exile_item_requirement` as a source. The label invents a game rule.
+   Reword to "drops from level N".
+
+2. **Empty `league` is rendered as a pack fact.** The "Where Uniques Drop" panel is
+   captioned *"The pack tags each unique with the system that drops it"* and lists
+   "General Drop Pool 212". `league` is empty on those 212 — the pack tags 39 of 251,
+   not all of them. The inference is probably right; stating it as pack-authored is
+   not. D4 applies.
+
+3. **Percent rendering is incomplete, and cannot be fixed from current data.**
+   Starforge shows `+100 Physical to Lightning Damage` and `+100 Electrify Chance`
+   with no unit, while `-25% Elemental Damage` gets one, because the renderer infers
+   `%` from `type: PERCENT|MORE` and from a `[VAL1]%` token in the name. Neither is
+   present for those stats. `phys_to_lightning` is `origin: "code"` with an **empty
+   `data` object** — one of the 353 stats registered in Java that ship no definition —
+   so the unit genuinely is not in `data/`. Closing this needs the unmapped
+   `mmorpg_stat_effect` registry or a hand-maintained unit map, and it affects every
+   stat line on every future item page. Bigger than Phase 2 as currently scoped.
 
 ## 5. Out of scope for the proof of concept
 
