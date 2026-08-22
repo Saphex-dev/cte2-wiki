@@ -1,0 +1,1443 @@
+---
+/* Landing page — a wiki portal, modelled on the Calamity Mod Wiki main page.
+
+   Structure borrowed from Calamity: persistent left nav rail, a bordered
+   welcome banner carrying live counts, a wide intro box beside a narrow
+   version box, then a grid of titled portal panels holding multi-column
+   index lists. Chrome is ours, not theirs — 16px grid, zero radius, bevelled
+   edges, and the rarity palette extracted from the pack.
+
+   Deliberately outside Starlight: Starlight owns the docs shell, this is the
+   front door. Docs pages keep the Starlight layout.
+
+   Every number, name and count below is read from data/ at build time.
+   Nothing is hand-typed — see CLAUDE.md § Never invent pack data. */
+import '../styles/tokens.css';
+
+import index from '../../data/_index.json';
+import uniquesData from '../../data/uniques.json';
+import statsData from '../../data/stats.json';
+import baseGearData from '../../data/base_gear.json';
+import professionsData from '../../data/professions.json';
+import talentTreeData from '../../data/talent_trees.json';
+
+type Roll = { type: string; min: number; max: number; stat: string };
+type Unique = {
+	id: string;
+	group: string | null;
+	name: string;
+	data: {
+		base_gear?: string;
+		min_drop_lvl?: number;
+		rarity?: string;
+		league?: string;
+		flavor_text?: string;
+		unique_stats?: Roll[];
+	};
+};
+type Named = { id: string; name: string };
+type Tree = { identifier: string; school_type: string; nodes: unknown[] };
+
+const uniques = uniquesData as Unique[];
+const trees = talentTreeData as Tree[];
+const statName = new Map((statsData as Named[]).map((s) => [s.id, s.name]));
+const gearName = new Map((baseGearData as Named[]).map((g) => [g.id, g.name]));
+
+const collections = new Map(index.collections.map((c) => [c.key, c]));
+const count = (key: string) => collections.get(key)?.count ?? 0;
+
+/* Talent trees carry a different envelope to every other collection — no id,
+   no name, just an identifier and a node array — so they are counted by node
+   rather than by entry, and left out of the entry total. */
+const totalEntries = index.collections
+	.filter((c) => c.key !== 'talent_trees')
+	.reduce((sum, c) => sum + (c.count ?? 0), 0);
+const totalNodes = trees.reduce((n, t) => n + t.nodes.length, 0);
+
+/* Player classes come from how the pack files its spells: one folder per
+   class, alongside a handful of folders that are plumbing rather than a
+   class. Subfolders (`rogue/sub_spells`) fold into their parent.
+
+   Note the pack disagrees with itself here: data/spell_schools.json lists
+   `sorcerer` and `warrior` where the spell folders say `elementalist` and
+   `fighter`. Both sources give twelve. The folders win here because they are
+   what actually carries the spells; resolving which the player sees is a
+   question for the extractor, not this template. */
+const SUPPORT_GROUPS = new Set([
+	'basic_summon_spells',
+	'cast_sound_spells',
+	'entity_cast_spells',
+	'gear_spells',
+	'identifier_spells',
+]);
+const spellGroups = collections.get('spells')?.groups ?? [];
+const classes = spellGroups
+	.filter((g) => !g.includes('/') && !SUPPORT_GROUPS.has(g))
+	.map((g) => ({
+		id: g,
+		label: g.replace(/_/g, ' '),
+		/* a class owns its folder plus any subfolder beneath it */
+		n: spellGroups.filter((x) => x === g || x.startsWith(`${g}/`)).length,
+	}));
+
+/* ---- Items panel -------------------------------------------------------
+   Uniques are filed by base gear type. Weapons and jewellery map one-to-one
+   onto a base gear name; armour is six material families crossed with four
+   slots, so it collapses to the family. `set_armor/<name>` is a matched set
+   and counts as one entry rather than four. */
+const ARMOUR_FAMILIES = [
+	'cloth',
+	'leather',
+	'chainmail',
+	'brigandine',
+	'plate',
+	'vest',
+];
+const JEWELLERY = new Set(['ring', 'necklace']);
+
+const byGroup = new Map<string, number>();
+for (const u of uniques) {
+	const g = u.group ?? 'other';
+	byGroup.set(g, (byGroup.get(g) ?? 0) + 1);
+}
+
+const armour = ARMOUR_FAMILIES.map((fam) => ({
+	label: fam,
+	n: [...byGroup].reduce(
+		(sum, [g, n]) => (g.startsWith(`${fam}_`) ? sum + n : sum),
+		0
+	),
+})).sort((a, b) => b.n - a.n);
+
+const weapons = [...byGroup]
+	.filter(
+		([g]) =>
+			!g.startsWith('set_armor/') &&
+			!JEWELLERY.has(g) &&
+			g !== 'other' &&
+			!ARMOUR_FAMILIES.some((f) => g.startsWith(`${f}_`))
+	)
+	.map(([g, n]) => ({ label: gearName.get(g) ?? g.replace(/_/g, ' '), n }))
+	.sort((a, b) => b.n - a.n || a.label.localeCompare(b.label));
+
+const sets = [...byGroup]
+	.filter(([g]) => g.startsWith('set_armor/'))
+	.map(([g, n]) => ({ label: g.slice('set_armor/'.length).replace(/_/g, ' '), n }))
+	.sort((a, b) => a.label.localeCompare(b.label));
+
+const jewellery = [...byGroup]
+	.filter(([g]) => JEWELLERY.has(g))
+	.map(([g, n]) => ({ label: gearName.get(g) ?? g, n }))
+	.sort((a, b) => b.n - a.n);
+
+/* ---- Drop sources ------------------------------------------------------
+   `league` on a unique is the pack's own answer to "where does this come
+   from". Most uniques carry an empty league, meaning the ordinary drop pool;
+   the rest name a specific endgame system. */
+const LEAGUE_LABEL: Record<string, string> = {
+	prophecy: 'Prophecy',
+	obelisk: 'Ancient obelisks',
+	uber: 'Uber bosses',
+	strongbox: 'Strongboxes',
+	harvest: 'The Harvest',
+	imprisoned_monster: 'Imprisoned monsters',
+	pinnacle: 'Pinnacle',
+};
+const leagueCounts = new Map<string, number>();
+for (const u of uniques) {
+	const l = u.data.league ?? '';
+	if (!l) continue;
+	leagueCounts.set(l, (leagueCounts.get(l) ?? 0) + 1);
+}
+const sources = [...leagueCounts]
+	.map(([l, n]) => ({ label: LEAGUE_LABEL[l] ?? l.replace(/_/g, ' '), n }))
+	.sort((a, b) => b.n - a.n);
+const generalDrops = uniques.filter((u) => !u.data.league).length;
+
+const professions = (professionsData as Named[]).map((p) => ({
+	label: p.name,
+	n: 0,
+}));
+
+const treeLabel: Record<string, string> = {
+	talents: 'Talent tree',
+	ascendancy: 'Ascendancy',
+	atlas_passives: 'Atlas passives',
+};
+const treeEntries = trees
+	.map((t) => ({ label: treeLabel[t.identifier] ?? t.identifier, n: t.nodes.length }))
+	.sort((a, b) => b.n - a.n);
+
+/* ---- Build discovery ---------------------------------------------------
+   The pitch demonstrated rather than asserted: each playstyle is matched
+   against the real stat ids rolled by real uniques. */
+const PLAYSTYLES: { label: string; blurb: string; re: RegExp }[] = [
+	{ label: 'Chaos', blurb: 'poison, decay, chaos conversion', re: /chaos|poison/ },
+	{ label: 'Spell damage', blurb: 'casters and spell scaling', re: /spell/ },
+	{ label: 'Critical', blurb: 'crit chance and multiplier', re: /crit/ },
+	{ label: 'Cold', blurb: 'freeze, chill, water conversion', re: /cold|water|freeze|chill/ },
+	{ label: 'Minions', blurb: 'summons and totems', re: /summon|minion|totem/ },
+	{ label: 'Bleed', blurb: 'physical damage over time', re: /bleed/ },
+];
+const playstyles = PLAYSTYLES.map((p) => ({
+	...p,
+	n: uniques.filter((u) =>
+		(u.data.unique_stats ?? []).some((s) => p.re.test(s.stat ?? ''))
+	).length,
+})).sort((a, b) => b.n - a.n);
+
+/* Rarity ladder, straight from mmorpg_gear_rarity. The weights are the pack's
+   own drop weights and form a clean 3x ladder. */
+const RARITIES = [
+	{ id: 'common', weight: 729 },
+	{ id: 'uncommon', weight: 243 },
+	{ id: 'rare', weight: 81 },
+	{ id: 'epic', weight: 27 },
+	{ id: 'legendary', weight: 9 },
+	{ id: 'mythic', weight: 3 },
+];
+
+const FEATURED = ['starforge', 'voltaxic_rift', 'quill_rain'];
+const featured = FEATURED.map((id) => uniques.find((u) => u.id === id)).filter(
+	(u): u is Unique => Boolean(u)
+);
+
+/* Stat names carry inline tokens: [VAL1] placeholders and glyphs like the
+   attribute star and damage-type sun. The value renders in its own column, so
+   the placeholder is stripped rather than substituted — but a `%` written
+   immediately after the placeholder belongs to the value, not the label. The
+   roll's own type does not always carry it: Voltaxic Rift's proc chance is a
+   FLAT roll whose name template is "[VAL1]% Chance to Cast ...". */
+function renderRoll(r: Roll): { value: string; label: string } {
+	const raw = statName.get(r.stat) ?? r.stat.replace(/_/g, ' ');
+	const percentFromName = /\[VAL\d\]%/.test(raw);
+	const percentFromType = r.type === 'PERCENT' || r.type === 'MORE';
+	const suffix = percentFromName || percentFromType ? '%' : '';
+	const sign = r.min < 0 ? '' : '+';
+	const value =
+		r.min === r.max
+			? `${sign}${r.min}${suffix}`
+			: `${sign}${r.min}–${r.max}${suffix}`;
+
+	const label = raw
+		.replace(/\[VAL\d\]%?/g, '')
+		.replace(/[★☀]/g, '')
+		.replace(/\s{2,}/g, ' ')
+		.trim();
+
+	return { value, label };
+}
+
+/* Everything the on-page filter can match, emitted once as JSON. Portal
+   entries are matched in the DOM; unique names need the data, since 251 item
+   rows would bloat the page for no reason until item routes exist. */
+const searchIndex = uniques.map((u) => ({
+	n: u.name,
+	g: gearName.get(u.data.base_gear ?? '') ?? u.data.base_gear ?? '',
+	l: u.data.min_drop_lvl ?? 0,
+}));
+
+/* Left rail, mirroring Calamity's grouped sidebar. `href` is set only where a
+   route genuinely exists today; the rest are index entries, not dead links. */
+const RAIL: { title: string; items: { label: string; href?: string }[] }[] = [
+	{
+		title: 'Wiki',
+		items: [
+			{ label: 'Main page', href: '/' },
+			{ label: 'Documentation', href: '/guides/example/' },
+			{ label: 'Contributing', href: 'https://github.com/Saphex-dev/cte2-wiki' },
+		],
+	},
+	{
+		title: 'Items',
+		items: [
+			{ label: 'Uniques' },
+			{ label: 'Base gear' },
+			{ label: 'Runewords' },
+			{ label: 'Support gems' },
+			{ label: 'Currency' },
+		],
+	},
+	{
+		title: 'Character',
+		items: [
+			{ label: 'Classes' },
+			{ label: 'Skills' },
+			{ label: 'Talents' },
+			{ label: 'Ascendancy' },
+			{ label: 'Perks' },
+		],
+	},
+	{
+		title: 'World',
+		items: [
+			{ label: 'Atlas' },
+			{ label: 'Dungeons' },
+			{ label: 'Prophecies' },
+			{ label: 'Map affixes' },
+			{ label: 'Professions' },
+		],
+	},
+];
+
+const title = 'Craft to Exile 2 Wiki';
+const description =
+	'A community wiki for Craft to Exile 2 — every unique, skill and passive, generated from the pack itself.';
+---
+
+<html lang="en" data-dimension="overworld">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="topbar">
+			<a class="wordmark" href="/">
+				<span class="mark bevel" aria-hidden="true"></span>
+				<span>CTE2 Wiki</span>
+			</a>
+
+			<form class="search" role="search" onsubmit="return false">
+				<label class="sr-only" for="q">Filter this page</label>
+				<input
+					id="q"
+					type="search"
+					autocomplete="off"
+					placeholder="Filter this page…"
+					aria-describedby="q-hint"
+				/>
+				<span id="q-hint" class="sr-only">
+					Filters the index panels below and searches all {uniques.length} unique
+					item names.
+				</span>
+			</form>
+
+			<nav>
+				<a href="/guides/example/">Docs</a>
+				<a href="https://github.com/Saphex-dev/cte2-wiki">GitHub</a>
+			</nav>
+		</header>
+
+		<div class="shell">
+			<aside class="rail" aria-label="Wiki navigation">
+				{
+					RAIL.map((group) => (
+						<section class="railgroup bevel">
+							<h2>{group.title}</h2>
+							<ul>
+								{group.items.map((it) => (
+									<li>
+										{it.href ? (
+											<a href={it.href}>{it.label}</a>
+										) : (
+											<span class="pending">{it.label}</span>
+										)}
+									</li>
+								))}
+							</ul>
+						</section>
+					))
+				}
+			</aside>
+
+			<main>
+				<section class="welcome">
+					<h1>
+						Welcome to the <strong>Craft to Exile 2 Wiki</strong>,
+					</h1>
+					<p class="tagline">
+						the community reference, generated from the modpack itself.
+					</p>
+					<p class="counts">
+						<strong>{totalEntries.toLocaleString('en-US')}</strong> entries across
+						{' '}<strong>{index.collections.length - 1}</strong> collections, read
+						from Craft to Exile 2 <strong>{index.pack_version}</strong>.
+					</p>
+					<hr />
+					<p class="tally">
+						<span style="--tint:var(--r-unique)">
+							{count('uniques')} uniques
+						</span>
+						<span style="--tint:var(--r-rare)">{count('spells')} skills</span>
+						<span style="--tint:var(--r-legendary)">
+							{classes.length} classes
+						</span>
+						<span style="--tint:var(--r-epic)">
+							{totalNodes.toLocaleString('en-US')} passive nodes
+						</span>
+						<span style="--tint:var(--r-uncommon)">
+							{count('atlas_nodes')} atlas nodes
+						</span>
+					</p>
+					<p class="links">
+						<a href="https://github.com/Saphex-dev/cte2-wiki">GitHub</a> &bull;
+						<a href="https://github.com/Saphex-dev/cte2-wiki/issues">
+							Report an error
+						</a> &bull;
+						<a href="/guides/example/">Documentation</a>
+					</p>
+				</section>
+
+				<div class="row">
+					<section class="panel">
+						<h2 class="ptitle">The Pack</h2>
+						<div class="pbody prose">
+							<p>
+								<strong>Craft to Exile 2</strong> is a Minecraft {index.minecraft}
+								{' '}Forge modpack by Mahjerion, built on Mine and Slash — an ARPG
+								overhaul in the Path of Exile mould. It bundles {index.mod_count}
+								{' '}mods into a single campaign with its own classes, passive
+								trees, crafting economy and map endgame.
+							</p>
+							<p>
+								This wiki is not written by hand. Every stat line, roll range and
+								count on the site is extracted straight out of the pack's own
+								registry files, so a pack update regenerates the wiki rather than
+								obsoleting it.
+							</p>
+							<p class="note">
+								Unofficial and community-run. Corrections and additions arrive as
+								pull requests — see <a href="/guides/example/">Documentation</a>.
+							</p>
+						</div>
+					</section>
+
+					<section class="panel narrow">
+						<h2 class="ptitle">Pack Version</h2>
+						<dl class="versions">
+							<div><dt>Craft to Exile 2</dt><dd>{index.pack_version}</dd></div>
+							<div><dt>Minecraft</dt><dd>{index.minecraft}</dd></div>
+							<div><dt>Loader</dt><dd>Forge</dd></div>
+							<div><dt>Mods</dt><dd>{index.mod_count}</dd></div>
+							<div>
+								<dt>Extracted entries</dt>
+								<dd>{totalEntries.toLocaleString('en-US')}</dd>
+							</div>
+							<div>
+								<dt>Collections</dt>
+								<dd>{index.collections.length - 1}</dd>
+							</div>
+						</dl>
+					</section>
+				</div>
+
+				<div class="portals">
+					<section class="panel portal" data-panel>
+						<h2 class="ptitle">Items</h2>
+						<div class="pbody">
+							<div class="cols">
+								<div class="col">
+									<h3>Weapons and offhand</h3>
+									<ul>
+										{
+											weapons.map((w) => (
+												<li data-entry data-label={w.label}>
+													<span class="e">{w.label}</span>
+													<span class="c">{w.n}</span>
+												</li>
+											))
+										}
+									</ul>
+								</div>
+								<div class="col">
+									<h3>Armour</h3>
+									<ul>
+										{
+											armour.map((a) => (
+												<li data-entry data-label={a.label}>
+													<span class="e">{a.label}</span>
+													<span class="c">{a.n}</span>
+												</li>
+											))
+										}
+									</ul>
+									<h3>Jewellery</h3>
+									<ul>
+										{
+											jewellery.map((j) => (
+												<li data-entry data-label={j.label}>
+													<span class="e">{j.label}</span>
+													<span class="c">{j.n}</span>
+												</li>
+											))
+										}
+									</ul>
+								</div>
+								<div class="col">
+									<h3>Armour sets</h3>
+									<ul>
+										{
+											sets.map((s) => (
+												<li data-entry data-label={s.label}>
+													<span class="e">{s.label}</span>
+													<span class="c">{s.n}</span>
+												</li>
+											))
+										}
+									</ul>
+								</div>
+							</div>
+							<ul class="alsorow">
+								<li data-entry data-label="base gear">
+									<span class="e">Base gear</span><span class="c">
+										{count('base_gear')}
+									</span>
+								</li>
+								<li data-entry data-label="runewords">
+									<span class="e">Runewords</span><span class="c">
+										{count('runewords')}
+									</span>
+								</li>
+								<li data-entry data-label="support gems">
+									<span class="e">Support gems</span><span class="c">
+										{count('support_gems')}
+									</span>
+								</li>
+								<li data-entry data-label="currency">
+									<span class="e">Currency</span><span class="c">
+										{count('currency')}
+									</span>
+								</li>
+								<li data-entry data-label="item modifications">
+									<span class="e">Item modifications</span><span class="c">
+										{count('item_modifications')}
+									</span>
+								</li>
+								<li data-entry data-label="affixes">
+									<span class="e">Affixes</span><span class="c">
+										{count('affixes')}
+									</span>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="panel portal" data-panel>
+						<h2 class="ptitle">Classes and Skills</h2>
+						<div class="pbody">
+							<div class="cols three">
+								{
+									classes.map((c) => (
+										<div class="classcell" data-entry data-label={c.label}>
+											<span class="e">{c.label}</span>
+										</div>
+									))
+								}
+							</div>
+							<ul class="alsorow">
+								<li data-entry data-label="skills spells">
+									<span class="e">All skills</span><span class="c">
+										{count('spells')}
+									</span>
+								</li>
+								<li data-entry data-label="auras">
+									<span class="e">Auras</span><span class="c">
+										{count('auras')}
+									</span>
+								</li>
+								<li data-entry data-label="exile effects">
+									<span class="e">Exile effects</span><span class="c">
+										{count('exile_effects')}
+									</span>
+								</li>
+								<li data-entry data-label="gems">
+									<span class="e">Gems</span><span class="c">{count('gems')}</span>
+								</li>
+								<li data-entry data-label="stats">
+									<span class="e">Stats</span><span class="c">
+										{count('stats')}
+									</span>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="panel portal" data-panel>
+						<h2 class="ptitle">Passives</h2>
+						<div class="pbody">
+							<ul class="wide">
+								{
+									treeEntries.map((t) => (
+										<li data-entry data-label={t.label}>
+											<span class="e">{t.label}</span>
+											<span class="c">{t.n.toLocaleString('en-US')}</span>
+										</li>
+									))
+								}
+								<li data-entry data-label="perks">
+									<span class="e">Perks</span>
+									<span class="c">{count('perks').toLocaleString('en-US')}</span>
+								</li>
+								<li data-entry data-label="runes">
+									<span class="e">Runes</span><span class="c">
+										{count('runes')}
+									</span>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="panel portal" data-panel>
+						<h2 class="ptitle">World and Endgame</h2>
+						<div class="pbody">
+							<div class="cols">
+								<ul>
+									<li data-entry data-label="atlas nodes">
+										<span class="e">Atlas nodes</span><span class="c">
+											{count('atlas_nodes')}
+										</span>
+									</li>
+									<li data-entry data-label="map affixes">
+										<span class="e">Map affixes</span><span class="c">
+											{count('map_affixes')}
+										</span>
+									</li>
+									<li data-entry data-label="dungeons">
+										<span class="e">Dungeons</span><span class="c">
+											{count('dungeons')}
+										</span>
+									</li>
+									<li data-entry data-label="prophecies">
+										<span class="e">Prophecies</span><span class="c">
+											{count('prophecies')}
+										</span>
+									</li>
+								</ul>
+								<ul>
+									<li data-entry data-label="omens">
+										<span class="e">Omens</span><span class="c">
+											{count('omens')}
+										</span>
+									</li>
+									<li data-entry data-label="shrine buffs">
+										<span class="e">Shrine buffs</span><span class="c">
+											{count('shrine_buffs')}
+										</span>
+									</li>
+									<li data-entry data-label="mob affixes">
+										<span class="e">Mob affixes</span><span class="c">
+											{count('mob_affixes')}
+										</span>
+									</li>
+									<li data-entry data-label="uber bosses">
+										<span class="e">Uber bosses</span><span class="c">
+											{count('uber_bosses')}
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section class="panel portal" data-panel>
+						<h2 class="ptitle">Where Uniques Drop</h2>
+						<div class="pbody">
+							<p class="phint">
+								The pack tags each unique with the system that drops it.
+							</p>
+							<ul class="wide">
+								<li data-entry data-label="general drop pool">
+									<span class="e">General drop pool</span>
+									<span class="c">{generalDrops}</span>
+								</li>
+								{
+									sources.map((s) => (
+										<li data-entry data-label={s.label}>
+											<span class="e">{s.label}</span>
+											<span class="c">{s.n}</span>
+										</li>
+									))
+								}
+							</ul>
+						</div>
+					</section>
+
+					<section class="panel portal" data-panel>
+						<h2 class="ptitle">Professions</h2>
+						<div class="pbody">
+							<div class="cols three">
+								{
+									professions.map((p) => (
+										<div class="classcell" data-entry data-label={p.label}>
+											<span class="e">{p.label}</span>
+										</div>
+									))
+								}
+							</div>
+							<ul class="alsorow">
+								<li data-entry data-label="recipes">
+									<span class="e">Recipes</span>
+									<span class="c">
+										{count('profession_recipes').toLocaleString('en-US')}
+									</span>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="panel portal wide-panel" data-panel>
+						<h2 class="ptitle">Find Items by Playstyle</h2>
+						<div class="pbody">
+							<p class="phint">
+								Uniques are matched on the stats they actually roll, so searching
+								a build turns up gear you would not have thought to look for.
+							</p>
+							<div class="cols three">
+								{
+									playstyles.map((p) => (
+										<div class="playcell" data-entry data-label={p.label}>
+											<div class="playhead">
+												<span class="e">{p.label}</span>
+												<span class="c">{p.n}</span>
+											</div>
+											<span class="blurb">{p.blurb}</span>
+										</div>
+									))
+								}
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<section class="panel results" id="results" hidden>
+					<h2 class="ptitle">Matching Uniques</h2>
+					<div class="pbody">
+						<ul class="hits" id="hits"></ul>
+						<p class="phint" id="hitsmore"></p>
+					</div>
+				</section>
+
+				<section class="panel" data-static>
+					<h2 class="ptitle">What an Item Page Looks Like</h2>
+					<div class="pbody">
+						<p class="phint">
+							Stat lines and roll ranges come from the pack's own registry.
+							Nothing below is transcribed.
+						</p>
+						<div class="items">
+							{
+								featured.map((item) => (
+									<article class="item bevel">
+										<header>
+											<h3>{item.name}</h3>
+											<p class="base">
+												{gearName.get(item.data.base_gear ?? '') ??
+													item.data.base_gear?.replace(/_/g, ' ')}
+												<span class="dot">&middot;</span>
+												requires level {item.data.min_drop_lvl}
+											</p>
+										</header>
+										<dl class="rolls">
+											{(item.data.unique_stats ?? []).map((r) => {
+												const { value, label } = renderRoll(r);
+												return (
+													<div class="roll">
+														<dt>{value}</dt>
+														<dd>{label}</dd>
+													</div>
+												);
+											})}
+										</dl>
+									</article>
+								))
+							}
+						</div>
+					</div>
+				</section>
+
+				<section class="panel" data-static>
+					<h2 class="ptitle">Rarity</h2>
+					<div class="pbody">
+						<p class="phint">
+							Six tiers, each roughly a third as common as the one below it.
+							Weights are the pack's own drop weights.
+						</p>
+						<ol class="ladder">
+							{
+								RARITIES.map((r) => (
+									<li>
+										<span
+											class="swatch bevel"
+											style={`background:var(--r-${r.id})`}
+										/>
+										<span class="rname">{r.id}</span>
+										<span class="rweight">{r.weight}</span>
+									</li>
+								))
+							}
+						</ol>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<footer>
+			<p>
+				An unofficial community wiki for <strong>Craft to Exile 2</strong> by
+				Mahjerion. Not affiliated with Mojang.
+			</p>
+			<p class="fine">
+				{totalEntries.toLocaleString('en-US')} entries generated from pack {
+					index.pack_version
+				} &middot; regenerated by re-running the extractor, never edited by hand.
+			</p>
+		</footer>
+
+		<script is:inline define:vars={{ searchIndex }}>
+			/* On-page filter. It narrows the index panels and searches every unique
+			   name, which is the useful search until item routes exist — Pagefind
+			   only indexes the Starlight docs pages, so wiring the header to it
+			   today would return two example pages and nothing else. */
+			(function () {
+				const q = document.getElementById('q');
+				if (!q) return;
+				const entries = Array.from(document.querySelectorAll('[data-entry]'));
+				const panels = Array.from(document.querySelectorAll('[data-panel]'));
+				const statics = Array.from(document.querySelectorAll('[data-static]'));
+				const results = document.getElementById('results');
+				const hits = document.getElementById('hits');
+				const more = document.getElementById('hitsmore');
+				const LIMIT = 30;
+
+				function reset() {
+					for (const el of entries) el.hidden = false;
+					for (const el of panels) el.hidden = false;
+					for (const el of statics) el.hidden = false;
+					results.hidden = true;
+					hits.textContent = '';
+					more.textContent = '';
+				}
+
+				function apply(term) {
+					if (!term) return reset();
+
+					for (const el of entries) {
+						const label = (el.getAttribute('data-label') || '').toLowerCase();
+						el.hidden = !label.includes(term);
+					}
+					for (const p of panels) {
+						const shown = p.querySelectorAll('[data-entry]:not([hidden])');
+						p.hidden = shown.length === 0;
+					}
+					for (const el of statics) el.hidden = true;
+
+					const matched = searchIndex.filter((u) =>
+						u.n.toLowerCase().includes(term)
+					);
+					hits.textContent = '';
+					for (const u of matched.slice(0, LIMIT)) {
+						const li = document.createElement('li');
+						const name = document.createElement('span');
+						name.className = 'hitname';
+						name.textContent = u.n;
+						const meta = document.createElement('span');
+						meta.className = 'hitmeta';
+						meta.textContent = u.g ? u.g + ' · lvl ' + u.l : 'lvl ' + u.l;
+						li.append(name, meta);
+						hits.append(li);
+					}
+					more.textContent = matched.length
+						? matched.length > LIMIT
+							? matched.length + ' uniques match — showing the first ' + LIMIT + '.'
+							: matched.length + (matched.length === 1 ? ' unique matches.' : ' uniques match.')
+						: 'No unique item name matches that.';
+					results.hidden = false;
+				}
+
+				q.addEventListener('input', () => apply(q.value.trim().toLowerCase()));
+				q.addEventListener('keydown', (e) => {
+					if (e.key === 'Escape') {
+						q.value = '';
+						reset();
+					}
+				});
+			})();
+		</script>
+
+		<style>
+			:global(*),
+			:global(*::before),
+			:global(*::after) {
+				box-sizing: border-box;
+			}
+			:global(body) {
+				margin: 0;
+				background: var(--bg);
+				color: var(--ink);
+				font-family: var(--font-body);
+				line-height: 1.6;
+				/* A pixel grid rather than a texture: modern, and it survives scaling. */
+				background-image:
+					linear-gradient(var(--bg-deep) 1px, transparent 1px),
+					linear-gradient(90deg, var(--bg-deep) 1px, transparent 1px);
+				background-size: 64px 64px;
+			}
+			:global(h1, h2, h3) {
+				font-family: var(--font-display);
+				font-weight: 600;
+				letter-spacing: -0.01em;
+				margin: 0;
+			}
+			:global(a) {
+				color: inherit;
+			}
+			.sr-only {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				padding: 0;
+				margin: -1px;
+				overflow: hidden;
+				clip: rect(0 0 0 0);
+				white-space: nowrap;
+				border: 0;
+			}
+
+			/* ---- top bar ---- */
+			.topbar {
+				display: flex;
+				align-items: center;
+				gap: var(--s2);
+				padding: var(--s1) var(--s2);
+				border-bottom: 1px solid var(--line);
+				background: rgba(11, 13, 18, 0.88);
+				backdrop-filter: blur(8px);
+				position: sticky;
+				top: 0;
+				z-index: 10;
+			}
+			.wordmark {
+				display: flex;
+				align-items: center;
+				gap: var(--s1);
+				font-family: var(--font-display);
+				text-decoration: none;
+				font-size: 16px;
+				flex-shrink: 0;
+			}
+			.mark {
+				width: 16px;
+				height: 16px;
+				background: var(--accent);
+				display: block;
+			}
+			.search {
+				margin-left: auto;
+				flex: 0 1 320px;
+			}
+			.search input {
+				width: 100%;
+				background: var(--bg-deep);
+				border: 1px solid var(--line);
+				box-shadow:
+					inset 1px 1px 0 var(--bevel-dark),
+					inset -1px -1px 0 var(--bevel-light);
+				color: var(--ink);
+				font-family: var(--font-mono);
+				font-size: 13px;
+				padding: 8px var(--s1);
+				border-radius: 0;
+				-webkit-appearance: none;
+				appearance: none;
+			}
+			.search input::placeholder {
+				color: var(--ink-faint);
+			}
+			.search input:focus {
+				outline: 2px solid var(--accent);
+				outline-offset: 1px;
+			}
+			.topbar nav {
+				display: flex;
+				gap: var(--s2);
+				font-size: 14px;
+				flex-shrink: 0;
+			}
+			.topbar nav a {
+				color: var(--ink-dim);
+				text-decoration: none;
+			}
+			.topbar nav a:hover {
+				color: var(--ink);
+			}
+
+			/* ---- shell: rail + main, Calamity's two-part frame ---- */
+			.shell {
+				display: grid;
+				grid-template-columns: 176px minmax(0, 1fr);
+				gap: var(--s2);
+				max-width: 1440px;
+				margin: 0 auto;
+				padding: var(--s2);
+				align-items: start;
+			}
+
+			/* ---- left rail ---- */
+			.rail {
+				position: sticky;
+				top: 80px;
+				display: flex;
+				flex-direction: column;
+				gap: var(--s1);
+			}
+			.railgroup {
+				background: var(--surface);
+				padding: var(--s1);
+			}
+			.railgroup h2 {
+				font-size: 12px;
+				letter-spacing: 0.14em;
+				text-transform: uppercase;
+				color: var(--ink-faint);
+				margin-bottom: 8px;
+			}
+			.railgroup ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			.railgroup li {
+				font-size: 13px;
+				padding: 3px 0;
+			}
+			.railgroup a {
+				color: var(--r-rare);
+				text-decoration: none;
+			}
+			.railgroup a:hover {
+				text-decoration: underline;
+			}
+			.pending {
+				color: var(--ink-faint);
+			}
+
+			main {
+				min-width: 0;
+				display: flex;
+				flex-direction: column;
+				gap: var(--s2);
+			}
+
+			/* ---- welcome banner: Calamity's signature bordered header ---- */
+			.welcome {
+				border: 2px solid var(--accent);
+				background: var(--surface);
+				padding: var(--s2);
+				text-align: center;
+			}
+			.welcome h1 {
+				font-size: clamp(24px, 3.4vw, 34px);
+				line-height: 1.2;
+				font-weight: 400;
+				color: var(--ink-dim);
+			}
+			.welcome h1 strong {
+				color: var(--ink);
+				font-weight: 600;
+			}
+			.tagline {
+				margin: 8px 0 0;
+				color: var(--ink-dim);
+			}
+			.counts {
+				margin: var(--s1) 0 0;
+				font-size: 14px;
+				color: var(--ink-faint);
+			}
+			.counts strong {
+				color: var(--ink);
+				font-family: var(--font-mono);
+				font-weight: 500;
+			}
+			.welcome hr {
+				border: 0;
+				border-top: 1px solid var(--line);
+				margin: var(--s2) auto;
+				max-width: 640px;
+			}
+			.tally {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: var(--s1) var(--s2);
+				margin: 0;
+				font-family: var(--font-mono);
+				font-size: 13px;
+			}
+			.tally span {
+				color: var(--tint);
+			}
+			.links {
+				margin: var(--s1) 0 0;
+				font-size: 13px;
+				color: var(--ink-faint);
+			}
+			.links a {
+				color: var(--r-rare);
+				text-decoration: none;
+			}
+			.links a:hover {
+				text-decoration: underline;
+			}
+
+			/* ---- panels ---- */
+			.row {
+				display: grid;
+				grid-template-columns: minmax(0, 1fr) 288px;
+				gap: var(--s2);
+				align-items: start;
+			}
+			.panel {
+				background: var(--surface);
+				border: 1px solid var(--line);
+				box-shadow:
+					inset 1px 1px 0 var(--bevel-light),
+					inset -1px -1px 0 var(--bevel-dark);
+			}
+			.ptitle {
+				/* Calamity centres its panel titles on their own bar. */
+				text-align: center;
+				font-size: 16px;
+				padding: var(--s1);
+				color: var(--r-rare);
+				background: var(--surface-raised);
+				border-bottom: 1px solid var(--line);
+			}
+			.pbody {
+				padding: var(--s2);
+			}
+			.phint {
+				margin: 0 0 var(--s2);
+				font-size: 13px;
+				color: var(--ink-faint);
+				max-width: 640px;
+			}
+			.prose p {
+				margin: 0 0 var(--s1);
+				color: var(--ink-dim);
+			}
+			.prose p:last-child {
+				margin-bottom: 0;
+			}
+			.prose strong {
+				color: var(--ink);
+			}
+			.note {
+				font-size: 13px;
+				color: var(--ink-faint) !important;
+			}
+			.prose a {
+				color: var(--r-rare);
+			}
+
+			/* ---- version box: Calamity's striped side table ---- */
+			.narrow .ptitle {
+				font-size: 14px;
+			}
+			.versions {
+				margin: 0;
+				padding: var(--s1);
+			}
+			.versions div {
+				display: flex;
+				justify-content: space-between;
+				gap: var(--s1);
+				padding: 8px var(--s1);
+			}
+			.versions div:nth-child(odd) {
+				background: var(--bg-deep);
+			}
+			.versions dt {
+				font-size: 13px;
+				color: var(--ink-dim);
+			}
+			.versions dd {
+				margin: 0;
+				font-family: var(--font-mono);
+				font-size: 13px;
+				color: var(--ink);
+			}
+
+			/* ---- portal grid ---- */
+			.portals {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+				gap: var(--s2);
+				align-items: start;
+			}
+			.wide-panel {
+				grid-column: 1 / -1;
+			}
+			.cols {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+				gap: var(--s1) var(--s2);
+			}
+			.cols.three {
+				grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+			}
+			.col h3,
+			.pbody > .cols h3 {
+				font-size: 12px;
+				letter-spacing: 0.12em;
+				text-transform: uppercase;
+				color: var(--ink-faint);
+				margin: 0 0 8px;
+			}
+			.col h3 + ul + h3 {
+				margin-top: var(--s1);
+			}
+			.pbody ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			.pbody li {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				gap: 8px;
+				padding: 3px 0;
+				font-size: 14px;
+			}
+			.e {
+				color: var(--ink-dim);
+				text-transform: capitalize;
+			}
+			.c {
+				font-family: var(--font-mono);
+				font-size: 12px;
+				color: var(--ink-faint);
+				flex-shrink: 0;
+			}
+			.wide li {
+				border-bottom: 1px solid var(--line);
+				padding: 8px 0;
+			}
+			.wide li:last-child {
+				border-bottom: 0;
+			}
+			.alsorow {
+				display: flex !important;
+				flex-wrap: wrap;
+				gap: 8px var(--s2);
+				margin-top: var(--s2) !important;
+				padding-top: var(--s1) !important;
+				border-top: 1px solid var(--line);
+			}
+			.alsorow li {
+				gap: 8px;
+			}
+			.classcell {
+				display: flex;
+				align-items: baseline;
+				gap: 8px;
+				padding: 4px 0;
+				font-size: 14px;
+			}
+
+			/* ---- playstyle cells ---- */
+			.playcell {
+				background: var(--bg-deep);
+				border: 1px solid var(--line);
+				padding: var(--s1);
+			}
+			.playhead {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				gap: 8px;
+			}
+			.playhead .e {
+				color: var(--ink);
+				font-family: var(--font-display);
+				font-size: 15px;
+			}
+			.playhead .c {
+				color: var(--r-legendary);
+				font-size: 14px;
+			}
+			.blurb {
+				display: block;
+				margin-top: 4px;
+				font-size: 13px;
+				color: var(--ink-faint);
+			}
+
+			/* ---- search results ---- */
+			.hits {
+				list-style: none;
+				margin: 0 0 var(--s1);
+				padding: 0;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+				gap: 0 var(--s2);
+			}
+			.hits li {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				gap: var(--s1);
+				padding: 6px 0;
+				border-bottom: 1px solid var(--line);
+			}
+			.hitname {
+				color: var(--r-unique);
+				font-size: 14px;
+			}
+			.hitmeta {
+				font-family: var(--font-mono);
+				font-size: 12px;
+				color: var(--ink-faint);
+				text-transform: capitalize;
+				flex-shrink: 0;
+			}
+
+			/* ---- featured items ---- */
+			.items {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+				gap: var(--s1);
+			}
+			.item {
+				background: var(--bg-deep);
+				padding: var(--s1);
+				border-top: 2px solid var(--r-unique);
+				display: flex;
+				flex-direction: column;
+			}
+			.item h3 {
+				font-size: 20px;
+				color: var(--r-unique);
+			}
+			.base {
+				margin: 8px 0 var(--s1);
+				font-family: var(--font-mono);
+				font-size: 12px;
+				color: var(--ink-faint);
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+			}
+			.dot {
+				margin: 0 8px;
+			}
+			.rolls {
+				margin: 0;
+				flex: 1;
+				/* Non-negotiable per the design brief: stat text always sits on a
+				   scrim, so a busy background can never eat it. */
+				background: rgba(0, 0, 0, 0.35);
+				padding: var(--s1);
+			}
+			.roll {
+				display: flex;
+				gap: var(--s1);
+				align-items: baseline;
+				padding: 4px 0;
+			}
+			.roll dt {
+				font-family: var(--font-mono);
+				font-size: 14px;
+				color: var(--r-rare);
+				min-width: 80px;
+				flex-shrink: 0;
+			}
+			.roll dd {
+				margin: 0;
+				font-size: 14px;
+				color: var(--ink-dim);
+			}
+
+			/* ---- rarity ladder ---- */
+			.ladder {
+				display: flex;
+				flex-wrap: wrap;
+				gap: var(--s1);
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.ladder li {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+				background: var(--bg-deep);
+				padding: 8px var(--s1);
+				border: 1px solid var(--line);
+			}
+			.swatch {
+				width: 16px;
+				height: 16px;
+				display: block;
+			}
+			.rname {
+				font-size: 14px;
+				text-transform: capitalize;
+			}
+			.rweight {
+				font-family: var(--font-mono);
+				font-size: 12px;
+				color: var(--ink-faint);
+			}
+
+			/* ---- footer ---- */
+			footer {
+				border-top: 1px solid var(--line);
+				padding: var(--s4) var(--s2);
+				text-align: center;
+				color: var(--ink-faint);
+				font-size: 14px;
+			}
+			footer p {
+				margin: 0 0 8px;
+			}
+			.fine {
+				font-family: var(--font-mono);
+				font-size: 12px;
+			}
+
+			@media (max-width: 1024px) {
+				.shell {
+					grid-template-columns: minmax(0, 1fr);
+				}
+				.rail {
+					position: static;
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+				}
+				.row {
+					grid-template-columns: minmax(0, 1fr);
+				}
+			}
+			@media (max-width: 640px) {
+				.topbar {
+					flex-wrap: wrap;
+					gap: var(--s1);
+				}
+				.search {
+					order: 3;
+					flex: 1 1 100%;
+					margin-left: 0;
+				}
+				.shell {
+					padding: var(--s1);
+				}
+				.portals {
+					grid-template-columns: minmax(0, 1fr);
+				}
+				.pbody {
+					padding: var(--s1);
+				}
+			}
+		</style>
+	</body>
+</html>
