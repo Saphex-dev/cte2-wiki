@@ -13,7 +13,6 @@
    Every number, name and count below is read from data/ at build time.
    Nothing is hand-typed — see CLAUDE.md § Never invent pack data. */
 import '../styles/tokens.css';
-import Wordmark from '../components/Wordmark.astro';
 import Banner from '../components/Banner.astro';
 
 import index from '../../data/_index.json';
@@ -303,10 +302,9 @@ const description =
 	</head>
 	<body>
 		<header class="topbar">
-			<a class="wordmark" href="/">
-				<Wordmark text="CTE2" size={20} />
-				<span class="wordmark-suffix">Wiki</span>
-			</a>
+			{/* The pack's logotype is the only mark on the page (D12). The wiki
+			    names itself in text, the way the Calamity wiki does. */}
+			<a class="wordmark" href="/">Craft to Exile 2 Wiki</a>
 
 			<form class="search" role="search" onsubmit="return false">
 				<label class="sr-only" for="q">Filter this page</label>
@@ -329,11 +327,12 @@ const description =
 			</nav>
 		</header>
 
-		{/* Mahjerion's CTE2 banner. Source is 560x300 (28:15); the slot crops
-		    to 3:1, which trims scene from top and bottom and leaves the
-		    centred logo intact. */}
+		{/* Mahjerion's CTE2 banner — the page's only logo (D12).
+		    Source is 560x300. Measuring the logo's pixels puts it in rows
+		    114..181, so a centred crop can reach 7.78:1 before it starts
+		    cutting letterforms. 7:1 leaves ~4px of margin either side. */}
 		<div class="bannerwrap">
-			<Banner src="/banner-cte2.webp" alt="Craft to Exile 2" />
+			<Banner src="/banner-cte2.webp" alt="Craft to Exile 2" ratio="7 / 1" />
 		</div>
 
 		<div class="shell">
@@ -940,18 +939,16 @@ const description =
 				z-index: 10;
 			}
 			.wordmark {
-				display: flex;
-				align-items: baseline;
-				gap: 12px;
+				font-family: var(--font-display);
+				font-size: 13px;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				color: var(--ink-faint);
 				text-decoration: none;
 				flex-shrink: 0;
 			}
-			.wordmark-suffix {
-				font-family: var(--font-display);
-				font-size: 11px;
-				letter-spacing: 0.16em;
-				text-transform: uppercase;
-				color: var(--ink-faint);
+			.wordmark:hover {
+				color: var(--ink);
 			}
 			.search {
 				margin-left: auto;
