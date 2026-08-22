@@ -449,6 +449,52 @@ a different asset.
 2. **A higher-resolution source.** 560px is upscaled about 2× at the content column and
    is visibly soft.
 
+### D13 — Colour is applied where the pack applies it, not where a word feels important
+
+**Supersedes the exclusivity clause in D8.** The question "can we colour the important
+words" has a data answer: **the pack already decides which words are coloured and what
+colour they are.**
+
+`stats.json` carries `data.format` on **619 of 1,151** stats, naming a Minecraft chat
+colour:
+
+| format | count | what it marks |
+|---|---:|---|
+| aqua | 572 | the default for stat text |
+| red | 26 | damage over time, leech and steal, attack and crit damage |
+| green | 10 | durations, regen, projectile speed |
+| yellow | 9 | healing, crit chance |
+| blue | 2 | area damage |
+
+Rarities carry `text_format`, and so do `gems` (72), `mob_affixes` (25),
+`mob_rarities` (10) and `relic_rarities` (6). None of it needs inventing.
+
+**D8 said rarity colours were reserved to rarity and could never appear elsewhere. That
+was wrong about how the pack works.** The pack formats text by naming one of Minecraft's
+16 chat colours and reuses them across systems — AQUA is both the `rare` rarity *and*
+the colour of 572 stat lines. The overlap is the game's, not ours.
+
+So the test is provenance, not exclusivity: **did a registry tell us to use this colour
+here?** Aqua on a stat line is the pack's instruction and matches what the player sees
+in their inventory. Aqua on a panel heading is a designer's whim wearing a pack colour's
+clothes — still forbidden, and still the actual defect D8 was reacting to.
+
+*A correction this forces:* the D8 pass moved stat values off aqua onto `--ink`, on the
+reasoning that aqua was a borrowed rarity colour. The colour was right and the source
+was wrong — it pointed at `--r-rare` rather than at the stat's own format. Stat text is
+aqua again, now driven by `data.format`.
+
+**Where hand-picked emphasis is still legitimate.** Generated content — stat lines, item
+names, rarities — is coloured from data and never by hand; that is what survives three
+hundred pages. Hand-written prose is finite, so editorial emphasis there is fine, but it
+uses **weight and brightness, not hue**. Hue means something on this site. Reserving it
+keeps the meaning readable.
+
+*Known gap:* 532 stats carry no format, almost all of them the code-origin stats that
+ship an empty `data` object — the same 353 that block unit rendering in §4.5. They fall
+back to aqua, which 92% of formatted stats use. That fallback is derived, not
+pack-stated (D4), and closing it needs the same unmapped `mmorpg_stat_effect` registry.
+
 ---
 
 ## 3. Phase order

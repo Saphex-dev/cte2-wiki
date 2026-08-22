@@ -5,18 +5,28 @@
    - No border-radius. Anywhere.
    - Beveled edges are the signature element.
 
-   THREE PALETTES LIVE HERE AND THEY MUST NOT BORROW FROM EACH OTHER.
+   THE RULE IS ABOUT PROVENANCE, NOT EXCLUSIVITY (revised, see D13).
 
-   BRAND   Sampled from the CurseForge icon. Belongs to the wordmark. The
-           saturated violet and magenta appear in the logotype and nowhere
-           else, because they sit directly on top of the epic and mythic
-           rarity hues — see D9.
-   CHROME  Surfaces, ink, borders, interactive states. Drawn from the dark end
-           of the same sampled palette, plus `torch`, which is the one colour
-           in it that collides with no rarity tier.
-   RARITY  Pack facts, read from mmorpg_gear_rarity `text_format`. They label
-           data and nothing else. A rarity colour used as decoration teaches
-           players a meaning the decoration does not have. */
+   An earlier version of this file said rarity colours were reserved to rarity
+   and could never appear elsewhere. That is not how the pack works: it formats
+   text by naming one of Minecraft's 16 chat colours, and it reuses them across
+   systems. AQUA is both the `rare` rarity AND the default colour of 572 stat
+   lines. The overlap is the game's, not ours.
+
+   So the test is not "does this colour mean something else somewhere" — it is
+   **did the pack tell us to use it here**:
+
+   PACK    A colour applied because a registry says so. Rarity from
+           mmorpg_gear_rarity `text_format`, stat text from stats.json
+           `data.format`. Render these freely, wherever the pack applies them.
+   BRAND   Sampled from the CurseForge icon. Belongs to the wordmark. Saturated
+           violet and magenta appear in the logotype and nowhere else (D9).
+   CHROME  Surfaces, ink, borders, interactive states. The dark end of the
+           sampled palette plus `torch`.
+
+   What is still forbidden is a pack colour used as decoration — aqua on a
+   panel heading is a designer's whim wearing a pack colour's clothes, and it
+   teaches players a meaning that is not there. */
 
 :root {
 	/* Spacing — 16px grid */
@@ -61,16 +71,40 @@
 	   carries links and emphasis instead of the borrowed aqua it replaces. */
 	--accent: #ffdedb;
 
-	/* ---- RARITY — data only, never chrome ------------------------------ */
-	/* Extracted from mmorpg_gear_rarity text_format (Minecraft chat colours). */
-	--r-common: #aaaaaa; /* GRAY */
-	--r-uncommon: #55ff55; /* GREEN */
-	--r-rare: #55ffff; /* AQUA */
-	--r-epic: #ff55ff; /* LIGHT_PURPLE */
-	--r-legendary: #ffaa00; /* GOLD */
-	--r-mythic: #aa00aa; /* DARK_PURPLE */
-	--r-unique: #ff5555; /* RED */
-	--r-runeword: #ffff55; /* YELLOW */
+	/* ---- PACK COLOUR --------------------------------------------------- */
+	/* Minecraft's chat palette. The pack never names a hex value — it names
+	   one of these, in `text_format` and `format` fields. Single source, so
+	   every system that references a colour references the same one. */
+	--mc-gray: #aaaaaa;
+	--mc-green: #55ff55;
+	--mc-aqua: #55ffff;
+	--mc-light-purple: #ff55ff;
+	--mc-gold: #ffaa00;
+	--mc-dark-purple: #aa00aa;
+	--mc-red: #ff5555;
+	--mc-yellow: #ffff55;
+	--mc-blue: #5555ff;
+
+	/* Rarity — mmorpg_gear_rarity `text_format`. */
+	--r-common: var(--mc-gray);
+	--r-uncommon: var(--mc-green);
+	--r-rare: var(--mc-aqua);
+	--r-epic: var(--mc-light-purple);
+	--r-legendary: var(--mc-gold);
+	--r-mythic: var(--mc-dark-purple);
+	--r-unique: var(--mc-red);
+	--r-runeword: var(--mc-yellow);
+
+	/* Stat text — stats.json `data.format`. 619 of 1,151 stats carry one:
+	   aqua 572, red 26, green 10, yellow 9, blue 2. Red marks damage over
+	   time and leech, green marks durations and regen, yellow marks healing,
+	   blue marks area damage.
+
+	   The other 532 carry no format, almost all of them the code-origin stats
+	   that ship an empty `data` object. They fall back to aqua, which is what
+	   92% of the stats that DO declare a format use. That fallback is derived,
+	   not pack-stated — see D4. */
+	--stat-default: var(--mc-aqua);
 
 	/* ---- Type ---------------------------------------------------------- */
 	/* `--font-pixel` is RESERVED. It sets exactly two things:

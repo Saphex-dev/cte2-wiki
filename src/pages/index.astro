@@ -42,6 +42,17 @@ type Tree = { identifier: string; school_type: string; nodes: unknown[] };
 const uniques = uniquesData as Unique[];
 const trees = talentTreeData as Tree[];
 const statName = new Map((statsData as Named[]).map((s) => [s.id, s.name]));
+
+/* The pack colours its own stat text: stats.json `data.format` names one of
+   Minecraft's chat colours. 619 of 1,151 stats declare one — aqua on 572, then
+   red for damage-over-time and leech, green for durations and regen, yellow
+   for healing, blue for area damage. The rest are mostly code-origin stats
+   with an empty `data`, and fall back to aqua via --stat-default. */
+const statFormat = new Map(
+	(statsData as { id: string; data?: { format?: string } }[])
+		.filter((s) => s.data?.format)
+		.map((s) => [s.id, s.data!.format as string])
+);
 const gearName = new Map((baseGearData as Named[]).map((g) => [g.id, g.name]));
 
 const collections = new Map(index.collections.map((c) => [c.key, c]));
@@ -209,8 +220,10 @@ const featured = FEATURED.map((id) => uniques.find((u) => u.id === id)).filter(
    immediately after the placeholder belongs to the value, not the label. The
    roll's own type does not always carry it: Voltaxic Rift's proc chance is a
    FLAT roll whose name template is "[VAL1]% Chance to Cast ...". */
-function renderRoll(r: Roll): { value: string; label: string } {
+function renderRoll(r: Roll): { value: string; label: string; colour: string } {
 	const raw = statName.get(r.stat) ?? r.stat.replace(/_/g, ' ');
+	const fmt = statFormat.get(r.stat);
+	const colour = fmt ? `var(--mc-${fmt})` : 'var(--stat-default)';
 	const percentFromName = /\[VAL\d\]%/.test(raw);
 	const percentFromType = r.type === 'PERCENT' || r.type === 'MORE';
 	const suffix = percentFromName || percentFromType ? '%' : '';
@@ -226,7 +239,7 @@ function renderRoll(r: Roll): { value: string; label: string } {
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 
-	return { value, label };
+	return { value, label, colour };
 }
 
 /* Everything the on-page filter can match, emitted once as JSON. Portal
@@ -749,9 +762,9 @@ const description =
 										</header>
 										<dl class="rolls">
 											{(item.data.unique_stats ?? []).map((r) => {
-												const { value, label } = renderRoll(r);
+												const { value, label, colour } = renderRoll(r);
 												return (
-													<div class="roll">
+													<div class="roll" style={`--fmt:${colour}`}>
 														<dt>{value}</dt>
 														<dd>{label}</dd>
 													</div>
@@ -1382,18 +1395,24 @@ const description =
 				align-items: baseline;
 				padding: 4px 0;
 			}
+			/* --fmt is the pack's own colour for this stat, from stats.json
+			   `data.format`. Not decoration: the game prints these lines in
+			   these colours, so a player reads the same signal here as in the
+			   inventory. Aqua is the default; red flags damage-over-time and
+			   leech, green durations and regen, yellow healing, blue area. */
 			.roll dt {
 				font-family: var(--font-mono);
 				font-size: 14px;
-				/* A roll value is a number, not a rarity. */
-				color: var(--ink);
+				color: var(--fmt);
 				min-width: 80px;
 				flex-shrink: 0;
 			}
 			.roll dd {
 				margin: 0;
 				font-size: 14px;
-				color: var(--ink-dim);
+				/* The label sits a step back from the number so the value
+				   leads, but keeps the hue so the pairing reads as one line. */
+				color: color-mix(in srgb, var(--fmt) 62%, var(--ink-faint));
 			}
 
 			/* ---- rarity ladder ---- */
