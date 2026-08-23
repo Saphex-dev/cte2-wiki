@@ -495,6 +495,47 @@ ship an empty `data` object — the same 353 that block unit rendering in §4.5.
 back to aqua, which 92% of formatted stats use. That fallback is derived, not
 pack-stated (D4), and closing it needs the same unmapped `mmorpg_stat_effect` registry.
 
+### D14 — The fire band is the landing page's alone
+
+A Minecraft-style fire animation runs along the bottom eighth of the viewport on the
+landing page, cross-fading from ember orange to void violet as the reader scrolls.
+
+*The palette is extracted, not chosen.* It is the modal colour of each luminance band
+of vanilla `assets/minecraft/textures/block/fire_0.png` — the 16×512, 32-frame
+animation strip — read out of the 1.20.1 client jar:
+
+`#b64800` `#bb5100` `#d28108` `#dfa21a` `#eecc54` `#ffffff`
+
+The violet end is built from the brand palette sampled from Mahjerion's icon.
+Deliberately **not** `--mc-dark-purple` — that hex is the mythic rarity, and a rarity
+colour spent on decoration is exactly what D13 still forbids.
+
+**Landing page only. It must not follow us onto item pages.** Three reasons:
+
+1. D2 already gives item pages a background system keyed to dimension. Two competing
+   atmospheres on one page is one too many.
+2. D12's lesson from Calamity is that the brand spend goes into *one* place and the
+   chrome stays plain. The landing page is the pitch surface and gets to be loud; three
+   hundred reference pages do not.
+3. A permanent animation on every page is a battery cost paid by someone reading a stat
+   table.
+
+*Implementation constraints, all load-bearing:*
+
+- **The cellular fire automaton on a canvas sized in whole 8px cells**, upscaled with
+  `image-rendering: pixelated`. A CSS gradient would be smooth, and smooth is wrong —
+  the point is that it is actually blocky. Cost is a few thousand cell updates a frame.
+- **`prefers-reduced-motion` gets one settled static frame and no animation loop.**
+- The loop also halts on `document.hidden` and when the band leaves the viewport.
+- **Anything sitting over the band carries its own scrim.** The footer is the only such
+  block and now has one; without it the flames ate the text outright. This is the
+  brief's non-negotiable rule, and it bit immediately.
+
+*Worth designing toward:* the orange→violet descent is decoration today, but the
+dimension ladder runs Overworld at level 1 to Twilight Forest at 100, and the act ladder
+is still unbuilt. If scroll depth ever maps to that ladder, the colour shift stops being
+ornament and becomes orientation.
+
 ---
 
 ## 3. Phase order

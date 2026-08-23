@@ -14,6 +14,7 @@
    Nothing is hand-typed — see CLAUDE.md § Never invent pack data. */
 import '../styles/tokens.css';
 import Banner from '../components/Banner.astro';
+import FireBand from '../components/FireBand.astro';
 
 import index from '../../data/_index.json';
 import uniquesData from '../../data/uniques.json';
@@ -314,6 +315,8 @@ const description =
 		/>
 	</head>
 	<body>
+		<FireBand />
+
 		<header class="topbar">
 			{/* The pack's logotype is the only mark on the page (D12). The wiki
 			    names itself in text, the way the Calamity wiki does. */}
@@ -1004,6 +1007,17 @@ const description =
 			}
 
 			/* ---- shell: rail + main, Calamity's two-part frame ---- */
+			/* The fire band is position:fixed with z-index 0, which puts it
+			   above ordinary non-positioned content in paint order. Give the
+			   page's own blocks a stacking context so the flames stay behind
+			   the cards rather than over them. */
+			.bannerwrap,
+			.shell,
+			footer {
+				position: relative;
+				z-index: 1;
+			}
+
 			/* Aligned to the shell rather than bled to the window edge, so the
 			   banner sits on the same column as everything below it. */
 			.bannerwrap {
@@ -1452,8 +1466,15 @@ const description =
 				border-top: 1px solid var(--line);
 				padding: var(--s4) var(--s2);
 				text-align: center;
-				color: var(--ink-faint);
+				color: var(--ink-dim);
 				font-size: 14px;
+				/* The footer is the one block that sits directly over the fire
+				   band, so it carries its own scrim. Translucent rather than
+				   solid: the flames still read through it, the text does not
+				   have to fight them. Non-negotiable per CLAUDE.md — legibility
+				   wins over atmosphere. */
+				background: color-mix(in srgb, var(--bg-deep) 88%, transparent);
+				backdrop-filter: blur(2px);
 			}
 			footer p {
 				margin: 0 0 8px;
