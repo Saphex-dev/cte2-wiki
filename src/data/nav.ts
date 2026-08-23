@@ -21,7 +21,7 @@ export const RAIL: NavGroup[] = [
 		title: 'Items',
 		items: [
 			{ label: 'Overview', href: '/items/' },
-			{ label: 'Uniques' },
+			{ label: 'Uniques', href: '/items/uniques/' },
 			{ label: 'Base gear' },
 			{ label: 'Runewords' },
 			{ label: 'Support gems' },
