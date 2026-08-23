@@ -540,6 +540,151 @@ dimension ladder runs Overworld at level 1 to Twilight Forest at 100, and the ac
 is still unbuilt. If scroll depth ever maps to that ladder, the colour shift stops being
 ornament and becomes orientation.
 
+### D15 — The site is modelled on the Calamity and RLCraft wikis
+
+**The full standard is `docs/DESIGN.md`, which is authoritative for appearance.**
+This entry records the decision and what it costs; the file records the detail.
+
+Players arriving here have already used the Official Calamity Mod Wiki
+(`calamitymod.wiki.gg`) and the RLCraft Wiki (`rlcraft.fandom.com`). The site adopts
+their conventions so nobody has to learn a new interface to look up a sword.
+
+**Calamity is primary; RLCraft is secondary; Calamity wins conflicts.** They are not
+reconcilable — they give opposite answers on density, column width, nav placement,
+infobox structure and corner radius. Calamity leads because:
+
+- It is square-cornered, so the no-radius rule survives intact.
+- Its background-behind-an-opaque-frame model is exactly what D2 wants, and it
+  makes the mandated scrim structural rather than per-component.
+- Its ~1000px content column can hold a 40-row stat table. RLCraft's measures
+  roughly **330px of actual prose** once its infobox and rails are subtracted —
+  an artefact of Fandom's ad inventory, not a design decision.
+- D12 already measured Calamity as the model. This extends that finding rather
+  than reversing it.
+
+Taken from RLCraft: the banner-strip masthead, and rendering game UI literally (its
+crafting recipes are drawn as real Minecraft inventory slots).
+
+*Confidence:* `calamitymod.wiki.gg` blocks extension script execution, so computed
+values could not be read off the page. Every number in `docs/DESIGN.md` is either a
+screenshot proportion, which is scale-independent, or a target chosen for our layout
+and marked as ours. **No hex from either reference is copied** — the palette stays
+sampled from the pack (D8, D9, D13).
+
+**Three things this costs:**
+
+1. **"Big visuals, generous spacing" is retired.** Wiki density is the point of the
+   reference. The 16px grid narrows to a **macro** scale — margins, frame padding,
+   panel gaps, section rhythm — and a new **micro** scale of 2/4/8/12 governs the
+   inside of data components only. The boundary is the rule, not a general licence
+   to tighten.
+2. **D5 is demoted.** The in-game tooltip stops being the item page's hero; the
+   **infobox** is, with the tooltip as an italic block at the foot of it. D5's
+   reasoning survives — there is no per-unique art (§1.5), so frame and type must
+   carry identity — but that is now the infobox's job. `[slug].astro` inverts:
+   prose leads the main column, structured data lives in the box.
+3. **The landing page becomes a hub, not a pitch** — Calamity's grid of portal
+   boxes. This leaves the hero and `FireBand` (D14) without a rationale.
+   *Recommendation, not yet applied:* retire the hero, leave the band disabled.
+
+**One thing it makes cheaper.** D2's per-tier vignette and tint work mostly
+disappears, and the bespoke mythic backdrop becomes optional. The backdrop never
+sits behind text — only behind the page gutters.
+
+**One relaxation flagged and not applied.** `docs/PAGE_STRUCTURE.md` forbids
+implementation vocabulary reaching a reader; both references break this routinely
+(RLCraft ships `Nameid: xat:dragons_eye` as a visible infobox row). A collapsed
+*Technical details* section at the foot of an item page is idiomatic and useful to
+modders. Needs a call before it goes in.
+
+Unaffected: D1, D3, D4, D6, D7, D8, D9, D11, D12, D13, D14.
+
+### D16 — The dimension palette is read from biome sky and fog, not chosen
+
+**Built 2026-08-23.** `data/dimension_biomes.json` (new collection),
+`src/lib/backdrop.ts`, `src/components/Backdrop.astro`.
+
+D2 said backgrounds key on dimension. It did not say where the colours come
+from, and CLAUDE.md is explicit that a palette derived from the pack beats one
+we made up. They are now read out of the pack, end to end, with no per-dimension
+colour authored anywhere.
+
+**Where the numbers come from.** Every biome JSON carries `effects.sky_color`
+and `effects.fog_color` as integers. Getting from a dimension to its biomes took
+three different routes, all of them pack-stated:
+
+| Dimensions | Route |
+|---|---|
+| Overworld, Nether, End | The game's own `is_overworld` / `is_nether` / `is_end` biome tags. Vanilla dimensions are registered in Java and ship no dimension file, but the tags are the same membership list |
+| Undergarden, Otherside | `generator.biome_source.biomes[]` in the mod's dimension file |
+| Everbright, Everdawn, Twilight Forest | The mod's own membership tag (`blue_skies:everbright`, `twilightforest:in_twilight_forest`). These use custom chunk generators, so their dimension file names no biomes at all |
+
+All eight resolve; 283 biomes, zero unreadable.
+
+**Tags merge, and reading one provider loses entries.** `is_end` is provided by
+both the client jar and TheOuterEnd, and the dimension genuinely contains both
+sets — 8 biomes, not 5. This is the same class of bug `SOURCE_INVENTORY.md`
+documents for registries, and the extractor now merges providers and follows
+`#tag` references rather than taking the first hit.
+
+**Which of the two colours — decided by the pack, not by eye.** `has_skylight`
+on the dimension type is the field that makes them comparable: a dimension with
+no skylight never draws its sky, so the Nether's `sky_color` is the vanilla blue
+`#6eb1ff` and means nothing on screen. Sky for dimensions that have one, fog for
+those that do not.
+
+**Two colours, because neither aggregate works alone.** Measured, not assumed:
+
+- The **mean** across biomes is never arbitrary, but averaging chroma away left
+  the Overworld and Everbright the same blue.
+- The **modal** value keeps chroma, but the Nether's five biomes have five
+  distinct fogs, so "most common" picks one arbitrarily.
+
+So the mean is the muted `ground`, and the `accent` is the most saturated value
+**that more than one biome shares** — with a fallback to plain most-saturated
+when every biome differs. The repeat requirement rejects one-off outliers:
+Undergarden's most saturated fog is a violet used by 1 of its 16 biomes, which
+rendered the whole dimension purple. The fallback is what keeps the Nether red,
+since all five of its fogs are distinct and the most saturated is crimson
+forest's `#330303`. Across all eight dimensions this rule changes Undergarden
+and nothing else.
+
+**The hue is the pack's, the lightness is ours.** Raw values are mostly bright —
+a full-bleed `#78a7ff` behind a dark wiki is unreadable. Hue is taken verbatim;
+lightness is forced into the chrome's dark band and saturation is clamped at
+both ends. The floor stops Undergarden, whose fog is literally `#272727`, from
+rendering as flat grey; the ceiling stops a saturated dimension from glaring.
+This transform is a display decision and lives in the lib, not the extractor.
+
+**Which dimension an item wears.** Bands overlap and the pack records no drop
+location, so there is no true answer. `backdropFor()` takes the band with the
+highest `min_lvl` — the furthest into the run you could be and still find it.
+That is a display choice and nothing presents it as fact: the act ladder lights
+every band the level touches and the prose names them all. Levels 76–89 fall in
+the ladder's real gap and get no backdrop at all.
+
+**Two process notes, both against us.**
+
+1. **Schema-first was not followed.** CLAUDE.md says update `extract/README.md`
+   and `docs/EXTRACTION_MANIFEST.md` *before* writing extraction logic. This was
+   written first and documented after. The docs are now correct; the order was
+   not.
+2. **`data/dimensions.json` changed on the re-run — line endings only.** It was
+   the one file in `data/` committed with LF while the rest are CRLF, and the
+   extractor writes platform newlines. Content is byte-identical once normalised.
+   Worth fixing properly: `Path.write_text` without `newline="\\n"` means `data/`
+   is not byte-identical between a Windows run and a Linux one, which is exactly
+   what the extractor's contract promises. Not fixed here.
+
+*What this makes cheaper:* D2's per-tier vignette and tint work, and the bespoke
+mythic backdrop. The frame is opaque, so the backdrop never sits behind text and
+legibility stops depending on the art being tame.
+
+*Still open:* the backdrop is colour only. DESIGN.md's "one tileable texture per
+dimension" is not built, and the band above the frame currently shows the baked
+banner composite rather than a transparent logotype — which is D12's first ask
+of Mahjerion, still outstanding.
+
 ---
 
 ## 3. Phase order
