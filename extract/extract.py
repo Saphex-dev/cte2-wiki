@@ -322,11 +322,224 @@ def extract_talent_trees(instance: Path, lang: dict, perk_ids: set,
 
 
 # --------------------------------------------------------------------------
+# dimension biomes -- the source of the per-dimension backdrop palette
+# --------------------------------------------------------------------------
+
+# Vanilla dimensions are registered in Java and ship no `data/minecraft/dimension/`
+# file, but the game DOES ship a biome tag per dimension, which is the same
+# membership list a dimension file would name. Three entries; each is verified
+# present at extraction time and the run reports loudly if one is not.
+VANILLA_DIMENSION_BIOME_TAG = {
+    "overworld": "minecraft:is_overworld",
+    "the_nether": "minecraft:is_nether",
+    "the_end": "minecraft:is_end",
+}
+
+# Mods that own a dimension declare its biome membership one of two ways, in the
+# order tried here. Blue Skies and Twilight Forest use custom chunk generators,
+# so their dimension file names no biomes at all and the tag is the only record.
+MOD_DIMENSION_TAG_PATTERNS = ("%(ns)s:%(path)s", "%(ns)s:in_%(path)s")
+
+
+class WorldgenIndex:
+    """Biome, dimension and dimension_type JSON across the mods folder AND the
+    vanilla client jar.
+
+    Deliberately separate from JarRegistries rather than folded into it. That
+    class backs every existing collection, and adding the client jar to it would
+    put `data/minecraft/**` into registry resolution for all of them. Nothing
+    currently reads a vanilla namespace, so the output would not change today --
+    but the extractor's contract is a byte-identical re-run, and that is not a
+    guarantee worth risking for convenience.
+    """
+
+    WANTED = ("/worldgen/biome/", "/dimension/", "/dimension_type/",
+              "/tags/worldgen/biome/")
+
+    def __init__(self, instance: Path, client_jar: Path):
+        self._zips: dict[str, zipfile.ZipFile] = {}
+        # path -> [archive label], in load order. Tags MERGE across providers,
+        # so this is a list and not a single winner.
+        self._providers: dict[str, list[str]] = defaultdict(list)
+
+        for jar in sorted((instance / "mods").glob("*.jar")) + [client_jar]:
+            try:
+                z = zipfile.ZipFile(jar)
+            except (zipfile.BadZipFile, OSError) as exc:
+                print("  ! unreadable jar %s: %s" % (jar.name, exc), file=sys.stderr)
+                continue
+            used = False
+            for member in z.namelist():
+                if (member.startswith("data/") and member.endswith(".json")
+                        and any(w in member for w in self.WANTED)):
+                    self._providers[member].append(jar.name)
+                    used = True
+            if used:
+                self._zips[jar.name] = z
+            else:
+                z.close()
+
+    def load_all(self, path: str) -> list:
+        return [json.loads(self._zips[label].read(path))
+                for label in self._providers.get(path, [])]
+
+    def load_one(self, path: str):
+        found = self.load_all(path)
+        return found[0] if found else None
+
+    def source_of(self, path: str) -> str | None:
+        labels = self._providers.get(path)
+        return "%s!/%s" % (labels[0], path) if labels else None
+
+    def tag_biomes(self, tag: str, seen: set | None = None) -> list:
+        """Every biome in a tag, following `#other:tag` references.
+
+        Tags MERGE across datapacks -- `is_end` is provided by both the client
+        jar and TheOuterEnd, and the dimension really does contain both sets.
+        Reading only the first provider silently loses the rest, which is the
+        same class of bug SOURCE_INVENTORY.md documents for registries.
+        """
+        seen = set() if seen is None else seen
+        if tag in seen:
+            return []
+        seen.add(tag)
+        namespace, _, path = tag.partition(":")
+        values: list = []
+        for payload in self.load_all(
+                "data/%s/tags/worldgen/biome/%s.json" % (namespace, path)):
+            if payload.get("replace"):
+                values = []
+            for entry in payload.get("values", []):
+                entry = entry if isinstance(entry, str) else entry.get("id")
+                if not entry:
+                    continue
+                if entry.startswith("#"):
+                    values.extend(self.tag_biomes(entry[1:], seen))
+                else:
+                    values.append(entry)
+        return values
+
+    def close(self):
+        for z in self._zips.values():
+            z.close()
+
+
+def default_client_jar(instance: Path):
+    """`<curseforge>/minecraft/Install/versions/<mc>/<mc>.jar`, or the vanilla
+    launcher's copy. Derived from the instance rather than configured, so the
+    normal CurseForge layout needs no extra flag."""
+    manifest_path = instance / "manifest.json"
+    if not manifest_path.is_file():
+        return None
+    version = json.loads(manifest_path.read_text(encoding="utf8")).get(
+        "minecraft", {}).get("version")
+    if not version:
+        return None
+    for candidate in (
+        instance.parent.parent / "Install" / "versions" / version / ("%s.jar" % version),
+        Path.home() / "AppData/Roaming/.minecraft/versions" / version / ("%s.jar" % version),
+        Path.home() / ".minecraft/versions" / version / ("%s.jar" % version),
+    ):
+        if candidate.is_file():
+            return candidate
+    return None
+
+
+def extract_dimension_biomes(index: WorldgenIndex, dimension_ids) -> tuple:
+    """Per dimension: whether it renders a sky, and every biome's sky and fog.
+
+    This MIRRORS the pack and interprets nothing. Which of the two colours reads
+    as the dimension, and how a list of them becomes one backdrop colour, is a
+    display decision and lives in `src/lib/dimensions.ts` (ROADMAP D3).
+
+    `has_skylight` is carried because it is the field that makes the two colours
+    comparable at all: a dimension with no skylight never draws `sky_color`, so
+    the Nether's is the vanilla blue and means nothing on screen.
+    """
+    out = []
+    problems = []
+    for dimension_id in sorted(dimension_ids):
+        namespace, _, path = dimension_id.partition(":")
+
+        biomes, source = [], None
+        if namespace == "minecraft":
+            tag = VANILLA_DIMENSION_BIOME_TAG.get(path)
+            if tag:
+                biomes = index.tag_biomes(tag)
+                source = "tag %s" % tag
+        else:
+            dimension_file = "data/%s/dimension/%s.json" % (namespace, path)
+            payload = index.load_one(dimension_file)
+            listed = (payload or {}).get("generator", {}).get(
+                "biome_source", {}).get("biomes")
+            if listed:
+                biomes = [b["biome"] if isinstance(b, dict) else b for b in listed]
+                source = index.source_of(dimension_file)
+            else:
+                for pattern in MOD_DIMENSION_TAG_PATTERNS:
+                    tag = pattern % {"ns": namespace, "path": path}
+                    biomes = index.tag_biomes(tag)
+                    if biomes:
+                        source = "tag %s" % tag
+                        break
+
+        if not biomes:
+            problems.append("%s: no biome list found" % dimension_id)
+            continue
+
+        # The dimension_type may be named by the dimension file rather than
+        # sharing its path -- Twilight Forest's is `twilight_forest_type`.
+        type_file = "data/%s/dimension_type/%s.json" % (namespace, path)
+        dimension_type = index.load_one(type_file)
+        if dimension_type is None:
+            named = (index.load_one(
+                "data/%s/dimension/%s.json" % (namespace, path)) or {}).get("type")
+            if isinstance(named, str) and ":" in named:
+                type_ns, _, type_path = named.partition(":")
+                type_file = "data/%s/dimension_type/%s.json" % (type_ns, type_path)
+                dimension_type = index.load_one(type_file)
+        if dimension_type is None:
+            problems.append("%s: no dimension_type" % dimension_id)
+            continue
+
+        rows = []
+        for biome in sorted(set(biomes)):
+            biome_ns, _, biome_path = biome.partition(":")
+            payload = index.load_one(
+                "data/%s/worldgen/biome/%s.json" % (biome_ns, biome_path))
+            if payload is None:
+                problems.append("%s: biome %s not found" % (dimension_id, biome))
+                continue
+            effects = payload.get("effects", {})
+            rows.append({
+                "id": biome,
+                "sky_color": effects.get("sky_color"),
+                "fog_color": effects.get("fog_color"),
+            })
+
+        out.append({
+            "id": dimension_id,
+            "source": source,
+            "type_source": index.source_of(type_file),
+            "data": {
+                "has_skylight": bool(dimension_type.get("has_skylight")),
+                "has_ceiling": bool(dimension_type.get("has_ceiling")),
+                "biomes": rows,
+            },
+        })
+    return out, problems
+
+
+# --------------------------------------------------------------------------
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--instance", required=True, type=Path)
     ap.add_argument("--out", default=Path("data"), type=Path)
+    # The vanilla jar is not inside the instance -- CurseForge keeps one shared
+    # copy per Minecraft version. It is derived from the instance below; this
+    # flag is for layouts the derivation does not know about.
+    ap.add_argument("--client-jar", default=None, type=Path)
     args = ap.parse_args()
 
     instance = args.instance.resolve()
@@ -394,6 +607,35 @@ def main() -> int:
                   % ", ".join("%s x%d" % (c, unknown[c]) for c in wide[:10]), file=sys.stderr)
     index.append({"key": "talent_trees", "count": len(trees),
                   "nodes": sum(len(t["nodes"]) for t in trees)})
+
+    # Dimension biomes -- the raw material for the per-dimension backdrop
+    # (ROADMAP D2/D15). Needs the vanilla client jar as well as the mods, since
+    # three of the eight dimensions are Minecraft's own.
+    client_jar = args.client_jar or default_client_jar(instance)
+    if client_jar is None or not client_jar.is_file():
+        print("error: vanilla client jar not found; pass --client-jar. Skipping it "
+              "would make data/ depend on the machine, and the extractor "
+              "guarantees a byte-identical re-run.", file=sys.stderr)
+        jars.close()
+        return 1
+    print("Reading worldgen (mods + %s)..." % client_jar.name)
+    worldgen = WorldgenIndex(instance, client_jar)
+    dimension_ids = [e["id"] for e in json.loads(
+        (args.out / "dimensions.json").read_text(encoding="utf8"))
+        if e["id"] != "default"]
+    dim_biomes, dim_problems = extract_dimension_biomes(worldgen, dimension_ids)
+    worldgen.close()
+    (args.out / "dimension_biomes.json").write_text(
+        json.dumps(dim_biomes, indent=2, ensure_ascii=False), encoding="utf8")
+    for entry in dim_biomes:
+        rows = entry["data"]["biomes"]
+        print("  dim:%-32s %3d biomes  skylight=%-5s  via %s"
+              % (entry["id"], len(rows), entry["data"]["has_skylight"], entry["source"]))
+    for problem in dim_problems:
+        print("  ! %s" % problem, file=sys.stderr)
+    index.append({"key": "dimension_biomes", "count": len(dim_biomes),
+                  "biomes": sum(len(e["data"]["biomes"]) for e in dim_biomes),
+                  "unresolved": len(dim_problems)})
 
     jars.close()
 

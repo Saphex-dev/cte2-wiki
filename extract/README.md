@@ -53,7 +53,8 @@ Getting that order wrong publishes wrong numbers, so it is centralized in
 
 ## What gets extracted
 
-5,869 entries across 37 collections, plus 3 talent trees (1,786 placed nodes).
+5,869 entries across 37 collections, plus 3 talent trees (1,786 placed nodes) and
+8 dimensions' biome colours (283 biomes).
 Full breakdown in [`docs/EXTRACTION_MANIFEST.md`](../docs/EXTRACTION_MANIFEST.md);
 where each source lives, in [`docs/SOURCE_INVENTORY.md`](../docs/SOURCE_INVENTORY.md).
 
@@ -74,6 +75,43 @@ i j v l h m` on the talent and atlas trees, `X O Y K` on ascendancy, `[CENTER]` 
 three — so glyphs are identified by *not* resolving against the perk registry rather
 than by an allowlist. An allowlist rots the moment the pack adds a glyph, and each
 unrecognised one becomes a phantom perk.
+
+### Dimension biomes
+
+`data/dimension_biomes.json` holds, per dimension, whether it renders a sky and
+every one of its biomes' raw `sky_color` and `fog_color`. It is the source of the
+per-dimension page backdrop (ROADMAP D16). 8 dimensions, 283 biomes.
+
+It **mirrors and interprets nothing** — which of the two colours reads as the
+place, and how a list of them becomes one backdrop, is a display decision and
+lives in `src/lib/backdrop.ts` (D3).
+
+Three things make it different from every other collection:
+
+- **It needs the vanilla client jar**, not just `mods/`. Three of the eight
+  dimensions are Minecraft's own. The path is derived from the instance and the
+  manifest's Minecraft version; `--client-jar` overrides it. The run **fails**
+  rather than skipping vanilla, because skipping would make `data/` depend on
+  the machine it was extracted on.
+- **It reads worldgen through its own index**, `WorldgenIndex`, not through
+  `JarRegistries`. Adding the client jar to the latter would put
+  `data/minecraft/**` into registry resolution for every existing collection.
+  Nothing reads a vanilla namespace today so the output would not change — but
+  the contract here is a byte-identical re-run, and that is not a guarantee to
+  risk for convenience.
+- **Tags merge across providers.** `is_end` is provided by both the client jar
+  and TheOuterEnd, and the dimension really does contain both sets: 8 biomes,
+  not 5. Providers are merged in load order, `replace: true` resets, and `#tag`
+  references are followed. Reading only the first provider silently loses
+  entries — the same failure mode described under *How it reads the pack*.
+
+Getting from a dimension to its biomes takes three routes, all pack-stated:
+
+| Dimensions | Route |
+|---|---|
+| Overworld, Nether, End | the `is_overworld` / `is_nether` / `is_end` biome tags — vanilla dimensions ship no dimension file |
+| Undergarden, Otherside | `generator.biome_source.biomes[]` in the mod's dimension file |
+| Everbright, Everdawn, Twilight Forest | the mod's own membership tag — these use custom chunk generators, so their dimension file names no biomes |
 
 ## Entry shape
 

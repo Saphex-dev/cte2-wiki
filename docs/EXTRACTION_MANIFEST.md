@@ -86,6 +86,38 @@ cited inline.
 The bands **overlap** (10–15 is both Overworld and Nether) and leave a **gap** —
 nothing covers 76–89. Both are the pack's, not an extraction artefact.
 
+### `dimension_biomes` — 8 dimensions, 283 biomes
+
+Per dimension: `has_skylight`, `has_ceiling`, and every biome's raw
+`effects.sky_color` and `effects.fog_color`. The source of the page backdrop
+(ROADMAP D16). Mirrors only — the palette is derived site-side in
+`src/lib/backdrop.ts`.
+
+| Dimension | Biomes | Sky? | Membership from |
+|---|---:|---|---|
+| `minecraft:overworld` | 206 | yes | tag `minecraft:is_overworld` |
+| `minecraft:the_nether` | 5 | no | tag `minecraft:is_nether` |
+| `minecraft:the_end` | 8 | no | tag `minecraft:is_end` |
+| `undergarden:undergarden` | 16 | no | dimension file `biome_source` |
+| `deeperdarker:otherside` | 4 | no | dimension file `biome_source` |
+| `blue_skies:everbright` | 12 | yes | tag `blue_skies:everbright` |
+| `blue_skies:everdawn` | 11 | yes | tag `blue_skies:everdawn` |
+| `twilightforest:twilight_forest` | 21 | yes | tag `twilightforest:in_twilight_forest` |
+
+All eight resolve; **zero unreadable biomes**.
+
+Three notes worth carrying:
+
+- **This collection needs the vanilla client jar.** Three dimensions are
+  Minecraft's own and ship no dimension file — the game's biome tags are the
+  membership list. The jar path is derived from the instance; the run fails
+  rather than silently omitting vanilla.
+- **The Overworld's 206 biomes are not a bug.** `is_overworld` merges across
+  every provider, so Terralith and Oh The Biomes We've Gone are in there. The
+  pack's overworld really does contain them.
+- **`is_end` is 8, not vanilla's 5** — TheOuterEnd adds three. Tags merge; a
+  reader that takes the first provider loses the rest.
+
 ## Endgame & Atlas
 
 | Collection | Count | Named |
