@@ -14,6 +14,7 @@
    Nothing is hand-typed — see CLAUDE.md § Never invent pack data. */
 import '../styles/tokens.css';
 import Banner from '../components/Banner.astro';
+import ActLadder from '../components/ActLadder.astro';
 
 import index from '../../data/_index.json';
 import uniquesData from '../../data/uniques.json';
@@ -709,6 +710,18 @@ const description =
 									</span>
 								</li>
 							</ul>
+						</div>
+					</section>
+
+					<section class="panel portal wide-panel" data-panel data-static>
+						<h2 class="ptitle">The Run</h2>
+						<div class="pbody">
+							<p class="phint">
+								Every dimension carries its own level band, and the pack sets
+								them: mobs scale to the band, not to you. The bands overlap, and
+								nothing covers 76–89.
+							</p>
+							<ActLadder />
 						</div>
 					</section>
 

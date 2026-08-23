@@ -47,6 +47,16 @@ REGISTRIES = [
     dict(key="weapon_types",  dir=f"{MMORPG}/mmorpg_weapon_type",     id_field="id"),
     dict(key="value_calcs",   dir=f"{MMORPG}/mmorpg_value_calc",      id_field="id"),
 
+    # --- world ---
+    # Dimension level bands: the pack's own progression ladder, and the source
+    # of the act ladder on the site. No name_key: the display names live in the
+    # individual mods' lang files (dimension.minecraft.overworld,
+    # generator.blue_skies.everbright, ...), and LANG_SOURCES deliberately reads
+    # only Mine and Slash plus the pack's resources.zip. Widening it would
+    # re-resolve names across all 36 existing collections, so these stay
+    # `derived` and are titled site-side instead.
+    dict(key="dimensions",    dir=f"{MMORPG}/mmorpg_dimension",       id_field="dimension_id"),
+
     # --- endgame / atlas ---
     dict(key="map_affixes",   dir=f"{MMORPG}/mmorpg_map_affix",       id_field="id"),
     dict(key="mob_affixes",   dir=f"{MMORPG}/mmorpg_mob_affix",       id_field="id",
