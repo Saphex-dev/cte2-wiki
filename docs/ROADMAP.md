@@ -316,15 +316,49 @@ Therefore:
 from a plain rule on screen, so the element the brief calls the signature was doing no
 work at all.
 
-### D10 — Press Start 2P is a logotype, not a typeface
+### D10 — Press Start 2P is the display face; Plex keeps body and stat lines
 
-Press Start 2P sets the wordmark. It sets nothing else, ever.
+**Revised 2026-08-22, same day.** D10 originally confined Press Start 2P to the
+wordmark. That was overruled deliberately: the blocky face is the character of the
+site, so it now carries headings, panel titles, nav, group labels and item names as
+well as the mark. Monocraft is demoted to a fallback behind it and is no longer
+blocking (D7's install task stands, but nothing waits on it).
 
-*Why the hard line:* it is effectively caps-only and extremely wide — fine for six
-words locked into a mark, punishing for a heading, unusable for a stat line. Monocraft
-remains the display face (D7) and the Plex family keeps body and numerics. Without the
-rule written down, someone reasonably sets an `h2` in the logo font and the line length
-falls apart.
+**Where the line actually falls, and why it is a measurement rather than a taste.**
+Press Start 2P advances a full em per glyph — every character is a square box — so a
+string is roughly 1.7× the width it would be in Plex Mono. Against the 1,151 real stat
+names at 13px:
+
+| | median | p90 | longest |
+|---|---|---|---|
+| Press Start 2P | 325px | 728px | 1,859px |
+| IBM Plex Mono | 195px | 437px | 1,115px |
+
+The content column is about 640px, so at p90 the line is already wider than the column.
+Rendered, a *median-length* stat name — "Physical as Added Lightning Damage" — wraps to
+**three lines** inside an item card, and the 143-character longest would run to roughly
+twelve. Nav labels overflow their rail, and the rarity ladder breaks onto two rows.
+
+So: **body prose and stat lines stay on the Plex family.** Not as a style preference —
+the stat tables are the reason players visit, and a face that triples their height is
+not serving them. Revisit if a narrower blocky face is found that holds up at 13px.
+
+Two smaller rules that fall out of the same fact:
+
+- **Small labels in narrow columns stay on mono.** "Weapons and offhand" in the display
+  face is ~255px inside a 128px column. Anything under ~12px in a constrained column
+  belongs to `--font-mono`.
+- **Never ask for a weight Press Start 2P does not have.** It ships one. Requesting 600
+  makes the browser synthesise a bold and smears the pixel grid. Likewise
+  `letter-spacing` must stay at `normal` — fractional tracking puts stems between
+  pixels.
+
+*The wordmark should still ship as SVG.* The current component reproduces the outer
+rim, dark outline and glow with `-webkit-text-stroke`, `paint-order` on HTML text and a
+`z-index:-1` pseudo-element — Chrome-favouring, fragile against stacking contexts, and
+unable to draw the inner line that gives the original glyphs their neon-tube
+cross-section. A wordmark also has to survive as a favicon, an OG image, a README
+banner and a Discord embed, none of which run CSS.
 
 *The wordmark should ship as SVG, not CSS.* The current study reproduces the outer
 rim, the dark outline and the glow with `-webkit-text-stroke`, `paint-order` on HTML
@@ -333,6 +367,178 @@ contexts, and unable to reproduce the inner dark line that gives the original gl
 their neon-tube cross-section. More decisively, a wordmark has to work as a favicon, an
 OG image, a README banner and a Discord embed, none of which run CSS. As an asset it is
 portable and pixel-exact; as a runtime effect it is neither.
+
+### D11 — The pixel face is reserved for two roles
+
+`--font-pixel` (Press Start 2P) sets **the wordmark** and **an item's own name**.
+Nothing else. Not panel titles, not nav, not section headings, not labels.
+Structural display goes to `--font-display`; body and stat text to the Plex family.
+
+*Why, after D10 briefly put it everywhere:* applied across six levels of hierarchy —
+hero heading, panel titles, nav, group labels, playstyle names, item names — the face
+stopped reading as an accent and became the page's body texture. The result looked
+cartoony. Character comes from contrast, and at six levels there was nothing left to
+contrast against. Press Start 2P's caps also fill nearly the whole em where Plex Sans
+fills about 70%, so 16px of it reads like 22px of a normal face and everything shouts
+at once.
+
+*Why by role and not by keyword:* the alternative considered was stylising selected
+words. That means someone decides which words are special on every page — hand-tagging,
+which does not survive three hundred item pages. A role is automatic: "an item's name
+is blocky" needs no human judgement and holds across the whole item set.
+
+*Why these two roles specifically:* the item name is the single most important string
+on an item page and the thing players scan for, so making it the loudest element is
+semantic rather than decorative. And both roles are short and can afford the width.
+
+*Sizing rule:* pixel text sits at multiples of 8 — 8, 16, 24, 32. The face is drawn on
+an 8px grid and interpolates at anything between, which reads as cheap rather than
+small. Item names are 16px for this reason. It also ships one weight, so never request
+a bold, and `letter-spacing` stays `normal`.
+
+**This supersedes D10's promotion of the face to display duty.** The width measurement
+recorded in D10 stands and is why body and stat text were never in scope.
+
+### D12 — The pack owns the logo; the wiki owns the chrome
+
+**Mahjerion's logotype is the only mark on the page.** The wiki names itself in text.
+Our identity comes from palette, layout, density, typography and icons — never from a
+second logo competing with his.
+
+*Measured from the Official Calamity Mod Wiki* rather than recalled, since it is the
+model this site was already built against:
+
+| | |
+|---|---|
+| Brand band | 2545 × 240px — **10.6 : 1** |
+| Backdrop | `Site-background.jpg` on `body`, `cover`, `50% 0%`, `no-repeat`, fallback `#43100E` |
+| Marks on the page | **one** — the mod logotype. No wiki wordmark anywhere |
+| Wiki's own name | plain text: "Welcome to the Official Calamity Mod Wiki" |
+| Chrome | thin borders, dense 3–4 column link lists, one accent border on the welcome panel |
+| Texture | hundreds of 16px sprite icons, not large artwork |
+
+Two structural lessons. The atmosphere is a **page-level backdrop with the logo floating
+over it**, not a composite image in a box — so it bleeds full width and content sits on
+top. And the chrome below is deliberately plain: all the brand spend goes into one band.
+
+*Why this settles our two-marks problem, and in which direction:* the pixel `CTE2`
+wordmark was designed from the icon's **palette** before anyone had seen Mahjerion's
+**logotype**, which is ornate and metallic and nothing like pixel art. Two visual
+languages 40px apart read as two projects. Since the goal is to become the official
+CTE2 wiki, the resolution is the one an official wiki always takes: inherit the parent
+brand, express yourself in chrome.
+
+**The pixel mark survives as the favicon only.** At tab size an ornate logotype is
+illegible, and a four-glyph wordmark in a row would be four pixels per glyph — so it is
+stacked 2×2. `public/favicon.svg` is generated by `scripts/genfavicon.py` from the real
+Press Start 2P glyph bitmaps, read out of the font by rendering each glyph to a canvas
+and downsampling to the face's native 8px grid. The colours come from the same ramp as
+the wordmark and land on `#844dec #844dec #9545ec #c730ed`, identical to the compact
+lockup in the original study. Verified rendering at 256/64/32/16px.
+
+*Banner sizing is measured, not chosen.* The source is 560×300 and the logo's pixels
+occupy rows 114–181, so a centred crop can reach **7.78 : 1** before it cuts
+letterforms. The slot runs at 7 : 1, leaving about 4px of margin. Anything shorter needs
+a different asset.
+
+**Two asks of Mahjerion, both blocking the better architecture:**
+
+1. **The logotype as a transparent PNG**, separate from the scene. With the logo on its
+   own, the band can be any height and the atmosphere can move to a page backdrop the
+   way Calamity does it. The baked composite is what forces the box.
+2. **A higher-resolution source.** 560px is upscaled about 2× at the content column and
+   is visibly soft.
+
+### D13 — Colour is applied where the pack applies it, not where a word feels important
+
+**Supersedes the exclusivity clause in D8.** The question "can we colour the important
+words" has a data answer: **the pack already decides which words are coloured and what
+colour they are.**
+
+`stats.json` carries `data.format` on **619 of 1,151** stats, naming a Minecraft chat
+colour:
+
+| format | count | what it marks |
+|---|---:|---|
+| aqua | 572 | the default for stat text |
+| red | 26 | damage over time, leech and steal, attack and crit damage |
+| green | 10 | durations, regen, projectile speed |
+| yellow | 9 | healing, crit chance |
+| blue | 2 | area damage |
+
+Rarities carry `text_format`, and so do `gems` (72), `mob_affixes` (25),
+`mob_rarities` (10) and `relic_rarities` (6). None of it needs inventing.
+
+**D8 said rarity colours were reserved to rarity and could never appear elsewhere. That
+was wrong about how the pack works.** The pack formats text by naming one of Minecraft's
+16 chat colours and reuses them across systems — AQUA is both the `rare` rarity *and*
+the colour of 572 stat lines. The overlap is the game's, not ours.
+
+So the test is provenance, not exclusivity: **did a registry tell us to use this colour
+here?** Aqua on a stat line is the pack's instruction and matches what the player sees
+in their inventory. Aqua on a panel heading is a designer's whim wearing a pack colour's
+clothes — still forbidden, and still the actual defect D8 was reacting to.
+
+*A correction this forces:* the D8 pass moved stat values off aqua onto `--ink`, on the
+reasoning that aqua was a borrowed rarity colour. The colour was right and the source
+was wrong — it pointed at `--r-rare` rather than at the stat's own format. Stat text is
+aqua again, now driven by `data.format`.
+
+**Where hand-picked emphasis is still legitimate.** Generated content — stat lines, item
+names, rarities — is coloured from data and never by hand; that is what survives three
+hundred pages. Hand-written prose is finite, so editorial emphasis there is fine, but it
+uses **weight and brightness, not hue**. Hue means something on this site. Reserving it
+keeps the meaning readable.
+
+*Known gap:* 532 stats carry no format, almost all of them the code-origin stats that
+ship an empty `data` object — the same 353 that block unit rendering in §4.5. They fall
+back to aqua, which 92% of formatted stats use. That fallback is derived, not
+pack-stated (D4), and closing it needs the same unmapped `mmorpg_stat_effect` registry.
+
+### D14 — The fire band is the landing page's alone *(built, currently disabled)*
+
+> **Disabled 2026-08-22**, same day it was built, pending a decision on what earns the
+> bottom of the viewport. `FireBand.astro` is intact and re-enabling is one import plus
+> one tag. Everything below still applies if it comes back.
+
+A Minecraft-style fire animation runs along the bottom eighth of the viewport on the
+landing page, cross-fading from ember orange to void violet as the reader scrolls.
+
+*The palette is extracted, not chosen.* It is the modal colour of each luminance band
+of vanilla `assets/minecraft/textures/block/fire_0.png` — the 16×512, 32-frame
+animation strip — read out of the 1.20.1 client jar:
+
+`#b64800` `#bb5100` `#d28108` `#dfa21a` `#eecc54` `#ffffff`
+
+The violet end is built from the brand palette sampled from Mahjerion's icon.
+Deliberately **not** `--mc-dark-purple` — that hex is the mythic rarity, and a rarity
+colour spent on decoration is exactly what D13 still forbids.
+
+**Landing page only. It must not follow us onto item pages.** Three reasons:
+
+1. D2 already gives item pages a background system keyed to dimension. Two competing
+   atmospheres on one page is one too many.
+2. D12's lesson from Calamity is that the brand spend goes into *one* place and the
+   chrome stays plain. The landing page is the pitch surface and gets to be loud; three
+   hundred reference pages do not.
+3. A permanent animation on every page is a battery cost paid by someone reading a stat
+   table.
+
+*Implementation constraints, all load-bearing:*
+
+- **The cellular fire automaton on a canvas sized in whole 8px cells**, upscaled with
+  `image-rendering: pixelated`. A CSS gradient would be smooth, and smooth is wrong —
+  the point is that it is actually blocky. Cost is a few thousand cell updates a frame.
+- **`prefers-reduced-motion` gets one settled static frame and no animation loop.**
+- The loop also halts on `document.hidden` and when the band leaves the viewport.
+- **Anything sitting over the band carries its own scrim.** The footer is the only such
+  block and now has one; without it the flames ate the text outright. This is the
+  brief's non-negotiable rule, and it bit immediately.
+
+*Worth designing toward:* the orange→violet descent is decoration today, but the
+dimension ladder runs Overworld at level 1 to Twilight Forest at 100, and the act ladder
+is still unbuilt. If scroll depth ever maps to that ladder, the colour shift stops being
+ornament and becomes orientation.
 
 ---
 

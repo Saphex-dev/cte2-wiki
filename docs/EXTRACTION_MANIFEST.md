@@ -2,7 +2,7 @@
 
 **Craft to Exile 2** v2.0.4 "Atlas Update" · Minecraft 1.20.1 / Forge 47.4.22 · 405 mods
 
-**5,860 entries · 36 collections · 3 talent trees (1,786 placed nodes) · 7.8 MB JSON**
+**5,869 entries · 37 collections · 3 talent trees (1,786 placed nodes) · 7.8 MB JSON**
 
 Regenerate with `python extract/extract.py --instance "<path>" --out data/`.
 
@@ -53,6 +53,38 @@ Minstrel, Rogue, Shaman, Elementalist, Warlock, Fighter, Cryolancer, Sanguimance
 | `gear_slots` | 23 | 23 | holds weapon types alongside armour slots |
 | `runes` | 22 | 0 | |
 | `weapon_types` | 13 | 0 | |
+
+## World
+
+| Collection | Count | Named | Notes |
+|---|---:|---:|---|
+| `dimensions` | 9 | 0 | level bands per dimension — the pack's progression ladder |
+
+`dimensions` is the source of the act ladder. Eight are real places; the ninth,
+`default`, is the mod's catch-all for any dimension without its own config and should
+be filtered out of anything player-facing.
+
+Names are `derived` and deliberately so. The pack does not translate dimension names —
+each mod does, under its own key (`dimension.minecraft.overworld`,
+`generator.blue_skies.everbright`, `dimension.twilightforest.twilight_forest`) — and
+`registry_map.LANG_SOURCES` reads only Mine and Slash plus the pack's `resources.zip`.
+Widening it to reach those keys would re-resolve names across all 37 collections, so
+titles are hand-written site-side in `ActLadder.astro`, each quoted from a lang key and
+cited inline.
+
+| Dimension | Levels | `mob_tier` |
+|---|---|---:|
+| `minecraft:overworld` | 1–15 | 0 |
+| `minecraft:the_nether` | 10–30 | 0 |
+| `undergarden:undergarden` | 25–40 | 1 |
+| `blue_skies:everbright` | 35–55 | 1 |
+| `blue_skies:everdawn` | 35–55 | 1 |
+| `minecraft:the_end` | 50–65 | 2 |
+| `deeperdarker:otherside` | 60–75 | 2 |
+| `twilightforest:twilight_forest` | 90–100 | 3 |
+
+The bands **overlap** (10–15 is both Overworld and Nether) and leave a **gap** —
+nothing covers 76–89. Both are the pack's, not an extraction artefact.
 
 ## Endgame & Atlas
 
@@ -154,7 +186,6 @@ jar / pack:
 | `ancient_obelisks_obelisk` | 1 / 5 | obelisk events |
 | `the_harvest_harvest_arena` | 2 / 6 | Harvest arenas |
 | `mmorpg_atlas_layout` | 1 / 1 | Atlas map layout |
-| `mmorpg_dimension` | 4 / 8 | |
 
 ## Not yet extracted
 

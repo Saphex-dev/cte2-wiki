@@ -294,6 +294,18 @@
       ]
     },
     {
+      "key": "dimensions",
+      "count": 9,
+      "lang_named": 0,
+      "from_pack": 8,
+      "from_mod": 1,
+      "from_code": 0,
+      "overridden": 3,
+      "hidden": 0,
+      "excluded": 0,
+      "groups": []
+    },
+    {
       "key": "map_affixes",
       "count": 77,
       "lang_named": 0,

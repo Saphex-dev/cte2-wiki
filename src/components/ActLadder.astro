@@ -1,0 +1,165 @@
+---
+/* The act ladder — where the run goes, drawn from the pack's own dimension
+ * level bands (`data/dimensions.json`, from `mmorpg_dimension`).
+ *
+ * Drawn as bands on a 1..100 level axis rather than as a row of swatches,
+ * because the bands are the interesting part: they OVERLAP (levels 10-15 are
+ * both Overworld and Nether) and they leave a GAP (nothing covers 76-89). A
+ * row of evenly-spaced swatches would quietly assert a tidy sequence the pack
+ * does not actually have.
+ *
+ * `default` is excluded: it is the mod's catch-all for any dimension without
+ * its own config, not a place you can go.
+ *
+ * Display names are hand-written here rather than extracted. The pack does not
+ * translate dimension names — each mod does, under its own key — and
+ * `registry_map.LANG_SOURCES` deliberately reads only Mine and Slash plus the
+ * pack's resources.zip, so widening it to reach them would re-resolve names
+ * across all 37 collections. Every title below is quoted from a lang key,
+ * cited inline; none is invented.
+ */
+import dimensionsData from '../../data/dimensions.json';
+
+type Dimension = {
+	id: string;
+	data: {
+		dimension_id?: string;
+		min_lvl?: number;
+		max_lvl?: number;
+		mob_tier?: number;
+		mob_strength_multi?: number;
+	};
+};
+
+const TITLES: Record<string, string> = {
+	'minecraft:overworld': 'Overworld', //           dimension.minecraft.overworld
+	'minecraft:the_nether': 'The Nether', //         dimension.minecraft.the_nether
+	'undergarden:undergarden': 'Undergarden', //     dungeon_realm.words.map_name_undergarden
+	'blue_skies:everbright': 'Everbright', //        generator.blue_skies.everbright
+	'blue_skies:everdawn': 'Everdawn', //            generator.blue_skies.everdawn
+	'minecraft:the_end': 'The End', //               dimension.minecraft.the_end
+	'deeperdarker:otherside': 'Otherside', //        advancements.deeperdarker.explore_otherside
+	'twilightforest:twilight_forest': 'Twilight Forest', // dimension.twilightforest.twilight_forest
+};
+
+const MIN = 1;
+const MAX = 100;
+
+const rungs = (dimensionsData as Dimension[])
+	.filter((d) => TITLES[d.id])
+	.map((d) => {
+		const lo = d.data.min_lvl ?? MIN;
+		const hi = d.data.max_lvl ?? MAX;
+		return {
+			id: d.id,
+			title: TITLES[d.id],
+			lo,
+			hi,
+			tier: d.data.mob_tier ?? 0,
+			multi: d.data.mob_strength_multi ?? 1,
+			left: ((lo - MIN) / (MAX - MIN)) * 100,
+			width: ((hi - lo) / (MAX - MIN)) * 100,
+		};
+	})
+	.sort((a, b) => a.lo - b.lo || a.hi - b.hi);
+
+const ticks = [1, 25, 50, 75, 100];
+---
+
+<section class="ladder" aria-label="Dimension level bands">
+	<ol>
+		{
+			rungs.map((r) => (
+				<li style={`--lo:${r.left}%; --w:${r.width}%; --tier:${r.tier}`}>
+					<span class="name">{r.title}</span>
+					<span class="track" aria-hidden="true">
+						<span class="band" />
+					</span>
+					<span class="lvl">
+						{r.lo}–{r.hi}
+					</span>
+				</li>
+			))
+		}
+	</ol>
+	<div class="axis" aria-hidden="true">
+		{ticks.map((t) => <span style={`--at:${((t - MIN) / (MAX - MIN)) * 100}%`}>{t}</span>)}
+	</div>
+</section>
+
+<style>
+	.ladder ol {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.ladder li {
+		display: grid;
+		grid-template-columns: 132px minmax(0, 1fr) 60px;
+		align-items: center;
+		gap: var(--s1);
+		padding: 3px 0;
+	}
+	.name {
+		font-size: 13px;
+		color: var(--ink-dim);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.track {
+		position: relative;
+		display: block;
+		height: 10px;
+		background: var(--bg-deep);
+		box-shadow:
+			inset 1px 1px 0 var(--bevel-dark),
+			inset -1px -1px 0 var(--bevel-light);
+	}
+	/* Bar brightness climbs with the pack's own mob_tier, so the visual weight
+	   tracks a real field rather than a decorative ramp. */
+	.band {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: var(--lo);
+		width: var(--w);
+		min-width: 3px;
+		background: var(--accent);
+		opacity: calc(0.42 + var(--tier) * 0.19);
+	}
+	.lvl {
+		font-family: var(--font-mono);
+		font-size: 12px;
+		color: var(--ink-faint);
+		text-align: right;
+	}
+	.axis {
+		position: relative;
+		height: 18px;
+		margin-left: calc(132px + var(--s1));
+		margin-right: calc(60px + var(--s1));
+		border-top: 1px solid var(--line);
+		margin-top: 6px;
+	}
+	.axis span {
+		position: absolute;
+		left: var(--at);
+		transform: translateX(-50%);
+		top: 4px;
+		font-family: var(--font-mono);
+		font-size: 11px;
+		color: var(--ink-fainter);
+	}
+
+	@media (max-width: 640px) {
+		.ladder li {
+			grid-template-columns: 96px minmax(0, 1fr) 52px;
+			gap: 8px;
+		}
+		.axis {
+			margin-left: calc(96px + 8px);
+			margin-right: calc(52px + 8px);
+		}
+	}
+</style>

@@ -257,6 +257,9 @@ vocabulary controlled — a new tag needs a deliberate decision, not an ad-hoc s
 
 - `docs/ROADMAP.md` — decisions and the data audit behind them, plus phase order.
   Written later than this file; where the two disagree, reconcile them
+- `docs/PACK_OVERVIEW.md` — what the pack contains, by system, with counts
+- `docs/PAGE_STRUCTURE.md` — how those systems become pages, and the rule that no
+  implementation vocabulary ever reaches a reader
 - `extract/README.md` — how extraction works, entry shape, gotchas
 - `docs/EXTRACTION_MANIFEST.md` — what exists: counts, named vs derived, join health,
   unmapped registries

@@ -1,0 +1,109 @@
+---
+/* The CTE2 wordmark.
+ *
+ * Letterforms are Press Start 2P, via `--font-pixel`. That token is reserved
+ * for exactly two roles — this mark, and an item's own name (ROADMAP § D11).
+ * Do not reach for it for a heading, a label or a panel title.
+ *
+ * The violet -> magenta ramp is not spread evenly across the glyphs. It holds
+ * brand violet for the first 55% of the mark and eases to magenta over the
+ * remaining 45%, which is what makes the two-line hero and the single-line
+ * header read as the same mark rather than two different gradients.
+ *
+ * That easing is not invented: solving it against the hand-tuned hexes in the
+ * original wordmark study reproduces every one of them exactly — CRAFT TO
+ * EXILE 2 gives #894BEC #9545EC #A240EC #AE3BED #BB35ED #C730ED, and CTE2
+ * gives #844DEC #844DEC #9545EC #C730ED. Change the constants and you are
+ * drawing a different mark.
+ */
+interface Props {
+	/** The mark itself. Spaces are rendered as gaps, not glyphs. */
+	text: string;
+	/** Glyph size in px. The mark is square-advance, so width ~= size * length. */
+	size?: number;
+	/** Where this glyph sits in a multi-line lockup, 0..1. Defaults to the
+	 *  component's own span, so a one-line mark ramps across itself. */
+	from?: number;
+	to?: number;
+	class?: string;
+}
+
+const { text, size = 24, from = 0, to = 1, class: className = '' } = Astro.props;
+
+const VIOLET = [0x84, 0x4d, 0xec];
+const MAGENTA = [0xc7, 0x30, 0xed];
+const HOLD = 0.55; // ramp starts here
+const SPAN = 0.45; // and completes at 1.0
+
+const hex = (n: number) => n.toString(16).padStart(2, '0');
+
+function tint(t: number): string {
+	const e = Math.min(1, Math.max(0, (t - HOLD) / SPAN));
+	const c = VIOLET.map((v, i) => Math.round(v + e * (MAGENTA[i] - v)));
+	return `#${c.map(hex).join('')}`;
+}
+
+/* Spaces occupy width but take no colour stop, so the ramp is distributed
+   across glyphs rather than across raw string positions. */
+const chars = [...text];
+const glyphs = chars.filter((c) => c !== ' ');
+const last = Math.max(1, glyphs.length - 1);
+
+let seen = -1;
+const rendered = chars.map((ch) => {
+	if (ch === ' ') return { ch, colour: null };
+	seen += 1;
+	const local = seen / last;
+	return { ch, colour: tint(from + local * (to - from)) };
+});
+---
+
+<span class={`wm ${className}`} style={`--wm-size:${size}px`} role="img" aria-label={text}>
+	{
+		rendered.map(({ ch, colour }) =>
+			colour === null ? (
+				<span class="wm-sp" aria-hidden="true"></span>
+			) : (
+				<span class="wm-g" style={`--c:${colour}`} data-ch={ch} aria-hidden="true">
+					{ch}
+				</span>
+			)
+		)
+	}
+</span>
+
+<style>
+	.wm {
+		font-family: var(--font-pixel);
+		font-size: var(--wm-size);
+		line-height: 1.5;
+		white-space: nowrap;
+		display: inline-block;
+	}
+	.wm-g {
+		position: relative;
+		display: inline-block;
+		color: var(--c);
+		-webkit-text-stroke: 0.055em var(--stroke);
+		paint-order: stroke fill;
+	}
+	/* The outer rim and glow. Sits behind the face so the dark outline stays
+	   crisp. A pseudo-element rather than a filter on the glyph itself,
+	   because the face must not pick up the blur. */
+	.wm-g::before {
+		content: attr(data-ch);
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -1;
+		color: transparent;
+		-webkit-text-stroke: 0.17em color-mix(in srgb, var(--c) 42%, var(--brand-lavender));
+		paint-order: stroke fill;
+		filter: drop-shadow(0 0 0.16em var(--c))
+			drop-shadow(0 0 0.42em color-mix(in srgb, var(--c) 70%, transparent));
+	}
+	.wm-sp {
+		display: inline-block;
+		width: 0.6em;
+	}
+</style>

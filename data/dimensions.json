@@ -1,0 +1,279 @@
+[
+  {
+    "id": "blue_skies:everbright",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_dimension/blue_skies_everbright.json",
+    "data": {
+      "all_drop_multi": 1.0,
+      "dimension_id": "blue_skies:everbright",
+      "exp_multi": 1.0,
+      "max_lvl": 55,
+      "min_lvl": 35,
+      "mob_lvl_per_distance": 100,
+      "mob_strength_multi": 1.3,
+      "mob_tier": 1,
+      "scale_to_nearest_player": true,
+      "min_lvl_area": 100,
+      "secondary_lvl_range": {
+        "max": 85,
+        "min": 65
+      },
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Blue Skies:Everbright",
+    "name_source": "derived"
+  },
+  {
+    "id": "blue_skies:everdawn",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_dimension/blue_skies_everdawn.json",
+    "data": {
+      "all_drop_multi": 1.0,
+      "dimension_id": "blue_skies:everdawn",
+      "exp_multi": 1.0,
+      "max_lvl": 55,
+      "min_lvl": 35,
+      "mob_lvl_per_distance": 100,
+      "mob_strength_multi": 1.3,
+      "mob_tier": 1,
+      "scale_to_nearest_player": true,
+      "min_lvl_area": 100,
+      "secondary_lvl_range": {
+        "max": 85,
+        "min": 65
+      },
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Blue Skies:Everdawn",
+    "name_source": "derived"
+  },
+  {
+    "id": "deeperdarker:otherside",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_dimension/deeperdarker_otherside.json",
+    "data": {
+      "all_drop_multi": 1.0,
+      "dimension_id": "deeperdarker:otherside",
+      "exp_multi": 1.0,
+      "max_lvl": 75,
+      "min_lvl": 60,
+      "mob_lvl_per_distance": 100,
+      "mob_strength_multi": 1.5,
+      "mob_tier": 2,
+      "scale_to_nearest_player": true,
+      "min_lvl_area": 100,
+      "secondary_lvl_range": {
+        "max": 95,
+        "min": 75
+      },
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Deeperdarker:Otherside",
+    "name_source": "derived"
+  },
+  {
+    "id": "default",
+    "group": null,
+    "origin": "mod",
+    "source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_dimension/default.json",
+    "data": {
+      "all_drop_multi": 1.0,
+      "dimension_id": "default",
+      "exp_multi": 1.0,
+      "max_lvl": 100,
+      "min_lvl": 1,
+      "min_lvl_area": 100,
+      "mob_lvl_per_distance": 100,
+      "mob_strength_multi": 1.0,
+      "mob_tier": 0,
+      "scale_to_nearest_player": true,
+      "secondary_lvl_range": {
+        "max": -1,
+        "min": -1
+      },
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Default",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:overworld",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_dimension/minecraft_overworld.json",
+    "data": {
+      "all_drop_multi": 1.0,
+      "dimension_id": "minecraft:overworld",
+      "exp_multi": 1.0,
+      "max_lvl": 15,
+      "min_lvl": 1,
+      "mob_lvl_per_distance": 100,
+      "mob_strength_multi": 1.0,
+      "mob_tier": 0,
+      "scale_to_nearest_player": true,
+      "min_lvl_area": 100,
+      "secondary_lvl_range": {
+        "max": 70,
+        "min": 50
+      },
+      "stats": {
+        "stats": []
+      }
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_dimension/minecraft_overworld.json",
+    "name": "Minecraft:Overworld",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:the_end",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_dimension/minecraft_the_end.json",
+    "data": {
+      "all_drop_multi": 1.0,
+      "dimension_id": "minecraft:the_end",
+      "exp_multi": 1.0,
+      "max_lvl": 65,
+      "min_lvl": 50,
+      "mob_lvl_per_distance": 100,
+      "mob_strength_multi": 1.4,
+      "mob_tier": 2,
+      "scale_to_nearest_player": true,
+      "min_lvl_area": 100,
+      "secondary_lvl_range": {
+        "max": 90,
+        "min": 70
+      },
+      "stats": {
+        "stats": []
+      }
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_dimension/minecraft_the_end.json",
+    "name": "Minecraft:The End",
+    "name_source": "derived"
+  },
+  {
+    "id": "minecraft:the_nether",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_dimension/minecraft_the_nether.json",
+    "data": {
+      "all_drop_multi": 1.0,
+      "dimension_id": "minecraft:the_nether",
+      "exp_multi": 1.0,
+      "max_lvl": 30,
+      "min_lvl": 10,
+      "mob_lvl_per_distance": 100,
+      "mob_strength_multi": 1.1,
+      "mob_tier": 0,
+      "scale_to_nearest_player": true,
+      "min_lvl_area": 100,
+      "secondary_lvl_range": {
+        "max": 75,
+        "min": 55
+      },
+      "stats": {
+        "stats": []
+      }
+    },
+    "base_source": "mods/Mine_and_Slash-1.20.1-6.4.7.jar!/data/mmorpg/mmorpg_dimension/minecraft_the_nether.json",
+    "name": "Minecraft:The Nether",
+    "name_source": "derived"
+  },
+  {
+    "id": "twilightforest:twilight_forest",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_dimension/twilightforest.json",
+    "data": {
+      "all_drop_multi": 1.0,
+      "dimension_id": "twilightforest:twilight_forest",
+      "exp_multi": 1.0,
+      "max_lvl": 100,
+      "min_lvl": 90,
+      "mob_lvl_per_distance": 100,
+      "mob_strength_multi": 1.5,
+      "mob_tier": 3,
+      "scale_to_nearest_player": true,
+      "min_lvl_area": 100,
+      "secondary_lvl_range": {
+        "max": -1,
+        "min": -1
+      },
+      "stats": {
+        "stats": [
+          {
+            "type": "more",
+            "scale_to_lvl": false,
+            "v1": 800.0,
+            "stat": "health"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "armor"
+          },
+          {
+            "type": "percent",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "dodge"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "elemental_resist"
+          },
+          {
+            "type": "flat",
+            "scale_to_lvl": false,
+            "v1": 25.0,
+            "stat": "chaos_resist"
+          }
+        ]
+      }
+    },
+    "name": "Twilightforest:Twilight Forest",
+    "name_source": "derived"
+  },
+  {
+    "id": "undergarden:undergarden",
+    "group": null,
+    "origin": "pack",
+    "source": "config/openloader/data/cte_mns/data/mmorpg/mmorpg_dimension/undergarden_undergarden.json",
+    "data": {
+      "all_drop_multi": 1.0,
+      "dimension_id": "undergarden:undergarden",
+      "exp_multi": 1.0,
+      "max_lvl": 40,
+      "min_lvl": 25,
+      "mob_lvl_per_distance": 100,
+      "mob_strength_multi": 1.2,
+      "mob_tier": 1,
+      "scale_to_nearest_player": true,
+      "min_lvl_area": 100,
+      "secondary_lvl_range": {
+        "max": 80,
+        "min": 60
+      },
+      "stats": {
+        "stats": []
+      }
+    },
+    "name": "Undergarden:Undergarden",
+    "name_source": "derived"
+  }
+]

@@ -13,6 +13,8 @@
    Every number, name and count below is read from data/ at build time.
    Nothing is hand-typed — see CLAUDE.md § Never invent pack data. */
 import '../styles/tokens.css';
+import Banner from '../components/Banner.astro';
+import ActLadder from '../components/ActLadder.astro';
 
 import index from '../../data/_index.json';
 import uniquesData from '../../data/uniques.json';
@@ -41,6 +43,17 @@ type Tree = { identifier: string; school_type: string; nodes: unknown[] };
 const uniques = uniquesData as Unique[];
 const trees = talentTreeData as Tree[];
 const statName = new Map((statsData as Named[]).map((s) => [s.id, s.name]));
+
+/* The pack colours its own stat text: stats.json `data.format` names one of
+   Minecraft's chat colours. 619 of 1,151 stats declare one — aqua on 572, then
+   red for damage-over-time and leech, green for durations and regen, yellow
+   for healing, blue for area damage. The rest are mostly code-origin stats
+   with an empty `data`, and fall back to aqua via --stat-default. */
+const statFormat = new Map(
+	(statsData as { id: string; data?: { format?: string } }[])
+		.filter((s) => s.data?.format)
+		.map((s) => [s.id, s.data!.format as string])
+);
 const gearName = new Map((baseGearData as Named[]).map((g) => [g.id, g.name]));
 
 const collections = new Map(index.collections.map((c) => [c.key, c]));
@@ -208,8 +221,10 @@ const featured = FEATURED.map((id) => uniques.find((u) => u.id === id)).filter(
    immediately after the placeholder belongs to the value, not the label. The
    roll's own type does not always carry it: Voltaxic Rift's proc chance is a
    FLAT roll whose name template is "[VAL1]% Chance to Cast ...". */
-function renderRoll(r: Roll): { value: string; label: string } {
+function renderRoll(r: Roll): { value: string; label: string; colour: string } {
 	const raw = statName.get(r.stat) ?? r.stat.replace(/_/g, ' ');
+	const fmt = statFormat.get(r.stat);
+	const colour = fmt ? `var(--mc-${fmt})` : 'var(--stat-default)';
 	const percentFromName = /\[VAL\d\]%/.test(raw);
 	const percentFromType = r.type === 'PERCENT' || r.type === 'MORE';
 	const suffix = percentFromName || percentFromType ? '%' : '';
@@ -225,7 +240,7 @@ function renderRoll(r: Roll): { value: string; label: string } {
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 
-	return { value, label };
+	return { value, label, colour };
 }
 
 /* Everything the on-page filter can match, emitted once as JSON. Portal
@@ -295,16 +310,19 @@ const description =
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
 	<body>
+		{/* Fire band disabled 2026-08-22 pending a decision on what earns the
+		    bottom of the viewport. The component is intact — re-enable by
+		    restoring the import and putting <FireBand /> back here. See D14. */}
+
 		<header class="topbar">
-			<a class="wordmark" href="/">
-				<span class="mark bevel" aria-hidden="true"></span>
-				<span>CTE2 Wiki</span>
-			</a>
+			{/* The pack's logotype is the only mark on the page (D12). The wiki
+			    names itself in text, the way the Calamity wiki does. */}
+			<a class="wordmark" href="/">Craft to Exile 2 Wiki</a>
 
 			<form class="search" role="search" onsubmit="return false">
 				<label class="sr-only" for="q">Filter this page</label>
@@ -326,6 +344,14 @@ const description =
 				<a href="https://github.com/Saphex-dev/cte2-wiki">GitHub</a>
 			</nav>
 		</header>
+
+		{/* Mahjerion's CTE2 banner — the page's only logo (D12).
+		    Source is 560x300. Measuring the logo's pixels puts it in rows
+		    114..181, so a centred crop can reach 7.78:1 before it starts
+		    cutting letterforms. 7:1 leaves ~4px of margin either side. */}
+		<div class="bannerwrap">
+			<Banner src="/banner-cte2.webp" alt="Craft to Exile 2" ratio="7 / 1" />
+		</div>
 
 		<div class="shell">
 			<aside class="rail" aria-label="Wiki navigation">
@@ -644,12 +670,16 @@ const description =
 					<section class="panel portal" data-panel>
 						<h2 class="ptitle">Where Uniques Drop</h2>
 						<div class="pbody">
+							{/* The pack ties 39 of 251 uniques to a specific mechanic and
+							    says nothing about the rest. Saying nothing back is the
+							    honest rendering — see PAGE_STRUCTURE § 4.1. */}
 							<p class="phint">
-								The pack tags each unique with the system that drops it.
+								Some uniques are tied to a particular mechanic. Most are not,
+								and the pack does not say where those come from.
 							</p>
 							<ul class="wide">
-								<li data-entry data-label="general drop pool">
-									<span class="e">General drop pool</span>
+								<li data-entry data-label="not tied to a mechanic">
+									<span class="e">Not tied to a mechanic</span>
 									<span class="c">{generalDrops}</span>
 								</li>
 								{
@@ -684,6 +714,18 @@ const description =
 									</span>
 								</li>
 							</ul>
+						</div>
+					</section>
+
+					<section class="panel portal wide-panel" data-panel data-static>
+						<h2 class="ptitle">The Run</h2>
+						<div class="pbody">
+							<p class="phint">
+								Every dimension carries its own level band, and the pack sets
+								them: mobs scale to the band, not to you. The bands overlap, and
+								nothing covers 76–89.
+							</p>
+							<ActLadder />
 						</div>
 					</section>
 
@@ -736,14 +778,14 @@ const description =
 												{gearName.get(item.data.base_gear ?? '') ??
 													item.data.base_gear?.replace(/_/g, ' ')}
 												<span class="dot">&middot;</span>
-												requires level {item.data.min_drop_lvl}
+												drops from level {item.data.min_drop_lvl}
 											</p>
 										</header>
 										<dl class="rolls">
 											{(item.data.unique_stats ?? []).map((r) => {
-												const { value, label } = renderRoll(r);
+												const { value, label, colour } = renderRoll(r);
 												return (
-													<div class="roll">
+													<div class="roll" style={`--fmt:${colour}`}>
 														<dt>{value}</dt>
 														<dd>{label}</dd>
 													</div>
@@ -931,19 +973,16 @@ const description =
 				z-index: 10;
 			}
 			.wordmark {
-				display: flex;
-				align-items: center;
-				gap: var(--s1);
 				font-family: var(--font-display);
+				font-size: 13px;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				color: var(--ink-faint);
 				text-decoration: none;
-				font-size: 16px;
 				flex-shrink: 0;
 			}
-			.mark {
-				width: 16px;
-				height: 16px;
-				background: var(--accent);
-				display: block;
+			.wordmark:hover {
+				color: var(--ink);
 			}
 			.search {
 				margin-left: auto;
@@ -986,6 +1025,24 @@ const description =
 			}
 
 			/* ---- shell: rail + main, Calamity's two-part frame ---- */
+			/* The fire band is position:fixed with z-index 0, which puts it
+			   above ordinary non-positioned content in paint order. Give the
+			   page's own blocks a stacking context so the flames stay behind
+			   the cards rather than over them. */
+			.bannerwrap,
+			.shell,
+			footer {
+				position: relative;
+				z-index: 1;
+			}
+
+			/* Aligned to the shell rather than bled to the window edge, so the
+			   banner sits on the same column as everything below it. */
+			.bannerwrap {
+				max-width: 1440px;
+				margin: 0 auto;
+				padding: var(--s2) var(--s2) 0;
+			}
 			.shell {
 				display: grid;
 				grid-template-columns: 176px minmax(0, 1fr);
@@ -1332,8 +1389,17 @@ const description =
 				display: flex;
 				flex-direction: column;
 			}
+			/* One of the two reserved roles for the pixel face: an item's own
+			   name. 16px because the face is drawn on an 8px grid and only
+			   stays crisp at multiples of it. Weight and tracking are left
+			   alone — it ships one weight, and fractional tracking would put
+			   stems between pixels. */
 			.item h3 {
-				font-size: 20px;
+				font-family: var(--font-pixel);
+				font-size: 16px;
+				font-weight: 400;
+				letter-spacing: normal;
+				line-height: 1.5;
 				color: var(--r-unique);
 			}
 			.base {
@@ -1361,18 +1427,24 @@ const description =
 				align-items: baseline;
 				padding: 4px 0;
 			}
+			/* --fmt is the pack's own colour for this stat, from stats.json
+			   `data.format`. Not decoration: the game prints these lines in
+			   these colours, so a player reads the same signal here as in the
+			   inventory. Aqua is the default; red flags damage-over-time and
+			   leech, green durations and regen, yellow healing, blue area. */
 			.roll dt {
 				font-family: var(--font-mono);
 				font-size: 14px;
-				/* A roll value is a number, not a rarity. */
-				color: var(--ink);
+				color: var(--fmt);
 				min-width: 80px;
 				flex-shrink: 0;
 			}
 			.roll dd {
 				margin: 0;
 				font-size: 14px;
-				color: var(--ink-dim);
+				/* The label sits a step back from the number so the value
+				   leads, but keeps the hue so the pairing reads as one line. */
+				color: color-mix(in srgb, var(--fmt) 62%, var(--ink-faint));
 			}
 
 			/* ---- rarity ladder ---- */
@@ -1412,8 +1484,15 @@ const description =
 				border-top: 1px solid var(--line);
 				padding: var(--s4) var(--s2);
 				text-align: center;
-				color: var(--ink-faint);
+				color: var(--ink-dim);
 				font-size: 14px;
+				/* The footer is the one block that sits directly over the fire
+				   band, so it carries its own scrim. Translucent rather than
+				   solid: the flames still read through it, the text does not
+				   have to fight them. Non-negotiable per CLAUDE.md — legibility
+				   wins over atmosphere. */
+				background: color-mix(in srgb, var(--bg-deep) 88%, transparent);
+				backdrop-filter: blur(2px);
 			}
 			footer p {
 				margin: 0 0 8px;
@@ -1448,6 +1527,9 @@ const description =
 				}
 				.shell {
 					padding: var(--s1);
+				}
+				.bannerwrap {
+					padding: var(--s1) var(--s1) 0;
 				}
 				.portals {
 					grid-template-columns: minmax(0, 1fr);

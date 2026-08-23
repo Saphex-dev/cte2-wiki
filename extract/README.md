@@ -53,7 +53,7 @@ Getting that order wrong publishes wrong numbers, so it is centralized in
 
 ## What gets extracted
 
-5,860 entries across 36 collections, plus 3 talent trees (1,786 placed nodes).
+5,869 entries across 37 collections, plus 3 talent trees (1,786 placed nodes).
 Full breakdown in [`docs/EXTRACTION_MANIFEST.md`](../docs/EXTRACTION_MANIFEST.md);
 where each source lives, in [`docs/SOURCE_INVENTORY.md`](../docs/SOURCE_INVENTORY.md).
 
