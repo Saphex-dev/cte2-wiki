@@ -45,6 +45,15 @@ const TITLES: Record<string, string> = {
 const MIN = 1;
 const MAX = 100;
 
+/* Dimension ids to light. Bands overlap, so this is a list — an item at
+   level 10 sits in both the Overworld and Nether ranges, and picking one
+   would be a guess presented as a fact. */
+interface Props {
+	highlight?: string[];
+}
+const { highlight = [] } = Astro.props;
+const lit = new Set(highlight);
+
 const rungs = (dimensionsData as Dimension[])
 	.filter((d) => TITLES[d.id])
 	.map((d) => {
@@ -70,7 +79,10 @@ const ticks = [1, 25, 50, 75, 100];
 	<ol>
 		{
 			rungs.map((r) => (
-				<li style={`--lo:${r.left}%; --w:${r.width}%; --tier:${r.tier}`}>
+				<li
+					style={`--lo:${r.left}%; --w:${r.width}%; --tier:${r.tier}`}
+					class={lit.has(r.id) ? 'lit' : undefined}
+				>
 					<span class="name">{r.title}</span>
 					<span class="track" aria-hidden="true">
 						<span class="band" />
@@ -133,6 +145,22 @@ const ticks = [1, 25, 50, 75, 100];
 		font-size: 12px;
 		color: var(--ink-faint);
 		text-align: right;
+	}
+
+	/* A lit rung. Everything unlit steps back rather than the lit one shouting,
+	   so the ladder stays readable as a whole. */
+	.ladder li.lit .name,
+	.ladder li.lit .lvl {
+		color: var(--ink);
+	}
+	.ladder li.lit .band {
+		opacity: 1;
+	}
+	.ladder:has(li.lit) li:not(.lit) .name {
+		color: var(--ink-fainter);
+	}
+	.ladder:has(li.lit) li:not(.lit) .band {
+		opacity: calc(0.18 + var(--tier) * 0.06);
 	}
 	.axis {
 		position: relative;

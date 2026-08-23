@@ -1,0 +1,109 @@
+---
+import Site from '../../layouts/Site.astro';
+import ActLadder from '../../components/ActLadder.astro';
+import { count } from '../../data/collections';
+import rarityData from '../../../data/mob_rarities.json';
+
+type MobRarity = {
+	id: string;
+	name: string;
+	data: { weight?: number; dmg_multi?: number; exp_multi?: number; loot_multi?: number };
+};
+
+/* Rolled rarities are the ones with a weight. The rest are placed by the game
+   rather than rolled onto a spawn, so listing them alongside a drop chance
+   would imply something untrue. */
+const rarities = (rarityData as MobRarity[])
+	.map((r) => ({ ...r.data, name: r.name }))
+	.sort((a, b) => (b.weight ?? 0) - (a.weight ?? 0));
+const rolled = rarities.filter((r) => (r.weight ?? 0) > 0);
+const placed = rarities.filter((r) => !(r.weight ?? 0));
+
+const title = 'World';
+const description =
+	'Dimensions, their level bands, dungeons and what lives in them in Craft to Exile 2.';
+---
+
+<Site
+	title={title}
+	description={description}
+	filters={{ section: 'World' }}
+	crumbs={[{ label: 'Wiki', href: '/' }]}
+>
+	<div class="pagehead">
+		<h1>World</h1>
+		<p>
+			Eight dimensions, each with a level band the pack sets. Mobs scale to the band
+			rather than to you, so where you are decides how hard the game is.
+		</p>
+	</div>
+
+	<section class="panel bevel">
+		<h2 class="ptitle">The Run</h2>
+		<div class="pbody">
+			<p class="phint">
+				The bands overlap, and nothing covers levels 76 to 89.
+			</p>
+			<ActLadder />
+		</div>
+	</section>
+
+	<section class="panel bevel">
+		<h2 class="ptitle">How dangerous a mob is</h2>
+		<div class="pbody">
+			<p class="phint">
+				Every spawn rolls a rarity. Rarer ones hit harder and drop far better — the
+				weight column is how often each comes up, and it falls by a factor of four
+				each step.
+			</p>
+			<div class="cols">
+				<ul>
+					<li class="colhead"><span>Rolled</span><span class="c">Weight</span></li>
+					{
+						rolled.map((r) => (
+							<li>
+								<span>{r.name}</span>
+								<span class="c">{r.weight}</span>
+							</li>
+						))
+					}
+				</ul>
+				<ul>
+					<li class="colhead"><span>Damage</span><span class="c">Loot</span></li>
+					{
+						rolled.map((r) => (
+							<li>
+								<span>&times;{r.dmg_multi}</span>
+								<span class="c">&times;{r.loot_multi}</span>
+							</li>
+						))
+					}
+				</ul>
+				<ul>
+					<li class="colhead"><span>Placed, not rolled</span><span class="c">Damage</span></li>
+					{
+						placed.map((r) => (
+							<li>
+								<span>{r.name}</span>
+								<span class="c">&times;{r.dmg_multi}</span>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<div class="sectiongrid">
+		<div class="sectioncard bevel">
+			<h3>Dungeons</h3>
+			<p>Generated interiors, each built from its own set of rooms and gated by what lives there.</p>
+			<span class="n">{count('dungeons')}</span>
+		</div>
+		<div class="sectioncard bevel">
+			<h3>Mob modifiers</h3>
+			<p>Affixes that make an individual spawn meaner.</p>
+			<span class="n">{count('mob_affixes')}</span>
+		</div>
+	</div>
+</Site>

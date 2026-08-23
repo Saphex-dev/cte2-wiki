@@ -1,0 +1,91 @@
+---
+import Site from '../../layouts/Site.astro';
+import { count, treeNodes, classes } from '../../data/collections';
+
+const cls = classes();
+const totalClassSkills = cls.reduce((n, c) => n + c.skills, 0);
+
+const AREAS = [
+	{ label: 'Classes', n: cls.length, blurb: 'Each with its own skill set and ascendancy options.' },
+	{ label: 'Skills', n: count('spells'), blurb: 'Everything a character can cast, swing or summon.' },
+	{ label: 'Passive nodes', n: treeNodes(), blurb: 'Across the talent, ascendancy and Atlas trees.' },
+	{ label: 'Perks', n: count('perks'), blurb: 'What the individual tree nodes actually grant.' },
+	{ label: 'Stats', n: count('stats'), blurb: 'Every value gear and passives can move.' },
+	{ label: 'Effects', n: count('exile_effects'), blurb: 'Buffs, debuffs and ailments.' },
+	{ label: 'Auras', n: count('auras'), blurb: 'Persistent effects you project.' },
+];
+
+const title = 'Character';
+const description =
+	'Classes, skills, passive trees, stats and effects in Craft to Exile 2.';
+---
+
+<Site
+	title={title}
+	description={description}
+	filters={{ section: 'Character' }}
+	crumbs={[{ label: 'Wiki', href: '/' }]}
+>
+	<div class="pagehead">
+		<h1>Character</h1>
+		<p>
+			Twelve classes share {count('spells')} skills and {treeNodes().toLocaleString('en-US')}
+			{' '}passive nodes. What separates them is which skills they own and which
+			ascendancy they take.
+		</p>
+	</div>
+
+	<div class="sectiongrid" style="margin-bottom: var(--s2)">
+		{
+			AREAS.map((a) => (
+				<div class="sectioncard bevel">
+					<h3>{a.label}</h3>
+					<p>{a.blurb}</p>
+					<span class="n">{a.n.toLocaleString('en-US')}</span>
+				</div>
+			))
+		}
+	</div>
+
+	<section class="panel bevel">
+		<h2 class="ptitle">Classes</h2>
+		<div class="pbody">
+			<p class="phint">
+				{totalClassSkills} of the {count('spells')} skills belong to a class. The rest
+				are cast by gear, by summons, or by things that are not you.
+			</p>
+			<div class="cols">
+				<ul>
+					{
+						cls.slice(0, 4).map((c) => (
+							<li>
+								<span>{c.label}</span>
+								<span class="c">{c.skills}</span>
+							</li>
+						))
+					}
+				</ul>
+				<ul>
+					{
+						cls.slice(4, 8).map((c) => (
+							<li>
+								<span>{c.label}</span>
+								<span class="c">{c.skills}</span>
+							</li>
+						))
+					}
+				</ul>
+				<ul>
+					{
+						cls.slice(8).map((c) => (
+							<li>
+								<span>{c.label}</span>
+								<span class="c">{c.skills}</span>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+		</div>
+	</section>
+</Site>

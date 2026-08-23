@@ -1,0 +1,126 @@
+---
+import Site from '../../layouts/Site.astro';
+import { count } from '../../data/collections';
+import professionData from '../../../data/professions.json';
+import recipeData from '../../../data/profession_recipes.json';
+import currencyData from '../../../data/currency.json';
+
+type Named = { id: string; name: string };
+type Recipe = { data?: { profession?: string } };
+type Currency = { id: string; name: string; data?: { rar?: string } };
+
+const recipesBy = new Map<string, number>();
+for (const r of recipeData as Recipe[]) {
+	const p = r.data?.profession;
+	if (!p) continue;
+	recipesBy.set(p, (recipesBy.get(p) ?? 0) + 1);
+}
+
+const professions = (professionData as Named[])
+	.map((p) => ({ label: p.name, recipes: recipesBy.get(p.id) ?? 0 }))
+	.sort((a, b) => b.recipes - a.recipes || a.label.localeCompare(b.label));
+
+const withRecipes = professions.filter((p) => p.recipes > 0);
+
+/* Currency by rarity, commonest tier first. */
+const RARITY_ORDER = ['common', 'uncommon', 'rare', 'epic', 'legendary', 'mythic', 'unique', 'runeword'];
+const byRarity = new Map<string, number>();
+for (const c of currencyData as Currency[]) {
+	const r = c.data?.rar ?? 'unknown';
+	byRarity.set(r, (byRarity.get(r) ?? 0) + 1);
+}
+const rarities = RARITY_ORDER.filter((r) => byRarity.has(r)).map((r) => ({
+	label: r.replace(/\b\w/, (c) => c.toUpperCase()),
+	id: r,
+	n: byRarity.get(r) ?? 0,
+}));
+
+const title = 'Crafting';
+const description =
+	'Currency, professions and recipes in Craft to Exile 2 — what changes an item and what it costs.';
+---
+
+<Site
+	title={title}
+	description={description}
+	filters={{ section: 'Crafting' }}
+	crumbs={[{ label: 'Wiki', href: '/' }]}
+>
+	<div class="pagehead">
+		<h1>Crafting</h1>
+		<p>
+			{count('currency')} currency items change gear in a specific way, and every one
+			of them asks the same three questions: what can it be used on, what has to be
+			true first, and what does it do.
+		</p>
+	</div>
+
+	<div class="sectiongrid" style="margin-bottom: var(--s2)">
+		<div class="sectioncard bevel">
+			<h3>Currency</h3>
+			<p>Orbs and stones that reroll, upgrade, socket and corrupt.</p>
+			<span class="n">{count('currency')}</span>
+		</div>
+		<div class="sectioncard bevel">
+			<h3>Professions</h3>
+			<p>Long-running tracks with their own experience and rewards.</p>
+			<span class="n">{count('professions')}</span>
+		</div>
+		<div class="sectioncard bevel">
+			<h3>Recipes</h3>
+			<p>Everything the crafting professions can actually make.</p>
+			<span class="n">{count('profession_recipes').toLocaleString('en-US')}</span>
+		</div>
+		<div class="sectioncard bevel">
+			<h3>Item modifiers</h3>
+			<p>The individual changes a currency item applies.</p>
+			<span class="n">{count('item_modifications')}</span>
+		</div>
+	</div>
+
+	<section class="panel bevel">
+		<h2 class="ptitle">Currency by rarity</h2>
+		<div class="pbody">
+			<p class="phint">
+				Rarer currency does rarer things. The Orb of Knowledge, which raises an
+				omen's rarity, is one of the {byRarity.get('legendary') ?? 0} legendary ones.
+			</p>
+			<div class="cols">
+				<ul>
+					{
+						rarities.map((r) => (
+							<li>
+								<span style={`color: var(--r-${r.id})`}>{r.label}</span>
+								<span class="c">{r.n}</span>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="panel bevel">
+		<h2 class="ptitle">Professions</h2>
+		<div class="pbody">
+			<p class="phint">
+				{withRecipes.length} of the {professions.length} have recipe lists. The others
+				are gathering and hunting tracks — they earn experience and drops rather than
+				crafting to a recipe.
+			</p>
+			<div class="cols">
+				<ul>
+					<li class="colhead"><span>Profession</span><span class="c">Recipes</span></li>
+					{
+						professions.map((p) => (
+							<li>
+								<span>{p.label}</span>
+								<span class="c">{p.recipes || '—'}</span>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+		</div>
+	</section>
+</Site>

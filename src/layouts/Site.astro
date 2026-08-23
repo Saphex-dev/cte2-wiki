@@ -1,0 +1,142 @@
+---
+/* The shell every page below the landing page shares.
+ *
+ * The landing page keeps its own bespoke markup for now — it is the pitch
+ * surface and carries a hero the reference pages do not want. Everything else
+ * lives here so the head, the rail and the footer cannot drift apart across a
+ * thousand generated pages.
+ *
+ * Search: `data-pagefind-body` on <main> is what makes a page exist as far as
+ * search is concerned, and the filter attributes are what make the build
+ * discovery feature possible. That is the cost D1 accepted when item pages
+ * moved off Starlight, and it is paid here once rather than per page.
+ */
+import '../styles/tokens.css';
+import '../styles/site.css';
+import { RAIL } from '../data/nav';
+
+interface Props {
+	title: string;
+	description: string;
+	/** Pagefind filters — section, kind, rarity, and so on. */
+	filters?: Record<string, string>;
+	/** Breadcrumb trail, nearest ancestor last. */
+	crumbs?: { label: string; href: string }[];
+}
+
+const { title, description, filters = {}, crumbs = [] } = Astro.props;
+
+const filterEntries = Object.entries(filters).filter(([, v]) => v);
+const filterAttr =
+	filterEntries.length > 0
+		? filterEntries.map(([k, v]) => `${k}:${v}`).join(', ')
+		: undefined;
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL('/banner-cte2.webp', Astro.site).href;
+const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
+const fullTitle = `${title} · Craft to Exile 2 Wiki`;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{fullTitle}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+		<meta property="og:type" content="article" />
+		<meta property="og:site_name" content="Craft to Exile 2 Wiki" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:image:width" content="1300" />
+		<meta property="og:image:height" content="340" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		{
+			beacon && (
+				<script
+					defer
+					src="https://static.cloudflareinsights.com/beacon.min.js"
+					data-cf-beacon={`{"token":"${beacon}"}`}
+				/>
+			)
+		}
+	</head>
+
+	<body>
+		<header class="topbar">
+			<a class="wordmark" href="/">Craft to Exile 2 Wiki</a>
+			<nav class="topnav">
+				<a href="/guides/example/">Docs</a>
+				<a href="https://github.com/Saphex-dev/cte2-wiki">GitHub</a>
+			</nav>
+		</header>
+
+		<div class="shell">
+			<aside class="rail" aria-label="Wiki navigation">
+				{
+					RAIL.map((group) => (
+						<section class="railgroup bevel">
+							<h2>{group.title}</h2>
+							<ul>
+								{group.items.map((item) => (
+									<li>
+										{item.href ? (
+											<a
+												href={item.href}
+												aria-current={item.href === Astro.url.pathname ? 'page' : undefined}
+											>
+												{item.label}
+											</a>
+										) : (
+											<span>{item.label}</span>
+										)}
+									</li>
+								))}
+							</ul>
+						</section>
+					))
+				}
+			</aside>
+
+			{/* Pagefind takes multiple filters on ONE attribute, comma-separated.
+			    Emitting the attribute repeatedly would silently keep only the
+			    last one. */}
+			<main data-pagefind-body data-pagefind-filter={filterAttr}>
+				{
+					crumbs.length > 0 && (
+						<nav class="crumbs" aria-label="Breadcrumb" data-pagefind-ignore>
+							{crumbs.map((c) => (
+								<a href={c.href}>{c.label}</a>
+							))}
+							<span aria-current="page">{title}</span>
+						</nav>
+					)
+				}
+				<slot />
+			</main>
+		</div>
+
+		<footer data-pagefind-ignore>
+			<p>
+				An unofficial community wiki for <strong>Craft to Exile 2</strong> by Mahjerion.
+				Not affiliated with Mojang.
+			</p>
+		</footer>
+	</body>
+</html>
