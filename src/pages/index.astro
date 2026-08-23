@@ -670,12 +670,16 @@ const description =
 					<section class="panel portal" data-panel>
 						<h2 class="ptitle">Where Uniques Drop</h2>
 						<div class="pbody">
+							{/* The pack ties 39 of 251 uniques to a specific mechanic and
+							    says nothing about the rest. Saying nothing back is the
+							    honest rendering — see PAGE_STRUCTURE § 4.1. */}
 							<p class="phint">
-								The pack tags each unique with the system that drops it.
+								Some uniques are tied to a particular mechanic. Most are not,
+								and the pack does not say where those come from.
 							</p>
 							<ul class="wide">
-								<li data-entry data-label="general drop pool">
-									<span class="e">General drop pool</span>
+								<li data-entry data-label="not tied to a mechanic">
+									<span class="e">Not tied to a mechanic</span>
 									<span class="c">{generalDrops}</span>
 								</li>
 								{
@@ -774,7 +778,7 @@ const description =
 												{gearName.get(item.data.base_gear ?? '') ??
 													item.data.base_gear?.replace(/_/g, ' ')}
 												<span class="dot">&middot;</span>
-												requires level {item.data.min_drop_lvl}
+												drops from level {item.data.min_drop_lvl}
 											</p>
 										</header>
 										<dl class="rolls">
