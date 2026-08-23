@@ -325,12 +325,11 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={canonical} />
 		<meta property="og:image" content={ogImage} />
-		{/* Mahjerion's banner is 560x300 — an aspect of 1.87, near enough to the
-		    1.91 social-card standard to fill the frame without cropping. It is
-		    small for the slot; a higher-resolution original would sharpen every
-		    unfurl at no other cost. */}
-		<meta property="og:image:width" content="560" />
-		<meta property="og:image:height" content="300" />
+		{/* 1300x340. Wider than the 1.91 social-card standard, so unfurls will
+		    letterbox it rather than crop — which is the right trade for a
+		    banner whose whole content is a centred wordmark. */}
+		<meta property="og:image:width" content="1300" />
+		<meta property="og:image:height" content="340" />
 		<meta property="og:image:alt" content="Craft to Exile 2" />
 
 		<meta name="twitter:card" content="summary_large_image" />
@@ -386,11 +385,12 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 		</header>
 
 		{/* Mahjerion's CTE2 banner — the page's only logo (D12).
-		    Source is 560x300. Measuring the logo's pixels puts it in rows
-		    114..181, so a centred crop can reach 7.78:1 before it starts
-		    cutting letterforms. 7:1 leaves ~4px of margin either side. */}
+		    Source is 1300x340. Measuring the logo's violet pixels puts it in
+		    rows 96..242, so a centred crop can reach 8.78:1 before it starts
+		    cutting letterforms. 8:1 leaves ~7px of margin either side, and is
+		    the proportion the earlier 560px asset could not reach. */}
 		<div class="bannerwrap">
-			<Banner src="/banner-cte2.webp" alt="Craft to Exile 2" ratio="7 / 1" />
+			<Banner src="/banner-cte2.webp" alt="Craft to Exile 2" ratio="8 / 1" />
 		</div>
 
 		<div class="shell">
