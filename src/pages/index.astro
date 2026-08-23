@@ -298,6 +298,16 @@ const RAIL: { title: string; items: { label: string; href?: string }[] }[] = [
 const title = 'Craft to Exile 2 Wiki';
 const description =
 	'A community wiki for Craft to Exile 2 — every unique, skill and passive, generated from the pack itself.';
+
+/* Social cards and canonical links need absolute URLs, which is what `site` in
+   astro.config.mjs exists for. Most arrivals will come from a link pasted into
+   a Discord channel, so an unfurl that shows the pack's own banner rather than
+   a bare hostname is not decoration. */
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL('/banner-cte2.webp', Astro.site).href;
+
+/* Inert until CF_BEACON_TOKEN is set in the deploy environment. */
+const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 ---
 
 <html lang="en" data-dimension="overworld">
@@ -306,7 +316,37 @@ const description =
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Craft to Exile 2 Wiki" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:image" content={ogImage} />
+		{/* Mahjerion's banner is 560x300 — an aspect of 1.87, near enough to the
+		    1.91 social-card standard to fill the frame without cropping. It is
+		    small for the slot; a higher-resolution original would sharpen every
+		    unfurl at no other cost. */}
+		<meta property="og:image:width" content="560" />
+		<meta property="og:image:height" content="300" />
+		<meta property="og:image:alt" content="Craft to Exile 2" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
+
+		{
+			beacon && (
+				<script
+					defer
+					src="https://static.cloudflareinsights.com/beacon.min.js"
+					data-cf-beacon={`{"token":"${beacon}"}`}
+				/>
+			)
+		}
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
