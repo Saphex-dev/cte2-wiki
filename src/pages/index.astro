@@ -298,6 +298,16 @@ const RAIL: { title: string; items: { label: string; href?: string }[] }[] = [
 const title = 'Craft to Exile 2 Wiki';
 const description =
 	'A community wiki for Craft to Exile 2 — every unique, skill and passive, generated from the pack itself.';
+
+/* Social cards and canonical links need absolute URLs, which is what `site` in
+   astro.config.mjs exists for. Most arrivals will come from a link pasted into
+   a Discord channel, so an unfurl that shows the pack's own banner rather than
+   a bare hostname is not decoration. */
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL('/banner-cte2.webp', Astro.site).href;
+
+/* Inert until CF_BEACON_TOKEN is set in the deploy environment. */
+const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 ---
 
 <html lang="en" data-dimension="overworld">
@@ -306,7 +316,36 @@ const description =
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Craft to Exile 2 Wiki" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:image" content={ogImage} />
+		{/* 1300x340. Wider than the 1.91 social-card standard, so unfurls will
+		    letterbox it rather than crop — which is the right trade for a
+		    banner whose whole content is a centred wordmark. */}
+		<meta property="og:image:width" content="1300" />
+		<meta property="og:image:height" content="340" />
+		<meta property="og:image:alt" content="Craft to Exile 2" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
+
+		{
+			beacon && (
+				<script
+					defer
+					src="https://static.cloudflareinsights.com/beacon.min.js"
+					data-cf-beacon={`{"token":"${beacon}"}`}
+				/>
+			)
+		}
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -346,11 +385,13 @@ const description =
 		</header>
 
 		{/* Mahjerion's CTE2 banner — the page's only logo (D12).
-		    Source is 560x300. Measuring the logo's pixels puts it in rows
-		    114..181, so a centred crop can reach 7.78:1 before it starts
-		    cutting letterforms. 7:1 leaves ~4px of margin either side. */}
+		    Ratio is the art's own 1300x340, so nothing is cropped: the scene
+		    he composed is what the reader sees. A tighter band is available —
+		    the logo's violet ink sits in rows 96..242, so a centred crop could
+		    reach 8.78:1 — but cropping his composition to buy vertical space
+		    is the wrong trade on the one surface that is his. */}
 		<div class="bannerwrap">
-			<Banner src="/banner-cte2.webp" alt="Craft to Exile 2" ratio="7 / 1" />
+			<Banner src="/banner-cte2.webp" alt="Craft to Exile 2" ratio="1300 / 340" />
 		</div>
 
 		<div class="shell">

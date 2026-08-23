@@ -637,6 +637,8 @@ sampled from the pack's own sky/fog and signature blocks rather than chosen.
 | ~~**Uncommitted work**~~ | Resolved 2026-08-22. The landing page and tokens are committed and merged; `origin/main` carries everything. An earlier 592-line draft of `index.astro` sits in `stash@{0}` and can be dropped once nobody wants it. |
 | **Starlight scaffold** | `guides/example` and `reference/example` are still the only docs pages, and the landing page's nav links to `/guides/example/`. Replace before showing anyone. |
 | **Cloudflare build ceiling** | 500 builds/month. Batch PR merges once contributions start. |
+| **Deploy values not yet known** | `SITE_URL` falls back to `https://cte2-wiki.pages.dev`, a guess from the repo name. A wrong value produces broken social cards silently rather than failing, so set it in the Pages build settings as soon as the real domain exists. `CF_BEACON_TOKEN` is unset, so analytics is wired but inert. |
+| **Social image is low-resolution** | The banner is 560×300 against a 1200×630 slot. Aspect is right (1.87 vs 1.91) so it fills the frame uncropped, but it is soft. A higher-resolution original from Mahjerion sharpens every unfurl at no other cost. |
 
 ## 4.5 Known defects on `main`
 
