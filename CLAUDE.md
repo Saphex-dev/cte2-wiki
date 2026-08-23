@@ -244,6 +244,11 @@ Implementation rules:
 - **Theming is automatic.** `data-dimension` on `<html>`, derived from the item's
   `min_drop_lvl` against the dimension level ladder, drives CSS custom properties.
   No hand-tagging — it has to hold up across hundreds of items.
+- **The backdrop is never labelled as a drop location.** `min_drop_lvl` is a
+  character-level threshold — the item drops from that level onward, anywhere,
+  with no upper bound and no dimension field. The dimension is derived
+  orientation only, and the site shipped this misreading once already; see
+  `docs/DESIGN.md` § 10 for the rules that came out of it.
 - **Rarity is carried absolutely by the item name and frame**, not by the
   background. A player landing cold on one page can't compare against other cells.
   Background is atmospheric reinforcement only.

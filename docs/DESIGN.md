@@ -177,7 +177,7 @@ Structure, taken from Calamity's `Murasama`:
 |         Statistics         |  section bar -- full width, centred
 +----------------------------+
 |    Type  Sword             |  label right-aligned, value left-aligned
-|   Level  40 (act 3)        |  qualifier in parens, smaller, dim
+|  Drops from  level 40 onward |  qualifier in parens, smaller, dim
 |    Slot  Main hand         |
 |  Rarity  Unique            |  value takes the pack's own colour (D13)
 +----------------------------+
@@ -201,8 +201,14 @@ Structure, taken from Calamity's `Murasama`:
    is the Terraria/Calamity idiom, and it is what makes a twelve-row box scannable:
    the values form a clean left edge to run your eye down.
 3. **Parenthetical qualifiers**, smaller and dimmer, carry the derived reading —
-   `40 (act 3)`, `2.4s (slow)`. Calamity does exactly this with `2200 (True melee)`.
-   Per D4 this is also where a derived-not-stated value gets flagged.
+   `level 40 (onward)`, `2.4s (slow)`. Calamity does exactly this with
+   `2200 (True melee)`. Per D4 this is also where a derived-not-stated value gets
+   flagged.
+
+   **A qualifier must never turn a number into a place.** The Level row briefly
+   read `40 (Otherside band)`, which told readers the item drops in Otherside.
+   It does not: `min_drop_lvl` is a character-level threshold and a unique
+   carries no max level, no dimension and no biome field. See § 10.
 4. **Section bars** divide the box. Any number of them; they are how a box grows
    without becoming an undifferentiated list.
 5. **The in-game tooltip becomes an italic block at the foot of the box**, not the
@@ -240,10 +246,10 @@ and it maps onto our 251 uniques with no adaptation:
 
 - **Sprite + name grid** inside a bordered box. Icon at native pixel size, name
   beside it as a link. Roughly seven across at full width, reflowing down.
-- **Grouped by progression tier**, with a small heading per group. Calamity uses
-  `Pre-Hardmode` / `Hardmode`. **We use the dimension ladder** — this is the native
-  wiki idiom for exactly the thing the act ladder was invented for, which is strong
-  independent evidence that the act ladder is right.
+- **Grouped by the level at which items start dropping**, with a small heading
+  per group. Calamity uses `Pre-Hardmode` / `Hardmode`; ours are `From level 30`,
+  with the dimension named underneath as orientation only. The heading leads with
+  the level, never the place — see § 10.
 - A sub-label under the name where a qualifier is needed. Calamity uses
   `(Unattuned)`; ours carries the level or the mechanic tie.
 
@@ -366,6 +372,55 @@ RLCraft's infobox ships `Nameid: xat:dragons_eye` as a visible row. A collapsed
 genuinely useful to modders. Recommend relaxing the rule to "implementation
 vocabulary never appears above the fold or in prose," rather than never. **Needs a
 call — not applied.**
+
+---
+
+## 10. Level is a threshold, never a place
+
+**Corrected 2026-08-23, after the site shipped the misreading.**
+
+`min_drop_lvl` is a **character-level threshold**. An item with `min_drop_lvl: 30`
+starts dropping when your character reaches level 30 and keeps dropping at every
+level above it, anywhere in the world, forever.
+
+This is not inference. The mod's own lang has
+`mmorpg.word.min_drop_level` = `"Min Drop Level: "` and
+`mmorpg.item_tips.drop_level_range` = `"Drops at Levels: %1$s"`, and a unique
+record carries exactly twelve fields — `base_gear`, `guid`, `flavor_text`,
+`force_item_id`, `league`, `min_drop_lvl`, `min_tier`, `rarity`, `replaces_name`,
+`runable`, `unique_stats`, `weight`. **There is no max level, no dimension and no
+biome field on any of the 251.**
+
+The only genuine drop-source field is `league`, which ties 39 uniques to a
+mechanic (Prophecies, Ancient Obelisks, Strongboxes…). That one may be presented
+as a source, because the pack states it.
+
+### What went wrong
+
+The dimension band derived from the level is *orientation* — it answers "roughly
+where am I in the run when this becomes available". Three separate pieces of
+presentation quietly turned it into a location:
+
+- the infobox qualifier `40 (Otherside band)`
+- the section heading *Where in the run*
+- the browse page grouping items under headings like *The Nether*
+
+and one sentence stated it outright: *"so it can turn up in any of them."* That
+was simply false. Caveats underneath did not undo it — the heading, the grouping
+and the per-page backdrop all said "place" louder than the caveat said "not
+place".
+
+### The rules
+
+1. **Lead with the level, never the place.** `Drops from — level 40 onward`.
+   Group headings read `From level 30`, with the dimension as a secondary note.
+2. **Say "onward".** There is no upper bound; a bare number invites reading it as
+   a band the item belongs to.
+3. **Any dimension name near a level carries an explicit disclaimer** that it is
+   not where the item drops.
+4. **The backdrop stays**, because it is atmosphere and is now labelled nowhere.
+   It remains the loudest implicit claim on the page, so if the misreading
+   resurfaces, the backdrop is the next thing to reconsider — not the copy.
 
 ---
 

@@ -64,8 +64,12 @@ const runGroups = ladder
 		const sharing = ladder.filter((o) => rangeKey(o.lo, o.hi) === key);
 		return {
 			id: `run-${key}`,
-			title: sharing.map((o) => DIMENSION_TITLES[o.id] ?? o.id).join(' / '),
-			note: `levels ${b.lo}–${b.hi}`,
+			/* The LEVEL leads and the dimension is the aside, not the other way
+			   round. Titling these "The Nether" put a place name at the head of a
+			   list of items that drop at any level from N onward, anywhere — which
+			   is the misreading this whole section had to be rewritten to stop. */
+			title: `From level ${b.lo}`,
+			note: `around ${sharing.map((o) => DIMENSION_TITLES[o.id] ?? o.id).join(' / ')}`,
 			items: byRange
 				.get(key)!
 				.sort((a, c) => a.dropLevel - c.dropLevel || a.name.localeCompare(c.name)),
@@ -78,11 +82,16 @@ const runGroups = ladder
 if (beyond.length > 0) {
 	runGroups.push({
 		id: 'run-beyond',
-		title: 'Past the last band',
-		note: 'levels 76–89, which no dimension covers',
+		title: 'From level 76',
+		note: 'a range no dimension band covers',
 		items: beyond.sort((a, c) => a.dropLevel - c.dropLevel || a.name.localeCompare(c.name)),
 	});
 }
+
+/* Sorted by the level each group starts at, so the gap group lands where it
+   belongs — between 60 and 90 — rather than at the end because it was pushed
+   last. The heading is the threshold, so the order has to be the threshold. */
+runGroups.sort((a, c) => a.items[0].dropLevel - c.items[0].dropLevel);
 
 const byBase = new Map<string, Unique[]>();
 for (const u of all) {
@@ -116,7 +125,8 @@ const description = `All ${all.length} unique items in Craft to Exile 2, grouped
 		<p class="lede">
 			All <strong>{all.length}</strong> named items in the pack, across {baseGroups.length}
 			{' '}base types. Every stat line on every page below is read out of the modpack
-			itself.
+			itself. Each item's level is the character level it <em>starts</em> dropping at —
+			it keeps dropping above that, and the pack ties no unique to a dimension.
 		</p>
 
 		{/* Calamity's floating Contents box. On a page this long it is not a
@@ -125,7 +135,7 @@ const description = `All ${all.length} unique items in Craft to Exile 2, grouped
 			<h2>Contents</h2>
 			<ol>
 				<li>
-					<a href="#by-run">Where they sit in the run</a>
+					<a href="#by-run">By the level they start dropping</a>
 					<ol>
 						{runGroups.map((g) => (
 							<li>
@@ -147,12 +157,13 @@ const description = `All ${all.length} unique items in Craft to Exile 2, grouped
 			</ol>
 		</nav>
 
-		<h2 id="by-run">Where they sit in the run</h2>
+		<h2 id="by-run">By the level they start dropping</h2>
 		<p class="caveat">
-			Grouped by the deepest dimension band an item's level reaches. The bands come
-			from the pack's own level ranges and they overlap, so this says where an item
-			sits on the ladder, not where it drops — the pack records no drop location for
-			uniques.
+			Every unique has a minimum character level and nothing else — no upper limit, no
+			dimension, no biome. An item listed here under <em>from level 30</em> drops at
+			level 30 and at every level above it, anywhere in the world. The dimension names
+			are only there to place each threshold in the run; they are
+			{' '}<strong>not</strong> where the items drop.
 		</p>
 
 		{
@@ -169,7 +180,7 @@ const description = `All ${all.length} unique items in Craft to Exile 2, grouped
 									<span class="n">{u.name}</span>
 								</a>
 								<span class="meta">
-									{u.baseType} · {u.dropLevel}
+									{u.baseType} · from {u.dropLevel}
 								</span>
 							</li>
 						))}
@@ -179,7 +190,10 @@ const description = `All ${all.length} unique items in Craft to Exile 2, grouped
 		}
 
 		<h2 id="by-base">By base type</h2>
-		<p class="caveat">The same {all.length} items, filed by the gear they sit on.</p>
+		<p class="caveat">
+			The same {all.length} items, filed by the gear they sit on. Levels are the
+			minimum to start dropping.
+		</p>
 
 		{
 			baseGroups.map((g) => (
@@ -194,7 +208,7 @@ const description = `All ${all.length} unique items in Craft to Exile 2, grouped
 									<span class="icon" aria-hidden="true" />
 									<span class="n">{u.name}</span>
 								</a>
-								<span class="meta">level {u.dropLevel}</span>
+								<span class="meta">from level {u.dropLevel}</span>
 							</li>
 						))}
 					</ul>
