@@ -495,7 +495,11 @@ ship an empty `data` object — the same 353 that block unit rendering in §4.5.
 back to aqua, which 92% of formatted stats use. That fallback is derived, not
 pack-stated (D4), and closing it needs the same unmapped `mmorpg_stat_effect` registry.
 
-### D14 — The fire band is the landing page's alone
+### D14 — The fire band is the landing page's alone *(built, currently disabled)*
+
+> **Disabled 2026-08-22**, same day it was built, pending a decision on what earns the
+> bottom of the viewport. `FireBand.astro` is intact and re-enabling is one import plus
+> one tag. Everything below still applies if it comes back.
 
 A Minecraft-style fire animation runs along the bottom eighth of the viewport on the
 landing page, cross-fading from ember orange to void violet as the reader scrolls.

@@ -14,7 +14,6 @@
    Nothing is hand-typed — see CLAUDE.md § Never invent pack data. */
 import '../styles/tokens.css';
 import Banner from '../components/Banner.astro';
-import FireBand from '../components/FireBand.astro';
 
 import index from '../../data/_index.json';
 import uniquesData from '../../data/uniques.json';
@@ -315,7 +314,9 @@ const description =
 		/>
 	</head>
 	<body>
-		<FireBand />
+		{/* Fire band disabled 2026-08-22 pending a decision on what earns the
+		    bottom of the viewport. The component is intact — re-enable by
+		    restoring the import and putting <FireBand /> back here. See D14. */}
 
 		<header class="topbar">
 			{/* The pack's logotype is the only mark on the page (D12). The wiki
