@@ -385,12 +385,13 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 		</header>
 
 		{/* Mahjerion's CTE2 banner — the page's only logo (D12).
-		    Source is 1300x340. Measuring the logo's violet pixels puts it in
-		    rows 96..242, so a centred crop can reach 8.78:1 before it starts
-		    cutting letterforms. 8:1 leaves ~7px of margin either side, and is
-		    the proportion the earlier 560px asset could not reach. */}
+		    Ratio is the art's own 1300x340, so nothing is cropped: the scene
+		    he composed is what the reader sees. A tighter band is available —
+		    the logo's violet ink sits in rows 96..242, so a centred crop could
+		    reach 8.78:1 — but cropping his composition to buy vertical space
+		    is the wrong trade on the one surface that is his. */}
 		<div class="bannerwrap">
-			<Banner src="/banner-cte2.webp" alt="Craft to Exile 2" ratio="8 / 1" />
+			<Banner src="/banner-cte2.webp" alt="Craft to Exile 2" ratio="1300 / 340" />
 		</div>
 
 		<div class="shell">

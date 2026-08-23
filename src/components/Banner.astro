@@ -59,11 +59,8 @@ const { src, alt = '', ratio = '3 / 1', class: className = '' } = Astro.props;
 		image-rendering: auto;
 	}
 
-	/* A 3:1 slot is most of a phone screen. Let it get taller-but-shorter
-	   rather than eating the whole first viewport. */
-	@media (max-width: 640px) {
-		.banner {
-			aspect-ratio: 2 / 1;
-		}
-	}
+	/* No narrow-screen override. When the slot is set to the art's own ratio,
+	   changing it on small screens would start cropping the very thing the
+	   ratio exists to preserve — and a wide banner gets shorter on a narrow
+	   screen anyway, so it never eats the viewport. */
 </style>
