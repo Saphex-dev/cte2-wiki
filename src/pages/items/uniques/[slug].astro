@@ -1,30 +1,35 @@
 ---
+/* The unique item page. Infobox-anchored, per docs/DESIGN.md § 3 and ROADMAP D15.
+ *
+ * Prose leads the main column; every structured field lives in the box on the
+ * right. This inverts the earlier layout, where the in-game tooltip was the
+ * hero (D5) — that decision is superseded, though its reasoning is why the box
+ * exists at all: there is no per-unique art (ROADMAP § 1.5), so the frame and
+ * the type have to carry identity.
+ *
+ * Nothing in the prose below is written about a specific item. Every sentence is
+ * assembled from a field that resolved against a pack registry, and a field that
+ * is absent produces no sentence rather than a hedge. That is the only way this
+ * survives 251 pages.
+ */
 import Site from '../../../layouts/Site.astro';
 import ActLadder from '../../../components/ActLadder.astro';
-import { all, siblings, type Unique } from '../../../lib/uniques';
+import Infobox, { type InfoSection } from '../../../components/Infobox.astro';
+import { all, siblings, uniquePhrase, type Unique } from '../../../lib/uniques';
+import { bandTitles, joinTitles, stripArticle } from '../../../lib/dimensions';
+import { backdropFor } from '../../../lib/backdrop';
 
 export function getStaticPaths() {
-	/* Deliberately a sample, not the bulk. Four items chosen to stress the
-	   template rather than to flatter it:
-	     starforge             baseline, seven clean rolls
-	     lantern_of_lost_ghost carries a 126-character stat name
-	     chaotic_spark         the most rolls of any unique
-	     champions_waistguard  one of the 39 the pack ties to a mechanic
-	   Turning this into all 251 pages is deleting the filter below.
+	/* Every unique gets a page. This was a five-item sample while the template
+	   was being proved out — the four that stress it (a 126-character stat name,
+	   the most rolls in the set, a mechanic tie, a granted spell) plus a
+	   baseline. They all render, so the filter is gone.
 
-	   The list lives inside this function on purpose: Astro hoists
-	   getStaticPaths out of the frontmatter, so it cannot see consts declared
-	   alongside it. */
-	const SAMPLE = new Set([
-		'starforge',
-		'lantern_of_lost_ghost',
-		'chaotic_spark',
-		'champions_waistguard',
-	]);
-
-	return all
-		.filter((u) => SAMPLE.has(u.id))
-		.map((u) => ({ params: { slug: u.slug }, props: { item: u } }));
+	   All 251 is not a scale decision to agonise over: they are static pages off
+	   data that is already in memory, and the whole build is still seconds. The
+	   real reason to generate them is that a browse page listing 251 uniques
+	   where 246 are dead links is worse than no browse page at all. */
+	return all.map((u) => ({ params: { slug: u.slug }, props: { item: u } }));
 }
 
 interface Props {
@@ -32,212 +37,254 @@ interface Props {
 }
 const { item } = Astro.props;
 const related = siblings(item);
+const base = item.baseType.toLowerCase();
+const bands = bandTitles(item.bands);
 
-const description = `${item.name} — a unique ${item.baseType.toLowerCase()} in Craft to Exile 2, with its full stat rolls.`;
+/* Bands overlap and the pack records no drop location, so there is no true
+   single dimension for an item. The backdrop takes the deepest band the
+   level reaches — a display choice, and nothing on the page presents it as a
+   fact: the ladder below lights every band, and the prose names them all. */
+const backdrop = backdropFor(item.dropLevel);
+
+const description = `${item.name} — ${uniquePhrase(item.baseType)} in Craft to Exile 2, with its full stat rolls.`;
+
+/* Counted, not asserted. Granting a spell is genuinely unusual and the lede
+   says so — but it only gets to say so with the real number behind it. */
+const grantCount = all.filter((u) => u.grants.length > 0).length;
+
+/* ---- Infobox ------------------------------------------------------------
+   Rows are pushed only when the field resolved. An item that yields four rows
+   renders four rows; that is correct output, not a gap to paper over. */
+const stats: InfoSection = { title: 'Statistics', rows: [] };
+
+if (item.family) stats.rows!.push({ label: 'Family', value: item.family });
+stats.rows!.push({ label: 'Base', value: item.baseType });
+if (item.slot) stats.rows!.push({ label: 'Slot', value: item.slot });
+stats.rows!.push({
+	label: 'Rarity',
+	value: item.rarity.replace(/\b\w/g, (c) => c.toUpperCase()),
+	colour: `var(--r-${item.rarity})`,
+});
+stats.rows!.push({
+	label: 'Level',
+	value: String(item.dropLevel),
+	/* Derived, not stated — D2 and D4. The band is inferred from the level
+	   against the dimension ladder and is never labelled a drop location. */
+	qualifier: bands.length === 1 ? `${bands[0]} band` : undefined,
+});
+if (item.mapTier > 0) {
+	stats.rows!.push({ label: 'Map tier', value: `${item.mapTier}+` });
+}
+if (item.baseDamage) {
+	stats.rows!.push({
+		label: 'Base damage',
+		value: item.baseDamage,
+		qualifier: 'before rolls',
+	});
+}
+if (item.scaling) {
+	stats.rows!.push({
+		label: 'Scales on',
+		value: item.scaling.attribute,
+		qualifier: `${item.scaling.factor}×`,
+	});
+}
+if (item.mechanic) stats.rows!.push({ label: 'Found via', value: item.mechanic });
+
+const sections: InfoSection[] = [
+	stats,
+	{
+		title: item.rolls.length === 1 ? 'Stat roll' : 'Stat rolls',
+		blocks: item.rolls.map((r) => ({ value: r.value, label: r.label, colour: r.colour })),
+	},
+	/* `learn_<spell>` is not a stat. All 15 unresolvable roll entries across the
+	   251 uniques are `learn_*`, and all 14 distinct suffixes resolve against
+	   spells.json — so they get their own section rather than rendering as a
+	   stat line with a missing label. No href: there are no spell pages yet, and
+	   nav.ts's rule is that a link exists only when its route does. */
+	{
+		title: item.grants.length === 1 ? 'Grants skill' : 'Grants skills',
+		links: item.grants.map((g) => ({ label: g.name })),
+	},
+	/* The build vocabulary, and the reason this site is more than a lookup. It
+	   lives in the box rather than the prose so it is one more scannable row
+	   among the others, and so Pagefind indexes it with everything else. */
+	{ title: 'Build tags', links: item.tags.map((t) => ({ label: t })) },
+];
+
+/* There is deliberately no auto-generated Notes section. Every bullet it could
+   hold from pack data — map tier, mechanic, base damage, scaling — is already
+   a row in the box, and a Notes list that restates the box is padding.
+   Notes is where HAND-WRITTEN detail lands, which is exactly the thing
+   analytics is in place to identify (CLAUDE.md § Contributions). Until an item
+   earns that, the main column carries the lede, the run placement and the
+   sibling list, and says nothing it cannot source. */
 ---
 
 <Site
 	title={item.name}
 	description={description}
-	filters={{ section: 'Items', kind: 'Unique', base: item.baseType }}
+	{/* Tags join the filter set: build discovery is the point of tagging them,
+	    and a tag nobody can filter on does no work. */}
+	filters={{
+		section: 'Items',
+		kind: 'Unique',
+		base: item.baseType,
+		...(item.tags.length > 0 ? { build: item.tags } : {}),
+	}}
 	crumbs={[
 		{ label: 'Wiki', href: '/' },
 		{ label: 'Items', href: '/items/' },
 	]}
+	dimension={backdrop?.slug ?? null}
 >
 	<div class="itemlayout">
-		<article class="tooltip bevel">
-			<h1>{item.name}</h1>
-			<p class="base">
-				{item.baseType}
-				<span class="dot">&middot;</span>
-				drops from level {item.dropLevel}
-				{item.mapTier > 0 && (
-					<>
-						<span class="dot">&middot;</span>
-						map tier {item.mapTier}+
-					</>
-				)}
+		<div class="prose">
+			<h1 class="itemname">{item.name}</h1>
+
+			{/* Family is left to the box — "greatsword" already tells a reader it is
+			    a weapon, and a lede that says so twice reads as generated. */}
+			<p class="lede">
+				<strong>{item.name}</strong> is {uniquePhrase(item.baseType)}. The pack lists it from level {
+					item.dropLevel
+				}, and it rolls {item.rolls.length}
+				{item.rolls.length === 1 ? ' stat line' : ' stat lines'}.
+				{
+					item.grants.length > 0 && (
+						<>
+							{' '}
+							It also teaches {joinTitles(item.grants.map((g) => g.name))} while equipped —
+							only {grantCount} of the {all.length} uniques do.
+						</>
+					)
+				}
 			</p>
 
-			<dl class="rolls">
+			<h2>Where in the run</h2>
+			<p>
 				{
-					item.rolls.map((r) => (
-						<div class="roll" style={`--fmt:${r.colour}`}>
-							<dt>{r.value}</dt>
-							<dd>{r.label}</dd>
-						</div>
-					))
+					bands.length > 1
+						? `Level ${item.dropLevel} falls inside more than one dimension's band — ${joinTitles(bands)} — so it can turn up in any of them.`
+						: bands.length === 1
+							? `Level ${item.dropLevel} falls inside the ${stripArticle(bands[0])} band.`
+							: `Level ${item.dropLevel} falls outside every dimension's band. The ladder below leaves a real gap at 76–89.`
 				}
-			</dl>
-
-			{
-				item.tags.length > 0 && (
-					<ul class="tags">
-						{item.tags.map((t) => (
-							<li>{t}</li>
-						))}
-					</ul>
-				)
-			}
-		</article>
-
-		<div class="aside">
-			<section class="panel bevel">
-				<h2 class="ptitle">Where in the run</h2>
-				<div class="pbody">
-					<p class="phint">
-						{
-							item.bands.length > 1
-								? `Level ${item.dropLevel} falls inside more than one dimension's band, so it can turn up in any of them.`
-								: `Level ${item.dropLevel} sits in this part of the run.`
-						}
-					</p>
-					<ActLadder highlight={item.bands} />
-				</div>
-			</section>
-
-			{
-				item.mechanic && (
-					<section class="panel bevel">
-						<h2 class="ptitle">How it is found</h2>
-						<div class="pbody">
-							<p class="phint" style="margin:0">
-								Tied to <strong>{item.mechanic}</strong>.
-							</p>
-						</div>
-					</section>
-				)
-			}
+			</p>
+			<p class="caveat">
+				The bands come from the pack's own dimension level ranges. They say where an
+				item's level sits on the ladder, not where it drops — the pack records no drop
+				location for uniques.
+			</p>
+			<ActLadder highlight={item.bands} />
 
 			{
 				related.length > 0 && (
-					<section class="panel bevel">
-						<h2 class="ptitle">Other {item.baseType.toLowerCase()} uniques</h2>
-						<div class="pbody">
-							<ul class="related">
-								{related.map((r) => (
-									<li>
-										<span>{r.name}</span>
-										<span class="c">{r.dropLevel}</span>
-									</li>
-								))}
-							</ul>
-						</div>
-					</section>
+					<>
+						<h2>Other {base} uniques</h2>
+						<ul class="related">
+							{related.map((r) => (
+								<li>
+									<span>{r.name}</span>
+									<span class="c">level {r.dropLevel}</span>
+								</li>
+							))}
+						</ul>
+					</>
 				)
 			}
 		</div>
+
+		<Infobox
+			title={item.name}
+			accent={`var(--r-${item.rarity})`}
+			spriteLabel={item.baseType}
+			sections={sections}
+			flavour={item.flavour}
+		/>
 	</div>
 </Site>
 
 <style>
 	.itemlayout {
-		display: grid;
-		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		display: flex;
+		align-items: flex-start;
 		gap: var(--s2);
-		align-items: start;
+	}
+	.prose {
+		flex: 1 1 auto;
+		min-width: 0;
+		max-width: var(--w-prose);
 	}
 
-	/* The tooltip is the page (ROADMAP D5). Everything else arranges around it. */
-	.tooltip {
-		background: var(--surface-raised);
-		padding: var(--s2);
-		border-top: 2px solid var(--r-unique);
-	}
-	.tooltip h1 {
-		/* One of the two reserved uses of the pixel face (D11). 16px because the
-		   face is drawn on an 8px grid. */
+	/* One of the two reserved uses of the pixel face (D11), and the reason an
+	   item still reads as special without any art. 24px because the face is
+	   drawn on an 8px grid and is only crisp at multiples of 8. */
+	/* Sized against the LONGEST name in the set, not a typical one: the pixel
+	   face advances a full em per glyph (D11), so "Zazzith, Curse of the
+	   Restless Dead" is 35 glyphs = 840px at 24px, against an 848px column. It
+	   fits, but only just, so the size steps down with the column rather than
+	   wrapping a heading into three lines. 24 and 16 because the face is drawn
+	   on an 8px grid and is only crisp at multiples of 8. */
+	.itemname {
 		font-family: var(--font-pixel);
-		font-size: 16px;
+		font-size: 24px;
 		font-weight: 400;
 		letter-spacing: normal;
-		line-height: 1.5;
+		line-height: 1.4;
 		color: var(--r-unique);
-	}
-	.base {
-		margin: 12px 0 var(--s2);
-		font-family: var(--font-mono);
-		font-size: 12px;
-		color: var(--ink-faint);
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-	}
-	.dot {
-		margin: 0 8px;
+		margin-bottom: var(--s1);
 	}
 
-	/* Non-negotiable per CLAUDE.md: stat text always sits on a scrim. */
-	.rolls {
-		margin: 0;
-		background: rgba(0, 0, 0, 0.35);
-		padding: var(--s1);
+	.lede {
+		font-size: var(--t-body);
+		color: var(--ink-dim);
+		margin: 0 0 var(--s2);
 	}
-	.roll {
-		display: flex;
-		gap: var(--s1);
-		align-items: baseline;
-		padding: 4px 0;
-	}
-	.roll dt {
-		font-family: var(--font-mono);
-		font-size: 14px;
-		color: var(--fmt);
-		min-width: 84px;
-		flex-shrink: 0;
-	}
-	.roll dd {
-		margin: 0;
-		font-size: 14px;
-		color: color-mix(in srgb, var(--fmt) 62%, var(--ink-faint));
+	.lede strong {
+		color: var(--ink);
 	}
 
-	.tags {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 8px;
-		list-style: none;
-		margin: var(--s2) 0 0;
-		padding: 0;
-	}
-	.tags li {
-		font-family: var(--font-mono);
-		font-size: 11px;
-		letter-spacing: 0.08em;
-		text-transform: uppercase;
-		color: var(--ink-faint);
-		border: 1px solid var(--line);
-		padding: 3px 8px;
+	.caveat {
+		font-size: var(--t-small);
+		color: var(--ink-fainter);
+		margin: 0 0 var(--s1);
+		max-width: 72ch;
 	}
 
-	.aside .panel:last-child {
-		margin-bottom: 0;
-	}
 	.related {
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		columns: 2;
+		column-gap: var(--s2);
 	}
 	.related li {
 		display: flex;
 		justify-content: space-between;
 		gap: var(--s1);
-		font-size: 14px;
-		padding: 5px 0;
+		font-size: var(--t-data);
+		padding: var(--m2) 0;
 		border-bottom: 1px solid var(--line);
-	}
-	.related li:last-child {
-		border-bottom: 0;
+		break-inside: avoid;
 	}
 	.related .c {
 		font-family: var(--font-mono);
-		font-size: 12px;
+		font-size: var(--t-small);
 		color: var(--ink-fainter);
+		white-space: nowrap;
 	}
 
+	@media (max-width: 1200px) {
+		.itemname {
+			font-size: 16px;
+		}
+	}
 	@media (max-width: 900px) {
 		.itemlayout {
-			grid-template-columns: minmax(0, 1fr);
+			flex-direction: column;
+		}
+		.related {
+			columns: 1;
 		}
 	}
 </style>

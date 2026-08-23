@@ -1,0 +1,82 @@
+---
+/* The full-bleed dimension backdrop (docs/DESIGN.md § 1; ROADMAP D2, D15).
+ *
+ * Both reference wikis put an opaque content frame on top of a themed
+ * full-bleed background — Calamity a red nebula, RLCraft a photographic banner.
+ * This is our version of that, and the theme is the dimension the page is about.
+ *
+ * TWO THINGS THIS BUYS BEYOND ATMOSPHERE.
+ *   The backdrop never sits behind text. The content frame is opaque, so the
+ *   brief's non-negotiable "dark scrim behind stat blocks" is satisfied by
+ *   construction rather than by every component remembering to carry one.
+ *   And because legibility no longer depends on the backdrop being tame, the
+ *   per-tier vignette and tint work D2 originally scoped mostly disappears.
+ *
+ * ALL EIGHT PALETTES ARE EMITTED, ALWAYS.
+ *   One rule per dimension, keyed on `data-dimension`, rather than inline styles
+ *   on the element. That is ~8 short rules once per page instead of a style
+ *   attribute per page, it keeps the derived values out of the markup, and it
+ *   means a page switches dimension by changing one attribute. D2's requirement
+ *   is that theming is automatic and needs no hand-tagging across hundreds of
+ *   items; this is what makes that true.
+ *
+ * The colours are derived in `src/lib/backdrop.ts` from the pack's own biome
+ * sky and fog colours — see that file for which channel is read and why.
+ */
+import { palettes } from '../lib/backdrop';
+
+/* No trailing newline juggling: this is emitted with `is:inline`, so Astro
+   passes it through untouched rather than scoping or minifying it. */
+const css = palettes
+	.map(
+		(p) => `html[data-dimension="${p.slug}"]{--dim-ground:${p.ground};--dim-accent:${p.accent};}`
+	)
+	.join('\n');
+---
+
+<style is:inline set:html={css} />
+
+<div class="backdrop" aria-hidden="true"></div>
+
+<style>
+	/* Fixed rather than scrolling: the backdrop is the room the page is in, not
+	   part of the document. Fixed also means no repaint cost on scroll. */
+	.backdrop {
+		position: fixed;
+		inset: 0;
+		z-index: -1;
+		background-color: var(--dim-ground, var(--bg-deep));
+		background-image:
+			/* the dimension's atmosphere, strongest at the top where the brand
+			   band sits and the frame is narrowest */
+			radial-gradient(
+				120% 78% at 50% -12%,
+				var(--dim-accent, transparent) 0%,
+				transparent 68%
+			),
+			/* the 64px pixel grid, moved here off `body` so the frame can sit on
+			   top of it opaquely instead of inheriting it */
+			linear-gradient(rgba(0, 0, 0, 0.28) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(0, 0, 0, 0.28) 1px, transparent 1px);
+		background-size:
+			100% 100%,
+			64px 64px,
+			64px 64px;
+		background-repeat: no-repeat, repeat, repeat;
+	}
+
+	/* Without a dimension there is no atmosphere to show, so the page falls back
+	   to the chrome's own ground rather than inventing one. This is the 76–89
+	   band gap and every non-item page. */
+	html:not([data-dimension]) .backdrop {
+		background-image:
+			linear-gradient(var(--bg-deep) 1px, transparent 1px),
+			linear-gradient(90deg, var(--bg-deep) 1px, transparent 1px),
+			linear-gradient(180deg, var(--bg) 0%, var(--bg-mid) 62%, var(--bg-earth) 100%);
+		background-size:
+			64px 64px,
+			64px 64px,
+			100% 100%;
+		background-repeat: repeat, repeat, no-repeat;
+	}
+</style>

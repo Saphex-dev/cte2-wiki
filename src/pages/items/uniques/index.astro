@@ -1,0 +1,342 @@
+---
+/* The uniques browse page — the destination every "Uniques" link needs.
+ *
+ * Modelled on Calamity's `Weapons` page (docs/DESIGN.md § 4), which is the
+ * strongest pattern either reference offers and maps onto 251 uniques with no
+ * adaptation: an entry grid inside a bordered box, grouped by progression tier,
+ * with a floating Contents box above it.
+ *
+ * TWO GROUPINGS, ONE PAGE, EVERY UNIQUE IN BOTH.
+ *   By run position, because that is the act ladder's spine and the native wiki
+ *   idiom — Calamity groups Pre-Hardmode / Hardmode for exactly this reason.
+ *   By base type, because that is how the landing page and the items overview
+ *   already talk about uniques, and those pages need somewhere to link a base
+ *   type TO. Listing 251 twice makes a long page; that is what wikis are, and
+ *   the Contents box is what makes a long page navigable.
+ *
+ * NO SPRITES YET. § 4 calls for a sprite+name grid and the icon pipeline is
+ * still unbuilt (ROADMAP § 1.5, Phase 3.5), so entries carry name, base and
+ * level. The row reserves the icon's space so dropping art in later shifts
+ * nothing.
+ */
+import Site from '../../../layouts/Site.astro';
+import { all, baseAnchor, type Unique } from '../../../lib/uniques';
+import { deepestBand, ladder } from '../../../lib/backdrop';
+import { DIMENSION_TITLES } from '../../../lib/dimensions';
+
+/* Grouped by the SAME deepest-band rule the backdrop uses, so an item's group
+   here and the atmosphere on its own page never disagree. Bands overlap, so
+   without one shared rule an item would appear in three groups.
+
+   Grouped by the band's RANGE, not by its dimension id, because Everbright and
+   Everdawn are both levels 35–55 — the same rung of the ladder under two names.
+   Keying on the id sent every item in that range to whichever won the tie-break
+   and left the other dimension showing zero uniques, which is not true of
+   either. The range is the real unit here, so the heading names both. */
+const rangeKey = (lo: number, hi: number) => `${lo}-${hi}`;
+
+const byRange = new Map<string, Unique[]>();
+const beyond: Unique[] = [];
+for (const u of all) {
+	const band = deepestBand(u.dropLevel);
+	if (!band) {
+		beyond.push(u);
+		continue;
+	}
+	const key = rangeKey(band.lo, band.hi);
+	const bucket = byRange.get(key);
+	if (bucket) bucket.push(u);
+	else byRange.set(key, [u]);
+}
+
+/* One entry per distinct range, in ladder order, titled with every dimension
+   that occupies it. */
+const seenRange = new Set<string>();
+const runGroups = ladder
+	.filter((b) => {
+		const key = rangeKey(b.lo, b.hi);
+		if (seenRange.has(key) || !byRange.has(key)) return false;
+		seenRange.add(key);
+		return true;
+	})
+	.map((b) => {
+		const key = rangeKey(b.lo, b.hi);
+		const sharing = ladder.filter((o) => rangeKey(o.lo, o.hi) === key);
+		return {
+			id: `run-${key}`,
+			title: sharing.map((o) => DIMENSION_TITLES[o.id] ?? o.id).join(' / '),
+			note: `levels ${b.lo}–${b.hi}`,
+			items: byRange
+				.get(key)!
+				.sort((a, c) => a.dropLevel - c.dropLevel || a.name.localeCompare(c.name)),
+		};
+	});
+
+/* The pack's dimension bands leave a real gap at 76–89 — ActLadder documents it
+   and 39 uniques land in it. They get their own group rather than being quietly
+   dropped or filed under a band they are not in. */
+if (beyond.length > 0) {
+	runGroups.push({
+		id: 'run-beyond',
+		title: 'Past the last band',
+		note: 'levels 76–89, which no dimension covers',
+		items: beyond.sort((a, c) => a.dropLevel - c.dropLevel || a.name.localeCompare(c.name)),
+	});
+}
+
+const byBase = new Map<string, Unique[]>();
+for (const u of all) {
+	const bucket = byBase.get(u.baseType);
+	if (bucket) bucket.push(u);
+	else byBase.set(u.baseType, [u]);
+}
+const baseGroups = [...byBase.entries()]
+	.map(([baseType, items]) => ({
+		id: baseAnchor(baseType),
+		title: baseType,
+		note: `${items.length} unique${items.length === 1 ? '' : 's'}`,
+		items: items.sort((a, c) => a.dropLevel - c.dropLevel || a.name.localeCompare(c.name)),
+	}))
+	.sort((a, c) => c.items.length - a.items.length || a.title.localeCompare(c.title));
+
+const description = `All ${all.length} unique items in Craft to Exile 2, grouped by where in the run they sit and by base type.`;
+---
+
+<Site
+	title="Uniques"
+	description={description}
+	filters={{ section: 'Items', kind: 'Unique' }}
+	crumbs={[
+		{ label: 'Wiki', href: '/' },
+		{ label: 'Items', href: '/items/' },
+	]}
+>
+	<div class="prose">
+		<h1>Uniques</h1>
+		<p class="lede">
+			All <strong>{all.length}</strong> named items in the pack, across {baseGroups.length}
+			{' '}base types. Every stat line on every page below is read out of the modpack
+			itself.
+		</p>
+
+		{/* Calamity's floating Contents box. On a page this long it is not a
+		    nicety — it is the only way to reach the middle of it. */}
+		<nav class="contents" aria-label="Contents">
+			<h2>Contents</h2>
+			<ol>
+				<li>
+					<a href="#by-run">Where they sit in the run</a>
+					<ol>
+						{runGroups.map((g) => (
+							<li>
+								<a href={`#${g.id}`}>{g.title}</a> <span class="c">{g.items.length}</span>
+							</li>
+						))}
+					</ol>
+				</li>
+				<li>
+					<a href="#by-base">By base type</a>
+					<ol class="wrapcols">
+						{baseGroups.map((g) => (
+							<li>
+								<a href={`#${g.id}`}>{g.title}</a> <span class="c">{g.items.length}</span>
+							</li>
+						))}
+					</ol>
+				</li>
+			</ol>
+		</nav>
+
+		<h2 id="by-run">Where they sit in the run</h2>
+		<p class="caveat">
+			Grouped by the deepest dimension band an item's level reaches. The bands come
+			from the pack's own level ranges and they overlap, so this says where an item
+			sits on the ladder, not where it drops — the pack records no drop location for
+			uniques.
+		</p>
+
+		{
+			runGroups.map((g) => (
+				<section class="group">
+					<h3 id={g.id}>
+						{g.title} <span class="note">{g.note}</span>
+					</h3>
+					<ul class="grid bevel">
+						{g.items.map((u) => (
+							<li>
+								<a href={`/items/uniques/${u.slug}/`}>
+									<span class="icon" aria-hidden="true" />
+									<span class="n">{u.name}</span>
+								</a>
+								<span class="meta">
+									{u.baseType} · {u.dropLevel}
+								</span>
+							</li>
+						))}
+					</ul>
+				</section>
+			))
+		}
+
+		<h2 id="by-base">By base type</h2>
+		<p class="caveat">The same {all.length} items, filed by the gear they sit on.</p>
+
+		{
+			baseGroups.map((g) => (
+				<section class="group">
+					<h3 id={g.id}>
+						{g.title} <span class="note">{g.note}</span>
+					</h3>
+					<ul class="grid bevel">
+						{g.items.map((u) => (
+							<li>
+								<a href={`/items/uniques/${u.slug}/`}>
+									<span class="icon" aria-hidden="true" />
+									<span class="n">{u.name}</span>
+								</a>
+								<span class="meta">level {u.dropLevel}</span>
+							</li>
+						))}
+					</ul>
+				</section>
+			))
+		}
+	</div>
+</Site>
+
+<style>
+	.prose {
+		max-width: var(--w-prose);
+	}
+
+	/* Calamity's Contents box: bordered, numbered, sitting in the flow rather
+	   than pinned to a rail. */
+	.contents {
+		background: var(--surface);
+		border: 1px solid var(--line);
+		padding: var(--s1);
+		margin: 0 0 var(--s2);
+		display: inline-block;
+		min-width: 320px;
+		max-width: 100%;
+	}
+	.contents h2 {
+		font-size: var(--t-body);
+		margin: 0 0 var(--m3);
+		padding: 0;
+		border: 0;
+		text-align: center;
+	}
+	.contents ol {
+		list-style: decimal;
+		margin: 0;
+		padding-left: var(--s1);
+		font-size: var(--t-small);
+		max-width: none; /* same 72ch cap as `.grid` above */
+	}
+	.contents ol ol {
+		list-style: none;
+		padding-left: var(--m4);
+	}
+	.contents li {
+		padding: var(--m1) 0;
+	}
+	.contents .c {
+		color: var(--ink-fainter);
+		font-family: var(--font-mono);
+		font-size: var(--t-label);
+	}
+	/* 41 base types would be a very tall single column. */
+	.wrapcols {
+		columns: 3;
+		column-gap: var(--s2);
+	}
+	.wrapcols li {
+		break-inside: avoid;
+	}
+
+	.group {
+		margin-bottom: var(--s2);
+	}
+	.group h3 {
+		margin: 0 0 var(--m3);
+		font-size: var(--t-body);
+		color: var(--ink);
+	}
+	.note {
+		font-family: var(--font-mono);
+		font-size: var(--t-small);
+		color: var(--ink-fainter);
+		font-weight: 400;
+		margin-left: var(--m3);
+	}
+
+	/* The entry grid. Auto-fit rather than a fixed column count so a group of
+	   three does not stretch to the full width. */
+	.grid {
+		list-style: none;
+		margin: 0;
+		padding: var(--m4);
+		/* site.css caps `.prose ul` at 72ch, which is right for a prose bullet
+		   list and wrong for a data grid — it was holding this to 648px inside a
+		   1000px column and forcing two columns where four fit. */
+		max-width: none;
+		background: var(--surface);
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+		gap: var(--m2) var(--s1);
+	}
+	/* Name on its own line, meta beneath. At four columns the name shared a row
+	   with "Brigandine Helmet · 20" and half the set truncated to "Granat'..." —
+	   which is useless in a list whose whole job is letting you find a name.
+	   Stacking costs a few pixels of height per row and nothing truncates. */
+	.grid li {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		padding: var(--m2) 0;
+		min-width: 0;
+	}
+	.grid a {
+		display: flex;
+		align-items: center;
+		gap: var(--m3);
+		min-width: 0;
+		text-decoration: none;
+	}
+	.grid a:hover .n {
+		text-decoration: underline;
+	}
+	/* Reserved for the icon pipeline (ROADMAP Phase 3.5). Holding the space now
+	   means dropping sprites in later shifts no layout. */
+	.icon {
+		flex: none;
+		width: 16px;
+		height: 16px;
+		background: var(--bg-deep);
+		box-shadow: inset 1px 1px 0 var(--bevel-dark), inset -1px -1px 0 var(--bevel-light);
+	}
+	.grid .n {
+		font-size: var(--t-data);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.grid .meta {
+		/* Indented to sit under the name rather than the icon, so the second line
+		   reads as belonging to the entry above it. */
+		margin-left: calc(16px + var(--m3));
+		font-family: var(--font-mono);
+		font-size: var(--t-label);
+		color: var(--ink-fainter);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	@media (max-width: 640px) {
+		.wrapcols {
+			columns: 1;
+		}
+	}
+</style>

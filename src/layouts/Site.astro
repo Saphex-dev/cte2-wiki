@@ -13,24 +13,33 @@
  */
 import '../styles/tokens.css';
 import '../styles/site.css';
+import Backdrop from '../components/Backdrop.astro';
 import { RAIL } from '../data/nav';
 
 interface Props {
 	title: string;
 	description: string;
-	/** Pagefind filters — section, kind, rarity, and so on. */
-	filters?: Record<string, string>;
+	/** Pagefind filters — section, kind, rarity, and so on. A value may be an
+	 *  array when one key carries several values (an item has several build
+	 *  tags); each becomes its own `key:value` pair. */
+	filters?: Record<string, string | string[]>;
 	/** Breadcrumb trail, nearest ancestor last. */
 	crumbs?: { label: string; href: string }[];
+	/** Dimension whose backdrop this page wears, as a `data-dimension` slug.
+	 *  Omitted means no atmosphere — the plain chrome ground. */
+	dimension?: string | null;
 }
 
-const { title, description, filters = {}, crumbs = [] } = Astro.props;
+const { title, description, filters = {}, crumbs = [], dimension = null } = Astro.props;
 
-const filterEntries = Object.entries(filters).filter(([, v]) => v);
-const filterAttr =
-	filterEntries.length > 0
-		? filterEntries.map(([k, v]) => `${k}:${v}`).join(', ')
-		: undefined;
+/* Pagefind reads ONE comma-separated attribute, and a key repeats to carry
+   several values: `build:Fire, build:Critical`. Flattening arrays here rather
+   than letting callers pre-join them is what stops a value containing a comma
+   from silently splitting into a bogus filter. */
+const filterPairs = Object.entries(filters).flatMap(([k, v]) =>
+	(Array.isArray(v) ? v : [v]).filter(Boolean).map((one) => `${k}:${one}`)
+);
+const filterAttr = filterPairs.length > 0 ? filterPairs.join(', ') : undefined;
 
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL('/banner-cte2.webp', Astro.site).href;
@@ -38,7 +47,7 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 const fullTitle = `${title} · Craft to Exile 2 Wiki`;
 ---
 
-<html lang="en">
+<html lang="en" data-dimension={dimension ?? undefined}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -79,64 +88,89 @@ const fullTitle = `${title} · Craft to Exile 2 Wiki`;
 	</head>
 
 	<body>
-		<header class="topbar">
-			<a class="wordmark" href="/">Craft to Exile 2 Wiki</a>
-			<nav class="topnav">
-				<a href="/guides/example/">Docs</a>
-				<a href="https://github.com/Saphex-dev/cte2-wiki">GitHub</a>
-			</nav>
+		<Backdrop />
+
+		{/* The brand band sits ON the backdrop, above the frame, not inside it.
+		    That is D12's measured lesson from Calamity: the atmosphere is a
+		    page-level backdrop with the logo floating over it, and all the brand
+		    spend goes into this one band while the chrome below stays plain.
+		    It is also the only place the backdrop gets real estate — at 1440px
+		    the frame leaves too little gutter for it to read. */}
+		<header class="masthead">
+			<a href="/" aria-label="Craft to Exile 2 Wiki — home">
+				<img
+					src="/banner-cte2.webp"
+					alt="Craft to Exile 2"
+					width="1300"
+					height="340"
+					decoding="async"
+				/>
+			</a>
 		</header>
 
-		<div class="shell">
-			<aside class="rail" aria-label="Wiki navigation">
-				{
-					RAIL.map((group) => (
-						<section class="railgroup bevel">
-							<h2>{group.title}</h2>
-							<ul>
-								{group.items.map((item) => (
-									<li>
-										{item.href ? (
-											<a
-												href={item.href}
-												aria-current={item.href === Astro.url.pathname ? 'page' : undefined}
-											>
-												{item.label}
-											</a>
-										) : (
-											<span>{item.label}</span>
-										)}
-									</li>
+		{/* The opaque content frame. Everything the reader reads sits inside it,
+		    on top of the backdrop, which is what makes the backdrop safe to be
+		    as busy as it likes (docs/DESIGN.md § 1). */}
+		<div class="frame">
+			<header class="topbar">
+				<a class="wordmark" href="/">Craft to Exile 2 Wiki</a>
+				<nav class="topnav">
+					<a href="/guides/example/">Docs</a>
+					<a href="https://github.com/Saphex-dev/cte2-wiki">GitHub</a>
+				</nav>
+			</header>
+
+			<div class="shell">
+				<aside class="rail" aria-label="Wiki navigation">
+					{
+						RAIL.map((group) => (
+							<section class="railgroup bevel">
+								<h2>{group.title}</h2>
+								<ul>
+									{group.items.map((item) => (
+										<li>
+											{item.href ? (
+												<a
+													href={item.href}
+													aria-current={item.href === Astro.url.pathname ? 'page' : undefined}
+												>
+													{item.label}
+												</a>
+											) : (
+												<span>{item.label}</span>
+											)}
+										</li>
+									))}
+								</ul>
+							</section>
+						))
+					}
+				</aside>
+
+				{/* Pagefind takes multiple filters on ONE attribute, comma-separated.
+				    Emitting the attribute repeatedly would silently keep only the
+				    last one. */}
+				<main data-pagefind-body data-pagefind-filter={filterAttr}>
+					{
+						crumbs.length > 0 && (
+							<nav class="crumbs" aria-label="Breadcrumb" data-pagefind-ignore>
+								{crumbs.map((c) => (
+									<a href={c.href}>{c.label}</a>
 								))}
-							</ul>
-						</section>
-					))
-				}
-			</aside>
+								<span aria-current="page">{title}</span>
+							</nav>
+						)
+					}
+					<slot />
+				</main>
+			</div>
 
-			{/* Pagefind takes multiple filters on ONE attribute, comma-separated.
-			    Emitting the attribute repeatedly would silently keep only the
-			    last one. */}
-			<main data-pagefind-body data-pagefind-filter={filterAttr}>
-				{
-					crumbs.length > 0 && (
-						<nav class="crumbs" aria-label="Breadcrumb" data-pagefind-ignore>
-							{crumbs.map((c) => (
-								<a href={c.href}>{c.label}</a>
-							))}
-							<span aria-current="page">{title}</span>
-						</nav>
-					)
-				}
-				<slot />
-			</main>
+			<footer data-pagefind-ignore>
+				<p>
+					An unofficial community wiki for <strong>Craft to Exile 2</strong> by Mahjerion.
+					Not affiliated with Mojang.
+				</p>
+			</footer>
 		</div>
-
-		<footer data-pagefind-ignore>
-			<p>
-				An unofficial community wiki for <strong>Craft to Exile 2</strong> by Mahjerion.
-				Not affiliated with Mojang.
-			</p>
-		</footer>
 	</body>
 </html>

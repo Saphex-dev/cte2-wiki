@@ -15,6 +15,8 @@
 import '../styles/tokens.css';
 import Banner from '../components/Banner.astro';
 import ActLadder from '../components/ActLadder.astro';
+import { baseHref, all as allUniques } from '../lib/uniques';
+import { RAIL } from '../data/nav';
 
 import index from '../../data/_index.json';
 import uniquesData from '../../data/uniques.json';
@@ -252,48 +254,13 @@ const searchIndex = uniques.map((u) => ({
 	l: u.data.min_drop_lvl ?? 0,
 }));
 
-/* Left rail, mirroring Calamity's grouped sidebar. `href` is set only where a
-   route genuinely exists today; the rest are index entries, not dead links. */
-const RAIL: { title: string; items: { label: string; href?: string }[] }[] = [
-	{
-		title: 'Wiki',
-		items: [
-			{ label: 'Main page', href: '/' },
-			{ label: 'Documentation', href: '/guides/example/' },
-			{ label: 'Contributing', href: 'https://github.com/Saphex-dev/cte2-wiki' },
-		],
-	},
-	{
-		title: 'Items',
-		items: [
-			{ label: 'Uniques' },
-			{ label: 'Base gear' },
-			{ label: 'Runewords' },
-			{ label: 'Support gems' },
-			{ label: 'Currency' },
-		],
-	},
-	{
-		title: 'Character',
-		items: [
-			{ label: 'Classes' },
-			{ label: 'Skills' },
-			{ label: 'Talents' },
-			{ label: 'Ascendancy' },
-			{ label: 'Perks' },
-		],
-	},
-	{
-		title: 'World',
-		items: [
-			{ label: 'Atlas' },
-			{ label: 'Dungeons' },
-			{ label: 'Prophecies' },
-			{ label: 'Map affixes' },
-			{ label: 'Professions' },
-		],
-	},
-];
+/* Left rail, mirroring Calamity's grouped sidebar.
+
+   Imported, not redeclared. This page carried its own copy of RAIL and it had
+   drifted: nav.ts had picked up hrefs for the section overviews and the uniques
+   list, while the copy here still listed every Items entry as plain text. The
+   result was a landing page whose sidebar led nowhere, which is exactly the
+   divergence nav.ts's own header says it exists to prevent. */
 
 const title = 'Craft to Exile 2 Wiki';
 const description =
@@ -502,7 +469,7 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 
 				<div class="portals">
 					<section class="panel portal" data-panel>
-						<h2 class="ptitle">Items</h2>
+						<h2 class="ptitle"><a href="/items/">Items</a></h2>
 						<div class="pbody">
 							<div class="cols">
 								<div class="col">
@@ -511,7 +478,9 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 										{
 											weapons.map((w) => (
 												<li data-entry data-label={w.label}>
-													<span class="e">{w.label}</span>
+													<a class="e" href={baseHref(w.label)}>
+														{w.label}
+													</a>
 													<span class="c">{w.n}</span>
 												</li>
 											))
@@ -524,7 +493,9 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 										{
 											armour.map((a) => (
 												<li data-entry data-label={a.label}>
-													<span class="e">{a.label}</span>
+													<a class="e" href={baseHref(a.label)}>
+														{a.label}
+													</a>
 													<span class="c">{a.n}</span>
 												</li>
 											))
@@ -535,7 +506,9 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 										{
 											jewellery.map((j) => (
 												<li data-entry data-label={j.label}>
-													<span class="e">{j.label}</span>
+													<a class="e" href={baseHref(j.label)}>
+														{j.label}
+													</a>
 													<span class="c">{j.n}</span>
 												</li>
 											))
@@ -556,6 +529,9 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 									</ul>
 								</div>
 							</div>
+							<p class="allrow">
+								<a href="/items/uniques/">All {allUniques.length} uniques &rarr;</a>
+							</p>
 							<ul class="alsorow">
 								<li data-entry data-label="base gear">
 									<span class="e">Base gear</span><span class="c">
@@ -592,7 +568,7 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 					</section>
 
 					<section class="panel portal" data-panel>
-						<h2 class="ptitle">Classes and Skills</h2>
+						<h2 class="ptitle"><a href="/character/">Classes and Skills</a></h2>
 						<div class="pbody">
 							<div class="cols three">
 								{
@@ -632,7 +608,7 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 					</section>
 
 					<section class="panel portal" data-panel>
-						<h2 class="ptitle">Passives</h2>
+						<h2 class="ptitle"><a href="/character/">Passives</a></h2>
 						<div class="pbody">
 							<ul class="wide">
 								{
@@ -657,7 +633,7 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 					</section>
 
 					<section class="panel portal" data-panel>
-						<h2 class="ptitle">World and Endgame</h2>
+						<h2 class="ptitle"><a href="/world/">World and Endgame</a></h2>
 						<div class="pbody">
 							<div class="cols">
 								<ul>
@@ -709,7 +685,7 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 					</section>
 
 					<section class="panel portal" data-panel>
-						<h2 class="ptitle">Where Uniques Drop</h2>
+						<h2 class="ptitle"><a href="/items/uniques/">Where Uniques Drop</a></h2>
 						<div class="pbody">
 							{/* The pack ties 39 of 251 uniques to a specific mechanic and
 							    says nothing about the rest. Saying nothing back is the
@@ -736,7 +712,7 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 					</section>
 
 					<section class="panel portal" data-panel>
-						<h2 class="ptitle">Professions</h2>
+						<h2 class="ptitle"><a href="/crafting/">Professions</a></h2>
 						<div class="pbody">
 							<div class="cols three">
 								{
@@ -771,7 +747,7 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 					</section>
 
 					<section class="panel portal wide-panel" data-panel>
-						<h2 class="ptitle">Find Items by Playstyle</h2>
+						<h2 class="ptitle"><a href="/items/uniques/">Find Items by Playstyle</a></h2>
 						<div class="pbody">
 							<p class="phint">
 								Uniques are matched on the stats they actually roll, so searching
@@ -1328,6 +1304,46 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 				color: var(--ink-dim);
 				text-transform: capitalize;
 			}
+			/* The base-type entries are links and read as links. An earlier pass
+			   kept them ink-coloured on the theory that forty accent rows would be
+			   noise — but checking the reference settles it: Calamity's main-page
+			   portals are columns of link-coloured entries, and that is most of
+			   what makes the page obviously navigable rather than a status board.
+			   A portal whose entries look like plain text is the bug this change
+			   set out to fix. */
+			a.e {
+				color: var(--accent);
+				text-decoration: none;
+			}
+			a.e:hover {
+				text-decoration: underline;
+			}
+
+			/* The plain way in, above the breakdown. The portal lists tell you how
+			   the 251 split up; this is the door to all of them. */
+			.allrow {
+				margin: var(--s2) 0 0;
+				padding-top: var(--s1);
+				border-top: 1px solid var(--line);
+				font-size: 14px;
+			}
+			.allrow a {
+				color: var(--accent);
+				text-decoration: none;
+			}
+			.allrow a:hover {
+				text-decoration: underline;
+			}
+
+			/* Panel titles that lead somewhere. Same reasoning as a.e: the title
+			   keeps its own colour and earns an underline on hover. */
+			.ptitle a {
+				color: inherit;
+				text-decoration: none;
+			}
+			.ptitle a:hover {
+				text-decoration: underline;
+			}
 			.c {
 				font-family: var(--font-mono);
 				font-size: 12px;
@@ -1345,9 +1361,10 @@ const beacon = import.meta.env.CF_BEACON_TOKEN ?? '';
 				display: flex !important;
 				flex-wrap: wrap;
 				gap: 8px var(--s2);
-				margin-top: var(--s2) !important;
-				padding-top: var(--s1) !important;
-				border-top: 1px solid var(--line);
+				/* No top border or margin: `.allrow` now sits immediately above and
+				   already draws the rule. Two would read as a mistake. */
+				margin-top: var(--s1) !important;
+				padding-top: 0 !important;
 			}
 			.alsorow li {
 				gap: 8px;

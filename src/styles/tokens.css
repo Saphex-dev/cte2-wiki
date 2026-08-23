@@ -1,7 +1,8 @@
 /* Design tokens — shared by the landing page and (later) the Starlight docs shell.
    See CLAUDE.md § Visual design and docs/ROADMAP.md § D7–D10.
 
-   - Hard 16px grid. Every spacing value is a multiple of 16.
+   - Two spacing scales, macro and micro. See the spacing block below — the
+     boundary between them is load-bearing (D15).
    - No border-radius. Anywhere.
    - Beveled edges are the signature element.
 
@@ -29,13 +30,51 @@
    teaches players a meaning that is not there. */
 
 :root {
-	/* Spacing — 16px grid */
+	/* ---- Spacing — two scales, and the boundary is the rule (D15) -------
+	   MACRO is the original 16px grid. It governs page margins, frame padding,
+	   gaps between panels, and vertical rhythm between sections.
+
+	   MICRO exists because the site is modelled on the Calamity wiki, and wiki
+	   density is the point of that reference — its infobox rows sit roughly 4px
+	   apart. A 16px minimum turns a seven-roll unique into a screen and a half
+	   of whitespace and a 40-row stat table into something nobody scrolls.
+
+	   MICRO IS NOT A GENERAL ESCAPE HATCH. It applies only inside a row of
+	   repeating data: infobox rows, table cells, stat lines, tag chips, rail
+	   links. If a value is not inside repeating data, it uses macro. Reaching
+	   for --m2 to tighten a layout that merely feels loose is the misuse this
+	   comment exists to prevent. */
+
+	/* Macro */
 	--s1: 16px;
 	--s2: 32px;
 	--s3: 48px;
 	--s4: 64px;
 	--s6: 96px;
 	--s8: 128px;
+
+	/* Micro — data components only */
+	--m1: 2px;
+	--m2: 4px;
+	--m3: 8px;
+	--m4: 12px;
+
+	/* ---- Type scale ---------------------------------------------------
+	   Dense, matching the reference. Press Start 2P is exempt: it is drawn on
+	   an 8px grid and is only crisp at multiples of 8, so it stays on
+	   8/16/24/32 regardless of this scale (D11). */
+	--t-body: 15px; /* body prose */
+	--t-data: 13px; /* data rows, tables, infobox values */
+	--t-small: 12px; /* rail links, captions, chips */
+	--t-label: 11px; /* group titles, small-caps labels */
+
+	/* ---- Layout — targets chosen for our frame, matching Calamity's
+	   proportions. RLCraft's ~330px prose column is an ad-inventory artefact
+	   and is deliberately not copied. */
+	--w-frame: 1440px;
+	--w-rail: 176px;
+	--w-prose: 1000px;
+	--w-infobox: 288px;
 
 	/* ---- BRAND — wordmark only ---------------------------------------- */
 	--brand-violet: #844dec;
@@ -53,6 +92,11 @@
 	--surface: #191521; /* panel */
 	--surface-raised: #221c2e; /* panel that needs to sit above its neighbour */
 	--line: #2e2740;
+	/* The section-heading rule. Brighter than --line because it sits on the page
+	   ground rather than on a panel: --line on --surface is a visible edge, but
+	   --line on --bg is 1.2:1 and effectively invisible. DESIGN.md § 6 calls the
+	   heading rule load-bearing, so it has to actually read. */
+	--rule: #4a4060;
 	--stroke: #211533; /* glyph and edge outline */
 
 	/* Bevel — the signature edge, 2px so it actually reads. At 1px it was

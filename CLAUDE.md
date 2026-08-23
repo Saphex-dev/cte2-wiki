@@ -158,16 +158,46 @@ Read it before touching `extract/`.
 
 ## Visual design
 
-Minecraft-flavoured pixel style, restrained rather than literal. Big visuals,
-generous spacing.
+> **`docs/DESIGN.md` is authoritative for appearance.** This section is the short
+> form. Where they disagree, that file wins. Decision logged as `docs/ROADMAP.md`
+> § D15 (2026-08-23).
 
-- **Hard 16px grid.** All spacing in multiples of 16.
-- **No border-radius.** Anywhere.
-- **Beveled panel edges** are the signature UI element.
-- Type: **Monocraft** headings, **IBM Plex Sans** body, **IBM Plex Mono** stat lines.
+**The site is modelled on two existing modpack wikis**, so players who already use
+them do not have to learn a new interface to look up a sword:
+
+| | |
+|---|---|
+| Primary | Official Calamity Mod Wiki — `calamitymod.wiki.gg` |
+| Secondary | RLCraft Wiki — `rlcraft.fandom.com` |
+| Conflicts | **Calamity wins** |
+
+Minecraft-flavoured pixel style, restrained rather than literal, expressed *through*
+wiki conventions rather than instead of them.
+
+- **Opaque, square-cornered content frame** on a full-bleed themed backdrop. The
+  frame is the scrim.
+- **No border-radius. Anywhere.** RLCraft is rounded; we take Calamity's square.
+- **Two-scale spacing.** *Macro* — 16/32/48/64/96/128 — governs margins, frame
+  padding, panel gaps and section rhythm. *Micro* — 2/4/8/12 — governs the inside of
+  data components only: infobox rows, table cells, stat lines, chips, rail links.
+  **The boundary is the rule**, not a licence to tighten a layout that feels loose.
+- **Wiki density, not generous spacing.** Body 15px, data rows 13px, rail 12px,
+  labels 11px. Press Start 2P is exempt and stays on 8/16/24/32 (D11).
+- **Beveled panel edges** remain the signature UI element.
+- **The infobox anchors every item page** — prose leads the main column, all
+  structured data lives in a 288px box on the right, with the in-game tooltip as an
+  italic block at the foot of it. This supersedes D5's tooltip-as-hero.
+- **Browse pages are sprite+name grids grouped by dimension**, the way Calamity's
+  Weapons page groups by Pre-Hardmode/Hardmode.
+- **The landing page is a hub of portal boxes**, not a pitch surface.
+- Type: **Monocraft** headings, **IBM Plex Sans** body, **IBM Plex Mono** stat lines,
+  **Press Start 2P** for the wordmark and an item's own name only.
 
 Avoid over-literal Minecraft styling — dirt-texture headers, blocky drop shadows on
 everything, cobblestone borders. It reads as amateur and undercuts the pitch.
+
+**Do not copy either reference's palette.** Ours is sampled from the pack and stays
+that way (D8, D9, D13). What we take from them is structure and density.
 
 ### Working within Starlight
 
@@ -180,42 +210,46 @@ Starlight ships its own opinionated theme, and this design fights it. Two rules:
   wrecks Starlight's typography. The cascade layer order at the top of that file is
   load-bearing; don't reorder it.
 
-If the design ends up requiring wholesale Starlight component overrides, that's a
-signal worth raising rather than absorbing.
+Starlight's centred ~700px prose column is Fandom-shaped, not Calamity-shaped. Since
+D1 already moved item and build pages onto custom routes, **match chrome only** —
+topbar, rail, palette — and accept that docs pages read as a second register. If the
+design ends up requiring wholesale Starlight component overrides, that's a signal
+worth raising rather than absorbing.
 
-### Dimension + rarity background matrix
+### Dimension background matrix
 
 > **Revised 2026-08-22 — the rarity axis is dropped.** Uniques carry no drop-source
-> field, and `rarity` is the constant `"unique"` on all 251 of them, so five of the six
-> procedural tiers would never render on an item page. Backgrounds key on **dimension
-> alone**, derived from `min_drop_lvl` against the pack's own `mmorpg_dimension` level
-> ladder (8 dimensions, 1–100). That mapping is *derived*, not a drop location — it may
-> never be labelled "drops in." See `docs/ROADMAP.md` § D2. The rest of this section
-> stands, with rarity read as a single tier.
+> field, and `rarity` is the constant `"unique"` on all 251 of them, so five of the
+> six procedural tiers would never render on an item page. Backgrounds key on
+> **dimension alone**, derived from `min_drop_lvl` against the pack's own
+> `mmorpg_dimension` level ladder (8 dimensions, 1–100). That mapping is *derived*,
+> not a drop location — it may never be labelled "drops in." See `docs/ROADMAP.md`
+> § D2.
+>
+> **Revised again 2026-08-23 (D15) — the backdrop moved behind the frame.** Content
+> now sits on an opaque square panel, Calamity-style, so the backdrop only shows in
+> the page gutters. Consequences: the per-tier vignette and tint work mostly
+> disappears, the bespoke mythic backdrop becomes optional rather than the
+> deliverable that justified the system, and the mandated scrim is satisfied
+> structurally instead of per-component.
 
-Backgrounds encode two signals at once: **material family = dimension**,
-**elaboration = rarity**. Netherrack for common Nether; the Citadel for mythic Nether;
-enchanted deepslate for mythic Overworld.
+Backgrounds encode material family = dimension. Netherrack for the Nether,
+enchanted deepslate for the Overworld's deep end.
 
 Implementation rules:
 
-- **Do not author N×5 bespoke backgrounds.** Rarity is procedural on top of one
-  tileable texture per dimension:
-  - *Common* — flat tiled base material, low opacity, no motion
-  - *Mid tiers* — same tile plus rarity-hued vignette and tint, intensity climbing
-    per tier
-  - *Mythic* — the only bespoke tier: hand-made pixel backdrop, strongest vignette,
-    optional ambient drift
-- Deliverable is roughly one tileable texture plus one mythic backdrop per dimension.
-  Everything between is CSS layers. Every dimension gets full coverage on day one.
+- **Do not author bespoke art per dimension per tier.** One tileable texture per
+  dimension is the deliverable; everything else is CSS layers. Every dimension gets
+  full coverage on day one.
 - **Theming is automatic.** `data-dimension` on `<html>`, derived from the item's
-  `min_drop_lvl` against the dimension level ladder, drives CSS custom properties. No
-  hand-tagging — it has to hold up across hundreds of items.
-- **Rarity is carried absolutely by the item name and frame**, not by the background.
-  A player landing cold on one page can't compare against other cells. Background is
-  atmospheric reinforcement only.
-- **The dark scrim behind stat blocks is non-negotiable.** Mythic backgrounds are the
-  busiest and the most likely to eat text. Legibility wins over atmosphere every time.
+  `min_drop_lvl` against the dimension level ladder, drives CSS custom properties.
+  No hand-tagging — it has to hold up across hundreds of items.
+- **Rarity is carried absolutely by the item name and frame**, not by the
+  background. A player landing cold on one page can't compare against other cells.
+  Background is atmospheric reinforcement only.
+- **Legibility wins over atmosphere every time.** The opaque frame now enforces
+  this by construction, but anything that deliberately breaks out of the frame
+  carries its own scrim.
 
 ### Prefer extracted values over invented ones
 
@@ -229,6 +263,10 @@ difference.
 A thin strip of dimension swatches in the header, current one lit, so every item page
 shows at a glance where in the run it sits. This is a navigational tool, not
 ornament — treat it as load-bearing.
+
+**Reinforced by D15.** Calamity's browse pages group items by progression tier
+(`Pre-Hardmode` / `Hardmode`) as their native idiom. Grouping by dimension is the
+same move, which is independent evidence the ladder is the right spine for the site.
 
 ## Build tagging
 
@@ -255,6 +293,9 @@ vocabulary controlled — a new tag needs a deliberate decision, not an ad-hoc s
 
 ## Reference docs
 
+- `docs/DESIGN.md` — **authoritative for appearance.** The Calamity/RLCraft
+  standard, the two-scale grid, the infobox spec, and what we deliberately did
+  not copy
 - `docs/ROADMAP.md` — decisions and the data audit behind them, plus phase order.
   Written later than this file; where the two disagree, reconcile them
 - `docs/PACK_OVERVIEW.md` — what the pack contains, by system, with counts

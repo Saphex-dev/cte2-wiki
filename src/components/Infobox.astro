@@ -1,0 +1,271 @@
+---
+/* The infobox — the anchor of every item, mob, dimension and skill page.
+ * Spec: docs/DESIGN.md § 3. Decision: ROADMAP D15.
+ *
+ * Modelled on the Official Calamity Mod Wiki's item infobox: title bar, sprite
+ * well, then any number of section bars over label/value rows. The label is
+ * right-aligned and dim, the value left-aligned and bright, so the values form
+ * a clean left edge you can run your eye down. That is what makes a twelve-row
+ * box scannable, and it is the whole reason for the alignment.
+ *
+ * It is DATA-DRIVEN rather than slot-driven so a page describes what it knows
+ * and this file decides how it looks. Adding a row to an item page is adding an
+ * entry to `sections`, never markup here.
+ *
+ * Two rules from the spec that this file enforces rather than trusts:
+ *   - Every section and every row is optional. `origin: "code"` entries ship an
+ *     empty `data` object; a box that renders three rows is correct output.
+ *     Empty sections are dropped here so callers can pass them unconditionally.
+ *   - Long values get a `block`, not a `row`. Stat names reach 126 characters
+ *     and would shred a 180px value cell.
+ */
+
+export interface InfoRow {
+	label: string;
+	value: string;
+	/** Smaller, dimmer trailing note — "(act 3)", "(slow)". Per D4 this is also
+	 *  where a derived-rather-than-stated reading is marked. */
+	qualifier?: string;
+	/** A pack-stated colour, as a CSS value. Never a decorative choice (D13). */
+	colour?: string;
+	href?: string;
+}
+
+/** Full-width, for values that wrap: stat lines, descriptions. */
+export interface InfoBlock {
+	value: string;
+	label: string;
+	colour?: string;
+}
+
+export interface InfoLink {
+	label: string;
+	href?: string;
+}
+
+export interface InfoSection {
+	title: string;
+	rows?: InfoRow[];
+	blocks?: InfoBlock[];
+	links?: InfoLink[];
+}
+
+interface Props {
+	title: string;
+	/** Rarity colour for the title bar's underline. */
+	accent?: string;
+	/** Shown in the sprite well until the icon pipeline lands (ROADMAP 3.5). */
+	spriteLabel?: string;
+	sections: InfoSection[];
+	/** The pack's own tooltip text. Empty on all 251 uniques today. */
+	flavour?: string | null;
+}
+
+const { title, accent, spriteLabel, sections, flavour } = Astro.props;
+
+const filled = sections.filter(
+	(s) => (s.rows?.length ?? 0) + (s.blocks?.length ?? 0) + (s.links?.length ?? 0) > 0
+);
+---
+
+{/* NOT `data-pagefind-ignore`. The stat lines in here are the most valuable
+    search corpus on the site — excluding them would gut the build-discovery
+    feature D1 moved item pages off Starlight to make possible. */}
+<aside class="infobox bevel">
+	<h2 class="ibtitle" style={accent ? `--accent-rarity:${accent}` : undefined}>{title}</h2>
+
+	<div class="well">
+		{/* No per-unique art exists yet (ROADMAP § 1.5), so the well names the
+		    base type rather than showing a broken image. */}
+		<span class="wellghost">{spriteLabel ?? title}</span>
+	</div>
+
+	{
+		filled.map((s) => (
+			<>
+				<h3 class="ibsection">{s.title}</h3>
+
+				{s.rows && s.rows.length > 0 && (
+					<dl class="ibrows">
+						{s.rows.map((r) => (
+							<div class="ibrow">
+								<dt>{r.label}</dt>
+								<dd style={r.colour ? `--fmt:${r.colour}` : undefined}>
+									{r.href ? <a href={r.href}>{r.value}</a> : r.value}
+									{/* The space is literal, not margin: without it the value and its
+									    qualifier concatenate when the text is copied or read aloud. */}
+									{r.qualifier && (
+										<>
+											{' '}
+											<span class="qual">{r.qualifier}</span>
+										</>
+									)}
+								</dd>
+							</div>
+						))}
+					</dl>
+				)}
+
+				{s.blocks && s.blocks.length > 0 && (
+					<ul class="ibblocks">
+						{s.blocks.map((b) => (
+							<li style={b.colour ? `--fmt:${b.colour}` : undefined}>
+								<span class="bv">{b.value}</span>
+								<span class="bl">{b.label}</span>
+							</li>
+						))}
+					</ul>
+				)}
+
+				{s.links && s.links.length > 0 && (
+					<ul class="iblinks">
+						{s.links.map((l) => (
+							<li>{l.href ? <a href={l.href}>{l.label}</a> : l.label}</li>
+						))}
+					</ul>
+				)}
+			</>
+		))
+	}
+
+	{flavour && <p class="ibflavour">{flavour}</p>}
+</aside>
+
+<style>
+	/* Width is measured, not chosen: against the 1,323 real roll entries, stat
+	   names run median 14 characters and p90 42, so 288px keeps 88% of stat
+	   lines on one line. See DESIGN.md § 1. */
+	.infobox {
+		width: var(--w-infobox);
+		flex: none;
+		background: var(--surface);
+		align-self: start;
+	}
+
+	.ibtitle {
+		margin: 0;
+		padding: var(--m4) var(--s1);
+		text-align: center;
+		font-family: var(--font-display);
+		font-size: var(--t-body);
+		font-weight: 600;
+		color: var(--ink);
+		background: var(--surface-raised);
+		border-bottom: 2px solid var(--accent-rarity, var(--line));
+	}
+
+	/* The sprite well. Sized so a 32px icon will drop in without the box
+	   reflowing when the icon pipeline lands. */
+	.well {
+		display: grid;
+		place-items: center;
+		min-height: 128px;
+		padding: var(--s1);
+		background: var(--bg-deep);
+	}
+	.wellghost {
+		font-family: var(--font-display);
+		font-size: var(--t-label);
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		color: var(--ink-fainter);
+		border: 1px dashed var(--line);
+		padding: var(--m4) var(--m4);
+		text-align: center;
+	}
+
+	.ibsection {
+		margin: 0;
+		padding: var(--m2) var(--s1);
+		text-align: center;
+		font-family: var(--font-display);
+		font-size: var(--t-label);
+		font-weight: 600;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--ink-faint);
+		background: var(--surface-raised);
+		border-top: 1px solid var(--line);
+		border-bottom: 1px solid var(--line);
+	}
+
+	/* Two-column: label right, value left. Micro spacing — this is repeating
+	   data, which is the only place it is allowed (DESIGN.md § 2). */
+	.ibrows {
+		margin: 0;
+		padding: var(--m3) 0;
+	}
+	.ibrow {
+		display: grid;
+		grid-template-columns: 92px minmax(0, 1fr);
+		gap: var(--m3);
+		padding: var(--m1) var(--s1);
+		align-items: baseline;
+	}
+	.ibrow dt {
+		text-align: right;
+		font-size: var(--t-small);
+		color: var(--ink-faint);
+	}
+	.ibrow dd {
+		margin: 0;
+		font-size: var(--t-data);
+		color: var(--fmt, var(--ink));
+	}
+	.qual {
+		font-size: var(--t-label);
+		color: var(--ink-fainter);
+		white-space: nowrap;
+	}
+
+	/* Full-width, for values that wrap. Mono, because these are numbers first. */
+	.ibblocks {
+		list-style: none;
+		margin: 0;
+		padding: var(--m3) var(--s1);
+		background: rgba(0, 0, 0, 0.35);
+	}
+	.ibblocks li {
+		display: flex;
+		gap: var(--m3);
+		align-items: baseline;
+		padding: var(--m2) 0;
+		font-family: var(--font-mono);
+		font-size: var(--t-data);
+		line-height: 1.45;
+	}
+	.bv {
+		color: var(--fmt, var(--stat-default));
+		white-space: nowrap;
+		flex: none;
+	}
+	.bl {
+		color: color-mix(in srgb, var(--fmt, var(--stat-default)) 58%, var(--ink-faint));
+	}
+
+	.iblinks {
+		list-style: none;
+		margin: 0;
+		padding: var(--m3) var(--s1);
+	}
+	.iblinks li {
+		font-size: var(--t-data);
+		padding: var(--m1) 0;
+	}
+
+	.ibflavour {
+		margin: 0;
+		padding: var(--m4) var(--s1);
+		border-top: 1px solid var(--line);
+		font-size: var(--t-data);
+		font-style: italic;
+		color: var(--ink-faint);
+		text-align: center;
+	}
+
+	@media (max-width: 900px) {
+		.infobox {
+			width: 100%;
+		}
+	}
+</style>

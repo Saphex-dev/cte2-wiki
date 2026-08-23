@@ -553,6 +553,12 @@
       "key": "talent_trees",
       "count": 3,
       "nodes": 1786
+    },
+    {
+      "key": "dimension_biomes",
+      "count": 8,
+      "biomes": 283,
+      "unresolved": 0
     }
   ]
 }

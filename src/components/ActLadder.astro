@@ -11,14 +11,11 @@
  * `default` is excluded: it is the mod's catch-all for any dimension without
  * its own config, not a place you can go.
  *
- * Display names are hand-written here rather than extracted. The pack does not
- * translate dimension names — each mod does, under its own key — and
- * `registry_map.LANG_SOURCES` deliberately reads only Mine and Slash plus the
- * pack's resources.zip, so widening it to reach them would re-resolve names
- * across all 37 collections. Every title below is quoted from a lang key,
- * cited inline; none is invented.
+ * Display names live in `src/lib/dimensions.ts` — one copy, shared with the item
+ * page, each title quoted from a lang key and cited there.
  */
 import dimensionsData from '../../data/dimensions.json';
+import { DIMENSION_TITLES as TITLES } from '../lib/dimensions';
 
 type Dimension = {
 	id: string;
@@ -31,16 +28,6 @@ type Dimension = {
 	};
 };
 
-const TITLES: Record<string, string> = {
-	'minecraft:overworld': 'Overworld', //           dimension.minecraft.overworld
-	'minecraft:the_nether': 'The Nether', //         dimension.minecraft.the_nether
-	'undergarden:undergarden': 'Undergarden', //     dungeon_realm.words.map_name_undergarden
-	'blue_skies:everbright': 'Everbright', //        generator.blue_skies.everbright
-	'blue_skies:everdawn': 'Everdawn', //            generator.blue_skies.everdawn
-	'minecraft:the_end': 'The End', //               dimension.minecraft.the_end
-	'deeperdarker:otherside': 'Otherside', //        advancements.deeperdarker.explore_otherside
-	'twilightforest:twilight_forest': 'Twilight Forest', // dimension.twilightforest.twilight_forest
-};
 
 const MIN = 1;
 const MAX = 100;

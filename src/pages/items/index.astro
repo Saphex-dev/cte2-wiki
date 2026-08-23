@@ -2,6 +2,7 @@
 import Site from '../../layouts/Site.astro';
 import { count } from '../../data/collections';
 import uniquesData from '../../../data/uniques.json';
+import { baseHref, all as allUniques } from '../../lib/uniques';
 
 type Unique = { id: string; group: string | null; name: string };
 const uniques = uniquesData as Unique[];
@@ -24,8 +25,10 @@ const bases = [...byBase.entries()]
 	.map(([id, n]) => ({ label: id.replace(/_/g, ' '), n }))
 	.sort((a, b) => b.n - a.n || a.label.localeCompare(b.label));
 
+/* `href` only where the route exists — same rule as nav.ts. The rest render as
+   plain cards, honest that the destination is not built yet. */
 const AREAS = [
-	{ label: 'Uniques', n: count('uniques'), blurb: 'Named gear with fixed stat lines and their own roll ranges.' },
+	{ label: 'Uniques', n: allUniques.length, href: '/items/uniques/', blurb: 'Named gear with fixed stat lines and their own roll ranges.' },
 	{ label: 'Base gear', n: count('base_gear'), blurb: 'The item types everything else is built on, each with its own stat ranges.' },
 	{ label: 'Affixes', n: count('affixes'), blurb: 'The prefixes, suffixes and implicits that roll onto gear.' },
 	{ label: 'Runewords', n: count('runewords'), blurb: 'Rune sequences that grant fixed stats in the right slot.' },
@@ -50,20 +53,28 @@ const description =
 		<h1>Items</h1>
 		<p>
 			Every stat line and roll range below is read out of the pack itself. There are
-			{' '}{count('uniques')} unique items across {bases.length} base types, plus {sets.size}
+			{' '}{allUniques.length} unique items across {bases.length} base types, plus {sets.size}
 			{' '}armour sets.
 		</p>
 	</div>
 
 	<div class="sectiongrid" style="margin-bottom: var(--s2)">
 		{
-			AREAS.map((a) => (
-				<div class="sectioncard bevel">
-					<h3>{a.label}</h3>
-					<p>{a.blurb}</p>
-					<span class="n">{a.n.toLocaleString('en-US')}</span>
-				</div>
-			))
+			AREAS.map((a) =>
+				a.href ? (
+					<a class="sectioncard bevel" href={a.href}>
+						<h3>{a.label}</h3>
+						<p>{a.blurb}</p>
+						<span class="n">{a.n.toLocaleString('en-US')}</span>
+					</a>
+				) : (
+					<div class="sectioncard bevel">
+						<h3>{a.label}</h3>
+						<p>{a.blurb}</p>
+						<span class="n">{a.n.toLocaleString('en-US')}</span>
+					</div>
+				)
+			)
 		}
 	</div>
 
@@ -71,16 +82,15 @@ const description =
 		<h2 class="ptitle">Uniques by base type</h2>
 		<div class="pbody">
 			<p class="phint">
-				Which weapon and armour types carry the most named gear. One base type is
-				worked through end to end as a sample:
-				{' '}<a href="/items/uniques/starforge/">Starforge</a>.
+				Which weapon and armour types carry the most named gear. Every one of them
+				is listed on the {' '}<a href="/items/uniques/">uniques page</a>.
 			</p>
 			<div class="cols">
 				<ul>
 					{
 						bases.slice(0, Math.ceil(bases.length / 3)).map((b) => (
 							<li>
-								<span>{b.label}</span>
+								<a href={baseHref(b.label)}>{b.label}</a>
 								<span class="c">{b.n}</span>
 							</li>
 						))
@@ -92,7 +102,7 @@ const description =
 							.slice(Math.ceil(bases.length / 3), Math.ceil((bases.length * 2) / 3))
 							.map((b) => (
 								<li>
-									<span>{b.label}</span>
+									<a href={baseHref(b.label)}>{b.label}</a>
 									<span class="c">{b.n}</span>
 								</li>
 							))
@@ -102,7 +112,7 @@ const description =
 					{
 						bases.slice(Math.ceil((bases.length * 2) / 3)).map((b) => (
 							<li>
-								<span>{b.label}</span>
+								<a href={baseHref(b.label)}>{b.label}</a>
 								<span class="c">{b.n}</span>
 							</li>
 						))

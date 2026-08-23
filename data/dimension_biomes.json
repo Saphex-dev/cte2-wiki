@@ -1,0 +1,1505 @@
+[
+  {
+    "id": "blue_skies:everbright",
+    "source": "tag blue_skies:everbright",
+    "type_source": "blue_skies-1.20.1-1.3.31.jar!/data/blue_skies/dimension_type/everbright.json",
+    "data": {
+      "has_skylight": true,
+      "has_ceiling": false,
+      "biomes": [
+        {
+          "id": "blue_skies:brightlands",
+          "sky_color": 9684223,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:brisk_meadow",
+          "sky_color": 9684223,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:brumble_forest",
+          "sky_color": 9684223,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:calming_skies",
+          "sky_color": 9684223,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:deep_peeking_ocean",
+          "sky_color": 9684223,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:frostbitten_forest",
+          "sky_color": 6654717,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:frostbitten_forest_clearing",
+          "sky_color": 6654717,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:midday_shore",
+          "sky_color": 10994416,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:peeking_ocean",
+          "sky_color": 9684223,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:polar_highland",
+          "sky_color": 7252691,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:slushlands",
+          "sky_color": 7252691,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:snow_covered_pines",
+          "sky_color": 9684223,
+          "fog_color": 12638463
+        }
+      ]
+    }
+  },
+  {
+    "id": "blue_skies:everdawn",
+    "source": "tag blue_skies:everdawn",
+    "type_source": "blue_skies-1.20.1-1.3.31.jar!/data/blue_skies/dimension_type/everdawn.json",
+    "data": {
+      "has_skylight": true,
+      "has_ceiling": false,
+      "biomes": [
+        {
+          "id": "blue_skies:crescent_orchard",
+          "sky_color": 15774612,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:crescent_orchard_lake",
+          "sky_color": 15774612,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:crystal_dunes",
+          "sky_color": 15784896,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:crystal_dunes_spikes",
+          "sky_color": 15784896,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:crystal_roughs",
+          "sky_color": 14350335,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:moonlit_reservoir",
+          "sky_color": 8687555,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:rising_creek",
+          "sky_color": 9471171,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:searing_grassland",
+          "sky_color": 15766676,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:shaded_woodlands",
+          "sky_color": 0,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:sunset_maple_forest",
+          "sky_color": 15770516,
+          "fog_color": 12638463
+        },
+        {
+          "id": "blue_skies:unorthodox_valley",
+          "sky_color": 9471171,
+          "fog_color": 12638463
+        }
+      ]
+    }
+  },
+  {
+    "id": "deeperdarker:otherside",
+    "source": "deeperdarker-forge-1.20.1-1.3.3.jar!/data/deeperdarker/dimension/otherside.json",
+    "type_source": "deeperdarker-forge-1.20.1-1.3.3.jar!/data/deeperdarker/dimension_type/otherside.json",
+    "data": {
+      "has_skylight": false,
+      "has_ceiling": true,
+      "biomes": [
+        {
+          "id": "deeperdarker:blooming_caverns",
+          "sky_color": 8560639,
+          "fog_color": 1716032
+        },
+        {
+          "id": "deeperdarker:deeplands",
+          "sky_color": 8625919,
+          "fog_color": 1317939
+        },
+        {
+          "id": "deeperdarker:echoing_forest",
+          "sky_color": 8168447,
+          "fog_color": 3152448
+        },
+        {
+          "id": "deeperdarker:overcast_columns",
+          "sky_color": 8037887,
+          "fog_color": 4663576
+        }
+      ]
+    }
+  },
+  {
+    "id": "minecraft:overworld",
+    "source": "tag minecraft:is_overworld",
+    "type_source": "1.20.1.jar!/data/minecraft/dimension_type/overworld.json",
+    "data": {
+      "has_skylight": true,
+      "has_ceiling": false,
+      "biomes": [
+        {
+          "id": "biomeswevegone:allium_shrubland",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:amaranth_grassland",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:araucaria_savanna",
+          "sky_color": 7711487,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:aspen_boreal",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:atacama_outback",
+          "sky_color": 12815488,
+          "fog_color": 12815488
+        },
+        {
+          "id": "biomeswevegone:baobab_savanna",
+          "sky_color": 7711487,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:basalt_barrera",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:bayou",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:black_forest",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:canadian_shield",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:cika_woods",
+          "sky_color": 8168447,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:coconino_meadow",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:coniferous_forest",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:crag_gardens",
+          "sky_color": 7842047,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:crimson_tundra",
+          "sky_color": 12700876,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:cypress_swamplands",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:cypress_wetlands",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:dacite_ridges",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:dacite_shore",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:dead_sea",
+          "sky_color": 7254527,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:ebony_woods",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:enchanted_tangle",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:eroded_borealis",
+          "sky_color": 8625919,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:firecracker_chaparral",
+          "sky_color": 7254527,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:forgotten_forest",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:fragment_jungle",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:frosted_coniferous_forest",
+          "sky_color": 8625919,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:frosted_taiga",
+          "sky_color": 8625919,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:howling_peaks",
+          "sky_color": 12700876,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:ironwood_gour",
+          "sky_color": 7711487,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:jacaranda_jungle",
+          "sky_color": 7842047,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:lush_stacks",
+          "sky_color": 7776511,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:maple_taiga",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:mojave_desert",
+          "sky_color": 7254527,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:orchard",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:overgrowth_woodlands",
+          "sky_color": 9358480,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:prairie",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:pumpkin_valley",
+          "sky_color": 8168447,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:rainbow_beach",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:red_rock_peaks",
+          "sky_color": 7711487,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:red_rock_valley",
+          "sky_color": 7711487,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:redwood_thicket",
+          "sky_color": 7842047,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:rose_fields",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:rugged_badlands",
+          "sky_color": 7711487,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:sakura_grove",
+          "sky_color": 7972607,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:shattered_glacier",
+          "sky_color": 12700876,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:sierra_badlands",
+          "sky_color": 7711487,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:skyris_vale",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:temperate_grove",
+          "sky_color": 7972607,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:tropical_rainforest",
+          "sky_color": 7842047,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:weeping_witch_forest",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:white_mangrove_marshes",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "biomeswevegone:windswept_desert",
+          "sky_color": 12815488,
+          "fog_color": 12815488
+        },
+        {
+          "id": "biomeswevegone:zelkova_forest",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:badlands",
+          "sky_color": 14865331,
+          "fog_color": 14866371
+        },
+        {
+          "id": "minecraft:bamboo_jungle",
+          "sky_color": 7842047,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:beach",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:birch_forest",
+          "sky_color": 8037887,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:cherry_grove",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:cold_ocean",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:dark_forest",
+          "sky_color": 7972607,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:deep_cold_ocean",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:deep_dark",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:deep_frozen_ocean",
+          "sky_color": 8364543,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:deep_lukewarm_ocean",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:deep_ocean",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:desert",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "minecraft:dripstone_caves",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:eroded_badlands",
+          "sky_color": 14865331,
+          "fog_color": 14866371
+        },
+        {
+          "id": "minecraft:flower_forest",
+          "sky_color": 7972607,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:forest",
+          "sky_color": 7972607,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:frozen_ocean",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "minecraft:frozen_peaks",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "minecraft:frozen_river",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "minecraft:grove",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "minecraft:ice_spikes",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "minecraft:jagged_peaks",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "minecraft:jungle",
+          "sky_color": 7842047,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:lukewarm_ocean",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:lush_caves",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:mangrove_swamp",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:meadow",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:mushroom_fields",
+          "sky_color": 7842047,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:ocean",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:old_growth_birch_forest",
+          "sky_color": 8037887,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:old_growth_pine_taiga",
+          "sky_color": 8168447,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:old_growth_spruce_taiga",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:plains",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:river",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:savanna",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "minecraft:savanna_plateau",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "minecraft:snowy_beach",
+          "sky_color": 8364543,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:snowy_plains",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "minecraft:snowy_slopes",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "minecraft:snowy_taiga",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "minecraft:sparse_jungle",
+          "sky_color": 7842047,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:stony_peaks",
+          "sky_color": 7776511,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:stony_shore",
+          "sky_color": 8233727,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:sunflower_plains",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:swamp",
+          "sky_color": 10599601,
+          "fog_color": 10660776
+        },
+        {
+          "id": "minecraft:taiga",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:warm_ocean",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:windswept_forest",
+          "sky_color": 8233727,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:windswept_gravelly_hills",
+          "sky_color": 8233727,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:windswept_hills",
+          "sky_color": 8233727,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:windswept_savanna",
+          "sky_color": 7254527,
+          "fog_color": 12638463
+        },
+        {
+          "id": "minecraft:wooded_badlands",
+          "sky_color": 14865331,
+          "fog_color": 14866371
+        },
+        {
+          "id": "terralith:alpha_islands",
+          "sky_color": 7972607,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:alpha_islands_winter",
+          "sky_color": 7972607,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:alpine_grove",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:alpine_highlands",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:amethyst_canyon",
+          "sky_color": 13551359,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:amethyst_rainforest",
+          "sky_color": 13551359,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:ancient_sands",
+          "sky_color": 8746857,
+          "fog_color": 12295069
+        },
+        {
+          "id": "terralith:arid_highlands",
+          "sky_color": 7711487,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:ashen_savanna",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:basalt_cliffs",
+          "sky_color": 8233727,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:birch_taiga",
+          "sky_color": 8233727,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:blooming_plateau",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:blooming_valley",
+          "sky_color": 7972607,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:brushland",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:bryce_canyon",
+          "sky_color": 14865331,
+          "fog_color": 14866371
+        },
+        {
+          "id": "terralith:caldera",
+          "sky_color": 7842047,
+          "fog_color": 14739967
+        },
+        {
+          "id": "terralith:cave/andesite_caves",
+          "sky_color": 7776511,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:cave/crystal_caves",
+          "sky_color": 2040877,
+          "fog_color": 1053721
+        },
+        {
+          "id": "terralith:cave/deep_caves",
+          "sky_color": 2040877,
+          "fog_color": 1053721
+        },
+        {
+          "id": "terralith:cave/desert_caves",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:cave/diorite_caves",
+          "sky_color": 7776511,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:cave/frostfire_caves",
+          "sky_color": 0,
+          "fog_color": 0
+        },
+        {
+          "id": "terralith:cave/fungal_caves",
+          "sky_color": 7776511,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:cave/granite_caves",
+          "sky_color": 7776511,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:cave/ice_caves",
+          "sky_color": 7776511,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:cave/infested_caves",
+          "sky_color": 7776511,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:cave/mantle_caves",
+          "sky_color": 0,
+          "fog_color": 0
+        },
+        {
+          "id": "terralith:cave/thermal_caves",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:cave/tuff_caves",
+          "sky_color": 7776511,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:cave/underground_jungle",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:cloud_forest",
+          "sky_color": 14145761,
+          "fog_color": 10858685
+        },
+        {
+          "id": "terralith:cold_shrubland",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:desert_canyon",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:desert_oasis",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:desert_spires",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:emerald_peaks",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:forested_highlands",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:fractured_savanna",
+          "sky_color": 14865331,
+          "fog_color": 14866371
+        },
+        {
+          "id": "terralith:frozen_cliffs",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:glacial_chasm",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:granite_cliffs",
+          "sky_color": 8233727,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:gravel_beach",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:gravel_desert",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:haze_mountain",
+          "sky_color": 14145761,
+          "fog_color": 10858685
+        },
+        {
+          "id": "terralith:highlands",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:hot_shrubland",
+          "sky_color": 12702684,
+          "fog_color": 13095896
+        },
+        {
+          "id": "terralith:ice_marsh",
+          "sky_color": 10599601,
+          "fog_color": 10660776
+        },
+        {
+          "id": "terralith:jungle_mountains",
+          "sky_color": 10599654,
+          "fog_color": 10664914
+        },
+        {
+          "id": "terralith:lavender_forest",
+          "sky_color": 7972607,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:lavender_valley",
+          "sky_color": 7972607,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:lush_desert",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:lush_valley",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:mirage_isles",
+          "sky_color": 12626175,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:moonlight_grove",
+          "sky_color": 7972607,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:moonlight_valley",
+          "sky_color": 7972607,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:mountain_steppe",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:orchid_swamp",
+          "sky_color": 10599601,
+          "fog_color": 10660776
+        },
+        {
+          "id": "terralith:painted_mountains",
+          "sky_color": 14865331,
+          "fog_color": 14866371
+        },
+        {
+          "id": "terralith:red_oasis",
+          "sky_color": 14865331,
+          "fog_color": 14866371
+        },
+        {
+          "id": "terralith:rocky_jungle",
+          "sky_color": 10599654,
+          "fog_color": 10664914
+        },
+        {
+          "id": "terralith:rocky_mountains",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:rocky_shrubland",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:sakura_grove",
+          "sky_color": 10864127,
+          "fog_color": 13822975
+        },
+        {
+          "id": "terralith:sakura_valley",
+          "sky_color": 10864127,
+          "fog_color": 13822975
+        },
+        {
+          "id": "terralith:sandstone_valley",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:savanna_badlands",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:savanna_slopes",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:scarlet_mountains",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:shield",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:shield_clearing",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:shrubland",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:siberian_grove",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:siberian_taiga",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:skylands",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:skylands_autumn",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:skylands_spring",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:skylands_summer",
+          "sky_color": 9619199,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:skylands_winter",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:snowy_badlands",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:snowy_cherry_grove",
+          "sky_color": 8103167,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:snowy_maple_forest",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:snowy_shield",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:steppe",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:stony_spires",
+          "sky_color": 7776511,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:temperate_highlands",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:tropical_jungle",
+          "sky_color": 9619199,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:valley_clearing",
+          "sky_color": 7907327,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:volcanic_crater",
+          "sky_color": 5725286,
+          "fog_color": 9148579
+        },
+        {
+          "id": "terralith:volcanic_peaks",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:warm_river",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:warped_mesa",
+          "sky_color": 12626175,
+          "fog_color": 13416173
+        },
+        {
+          "id": "terralith:white_cliffs",
+          "sky_color": 8233727,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:white_mesa",
+          "sky_color": 11653631,
+          "fog_color": 13494015
+        },
+        {
+          "id": "terralith:windswept_spires",
+          "sky_color": 8233727,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:wintry_forest",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:wintry_lowlands",
+          "sky_color": 10858685,
+          "fog_color": 14145761
+        },
+        {
+          "id": "terralith:yellowstone",
+          "sky_color": 7842047,
+          "fog_color": 14739967
+        },
+        {
+          "id": "terralith:yosemite_cliffs",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        },
+        {
+          "id": "terralith:yosemite_lowlands",
+          "sky_color": 8233983,
+          "fog_color": 12638463
+        }
+      ]
+    }
+  },
+  {
+    "id": "minecraft:the_end",
+    "source": "tag minecraft:is_end",
+    "type_source": "1.20.1.jar!/data/minecraft/dimension_type/the_end.json",
+    "data": {
+      "has_skylight": false,
+      "has_ceiling": false,
+      "biomes": [
+        {
+          "id": "minecraft:end_barrens",
+          "sky_color": 0,
+          "fog_color": 10518688
+        },
+        {
+          "id": "minecraft:end_highlands",
+          "sky_color": 0,
+          "fog_color": 10518688
+        },
+        {
+          "id": "minecraft:end_midlands",
+          "sky_color": 0,
+          "fog_color": 10518688
+        },
+        {
+          "id": "minecraft:small_end_islands",
+          "sky_color": 0,
+          "fog_color": 10518688
+        },
+        {
+          "id": "minecraft:the_end",
+          "sky_color": 0,
+          "fog_color": 10518688
+        },
+        {
+          "id": "outer_end:azure_forest",
+          "sky_color": 0,
+          "fog_color": 10518688
+        },
+        {
+          "id": "outer_end:crystal_crag",
+          "sky_color": 0,
+          "fog_color": 10518688
+        },
+        {
+          "id": "outer_end:primordial_pools",
+          "sky_color": 0,
+          "fog_color": 10518688
+        }
+      ]
+    }
+  },
+  {
+    "id": "minecraft:the_nether",
+    "source": "tag minecraft:is_nether",
+    "type_source": "1.20.1.jar!/data/minecraft/dimension_type/the_nether.json",
+    "data": {
+      "has_skylight": false,
+      "has_ceiling": true,
+      "biomes": [
+        {
+          "id": "minecraft:basalt_deltas",
+          "sky_color": 7254527,
+          "fog_color": 6840176
+        },
+        {
+          "id": "minecraft:crimson_forest",
+          "sky_color": 7254527,
+          "fog_color": 3343107
+        },
+        {
+          "id": "minecraft:nether_wastes",
+          "sky_color": 7254527,
+          "fog_color": 3344392
+        },
+        {
+          "id": "minecraft:soul_sand_valley",
+          "sky_color": 7254527,
+          "fog_color": 1787717
+        },
+        {
+          "id": "minecraft:warped_forest",
+          "sky_color": 7254527,
+          "fog_color": 1705242
+        }
+      ]
+    }
+  },
+  {
+    "id": "twilightforest:twilight_forest",
+    "source": "tag twilightforest:in_twilight_forest",
+    "type_source": "twilightforest-1.20.1-4.3.2508-universal.jar!/data/twilightforest/dimension_type/twilight_forest_type.json",
+    "data": {
+      "has_skylight": true,
+      "has_ceiling": false,
+      "biomes": [
+        {
+          "id": "twilightforest:clearing",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:dark_forest",
+          "sky_color": 0,
+          "fog_color": 0
+        },
+        {
+          "id": "twilightforest:dark_forest_center",
+          "sky_color": 0,
+          "fog_color": 4796416
+        },
+        {
+          "id": "twilightforest:dense_forest",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:dense_mushroom_forest",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:enchanted_forest",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:final_plateau",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:fire_swamp",
+          "sky_color": 2105930,
+          "fog_color": 3672576
+        },
+        {
+          "id": "twilightforest:firefly_forest",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:forest",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:glacier",
+          "sky_color": 1248552,
+          "fog_color": 3547016
+        },
+        {
+          "id": "twilightforest:highlands",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:lake",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:mushroom_forest",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:oak_savannah",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:snowy_forest",
+          "sky_color": 8421504,
+          "fog_color": 16777215
+        },
+        {
+          "id": "twilightforest:spooky_forest",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:stream",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:swamp",
+          "sky_color": 8466,
+          "fog_color": 16161
+        },
+        {
+          "id": "twilightforest:thornlands",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        },
+        {
+          "id": "twilightforest:underground",
+          "sky_color": 2105930,
+          "fog_color": 12648408
+        }
+      ]
+    }
+  },
+  {
+    "id": "undergarden:undergarden",
+    "source": "The_Undergarden-1.20.1-0.8.14.jar!/data/undergarden/dimension/undergarden.json",
+    "type_source": "The_Undergarden-1.20.1-0.8.14.jar!/data/undergarden/dimension_type/undergarden.json",
+    "data": {
+      "has_skylight": false,
+      "has_ceiling": true,
+      "biomes": [
+        {
+          "id": "undergarden:ancient_sea",
+          "sky_color": 1186057,
+          "fog_color": 1186057
+        },
+        {
+          "id": "undergarden:barren_abyss",
+          "sky_color": 1186057,
+          "fog_color": 2565927
+        },
+        {
+          "id": "undergarden:blood_mushroom_bog",
+          "sky_color": 1186057,
+          "fog_color": 1248522
+        },
+        {
+          "id": "undergarden:dead_sea",
+          "sky_color": 1186057,
+          "fog_color": 2565927
+        },
+        {
+          "id": "undergarden:dense_forest",
+          "sky_color": 1186057,
+          "fog_color": 1186057
+        },
+        {
+          "id": "undergarden:forgotten_field",
+          "sky_color": 1186057,
+          "fog_color": 1186057
+        },
+        {
+          "id": "undergarden:frostfields",
+          "sky_color": 1186057,
+          "fog_color": 2565927
+        },
+        {
+          "id": "undergarden:frosty_smogstem_forest",
+          "sky_color": 1186057,
+          "fog_color": 2565927
+        },
+        {
+          "id": "undergarden:gronglegrowth",
+          "sky_color": 1186057,
+          "fog_color": 1186057
+        },
+        {
+          "id": "undergarden:icy_sea",
+          "sky_color": 1186057,
+          "fog_color": 2565927
+        },
+        {
+          "id": "undergarden:indigo_mushroom_bog",
+          "sky_color": 1186057,
+          "fog_color": 2432083
+        },
+        {
+          "id": "undergarden:ink_mushroom_bog",
+          "sky_color": 1186057,
+          "fog_color": 1640729
+        },
+        {
+          "id": "undergarden:smog_spires",
+          "sky_color": 1186057,
+          "fog_color": 2565927
+        },
+        {
+          "id": "undergarden:smogstem_forest",
+          "sky_color": 1186057,
+          "fog_color": 595225
+        },
+        {
+          "id": "undergarden:veil_mushroom_bog",
+          "sky_color": 1186057,
+          "fog_color": 1643784
+        },
+        {
+          "id": "undergarden:wigglewood_forest",
+          "sky_color": 1186057,
+          "fog_color": 1643784
+        }
+      ]
+    }
+  }
+]
