@@ -1,0 +1,94 @@
+---
+import Site from '../../layouts/Site.astro';
+import { count } from '../../data/collections';
+import omenData from '../../../data/omens.json';
+
+const omens = (omenData as { id: string; name: string }[]).map((o) => o.name).sort();
+
+const AREAS = [
+	{ label: 'Atlas nodes', n: count('atlas_nodes'), blurb: 'The map graph the endgame runs on, tiered from the first map to the last.' },
+	{ label: 'Atlas passives', n: 222, blurb: 'A third passive tree, spent on how maps themselves behave.' },
+	{ label: 'Map modifiers', n: count('map_affixes'), blurb: 'What a map rolls, and what it pays you for surviving it.' },
+	{ label: 'Prophecies', n: count('prophecies'), blurb: 'Predictions that pay out in specific gear.' },
+	{ label: 'Omens', n: count('omens'), blurb: 'Endgame modifiers with their own rarity ladder.' },
+	{ label: 'Uber bosses', n: count('uber_bosses'), blurb: 'The fights at the end of the Atlas.' },
+	{ label: 'Boss arenas', n: count('boss_arenas'), blurb: 'Where those fights happen.' },
+	{ label: 'Shrines', n: count('shrine_buffs'), blurb: 'Temporary blessings found in the world.' },
+];
+
+const RELICS = [
+	{ label: 'Relic types', n: count('relic_types') },
+	{ label: 'Relic rarities', n: count('relic_rarities') },
+	{ label: 'Relic modifiers', n: count('relic_affixes') },
+	{ label: 'Relic stats', n: count('relic_stats') },
+];
+
+const title = 'Atlas';
+const description =
+	'The endgame: the Atlas map graph, map modifiers, prophecies, omens, relics and uber bosses.';
+---
+
+<Site
+	title={title}
+	description={description}
+	filters={{ section: 'Atlas' }}
+	crumbs={[{ label: 'Wiki', href: '/' }]}
+>
+	<div class="pagehead">
+		<h1>Atlas</h1>
+		<p>
+			The endgame is a map graph with its own passive tree. {count('atlas_nodes')} nodes,
+			{' '}{count('map_affixes')} modifiers that can roll onto a map, and a set of
+			mechanics that pay out in gear you cannot get any other way.
+		</p>
+	</div>
+
+	<div class="sectiongrid" style="margin-bottom: var(--s2)">
+		{
+			AREAS.map((a) => (
+				<div class="sectioncard bevel">
+					<h3>{a.label}</h3>
+					<p>{a.blurb}</p>
+					<span class="n">{a.n.toLocaleString('en-US')}</span>
+				</div>
+			))
+		}
+	</div>
+
+	<section class="panel bevel">
+		<h2 class="ptitle">Omens</h2>
+		<div class="pbody">
+			<p class="phint">
+				Nine of them. Each carries its own rarity, and raising that rarity is what
+				the Orb of Knowledge is for.
+			</p>
+			<div class="cols">
+				<ul>{omens.slice(0, 3).map((o) => <li><span>{o}</span></li>)}</ul>
+				<ul>{omens.slice(3, 6).map((o) => <li><span>{o}</span></li>)}</ul>
+				<ul>{omens.slice(6).map((o) => <li><span>{o}</span></li>)}</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="panel bevel">
+		<h2 class="ptitle">Relics</h2>
+		<div class="pbody">
+			<p class="phint">
+				Relics do not make you stronger. They change what the world gives you —
+				currency rate, gear rate, gem rate, the chance of content appearing at all.
+			</p>
+			<div class="cols">
+				<ul>
+					{
+						RELICS.map((r) => (
+							<li>
+								<span>{r.label}</span>
+								<span class="c">{r.n}</span>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+		</div>
+	</section>
+</Site>

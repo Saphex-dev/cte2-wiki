@@ -1,0 +1,243 @@
+---
+import Site from '../../../layouts/Site.astro';
+import ActLadder from '../../../components/ActLadder.astro';
+import { all, siblings, type Unique } from '../../../lib/uniques';
+
+export function getStaticPaths() {
+	/* Deliberately a sample, not the bulk. Four items chosen to stress the
+	   template rather than to flatter it:
+	     starforge             baseline, seven clean rolls
+	     lantern_of_lost_ghost carries a 126-character stat name
+	     chaotic_spark         the most rolls of any unique
+	     champions_waistguard  one of the 39 the pack ties to a mechanic
+	   Turning this into all 251 pages is deleting the filter below.
+
+	   The list lives inside this function on purpose: Astro hoists
+	   getStaticPaths out of the frontmatter, so it cannot see consts declared
+	   alongside it. */
+	const SAMPLE = new Set([
+		'starforge',
+		'lantern_of_lost_ghost',
+		'chaotic_spark',
+		'champions_waistguard',
+	]);
+
+	return all
+		.filter((u) => SAMPLE.has(u.id))
+		.map((u) => ({ params: { slug: u.slug }, props: { item: u } }));
+}
+
+interface Props {
+	item: Unique;
+}
+const { item } = Astro.props;
+const related = siblings(item);
+
+const description = `${item.name} — a unique ${item.baseType.toLowerCase()} in Craft to Exile 2, with its full stat rolls.`;
+---
+
+<Site
+	title={item.name}
+	description={description}
+	filters={{ section: 'Items', kind: 'Unique', base: item.baseType }}
+	crumbs={[
+		{ label: 'Wiki', href: '/' },
+		{ label: 'Items', href: '/items/' },
+	]}
+>
+	<div class="itemlayout">
+		<article class="tooltip bevel">
+			<h1>{item.name}</h1>
+			<p class="base">
+				{item.baseType}
+				<span class="dot">&middot;</span>
+				drops from level {item.dropLevel}
+				{item.mapTier > 0 && (
+					<>
+						<span class="dot">&middot;</span>
+						map tier {item.mapTier}+
+					</>
+				)}
+			</p>
+
+			<dl class="rolls">
+				{
+					item.rolls.map((r) => (
+						<div class="roll" style={`--fmt:${r.colour}`}>
+							<dt>{r.value}</dt>
+							<dd>{r.label}</dd>
+						</div>
+					))
+				}
+			</dl>
+
+			{
+				item.tags.length > 0 && (
+					<ul class="tags">
+						{item.tags.map((t) => (
+							<li>{t}</li>
+						))}
+					</ul>
+				)
+			}
+		</article>
+
+		<div class="aside">
+			<section class="panel bevel">
+				<h2 class="ptitle">Where in the run</h2>
+				<div class="pbody">
+					<p class="phint">
+						{
+							item.bands.length > 1
+								? `Level ${item.dropLevel} falls inside more than one dimension's band, so it can turn up in any of them.`
+								: `Level ${item.dropLevel} sits in this part of the run.`
+						}
+					</p>
+					<ActLadder highlight={item.bands} />
+				</div>
+			</section>
+
+			{
+				item.mechanic && (
+					<section class="panel bevel">
+						<h2 class="ptitle">How it is found</h2>
+						<div class="pbody">
+							<p class="phint" style="margin:0">
+								Tied to <strong>{item.mechanic}</strong>.
+							</p>
+						</div>
+					</section>
+				)
+			}
+
+			{
+				related.length > 0 && (
+					<section class="panel bevel">
+						<h2 class="ptitle">Other {item.baseType.toLowerCase()} uniques</h2>
+						<div class="pbody">
+							<ul class="related">
+								{related.map((r) => (
+									<li>
+										<span>{r.name}</span>
+										<span class="c">{r.dropLevel}</span>
+									</li>
+								))}
+							</ul>
+						</div>
+					</section>
+				)
+			}
+		</div>
+	</div>
+</Site>
+
+<style>
+	.itemlayout {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		gap: var(--s2);
+		align-items: start;
+	}
+
+	/* The tooltip is the page (ROADMAP D5). Everything else arranges around it. */
+	.tooltip {
+		background: var(--surface-raised);
+		padding: var(--s2);
+		border-top: 2px solid var(--r-unique);
+	}
+	.tooltip h1 {
+		/* One of the two reserved uses of the pixel face (D11). 16px because the
+		   face is drawn on an 8px grid. */
+		font-family: var(--font-pixel);
+		font-size: 16px;
+		font-weight: 400;
+		letter-spacing: normal;
+		line-height: 1.5;
+		color: var(--r-unique);
+	}
+	.base {
+		margin: 12px 0 var(--s2);
+		font-family: var(--font-mono);
+		font-size: 12px;
+		color: var(--ink-faint);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+	.dot {
+		margin: 0 8px;
+	}
+
+	/* Non-negotiable per CLAUDE.md: stat text always sits on a scrim. */
+	.rolls {
+		margin: 0;
+		background: rgba(0, 0, 0, 0.35);
+		padding: var(--s1);
+	}
+	.roll {
+		display: flex;
+		gap: var(--s1);
+		align-items: baseline;
+		padding: 4px 0;
+	}
+	.roll dt {
+		font-family: var(--font-mono);
+		font-size: 14px;
+		color: var(--fmt);
+		min-width: 84px;
+		flex-shrink: 0;
+	}
+	.roll dd {
+		margin: 0;
+		font-size: 14px;
+		color: color-mix(in srgb, var(--fmt) 62%, var(--ink-faint));
+	}
+
+	.tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		list-style: none;
+		margin: var(--s2) 0 0;
+		padding: 0;
+	}
+	.tags li {
+		font-family: var(--font-mono);
+		font-size: 11px;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--ink-faint);
+		border: 1px solid var(--line);
+		padding: 3px 8px;
+	}
+
+	.aside .panel:last-child {
+		margin-bottom: 0;
+	}
+	.related {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.related li {
+		display: flex;
+		justify-content: space-between;
+		gap: var(--s1);
+		font-size: 14px;
+		padding: 5px 0;
+		border-bottom: 1px solid var(--line);
+	}
+	.related li:last-child {
+		border-bottom: 0;
+	}
+	.related .c {
+		font-family: var(--font-mono);
+		font-size: 12px;
+		color: var(--ink-fainter);
+	}
+
+	@media (max-width: 900px) {
+		.itemlayout {
+			grid-template-columns: minmax(0, 1fr);
+		}
+	}
+</style>
